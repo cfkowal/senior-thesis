@@ -1,0 +1,12 @@
+{
+  "name": "flash_attn",
+  "type": "HLS",
+  "configuration": {
+    "componentType": "HLS",
+    "configFiles": [
+      "hls_config.cfg"
+    ],
+    "work_dir": "flash_attn"
+  },
+  "template": "empty_hls_component"
+}
