@@ -1,0 +1,189 @@
+
+
+================================================================
+== Vitis HLS Report for 'flashattn'
+================================================================
+* Date:           Wed Apr  9 14:21:25 2025
+
+* Version:        2024.2 (Build 5238294 on Nov  8 2024)
+* Project:        flash_attn
+* Solution:       hls (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z020-clg400-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  7.256 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+-----------+-----------+------+------+---------+
+    |  Latency (cycles) |   Latency (absolute)  |   Interval  | Pipeline|
+    |   min   |   max   |    min    |    max    |  min |  max |   Type  |
+    +---------+---------+-----------+-----------+------+------+---------+
+    |     8212|     8212|  82.120 us|  82.120 us|  8213|  8213|       no|
+    +---------+---------+-----------+-----------+------+------+---------+
+
+    + Detail: 
+        * Instance: 
+        +--------------------------------------------------------------+---------------------------------------------------+---------+---------+-----------+-----------+------+------+------------------------------------------------+
+        |                                                              |                                                   |  Latency (cycles) |   Latency (absolute)  |   Interval  |                    Pipeline                    |
+        |                           Instance                           |                       Module                      |   min   |   max   |    min    |    max    |  min |  max |                      Type                      |
+        +--------------------------------------------------------------+---------------------------------------------------+---------+---------+-----------+-----------+------+------+------------------------------------------------+
+        |grp_flashattn_Pipeline_Read_Q_VITIS_LOOP_25_1_fu_82           |flashattn_Pipeline_Read_Q_VITIS_LOOP_25_1          |     4099|     4099|  40.990 us|  40.990 us|  4097|  4097|  loop auto-rewind stp (delay=0 clock cycles(s))|
+        |grp_flashattn_Pipeline_Read_K_and_V_VITIS_LOOP_35_2_fu_96     |flashattn_Pipeline_Read_K_and_V_VITIS_LOOP_35_2    |     4099|     4099|  40.990 us|  40.990 us|  4097|  4097|  loop auto-rewind stp (delay=0 clock cycles(s))|
+        |grp_flashattn_Pipeline_Attention_Loop_VITIS_LOOP_48_3_fu_120  |flashattn_Pipeline_Attention_Loop_VITIS_LOOP_48_3  |     4110|     4110|  41.100 us|  41.100 us|  4097|  4097|  loop auto-rewind stp (delay=0 clock cycles(s))|
+        +--------------------------------------------------------------+---------------------------------------------------+---------+---------+-----------+-----------+------+------+------------------------------------------------+
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-----+--------+-------+-----+
+|       Name      | BRAM_18K| DSP |   FF   |  LUT  | URAM|
++-----------------+---------+-----+--------+-------+-----+
+|DSP              |        -|    -|       -|      -|    -|
+|Expression       |        -|    -|       0|      4|    -|
+|FIFO             |        -|    -|       -|      -|    -|
+|Instance         |        -|    4|     833|   1386|    -|
+|Memory           |       24|    -|       0|      0|    0|
+|Multiplexer      |        -|    -|       0|    199|    -|
+|Register         |        -|    -|      48|      -|    -|
++-----------------+---------+-----+--------+-------+-----+
+|Total            |       24|    4|     881|   1589|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Available        |      280|  220|  106400|  53200|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Utilization (%)  |        8|    1|      ~0|      2|    0|
++-----------------+---------+-----+--------+-------+-----+
+
++ Detail: 
+    * Instance: 
+    +--------------------------------------------------------------+---------------------------------------------------+---------+----+-----+------+-----+
+    |                           Instance                           |                       Module                      | BRAM_18K| DSP|  FF |  LUT | URAM|
+    +--------------------------------------------------------------+---------------------------------------------------+---------+----+-----+------+-----+
+    |grp_flashattn_Pipeline_Attention_Loop_VITIS_LOOP_48_3_fu_120  |flashattn_Pipeline_Attention_Loop_VITIS_LOOP_48_3  |        0|   4|  745|  1041|    0|
+    |grp_flashattn_Pipeline_Read_K_and_V_VITIS_LOOP_35_2_fu_96     |flashattn_Pipeline_Read_K_and_V_VITIS_LOOP_35_2    |        0|   0|   44|   178|    0|
+    |grp_flashattn_Pipeline_Read_Q_VITIS_LOOP_25_1_fu_82           |flashattn_Pipeline_Read_Q_VITIS_LOOP_25_1          |        0|   0|   44|   167|    0|
+    +--------------------------------------------------------------+---------------------------------------------------+---------+----+-----+------+-----+
+    |Total                                                         |                                                   |        0|   4|  833|  1386|    0|
+    +--------------------------------------------------------------+---------------------------------------------------+---------+----+-----+------+-----+
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    +----------+----------------------+---------+---+----+-----+------+-----+------+-------------+
+    |  Memory  |        Module        | BRAM_18K| FF| LUT| URAM| Words| Bits| Banks| W*Bits*Banks|
+    +----------+----------------------+---------+---+----+-----+------+-----+------+-------------+
+    |Q_tile_U  |Q_tile_RAM_AUTO_1R1W  |        8|  0|   0|    0|  4096|   32|     1|       131072|
+    |K_tile_U  |Q_tile_RAM_AUTO_1R1W  |        8|  0|   0|    0|  4096|   32|     1|       131072|
+    |V_tile_U  |Q_tile_RAM_AUTO_1R1W  |        8|  0|   0|    0|  4096|   32|     1|       131072|
+    +----------+----------------------+---------+---+----+-----+------+-----+------+-------------+
+    |Total     |                      |       24|  0|   0|    0| 12288|   96|     3|       393216|
+    +----------+----------------------+---------+---+----+-----+------+-----+------+-------------+
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +--------------------------------------------------------------------------------+----------+----+---+----+------------+------------+
+    |                                  Variable Name                                 | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +--------------------------------------------------------------------------------+----------+----+---+----+------------+------------+
+    |grp_flashattn_Pipeline_Attention_Loop_VITIS_LOOP_48_3_fu_120_O_tile_out_TREADY  |       and|   0|  0|   2|           1|           1|
+    |ap_block_state2_on_subcall_done                                                 |        or|   0|  0|   2|           1|           1|
+    +--------------------------------------------------------------------------------+----------+----+---+----+------------+------------+
+    |Total                                                                           |          |   0|  0|   4|           2|           2|
+    +--------------------------------------------------------------------------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    +------------------+----+-----------+-----+-----------+
+    |       Name       | LUT| Input Size| Bits| Total Bits|
+    +------------------+----+-----------+-----+-----------+
+    |K_tile_address0   |  14|          3|   12|         36|
+    |K_tile_ce0        |  14|          3|    1|          3|
+    |K_tile_in_TREADY  |   9|          2|    1|          2|
+    |K_tile_we0        |   9|          2|    1|          2|
+    |O_tile_out_TDATA  |   9|          2|   32|         64|
+    |O_tile_out_TKEEP  |   9|          2|    4|          8|
+    |O_tile_out_TLAST  |   9|          2|    1|          2|
+    |O_tile_out_TSTRB  |   9|          2|    4|          8|
+    |Q_tile_address0   |  14|          3|   12|         36|
+    |Q_tile_ce0        |  14|          3|    1|          3|
+    |Q_tile_in_TREADY  |   9|          2|    1|          2|
+    |Q_tile_we0        |   9|          2|    1|          2|
+    |V_tile_address0   |  14|          3|   12|         36|
+    |V_tile_ce0        |  14|          3|    1|          3|
+    |V_tile_in_TREADY  |   9|          2|    1|          2|
+    |V_tile_we0        |   9|          2|    1|          2|
+    |ap_NS_fsm         |  25|          5|    1|          5|
+    +------------------+----+-----------+-----+-----------+
+    |Total             | 199|         43|   87|        216|
+    +------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +---------------------------------------------------------------------------+----+----+-----+-----------+
+    |                                    Name                                   | FF | LUT| Bits| Const Bits|
+    +---------------------------------------------------------------------------+----+----+-----+-----------+
+    |O_tile_out_TDATA_reg                                                       |  32|   0|   32|          0|
+    |O_tile_out_TKEEP_reg                                                       |   4|   0|    4|          0|
+    |O_tile_out_TLAST_reg                                                       |   1|   0|    1|          0|
+    |O_tile_out_TSTRB_reg                                                       |   4|   0|    4|          0|
+    |ap_CS_fsm                                                                  |   4|   0|    4|          0|
+    |grp_flashattn_Pipeline_Attention_Loop_VITIS_LOOP_48_3_fu_120_ap_start_reg  |   1|   0|    1|          0|
+    |grp_flashattn_Pipeline_Read_K_and_V_VITIS_LOOP_35_2_fu_96_ap_start_reg     |   1|   0|    1|          0|
+    |grp_flashattn_Pipeline_Read_Q_VITIS_LOOP_25_1_fu_82_ap_start_reg           |   1|   0|    1|          0|
+    +---------------------------------------------------------------------------+----+----+-----+-----------+
+    |Total                                                                      |  48|   0|   48|          0|
+    +---------------------------------------------------------------------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++-------------------+-----+-----+--------------+---------------------+--------------+
+|     RTL Ports     | Dir | Bits|   Protocol   |    Source Object    |    C Type    |
++-------------------+-----+-----+--------------+---------------------+--------------+
+|ap_clk             |   in|    1|  ap_ctrl_none|            flashattn|  return value|
+|ap_rst_n           |   in|    1|  ap_ctrl_none|            flashattn|  return value|
+|Q_tile_in_TDATA    |   in|   32|          axis|   Q_tile_in_V_data_V|       pointer|
+|Q_tile_in_TVALID   |   in|    1|          axis|   Q_tile_in_V_last_V|       pointer|
+|Q_tile_in_TREADY   |  out|    1|          axis|   Q_tile_in_V_last_V|       pointer|
+|Q_tile_in_TLAST    |   in|    1|          axis|   Q_tile_in_V_last_V|       pointer|
+|Q_tile_in_TKEEP    |   in|    4|          axis|   Q_tile_in_V_keep_V|       pointer|
+|Q_tile_in_TSTRB    |   in|    4|          axis|   Q_tile_in_V_strb_V|       pointer|
+|K_tile_in_TDATA    |   in|   32|          axis|   K_tile_in_V_data_V|       pointer|
+|K_tile_in_TVALID   |   in|    1|          axis|   K_tile_in_V_last_V|       pointer|
+|K_tile_in_TREADY   |  out|    1|          axis|   K_tile_in_V_last_V|       pointer|
+|K_tile_in_TLAST    |   in|    1|          axis|   K_tile_in_V_last_V|       pointer|
+|K_tile_in_TKEEP    |   in|    4|          axis|   K_tile_in_V_keep_V|       pointer|
+|K_tile_in_TSTRB    |   in|    4|          axis|   K_tile_in_V_strb_V|       pointer|
+|V_tile_in_TDATA    |   in|   32|          axis|   V_tile_in_V_data_V|       pointer|
+|V_tile_in_TVALID   |   in|    1|          axis|   V_tile_in_V_last_V|       pointer|
+|V_tile_in_TREADY   |  out|    1|          axis|   V_tile_in_V_last_V|       pointer|
+|V_tile_in_TLAST    |   in|    1|          axis|   V_tile_in_V_last_V|       pointer|
+|V_tile_in_TKEEP    |   in|    4|          axis|   V_tile_in_V_keep_V|       pointer|
+|V_tile_in_TSTRB    |   in|    4|          axis|   V_tile_in_V_strb_V|       pointer|
+|O_tile_out_TDATA   |  out|   32|          axis|  O_tile_out_V_data_V|       pointer|
+|O_tile_out_TVALID  |  out|    1|          axis|  O_tile_out_V_last_V|       pointer|
+|O_tile_out_TREADY  |   in|    1|          axis|  O_tile_out_V_last_V|       pointer|
+|O_tile_out_TLAST   |  out|    1|          axis|  O_tile_out_V_last_V|       pointer|
+|O_tile_out_TKEEP   |  out|    4|          axis|  O_tile_out_V_keep_V|       pointer|
+|O_tile_out_TSTRB   |  out|    4|          axis|  O_tile_out_V_strb_V|       pointer|
++-------------------+-----+-----+--------------+---------------------+--------------+
+

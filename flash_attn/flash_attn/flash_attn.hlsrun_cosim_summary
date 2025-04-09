@@ -9,10 +9,10 @@
 <ENTRY>
 {
  "type": "ET_CmdStep",
- "dateTimestamp": "04/07/25 11:36:38",
- "timestampMillis": "1744040198130",
+ "dateTimestamp": "04/09/25 14:22:11",
+ "timestampMillis": "1744222931374",
  "buildStep": {
-  "cmdId": "620bc65b-7af4-48da-9515-5736b9bb0bf9",
+  "cmdId": "3439fbb4-ed2f-43fe-a01d-bb4ed134a963",
   "name": "vitis-run",
   "logFile": "C:/Users\\cfk30\\OneDrive\\Documents\\ECE4910\\thesis\\flash_attn\\flash_attn\\logs\\flash_attn.steps.log",
   "commandLine": "C:/Xilinx/Vitis/2024.2/bin/unwrapped/win64.o/vitis-run.exe  --mode hls --cosim --config C:\\Users\\cfk30\\OneDrive\\Documents\\ECE4910\\thesis\\flash_attn\\hls_config.cfg --work_dir flash_attn ",
@@ -33,10 +33,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "04/07/25 11:36:38",
- "timestampMillis": "1744040198130",
+ "dateTimestamp": "04/09/25 14:22:11",
+ "timestampMillis": "1744222931374",
  "status": {
-  "cmdId": "620bc65b-7af4-48da-9515-5736b9bb0bf9",
+  "cmdId": "3439fbb4-ed2f-43fe-a01d-bb4ed134a963",
   "state": "CS_RUNNING"
  }
 }
@@ -44,8 +44,8 @@
 <ENTRY>
 {
  "type": "ET_FlowMetaData",
- "dateTimestamp": "04/07/25 11:36:42",
- "timestampMillis": "1744040202570",
+ "dateTimestamp": "04/09/25 14:22:16",
+ "timestampMillis": "1744222936009",
  "buildSummary": {
   "hardwarePlatform": "",
   "hardwareDsa": "",
@@ -58,14 +58,14 @@
    {
     "base": {
      "type": "KERNEL",
-     "name": "matrix_cyclic_block",
+     "name": "flashattn",
      "file": "",
      "reports": [],
      "uuid": ""
     },
     "sources": [
-     "C:/Users\\cfk30\\OneDrive\\Documents\\ECE4910\\thesis\\flash_attn\\loop_pipeline.h",
-     "C:/Users\\cfk30\\OneDrive\\Documents\\ECE4910\\thesis\\flash_attn\\loop_pipeline.cpp"
+     "C:/Users\\cfk30\\OneDrive\\Documents\\ECE4910\\thesis\\flash_attn\\flashattn.h.cpp",
+     "C:/Users\\cfk30\\OneDrive\\Documents\\ECE4910\\thesis\\flash_attn\\flashattn.cpp"
     ],
     "psSources": [],
     "cuNames": [],
@@ -81,10 +81,10 @@
 <ENTRY>
 {
  "type": "ET_SubCmdStep",
- "dateTimestamp": "04/07/25 11:36:42",
- "timestampMillis": "1744040202571",
+ "dateTimestamp": "04/09/25 14:22:16",
+ "timestampMillis": "1744222936011",
  "buildStep": {
-  "cmdId": "e33dba94-dd04-40b4-ac19-603d5e2d0121",
+  "cmdId": "edf42a04-b5d7-40be-9594-05c879b5ad03",
   "name": "",
   "logFile": "C:/Users\\cfk30\\OneDrive\\Documents\\ECE4910\\thesis\\flash_attn\\flash_attn\\hls\\hls.log",
   "commandLine": "",
@@ -97,10 +97,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "04/07/25 11:36:42",
- "timestampMillis": "1744040202572",
+ "dateTimestamp": "04/09/25 14:22:16",
+ "timestampMillis": "1744222936011",
  "status": {
-  "cmdId": "e33dba94-dd04-40b4-ac19-603d5e2d0121",
+  "cmdId": "edf42a04-b5d7-40be-9594-05c879b5ad03",
   "state": "CS_RUNNING"
  }
 }
@@ -108,10 +108,10 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "04/07/25 11:36:42",
- "timestampMillis": "1744040202572",
+ "dateTimestamp": "04/09/25 14:22:16",
+ "timestampMillis": "1744222936011",
  "report": {
-  "path": "C:/Users\\cfk30\\OneDrive\\Documents\\ECE4910\\thesis\\flash_attn\\flash_attn\\hls\\sim\\report\\matrix_cyclic_block_cosim.rpt",
+  "path": "C:/Users\\cfk30\\OneDrive\\Documents\\ECE4910\\thesis\\flash_attn\\flash_attn\\hls\\sim\\report\\flashattn_cosim.rpt",
   "name": "",
   "fileType": "TEXT",
   "reportType": "HLS_COSIMULATION",
@@ -122,8 +122,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "04/07/25 11:36:42",
- "timestampMillis": "1744040202572",
+ "dateTimestamp": "04/09/25 14:22:16",
+ "timestampMillis": "1744222936012",
  "report": {
   "path": "C:/Users\\cfk30\\OneDrive\\Documents\\ECE4910\\thesis\\flash_attn\\flash_attn\\hls",
   "name": "",
@@ -136,8 +136,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "04/07/25 11:36:42",
- "timestampMillis": "1744040202573",
+ "dateTimestamp": "04/09/25 14:22:16",
+ "timestampMillis": "1744222936012",
  "report": {
   "path": "C:/Users\\cfk30\\OneDrive\\Documents\\ECE4910\\thesis\\flash_attn\\flash_attn\\hls",
   "name": "",
@@ -150,8 +150,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "04/07/25 11:36:42",
- "timestampMillis": "1744040202573",
+ "dateTimestamp": "04/09/25 14:22:16",
+ "timestampMillis": "1744222936013",
  "report": {
   "path": "C:/Users\\cfk30\\OneDrive\\Documents\\ECE4910\\thesis\\flash_attn\\flash_attn\\hls",
   "name": "",
@@ -164,8 +164,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "04/07/25 11:36:42",
- "timestampMillis": "1744040202574",
+ "dateTimestamp": "04/09/25 14:22:16",
+ "timestampMillis": "1744222936013",
  "report": {
   "path": "C:/Users\\cfk30\\OneDrive\\Documents\\ECE4910\\thesis\\flash_attn\\flash_attn\\hls",
   "name": "",
@@ -178,10 +178,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "04/07/25 11:37:04",
- "timestampMillis": "1744040224130",
+ "dateTimestamp": "04/09/25 14:23:15",
+ "timestampMillis": "1744222995067",
  "status": {
-  "cmdId": "e33dba94-dd04-40b4-ac19-603d5e2d0121",
+  "cmdId": "edf42a04-b5d7-40be-9594-05c879b5ad03",
   "state": "CS_PASSED"
  }
 }
@@ -189,10 +189,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "04/07/25 11:37:04",
- "timestampMillis": "1744040224234",
+ "dateTimestamp": "04/09/25 14:23:15",
+ "timestampMillis": "1744222995188",
  "status": {
-  "cmdId": "620bc65b-7af4-48da-9515-5736b9bb0bf9",
+  "cmdId": "3439fbb4-ed2f-43fe-a01d-bb4ed134a963",
   "state": "CS_PASSED"
  }
 }
@@ -200,8 +200,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "04/07/25 11:37:04",
- "timestampMillis": "1744040224234",
+ "dateTimestamp": "04/09/25 14:23:15",
+ "timestampMillis": "1744222995189",
  "report": {
   "path": "",
   "name": "",
@@ -214,8 +214,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "04/07/25 11:37:04",
- "timestampMillis": "1744040224234",
+ "dateTimestamp": "04/09/25 14:23:15",
+ "timestampMillis": "1744222995189",
  "report": {
   "path": "",
   "name": "",

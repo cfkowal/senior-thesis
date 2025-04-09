@@ -1,0 +1,7 @@
+Running: xsim.dir/flashattn/xsimk.exe -simmode gui -wdb flashattn.wdb -simrunnum 0 -socket 64903
+Design successfully loaded
+Design Loading Memory Usage: 29528 KB (Peak: 29528 KB)
+Design Loading CPU Usage: 671 ms
+Simulation completed
+Simulation Memory Usage: 36448 KB (Peak: 36448 KB)
+Simulation CPU Usage: 1639 ms

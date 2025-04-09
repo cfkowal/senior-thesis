@@ -35,12 +35,12 @@ if {$ret == 1} {
 	return -code error -errorcode $::errorCode
 }
 
-if {[file isfile matrix_cyclic_block.autotvin.dat]} {
-	file delete -force matrix_cyclic_block.autotvin.dat
+if {[file isfile flashattn.autotvin.dat]} {
+	file delete -force flashattn.autotvin.dat
 }
 
-if {[file isfile matrix_cyclic_block.autotvout.dat]} {
-	file delete -force matrix_cyclic_block.autotvout.dat
+if {[file isfile flashattn.autotvout.dat]} {
+	file delete -force flashattn.autotvout.dat
 }
 
 sc_sim_check $ret $err "temp0.log"

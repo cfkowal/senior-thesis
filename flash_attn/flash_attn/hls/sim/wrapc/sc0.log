@@ -1,7 +1,7 @@
    Build using "C:/Xilinx/Vitis/2024.2/vcxx/libexec/clang++"
-   Compiling apatb_matrix_cyclic_block.cpp
-   Compiling apatb_matrix_cyclic_block_util.cpp
-   Compiling loop_pipeline.cpp_pre.cpp.tb.cpp
-   Compiling loop_pipeline_tb.cpp_pre.cpp.tb.cpp
-   Compiling apatb_matrix_cyclic_block_ir.ll
+   Compiling flashattn_tb.cpp_pre.cpp.tb.cpp
+   Compiling apatb_flashattn.cpp
+   Compiling apatb_flashattn_util.cpp
+   Compiling flashattn.cpp_pre.cpp.tb.cpp
+   Compiling apatb_flashattn_ir.ll
    Generating cosim.tv.exe

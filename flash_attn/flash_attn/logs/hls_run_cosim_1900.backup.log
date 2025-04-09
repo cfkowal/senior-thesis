@@ -1,0 +1,167 @@
+  **** HLS Build v2024.2 5238294
+INFO: [HLS 200-2005] Using work_dir C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn/flash_attn 
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg400-1'
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying ini 'syn.file=loop_pipeline.h' from C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn/hls_config.cfg(9)
+INFO: [HLS 200-10] Adding design file 'C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn/loop_pipeline.h' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=loop_pipeline.cpp' from C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn/hls_config.cfg(10)
+INFO: [HLS 200-10] Adding design file 'C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn/loop_pipeline.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'tb.file=loop_pipeline_tb.cpp' from C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn/hls_config.cfg(11)
+INFO: [HLS 200-10] Adding test bench file 'C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn/loop_pipeline_tb.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.top=matrix_cyclic_block' from C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn/hls_config.cfg(7)
+INFO: [HLS 200-1465] Applying ini 'flow_target=vivado' from C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn/hls_config.cfg(4)
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying ini 'part=xc7z020clg400-1' from C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn/hls_config.cfg(1)
+INFO: [HLS 200-1465] Applying ini 'package.output.format=ip_catalog' from C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn/hls_config.cfg(5)
+INFO: [HLS 200-1465] Applying ini 'syn.interface.s_axilite_data64=1' from C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn/hls_config.cfg(8)
+INFO: [COSIM 212-47] Using XSIM for RTL simulation.
+INFO: [COSIM 212-14] Instrumenting C test bench ...
+   Build using "C:/Xilinx/Vitis/2024.2/vcxx/libexec/clang++"
+   Compiling apatb_matrix_cyclic_block.cpp
+   Compiling apatb_matrix_cyclic_block_util.cpp
+   Compiling loop_pipeline.cpp_pre.cpp.tb.cpp
+   Compiling loop_pipeline_tb.cpp_pre.cpp.tb.cpp
+   Compiling apatb_matrix_cyclic_block_ir.ll
+   Generating cosim.tv.exe
+INFO: [COSIM 212-302] Starting C TB testing ... 
+dataout[0] is 56
+dataout[1] is 62
+dataout[2] is 68
+dataout[3] is 74
+dataout[4] is 152
+dataout[5] is 174
+dataout[6] is 196
+dataout[7] is 218
+dataout[8] is 248
+dataout[9] is 286
+dataout[10] is 324
+dataout[11] is 362
+dataout[12] is 344
+dataout[13] is 398
+dataout[14] is 452
+dataout[15] is 506
+INFO [HLS SIM]: The maximum depth reached by any hls::stream() instance in the design is 16
+INFO: [COSIM 212-333] Generating C post check test bench ...
+INFO: [COSIM 212-12] Generating RTL test bench ...
+INFO: [COSIM 212-1] *** C/RTL co-simulation file generation completed. ***
+INFO: [COSIM 212-323] Starting verilog simulation. 
+INFO: [COSIM 212-15] Starting XSIM ...
+
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\sim\verilog>set PATH= 
+
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\sim\verilog>call C:/Xilinx/Vivado/2024.2/bin/xelab xil_defaultlib.apatb_matrix_cyclic_block_top glbl -Oenable_linking_all_libraries  -prj matrix_cyclic_block.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims_ver -L xpm  -L floating_point_v7_0_24 -L floating_point_v7_1_19 --lib "ieee_proposed=./ieee_proposed" -s matrix_cyclic_block  
+Vivado Simulator v2024.2.0
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2024.2/bin/unwrapped/win64.o/xelab.exe xil_defaultlib.apatb_matrix_cyclic_block_top glbl -Oenable_linking_all_libraries -prj matrix_cyclic_block.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims_ver -L xpm -L floating_point_v7_0_24 -L floating_point_v7_1_19 --lib ieee_proposed=./ieee_proposed -s matrix_cyclic_block 
+Multi-threading is on. Using 14 slave threads.
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn/flash_attn/hls/sim/verilog/glbl.v" into library work
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn/flash_attn/hls/sim/verilog/AESL_axi_s_stream_in.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_axi_s_stream_in
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn/flash_attn/hls/sim/verilog/AESL_axi_s_stream_in2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_axi_s_stream_in2
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn/flash_attn/hls/sim/verilog/AESL_axi_s_stream_out.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_axi_s_stream_out
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn/flash_attn/hls/sim/verilog/AESL_deadlock_idx0_monitor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_deadlock_idx0_monitor
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn/flash_attn/hls/sim/verilog/AESL_deadlock_idx1_monitor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_deadlock_idx1_monitor
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn/flash_attn/hls/sim/verilog/AESL_deadlock_kernel_monitor_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_deadlock_kernel_monitor_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn/flash_attn/hls/sim/verilog/AESL_fifo.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fifo
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn/flash_attn/hls/sim/verilog/matrix_cyclic_block.autotb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module apatb_matrix_cyclic_block_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn/flash_attn/hls/sim/verilog/matrix_cyclic_block.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module matrix_cyclic_block
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn/flash_attn/hls/sim/verilog/matrix_cyclic_block_A_RAM_AUTO_1R1W.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module matrix_cyclic_block_A_RAM_AUTO_1R1W
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn/flash_attn/hls/sim/verilog/matrix_cyclic_block_flow_control_loop_pipe_sequential_init.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module matrix_cyclic_block_flow_control_loop_pipe_sequential_init
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn/flash_attn/hls/sim/verilog/matrix_cyclic_block_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module matrix_cyclic_block_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn/flash_attn/hls/sim/verilog/matrix_cyclic_block_matrix_cyclic_block_Pipeline_read_A_and_B_VITIS_LOOP_28_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module matrix_cyclic_block_matrix_cyclic_block_Pipeline_read_A_and_B_VITIS_LOOP_28_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn/flash_attn/hls/sim/verilog/matrix_cyclic_block_mul_32s_32s_32_2_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module matrix_cyclic_block_mul_32s_32s_32_2_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn/flash_attn/hls/sim/verilog/dataflow_monitor.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dataflow_monitor
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package xil_defaultlib.$unit_dataflow_monitor_sv
+Compiling module xil_defaultlib.matrix_cyclic_block_A_RAM_AUTO_1...
+Compiling module xil_defaultlib.matrix_cyclic_block_flow_control...
+Compiling module xil_defaultlib.matrix_cyclic_block_matrix_cycli...
+Compiling module xil_defaultlib.matrix_cyclic_block_mul_32s_32s_...
+Compiling module xil_defaultlib.matrix_cyclic_block_matrix_cycli...
+Compiling module xil_defaultlib.matrix_cyclic_block
+Compiling module xil_defaultlib.fifo(WIDTH=32)
+Compiling module xil_defaultlib.fifo(WIDTH=4)
+Compiling module xil_defaultlib.fifo(WIDTH=1)
+Compiling module xil_defaultlib.AESL_axi_s_stream_in
+Compiling module xil_defaultlib.AESL_axi_s_stream_out
+Compiling module xil_defaultlib.AESL_axi_s_stream_in2
+Compiling module xil_defaultlib.AESL_deadlock_idx1_monitor
+Compiling module xil_defaultlib.AESL_deadlock_idx0_monitor
+Compiling module xil_defaultlib.AESL_deadlock_kernel_monitor_top...
+Compiling module xil_defaultlib.nodf_module_intf_default
+Compiling module xil_defaultlib.upc_loop_intf(FSM_WIDTH=1)
+Compiling module xil_defaultlib.dataflow_monitor_1
+Compiling module xil_defaultlib.apatb_matrix_cyclic_block_top
+Compiling module work.glbl
+Built simulation snapshot matrix_cyclic_block
+
+****** xsim v2024.2 (64-bit)
+  **** SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+  **** IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+  **** SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+  **** Start of session at: Mon Apr  7 11:37:01 2025
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source xsim.dir/matrix_cyclic_block/xsim_script.tcl
+# xsim {matrix_cyclic_block} -autoloadwcfg -tclbatch {matrix_cyclic_block.tcl}
+Time resolution is 1 ps
+source matrix_cyclic_block.tcl
+## run all
+////////////////////////////////////////////////////////////////////////////////////
+// Inter-Transaction Progress: Completed Transaction / Total Transaction
+// Intra-Transaction Progress: Measured Latency / Latency Estimation * 100%
+//
+// RTL Simulation : "Inter-Transaction Progress" ["Intra-Transaction Progress"] @ "Simulation Time"
+////////////////////////////////////////////////////////////////////////////////////
+// RTL Simulation : 0 / 1 [0.00%] @ "125000"
+// RTL Simulation : 1 / 1 [100.00%] @ "525000"
+////////////////////////////////////////////////////////////////////////////////////
+$finish called at time : 585 ns : File "C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn/flash_attn/hls/sim/verilog/matrix_cyclic_block.autotb.v" Line 307
+## quit
+INFO: [Common 17-206] Exiting xsim at Mon Apr  7 11:37:03 2025...
+INFO: [COSIM 212-316] Starting C post checking ...
+WARNING: [SIM 212-201] RTL produces unknown value 'x' or 'X' on some port, possible cause: There are uninitialized variables in the design.
+dataout[0] is 56
+dataout[1] is 62
+dataout[2] is 68
+dataout[3] is 74
+dataout[4] is 152
+dataout[5] is 174
+dataout[6] is 196
+dataout[7] is 218
+dataout[8] is 248
+dataout[9] is 286
+dataout[10] is 324
+dataout[11] is 362
+dataout[12] is 344
+dataout[13] is 398
+dataout[14] is 452
+dataout[15] is 506
+INFO [HLS SIM]: The maximum depth reached by any hls::stream() instance in the design is 16
+INFO: [COSIM 212-1000] *** C/RTL co-simulation finished: PASS ***
+INFO: [HLS 200-112] Total CPU user time: 3 seconds. Total CPU system time: 1 seconds. Total elapsed time: 24.424 seconds; peak allocated memory: 329.590 MB.
+INFO: [vitis-run 60-791] Total elapsed time: 0h 0m 28s

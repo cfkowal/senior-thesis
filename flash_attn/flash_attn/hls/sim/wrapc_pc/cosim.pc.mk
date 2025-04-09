@@ -83,10 +83,10 @@ $(ObjDir)/$(CPPWRAPPER).o: $(CPPWRAPPER).cpp
 	$(Echo) "   Compiling $<" $(AVE_DIR_DLOG)
 	$(Verb) $(CXX) -fno-builtin-isinf -fno-builtin-isnan -c $(TOOLCHAIN) $(IFLAG) $(WFLAG) $< -o $@
 
-$(ObjDir)/loop_pipeline_tb.cpp_pre.cpp.tb.o : loop_pipeline_tb.cpp_pre.cpp.tb.cpp $(ObjDir)/.dir
-	$(Echo) "   Compiling loop_pipeline_tb.cpp_pre.cpp.tb.cpp" $(AVE_DIR_DLOG)
+$(ObjDir)/flashattn_tb.cpp_pre.cpp.tb.o : flashattn_tb.cpp_pre.cpp.tb.cpp $(ObjDir)/.dir
+	$(Echo) "   Compiling flashattn_tb.cpp_pre.cpp.tb.cpp" $(AVE_DIR_DLOG)
 	$(Verb) $(CC) ${CCFLAG} ${TOOLCHAIN} -std=gnu++14 -fno-builtin-isinf -fno-builtin-isnan -c -Wno-unknown-pragmas -Wno-unknown-pragmas $(IFLAG) $(DFLAG) $< -o $@; \
 
-$(ObjDir)/loop_pipeline.cpp_pre.cpp.tb.o : loop_pipeline.cpp_pre.cpp.tb.cpp $(ObjDir)/.dir
-	$(Echo) "   Compiling loop_pipeline.cpp_pre.cpp.tb.cpp" $(AVE_DIR_DLOG)
+$(ObjDir)/flashattn.cpp_pre.cpp.tb.o : flashattn.cpp_pre.cpp.tb.cpp $(ObjDir)/.dir
+	$(Echo) "   Compiling flashattn.cpp_pre.cpp.tb.cpp" $(AVE_DIR_DLOG)
 	$(Verb) $(CC) ${CCFLAG} ${TOOLCHAIN} -std=gnu++14 -fno-builtin-isinf -fno-builtin-isnan -c  $(IFLAG) $(DFLAG) $< -o $@; \

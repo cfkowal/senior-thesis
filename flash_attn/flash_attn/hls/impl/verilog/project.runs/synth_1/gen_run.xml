@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7z020clg400-1" LaunchTime="1744040544">
+<GenRun Id="synth_1" LaunchPart="xc7z020clg400-1" LaunchTime="1744223149">
   <File Type="PA-TCL" Name="bd_0_wrapper.tcl"/>
   <File Type="REPORTS-TCL" Name="bd_0_wrapper_reports.tcl"/>
   <File Type="RDS-RDS" Name="bd_0_wrapper.vds"/>
@@ -33,7 +33,7 @@
   </FileSet>
   <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1" RelGenDir="$PGENDIR/constrs_1">
     <Filter Type="Constrs"/>
-    <File Path="$PPRDIR/matrix_cyclic_block.xdc">
+    <File Path="$PPRDIR/flashattn.xdc">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>

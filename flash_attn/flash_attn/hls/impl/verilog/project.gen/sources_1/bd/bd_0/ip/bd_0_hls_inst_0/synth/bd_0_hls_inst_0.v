@@ -47,111 +47,137 @@
 // DO NOT MODIFY THIS FILE.
 
 
-// IP VLNV: xilinx.com:hls:matrix_cyclic_block:1.0
-// IP Revision: 2114029481
+// IP VLNV: xilinx.com:hls:flashattn:1.0
+// IP Revision: 2114032525
 
-(* X_CORE_INFO = "matrix_cyclic_block,Vivado 2024.2" *)
-(* CHECK_LICENSE_TYPE = "bd_0_hls_inst_0,matrix_cyclic_block,{}" *)
-(* CORE_GENERATION_INFO = "bd_0_hls_inst_0,matrix_cyclic_block,{x_ipProduct=Vivado 2024.2,x_ipVendor=xilinx.com,x_ipLibrary=hls,x_ipName=matrix_cyclic_block,x_ipVersion=1.0,x_ipCoreRevision=2114029481,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED}" *)
+(* X_CORE_INFO = "flashattn,Vivado 2024.2" *)
+(* CHECK_LICENSE_TYPE = "bd_0_hls_inst_0,flashattn,{}" *)
+(* CORE_GENERATION_INFO = "bd_0_hls_inst_0,flashattn,{x_ipProduct=Vivado 2024.2,x_ipVendor=xilinx.com,x_ipLibrary=hls,x_ipName=flashattn,x_ipVersion=1.0,x_ipCoreRevision=2114032525,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED}" *)
 (* IP_DEFINITION_SOURCE = "HLS" *)
 (* DowngradeIPIdentifiedWarnings = "yes" *)
 module bd_0_hls_inst_0 (
   ap_clk,
   ap_rst_n,
-  stream_in_TDATA,
-  stream_in_TKEEP,
-  stream_in_TLAST,
-  stream_in_TREADY,
-  stream_in_TSTRB,
-  stream_in_TVALID,
-  stream_out_TDATA,
-  stream_out_TKEEP,
-  stream_out_TLAST,
-  stream_out_TREADY,
-  stream_out_TSTRB,
-  stream_out_TVALID,
-  stream_in2_TDATA,
-  stream_in2_TKEEP,
-  stream_in2_TLAST,
-  stream_in2_TREADY,
-  stream_in2_TSTRB,
-  stream_in2_TVALID
+  Q_tile_in_TDATA,
+  Q_tile_in_TKEEP,
+  Q_tile_in_TLAST,
+  Q_tile_in_TREADY,
+  Q_tile_in_TSTRB,
+  Q_tile_in_TVALID,
+  K_tile_in_TDATA,
+  K_tile_in_TKEEP,
+  K_tile_in_TLAST,
+  K_tile_in_TREADY,
+  K_tile_in_TSTRB,
+  K_tile_in_TVALID,
+  V_tile_in_TDATA,
+  V_tile_in_TKEEP,
+  V_tile_in_TLAST,
+  V_tile_in_TREADY,
+  V_tile_in_TSTRB,
+  V_tile_in_TVALID,
+  O_tile_out_TDATA,
+  O_tile_out_TKEEP,
+  O_tile_out_TLAST,
+  O_tile_out_TREADY,
+  O_tile_out_TSTRB,
+  O_tile_out_TVALID
 );
 
 (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 ap_clk CLK" *)
 (* X_INTERFACE_MODE = "slave" *)
-(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME ap_clk, ASSOCIATED_BUSIF stream_in:stream_out:stream_in2, ASSOCIATED_RESET ap_rst_n, FREQ_HZ 100000000.0, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN bd_0_ap_clk_0, INSERT_VIP 0" *)
+(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME ap_clk, ASSOCIATED_BUSIF Q_tile_in:K_tile_in:V_tile_in:O_tile_out, ASSOCIATED_RESET ap_rst_n, FREQ_HZ 100000000.0, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN bd_0_ap_clk_0, INSERT_VIP 0" *)
 input wire ap_clk;
 (* X_INTERFACE_INFO = "xilinx.com:signal:reset:1.0 ap_rst_n RST" *)
 (* X_INTERFACE_MODE = "slave" *)
 (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME ap_rst_n, POLARITY ACTIVE_LOW, INSERT_VIP 0" *)
 input wire ap_rst_n;
-(* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 stream_in TDATA" *)
+(* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 Q_tile_in TDATA" *)
 (* X_INTERFACE_MODE = "slave" *)
-(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME stream_in, TUSER_WIDTH 0, TDATA_NUM_BYTES 4, TDEST_WIDTH 0, TID_WIDTH 0, HAS_TREADY 1, HAS_TSTRB 1, HAS_TKEEP 1, HAS_TLAST 1, FREQ_HZ 100000000.0, PHASE 0.0, CLK_DOMAIN bd_0_ap_clk_0, LAYERED_METADATA undef, INSERT_VIP 0" *)
-input wire [31 : 0] stream_in_TDATA;
-(* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 stream_in TKEEP" *)
-input wire [3 : 0] stream_in_TKEEP;
-(* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 stream_in TLAST" *)
-input wire [0 : 0] stream_in_TLAST;
-(* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 stream_in TREADY" *)
-output wire stream_in_TREADY;
-(* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 stream_in TSTRB" *)
-input wire [3 : 0] stream_in_TSTRB;
-(* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 stream_in TVALID" *)
-input wire stream_in_TVALID;
-(* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 stream_out TDATA" *)
+(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME Q_tile_in, TUSER_WIDTH 0, TDATA_NUM_BYTES 4, TDEST_WIDTH 0, TID_WIDTH 0, HAS_TREADY 1, HAS_TSTRB 1, HAS_TKEEP 1, HAS_TLAST 1, FREQ_HZ 100000000.0, PHASE 0.0, CLK_DOMAIN bd_0_ap_clk_0, LAYERED_METADATA undef, INSERT_VIP 0" *)
+input wire [31 : 0] Q_tile_in_TDATA;
+(* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 Q_tile_in TKEEP" *)
+input wire [3 : 0] Q_tile_in_TKEEP;
+(* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 Q_tile_in TLAST" *)
+input wire [0 : 0] Q_tile_in_TLAST;
+(* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 Q_tile_in TREADY" *)
+output wire Q_tile_in_TREADY;
+(* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 Q_tile_in TSTRB" *)
+input wire [3 : 0] Q_tile_in_TSTRB;
+(* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 Q_tile_in TVALID" *)
+input wire Q_tile_in_TVALID;
+(* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 K_tile_in TDATA" *)
+(* X_INTERFACE_MODE = "slave" *)
+(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME K_tile_in, TUSER_WIDTH 0, TDATA_NUM_BYTES 4, TDEST_WIDTH 0, TID_WIDTH 0, HAS_TREADY 1, HAS_TSTRB 1, HAS_TKEEP 1, HAS_TLAST 1, FREQ_HZ 100000000.0, PHASE 0.0, CLK_DOMAIN bd_0_ap_clk_0, LAYERED_METADATA undef, INSERT_VIP 0" *)
+input wire [31 : 0] K_tile_in_TDATA;
+(* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 K_tile_in TKEEP" *)
+input wire [3 : 0] K_tile_in_TKEEP;
+(* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 K_tile_in TLAST" *)
+input wire [0 : 0] K_tile_in_TLAST;
+(* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 K_tile_in TREADY" *)
+output wire K_tile_in_TREADY;
+(* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 K_tile_in TSTRB" *)
+input wire [3 : 0] K_tile_in_TSTRB;
+(* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 K_tile_in TVALID" *)
+input wire K_tile_in_TVALID;
+(* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 V_tile_in TDATA" *)
+(* X_INTERFACE_MODE = "slave" *)
+(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME V_tile_in, TUSER_WIDTH 0, TDATA_NUM_BYTES 4, TDEST_WIDTH 0, TID_WIDTH 0, HAS_TREADY 1, HAS_TSTRB 1, HAS_TKEEP 1, HAS_TLAST 1, FREQ_HZ 100000000.0, PHASE 0.0, CLK_DOMAIN bd_0_ap_clk_0, LAYERED_METADATA undef, INSERT_VIP 0" *)
+input wire [31 : 0] V_tile_in_TDATA;
+(* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 V_tile_in TKEEP" *)
+input wire [3 : 0] V_tile_in_TKEEP;
+(* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 V_tile_in TLAST" *)
+input wire [0 : 0] V_tile_in_TLAST;
+(* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 V_tile_in TREADY" *)
+output wire V_tile_in_TREADY;
+(* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 V_tile_in TSTRB" *)
+input wire [3 : 0] V_tile_in_TSTRB;
+(* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 V_tile_in TVALID" *)
+input wire V_tile_in_TVALID;
+(* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 O_tile_out TDATA" *)
 (* X_INTERFACE_MODE = "master" *)
-(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME stream_out, TUSER_WIDTH 0, TDATA_NUM_BYTES 4, TDEST_WIDTH 0, TID_WIDTH 0, HAS_TREADY 1, HAS_TSTRB 1, HAS_TKEEP 1, HAS_TLAST 1, FREQ_HZ 100000000.0, PHASE 0.0, CLK_DOMAIN bd_0_ap_clk_0, LAYERED_METADATA undef, INSERT_VIP 0" *)
-output wire [31 : 0] stream_out_TDATA;
-(* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 stream_out TKEEP" *)
-output wire [3 : 0] stream_out_TKEEP;
-(* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 stream_out TLAST" *)
-output wire [0 : 0] stream_out_TLAST;
-(* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 stream_out TREADY" *)
-input wire stream_out_TREADY;
-(* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 stream_out TSTRB" *)
-output wire [3 : 0] stream_out_TSTRB;
-(* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 stream_out TVALID" *)
-output wire stream_out_TVALID;
-(* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 stream_in2 TDATA" *)
-(* X_INTERFACE_MODE = "slave" *)
-(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME stream_in2, TUSER_WIDTH 0, TDATA_NUM_BYTES 4, TDEST_WIDTH 0, TID_WIDTH 0, HAS_TREADY 1, HAS_TSTRB 1, HAS_TKEEP 1, HAS_TLAST 1, FREQ_HZ 100000000.0, PHASE 0.0, CLK_DOMAIN bd_0_ap_clk_0, LAYERED_METADATA undef, INSERT_VIP 0" *)
-input wire [31 : 0] stream_in2_TDATA;
-(* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 stream_in2 TKEEP" *)
-input wire [3 : 0] stream_in2_TKEEP;
-(* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 stream_in2 TLAST" *)
-input wire [0 : 0] stream_in2_TLAST;
-(* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 stream_in2 TREADY" *)
-output wire stream_in2_TREADY;
-(* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 stream_in2 TSTRB" *)
-input wire [3 : 0] stream_in2_TSTRB;
-(* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 stream_in2 TVALID" *)
-input wire stream_in2_TVALID;
+(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME O_tile_out, TUSER_WIDTH 0, TDATA_NUM_BYTES 4, TDEST_WIDTH 0, TID_WIDTH 0, HAS_TREADY 1, HAS_TSTRB 1, HAS_TKEEP 1, HAS_TLAST 1, FREQ_HZ 100000000.0, PHASE 0.0, CLK_DOMAIN bd_0_ap_clk_0, LAYERED_METADATA undef, INSERT_VIP 0" *)
+output wire [31 : 0] O_tile_out_TDATA;
+(* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 O_tile_out TKEEP" *)
+output wire [3 : 0] O_tile_out_TKEEP;
+(* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 O_tile_out TLAST" *)
+output wire [0 : 0] O_tile_out_TLAST;
+(* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 O_tile_out TREADY" *)
+input wire O_tile_out_TREADY;
+(* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 O_tile_out TSTRB" *)
+output wire [3 : 0] O_tile_out_TSTRB;
+(* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 O_tile_out TVALID" *)
+output wire O_tile_out_TVALID;
 
 (* SDX_KERNEL = "true" *)
 (* SDX_KERNEL_TYPE = "hls" *)
 (* SDX_KERNEL_SYNTH_INST = "inst" *)
-  matrix_cyclic_block inst (
+  flashattn inst (
     .ap_clk(ap_clk),
     .ap_rst_n(ap_rst_n),
-    .stream_in_TDATA(stream_in_TDATA),
-    .stream_in_TKEEP(stream_in_TKEEP),
-    .stream_in_TLAST(stream_in_TLAST),
-    .stream_in_TREADY(stream_in_TREADY),
-    .stream_in_TSTRB(stream_in_TSTRB),
-    .stream_in_TVALID(stream_in_TVALID),
-    .stream_out_TDATA(stream_out_TDATA),
-    .stream_out_TKEEP(stream_out_TKEEP),
-    .stream_out_TLAST(stream_out_TLAST),
-    .stream_out_TREADY(stream_out_TREADY),
-    .stream_out_TSTRB(stream_out_TSTRB),
-    .stream_out_TVALID(stream_out_TVALID),
-    .stream_in2_TDATA(stream_in2_TDATA),
-    .stream_in2_TKEEP(stream_in2_TKEEP),
-    .stream_in2_TLAST(stream_in2_TLAST),
-    .stream_in2_TREADY(stream_in2_TREADY),
-    .stream_in2_TSTRB(stream_in2_TSTRB),
-    .stream_in2_TVALID(stream_in2_TVALID)
+    .Q_tile_in_TDATA(Q_tile_in_TDATA),
+    .Q_tile_in_TKEEP(Q_tile_in_TKEEP),
+    .Q_tile_in_TLAST(Q_tile_in_TLAST),
+    .Q_tile_in_TREADY(Q_tile_in_TREADY),
+    .Q_tile_in_TSTRB(Q_tile_in_TSTRB),
+    .Q_tile_in_TVALID(Q_tile_in_TVALID),
+    .K_tile_in_TDATA(K_tile_in_TDATA),
+    .K_tile_in_TKEEP(K_tile_in_TKEEP),
+    .K_tile_in_TLAST(K_tile_in_TLAST),
+    .K_tile_in_TREADY(K_tile_in_TREADY),
+    .K_tile_in_TSTRB(K_tile_in_TSTRB),
+    .K_tile_in_TVALID(K_tile_in_TVALID),
+    .V_tile_in_TDATA(V_tile_in_TDATA),
+    .V_tile_in_TKEEP(V_tile_in_TKEEP),
+    .V_tile_in_TLAST(V_tile_in_TLAST),
+    .V_tile_in_TREADY(V_tile_in_TREADY),
+    .V_tile_in_TSTRB(V_tile_in_TSTRB),
+    .V_tile_in_TVALID(V_tile_in_TVALID),
+    .O_tile_out_TDATA(O_tile_out_TDATA),
+    .O_tile_out_TKEEP(O_tile_out_TKEEP),
+    .O_tile_out_TLAST(O_tile_out_TLAST),
+    .O_tile_out_TREADY(O_tile_out_TREADY),
+    .O_tile_out_TSTRB(O_tile_out_TSTRB),
+    .O_tile_out_TVALID(O_tile_out_TVALID)
   );
 endmodule

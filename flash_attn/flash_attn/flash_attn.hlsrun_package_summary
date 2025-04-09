@@ -9,10 +9,10 @@
 <ENTRY>
 {
  "type": "ET_CmdStep",
- "dateTimestamp": "04/07/25 11:39:35",
- "timestampMillis": "1744040375107",
+ "dateTimestamp": "04/09/25 14:23:47",
+ "timestampMillis": "1744223027065",
  "buildStep": {
-  "cmdId": "72633d48-54ff-4aa8-aa53-5fa6c28e935c",
+  "cmdId": "40965627-c135-41e4-ba82-0949003937ff",
   "name": "vitis-run",
   "logFile": "C:/Users\\cfk30\\OneDrive\\Documents\\ECE4910\\thesis\\flash_attn\\flash_attn\\logs\\flash_attn.steps.log",
   "commandLine": "C:/Xilinx/Vitis/2024.2/bin/unwrapped/win64.o/vitis-run.exe  --mode hls --package --config C:\\Users\\cfk30\\OneDrive\\Documents\\ECE4910\\thesis\\flash_attn\\hls_config.cfg --work_dir flash_attn ",
@@ -33,10 +33,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "04/07/25 11:39:35",
- "timestampMillis": "1744040375107",
+ "dateTimestamp": "04/09/25 14:23:47",
+ "timestampMillis": "1744223027065",
  "status": {
-  "cmdId": "72633d48-54ff-4aa8-aa53-5fa6c28e935c",
+  "cmdId": "40965627-c135-41e4-ba82-0949003937ff",
   "state": "CS_RUNNING"
  }
 }
@@ -44,8 +44,8 @@
 <ENTRY>
 {
  "type": "ET_FlowMetaData",
- "dateTimestamp": "04/07/25 11:39:39",
- "timestampMillis": "1744040379556",
+ "dateTimestamp": "04/09/25 14:23:51",
+ "timestampMillis": "1744223031626",
  "buildSummary": {
   "hardwarePlatform": "",
   "hardwareDsa": "",
@@ -58,14 +58,14 @@
    {
     "base": {
      "type": "KERNEL",
-     "name": "matrix_cyclic_block",
-     "file": "C:/Users\\cfk30\\OneDrive\\Documents\\ECE4910\\thesis\\flash_attn\\flash_attn\\matrix_cyclic_block.zip",
+     "name": "flashattn",
+     "file": "C:/Users\\cfk30\\OneDrive\\Documents\\ECE4910\\thesis\\flash_attn\\flash_attn\\flashattn.zip",
      "reports": [],
      "uuid": ""
     },
     "sources": [
-     "C:/Users\\cfk30\\OneDrive\\Documents\\ECE4910\\thesis\\flash_attn\\loop_pipeline.h",
-     "C:/Users\\cfk30\\OneDrive\\Documents\\ECE4910\\thesis\\flash_attn\\loop_pipeline.cpp"
+     "C:/Users\\cfk30\\OneDrive\\Documents\\ECE4910\\thesis\\flash_attn\\flashattn.h.cpp",
+     "C:/Users\\cfk30\\OneDrive\\Documents\\ECE4910\\thesis\\flash_attn\\flashattn.cpp"
     ],
     "psSources": [],
     "cuNames": [],
@@ -81,10 +81,10 @@
 <ENTRY>
 {
  "type": "ET_SubCmdStep",
- "dateTimestamp": "04/07/25 11:39:39",
- "timestampMillis": "1744040379557",
+ "dateTimestamp": "04/09/25 14:23:51",
+ "timestampMillis": "1744223031627",
  "buildStep": {
-  "cmdId": "401a2003-cd74-4398-8e48-74b64e29206b",
+  "cmdId": "6e4d1ae3-bdcd-404a-a264-14b3c3a96a8a",
   "name": "",
   "logFile": "C:/Users\\cfk30\\OneDrive\\Documents\\ECE4910\\thesis\\flash_attn\\flash_attn\\hls\\hls.log",
   "commandLine": "",
@@ -97,10 +97,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "04/07/25 11:39:39",
- "timestampMillis": "1744040379558",
+ "dateTimestamp": "04/09/25 14:23:51",
+ "timestampMillis": "1744223031628",
  "status": {
-  "cmdId": "401a2003-cd74-4398-8e48-74b64e29206b",
+  "cmdId": "6e4d1ae3-bdcd-404a-a264-14b3c3a96a8a",
   "state": "CS_RUNNING"
  }
 }
@@ -108,10 +108,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "04/07/25 11:39:51",
- "timestampMillis": "1744040391860",
+ "dateTimestamp": "04/09/25 14:24:06",
+ "timestampMillis": "1744223046611",
  "status": {
-  "cmdId": "401a2003-cd74-4398-8e48-74b64e29206b",
+  "cmdId": "6e4d1ae3-bdcd-404a-a264-14b3c3a96a8a",
   "state": "CS_PASSED"
  }
 }
@@ -119,10 +119,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "04/07/25 11:39:51",
- "timestampMillis": "1744040391973",
+ "dateTimestamp": "04/09/25 14:24:06",
+ "timestampMillis": "1744223046732",
  "status": {
-  "cmdId": "72633d48-54ff-4aa8-aa53-5fa6c28e935c",
+  "cmdId": "40965627-c135-41e4-ba82-0949003937ff",
   "state": "CS_PASSED"
  }
 }
@@ -130,8 +130,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "04/07/25 11:39:51",
- "timestampMillis": "1744040391974",
+ "dateTimestamp": "04/09/25 14:24:06",
+ "timestampMillis": "1744223046732",
  "report": {
   "path": "",
   "name": "",
@@ -144,8 +144,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "04/07/25 11:39:51",
- "timestampMillis": "1744040391974",
+ "dateTimestamp": "04/09/25 14:24:06",
+ "timestampMillis": "1744223046732",
  "report": {
   "path": "",
   "name": "",

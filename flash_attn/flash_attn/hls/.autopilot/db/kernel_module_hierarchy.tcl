@@ -1,10 +1,13 @@
 set ModuleHierarchy {[{
-"Name" : "matrix_cyclic_block","ID" : "0","Type" : "sequential",
+"Name" : "flashattn","ID" : "0","Type" : "sequential",
 "SubInsts" : [
-	{"Name" : "grp_matrix_cyclic_block_Pipeline_read_A_and_B_VITIS_LOOP_28_1_fu_90","ID" : "1","Type" : "sequential",
+	{"Name" : "grp_flashattn_Pipeline_Read_Q_VITIS_LOOP_25_1_fu_82","ID" : "1","Type" : "sequential",
 		"SubLoops" : [
-		{"Name" : "read_A_and_B_VITIS_LOOP_28_1","ID" : "2","Type" : "pipeline"},]},
-	{"Name" : "grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126","ID" : "3","Type" : "sequential",
+		{"Name" : "Read_Q_VITIS_LOOP_25_1","ID" : "2","Type" : "pipeline"},]},
+	{"Name" : "grp_flashattn_Pipeline_Read_K_and_V_VITIS_LOOP_35_2_fu_96","ID" : "3","Type" : "sequential",
 		"SubLoops" : [
-		{"Name" : "Matrix_Loop_VITIS_LOOP_39_2","ID" : "4","Type" : "pipeline"},]},]
+		{"Name" : "Read_K_and_V_VITIS_LOOP_35_2","ID" : "4","Type" : "pipeline"},]},
+	{"Name" : "grp_flashattn_Pipeline_Attention_Loop_VITIS_LOOP_48_3_fu_120","ID" : "5","Type" : "sequential",
+		"SubLoops" : [
+		{"Name" : "Attention_Loop_VITIS_LOOP_48_3","ID" : "6","Type" : "pipeline"},]},]
 }]}

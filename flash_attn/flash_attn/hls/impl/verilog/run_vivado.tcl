@@ -14,7 +14,7 @@ set target_device "${device}${package}${speed}"
 set target_clk_period_ns "10.000"
 set target_clk_freq_hz [expr {floor(1000 / $target_clk_period_ns) * 1000000}]
 set other_clks_freq_hz {}
-set ip_vlnv xilinx.com:hls:matrix_cyclic_block:1.0
+set ip_vlnv xilinx.com:hls:flashattn:1.0
 set ip_repo_path ../ip
 set bd_design_name bd_0
 set bd_inst_name hls_inst
@@ -46,9 +46,9 @@ dict set report_options target_device $target_device
 dict set report_options language $language
 dict set report_options clock_name $clock
 dict set report_options error_if_impl_timing_fails false
-dict set report_options topmodule "matrix_cyclic_block"
-dict set report_options funcmodules {matrix_cyclic_block_matrix_cyclic_block_Pipeline_read_A_and_B_VITIS_LOOP_28_1 matrix_cyclic_block_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2}
-dict set report_options bindmodules {matrix_cyclic_block_flow_control_loop_pipe_sequential_init matrix_cyclic_block_mul_32s_32s_32_2_1 matrix_cyclic_block_A_RAM_AUTO_1R1W}
+dict set report_options topmodule "flashattn"
+dict set report_options funcmodules {flashattn_flashattn_Pipeline_Read_Q_VITIS_LOOP_25_1 flashattn_flashattn_Pipeline_Read_K_and_V_VITIS_LOOP_35_2 flashattn_flashattn_Pipeline_Attention_Loop_VITIS_LOOP_48_3}
+dict set report_options bindmodules {flashattn_flow_control_loop_pipe_sequential_init flashattn_fadd_32ns_32ns_32_5_full_dsp_1 flashattn_Q_tile_RAM_AUTO_1R1W}
 dict set report_options max_module_depth 6
 
 

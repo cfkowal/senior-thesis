@@ -1,7 +1,0 @@
-Running: xsim.dir/matrix_cyclic_block/xsimk.exe -simmode gui -wdb matrix_cyclic_block.wdb -simrunnum 0 -socket 62057
-Design successfully loaded
-Design Loading Memory Usage: 26872 KB (Peak: 26872 KB)
-Design Loading CPU Usage: 624 ms
-Simulation completed
-Simulation Memory Usage: 29212 KB (Peak: 29212 KB)
-Simulation CPU Usage: 656 ms

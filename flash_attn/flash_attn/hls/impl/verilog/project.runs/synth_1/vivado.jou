@@ -3,8 +3,8 @@
 # SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
 # IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
 # SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
-# Start of session at: Mon Apr  7 11:43:11 2025
-# Process ID         : 23948
+# Start of session at: Wed Apr  9 14:26:52 2025
+# Process ID         : 14712
 # Current directory  : C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn/flash_attn/hls/impl/verilog/project.runs/synth_1
 # Command line       : vivado.exe -log bd_0_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source bd_0_wrapper.tcl
 # Log file           : C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn/flash_attn/hls/impl/verilog/project.runs/synth_1/bd_0_wrapper.vds
@@ -19,6 +19,6 @@
 # Host memory        : 34222 MB
 # Swap memory        : 5100 MB
 # Total Virtual      : 39322 MB
-# Available Virtual  : 21376 MB
+# Available Virtual  : 22598 MB
 #-----------------------------------------------------------
 source bd_0_wrapper.tcl -notrace

@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version              : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
-| Date                      : Mon Apr  7 11:44:39 2025
+| Date                      : Wed Apr  9 14:28:24 2025
 | Host                      : DESKTOP-I99LGQ1 running 64-bit major release  (build 9200)
 | Command                   : report_io -file bd_0_wrapper_io_placed.rpt
 | Design                    : bd_0_wrapper
@@ -25,7 +25,7 @@ Table of Contents
 +---------------+
 | Total User IO |
 +---------------+
-|           131 |
+|           174 |
 +---------------+
 
 

@@ -2,7 +2,7 @@
 == Vivado RTL Synthesis Results
 ================================================================
 + General Information:
-    * Date:            Mon Apr 07 11:45:15 -0400 2025
+    * Date:            Wed Apr 09 14:29:04 -0400 2025
     * Version:         2024.2 (Build 5238294 on Nov  8 2024)
     * Project:         flash_attn
     * Solution:        hls (Vivado IP Flow Target)
@@ -29,12 +29,12 @@
 ================================================================
 == RTL Synthesis Resource Summary
 ================================================================
-LUT:              502
-FF:               274
-DSP:              12
-BRAM:             0
+LUT:              713
+FF:               639
+DSP:              4
+BRAM:             24
 URAM:             0
-SRL:              3
+SRL:              16
 
 
 ================================================================
@@ -45,36 +45,33 @@ SRL:              3
 | Timing         | Period (ns) |
 +----------------+-------------+
 | Target         | 10.000      |
-| Post-Synthesis | 5.745       |
+| Post-Synthesis | 8.276       |
 +----------------+-------------+
 
 
 ================================================================
 == RTL Synthesis Resources
 ================================================================
-+---------------------------------------------------------------------------+-----+-----+-----+------+------+-----+--------+------+---------+----------+--------+
-| Name                                                                      | LUT | FF  | DSP | BRAM | URAM | SRL | Pragma | Impl | Latency | Variable | Source |
-+---------------------------------------------------------------------------+-----+-----+-----+------+------+-----+--------+------+---------+----------+--------+
-| inst                                                                      | 502 | 274 | 12  |      |      |     |        |      |         |          |        |
-|   (inst)                                                                  |     | 39  |     |      |      |     |        |      |         |          |        |
-|   A_1_U                                                                   | 32  |     |     |      |      |     |        |      |         |          |        |
-|   A_2_U                                                                   | 32  |     |     |      |      |     |        |      |         |          |        |
-|   A_3_U                                                                   | 32  |     |     |      |      |     |        |      |         |          |        |
-|   A_U                                                                     | 32  |     |     |      |      |     |        |      |         |          |        |
-|   B_1_U                                                                   | 32  |     |     |      |      |     |        |      |         |          |        |
-|   B_2_U                                                                   | 32  |     |     |      |      |     |        |      |         |          |        |
-|   B_3_U                                                                   | 32  |     |     |      |      |     |        |      |         |          |        |
-|   B_U                                                                     | 32  |     |     |      |      |     |        |      |         |          |        |
-|   grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126     | 219 | 222 | 12  |      |      |     |        |      |         |          |        |
-|     (grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126) | 143 | 152 |     |      |      |     |        |      |         |          |        |
-|     mul_32s_32s_32_2_1_U17                                                | 15  | 17  | 3   |      |      |     |        |      |         |          |        |
-|     mul_32s_32s_32_2_1_U18                                                | 18  | 17  | 3   |      |      |     |        |      |         |          |        |
-|     mul_32s_32s_32_2_1_U19                                                | 15  | 17  | 3   |      |      |     |        |      |         |          |        |
-|     mul_32s_32s_32_2_1_U20                                                | 15  | 17  | 3   |      |      |     |        |      |         |          |        |
-|   grp_matrix_cyclic_block_Pipeline_read_A_and_B_VITIS_LOOP_28_1_fu_90     | 27  | 13  |     |      |      |     |        |      |         |          |        |
-|     (grp_matrix_cyclic_block_Pipeline_read_A_and_B_VITIS_LOOP_28_1_fu_90) | 14  | 11  |     |      |      |     |        |      |         |          |        |
-|     flow_control_loop_pipe_sequential_init_U                              | 13  | 2   |     |      |      |     |        |      |         |          |        |
-+---------------------------------------------------------------------------+-----+-----+-----+------+------+-----+--------+------+---------+----------+--------+
++--------------------------------------------------------------------+-----+-----+-----+------+------+-----+--------+------+---------+----------+--------+
+| Name                                                               | LUT | FF  | DSP | BRAM | URAM | SRL | Pragma | Impl | Latency | Variable | Source |
++--------------------------------------------------------------------+-----+-----+-----+------+------+-----+--------+------+---------+----------+--------+
+| inst                                                               | 713 | 639 | 4   | 24   |      |     |        |      |         |          |        |
+|   (inst)                                                           |     | 40  |     |      |      |     |        |      |         |          |        |
+|   K_tile_U                                                         |     |     |     | 8    |      |     |        |      |         |          |        |
+|   Q_tile_U                                                         |     |     |     | 8    |      |     |        |      |         |          |        |
+|   V_tile_U                                                         |     |     |     | 8    |      |     |        |      |         |          |        |
+|   grp_flashattn_Pipeline_Attention_Loop_VITIS_LOOP_48_3_fu_120     | 608 | 513 | 4   |      |      |     |        |      |         |          |        |
+|     (grp_flashattn_Pipeline_Attention_Loop_VITIS_LOOP_48_3_fu_120) | 87  | 96  |     |      |      |     |        |      |         |          |        |
+|     fadd_32ns_32ns_32_5_full_dsp_1_U16                             | 242 | 208 | 2   |      |      |     |        |      |         |          |        |
+|     fadd_32ns_32ns_32_5_full_dsp_1_U17                             | 257 | 207 | 2   |      |      |     |        |      |         |          |        |
+|     flow_control_loop_pipe_sequential_init_U                       | 22  | 2   |     |      |      |     |        |      |         |          |        |
+|   grp_flashattn_Pipeline_Read_K_and_V_VITIS_LOOP_35_2_fu_96        | 56  | 43  |     |      |      |     |        |      |         |          |        |
+|     (grp_flashattn_Pipeline_Read_K_and_V_VITIS_LOOP_35_2_fu_96)    | 32  | 41  |     |      |      |     |        |      |         |          |        |
+|     flow_control_loop_pipe_sequential_init_U                       | 24  | 2   |     |      |      |     |        |      |         |          |        |
+|   grp_flashattn_Pipeline_Read_Q_VITIS_LOOP_25_1_fu_82              | 49  | 43  |     |      |      |     |        |      |         |          |        |
+|     (grp_flashattn_Pipeline_Read_Q_VITIS_LOOP_25_1_fu_82)          | 29  | 41  |     |      |      |     |        |      |         |          |        |
+|     flow_control_loop_pipe_sequential_init_U                       | 20  | 2   |     |      |      |     |        |      |         |          |        |
++--------------------------------------------------------------------+-----+-----+-----+------+------+-----+--------+------+---------+----------+--------+
 
 
 ================================================================
@@ -83,18 +80,18 @@ SRL:              3
 +-----------------------------------------------------------+-----------+--------+--------+
 | Criteria                                                  | Guideline | Actual | Status |
 +-----------------------------------------------------------+-----------+--------+--------+
-| LUT                                                       | 70%       | 0.94%  | OK     |
-| FD                                                        | 50%       | 0.26%  | OK     |
-| LUTRAM+SRL                                                | 25%       | 1.49%  | OK     |
+| LUT                                                       | 70%       | 1.34%  | OK     |
+| FD                                                        | 50%       | 0.60%  | OK     |
+| LUTRAM+SRL                                                | 25%       | 0.09%  | OK     |
 | MUXF7                                                     | 15%       | 0.00%  | OK     |
-| DSP                                                       | 80%       | 5.45%  | OK     |
-| RAMB/FIFO                                                 | 80%       | 0.00%  | OK     |
-| DSP+RAMB+URAM (Avg)                                       | 70%       | 5.45%  | OK     |
+| DSP                                                       | 80%       | 1.82%  | OK     |
+| RAMB/FIFO                                                 | 80%       | 8.57%  | OK     |
+| DSP+RAMB+URAM (Avg)                                       | 70%       | 5.20%  | OK     |
 | BUFGCE* + BUFGCTRL                                        | 24        | 0      | OK     |
 | DONT_TOUCH (cells/nets)                                   | 0         | 0      | OK     |
 | MARK_DEBUG (nets)                                         | 0         | 0      | OK     |
-| Control Sets                                              | 998       | 17     | OK     |
-| Average Fanout for modules > 100k cells                   | 4         | 1.88   | OK     |
+| Control Sets                                              | 998       | 13     | OK     |
+| Average Fanout for modules > 100k cells                   | 4         | 2.79   | OK     |
 | Max Average Fanout for modules > 100k cells               | 4         | 0      | OK     |
 | Non-FD high fanout nets > 10k loads                       | 0         | 0      | OK     |
 +-----------------------------------------------------------+-----------+--------+--------+
@@ -113,106 +110,131 @@ SRL:              3
 == RTL Synthesis Timing Paths
 ================================================================
 * Timing was met
-+-------+-------+---------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------+--------------+------------+----------------+----------------+--------------+
-| Path  | SLACK | STARTPOINT PIN                                                                                                | ENDPOINT PIN                                                                                                  | LOGIC LEVELS | MAX FANOUT | DATAPATH DELAY | DATAPATH LOGIC | DATAPATH NET |
-|       |       |                                                                                                               |                                                                                                               |              |            |                |          DELAY |        DELAY |
-+-------+-------+---------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------+--------------+------------+----------------+----------------+--------------+
-| Path1 | 4.255 | grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U17/tmp_product__0/CLK | grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U17/buff0_reg/PCIN[0]  |            0 |          1 |          4.261 |          4.206 |        0.055 |
-| Path2 | 4.255 | grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U17/tmp_product__0/CLK | grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U17/buff0_reg/PCIN[10] |            0 |          1 |          4.261 |          4.206 |        0.055 |
-| Path3 | 4.255 | grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U17/tmp_product__0/CLK | grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U17/buff0_reg/PCIN[11] |            0 |          1 |          4.261 |          4.206 |        0.055 |
-| Path4 | 4.255 | grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U17/tmp_product__0/CLK | grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U17/buff0_reg/PCIN[12] |            0 |          1 |          4.261 |          4.206 |        0.055 |
-| Path5 | 4.255 | grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U17/tmp_product__0/CLK | grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U17/buff0_reg/PCIN[13] |            0 |          1 |          4.261 |          4.206 |        0.055 |
-+-------+-------+---------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------+--------------+------------+----------------+----------------+--------------+
++-------+-------+-----------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------+--------------+------------+----------------+----------------+--------------+
+| Path  | SLACK | STARTPOINT PIN                                                                                      | ENDPOINT PIN                                                                                         | LOGIC LEVELS | MAX FANOUT | DATAPATH DELAY | DATAPATH LOGIC | DATAPATH NET |
+|       |       |                                                                                                     |                                                                                                      |              |            |                |          DELAY |        DELAY |
++-------+-------+-----------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------+--------------+------------+----------------+----------------+--------------+
+| Path1 | 1.724 | i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/BMA_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg[5]/C | i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/i_no_versal_es1_workaround.DSP/INMODE[1] |            1 |         18 |          2.635 |          0.813 |        1.822 |
+| Path2 | 1.724 | i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/BMA_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg[5]/C | i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/i_no_versal_es1_workaround.DSP/INMODE[2] |            1 |         18 |          2.635 |          0.813 |        1.822 |
+| Path3 | 1.724 | i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/BMA_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg[5]/C | i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/i_no_versal_es1_workaround.DSP/INMODE[1] |            1 |         18 |          2.635 |          0.813 |        1.822 |
+| Path4 | 1.724 | i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/BMA_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg[5]/C | i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/i_no_versal_es1_workaround.DSP/INMODE[2] |            1 |         18 |          2.635 |          0.813 |        1.822 |
+| Path5 | 2.070 | i_synth/ADDSUB_OP.ADDSUB/DSP.OP/A_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[0]/C                     | i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/i_no_versal_es1_workaround.DSP/A[0]      |            1 |          3 |          2.372 |          0.813 |        1.559 |
++-------+-------+-----------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------+--------------+------------+----------------+----------------+--------------+
 
-    +-----------------------------------------------------------------------------------------------------------+------------------+
-    | Path1 Cells                                                                                               | Primitive Type   |
-    +-----------------------------------------------------------------------------------------------------------+------------------+
-    | grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U17/tmp_product__0 | MULT.dsp.DSP48E1 |
-    | grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U17/buff0_reg      | MULT.dsp.DSP48E1 |
-    | grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U17/tmp_product__0 | MULT.dsp.DSP48E1 |
-    | grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U17/buff0_reg      | MULT.dsp.DSP48E1 |
-    | grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U17/tmp_product__0 | MULT.dsp.DSP48E1 |
-    | grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U17/buff0_reg      | MULT.dsp.DSP48E1 |
-    | grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U17/tmp_product__0 | MULT.dsp.DSP48E1 |
-    | grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U17/buff0_reg      | MULT.dsp.DSP48E1 |
-    | grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U17/tmp_product__0 | MULT.dsp.DSP48E1 |
-    | grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U17/buff0_reg      | MULT.dsp.DSP48E1 |
-    +-----------------------------------------------------------------------------------------------------------+------------------+
+    +-----------------------------------------------------------------------------------------------------------+----------------------+
+    | Path1 Cells                                                                                               | Primitive Type       |
+    +-----------------------------------------------------------------------------------------------------------+----------------------+
+    | i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/BMA_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg[5]         | FLOP_LATCH.flop.FDRE |
+    | i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/BMA_EXP_DELAY/i_pipe/i_no_versal_es1_workaround.DSP_i_64 | LUT.others.LUT6      |
+    | i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/i_no_versal_es1_workaround.DSP                | MULT.dsp.DSP48E1     |
+    | i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/BMA_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg[5]         | FLOP_LATCH.flop.FDRE |
+    | i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/BMA_EXP_DELAY/i_pipe/i_no_versal_es1_workaround.DSP_i_64 | LUT.others.LUT6      |
+    | i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/i_no_versal_es1_workaround.DSP                | MULT.dsp.DSP48E1     |
+    | i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/BMA_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg[5]         | FLOP_LATCH.flop.FDRE |
+    | i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/BMA_EXP_DELAY/i_pipe/i_no_versal_es1_workaround.DSP_i_64 | LUT.others.LUT6      |
+    | i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/i_no_versal_es1_workaround.DSP                | MULT.dsp.DSP48E1     |
+    | i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/BMA_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg[5]         | FLOP_LATCH.flop.FDRE |
+    | i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/BMA_EXP_DELAY/i_pipe/i_no_versal_es1_workaround.DSP_i_64 | LUT.others.LUT6      |
+    | i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/i_no_versal_es1_workaround.DSP                | MULT.dsp.DSP48E1     |
+    | i_synth/ADDSUB_OP.ADDSUB/DSP.OP/A_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[0]                             | FLOP_LATCH.flop.FDRE |
+    | i_synth/ADDSUB_OP.ADDSUB/DSP.OP/A_IP_DELAY/i_pipe/i_no_versal_es1_workaround.DSP_i_40                     | LUT.others.LUT3      |
+    | i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/i_no_versal_es1_workaround.DSP                | MULT.dsp.DSP48E1     |
+    +-----------------------------------------------------------------------------------------------------------+----------------------+
 
-    +-----------------------------------------------------------------------------------------------------------+------------------+
-    | Path2 Cells                                                                                               | Primitive Type   |
-    +-----------------------------------------------------------------------------------------------------------+------------------+
-    | grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U17/tmp_product__0 | MULT.dsp.DSP48E1 |
-    | grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U17/buff0_reg      | MULT.dsp.DSP48E1 |
-    | grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U17/tmp_product__0 | MULT.dsp.DSP48E1 |
-    | grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U17/buff0_reg      | MULT.dsp.DSP48E1 |
-    | grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U17/tmp_product__0 | MULT.dsp.DSP48E1 |
-    | grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U17/buff0_reg      | MULT.dsp.DSP48E1 |
-    | grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U17/tmp_product__0 | MULT.dsp.DSP48E1 |
-    | grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U17/buff0_reg      | MULT.dsp.DSP48E1 |
-    | grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U17/tmp_product__0 | MULT.dsp.DSP48E1 |
-    | grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U17/buff0_reg      | MULT.dsp.DSP48E1 |
-    +-----------------------------------------------------------------------------------------------------------+------------------+
+    +-----------------------------------------------------------------------------------------------------------+----------------------+
+    | Path2 Cells                                                                                               | Primitive Type       |
+    +-----------------------------------------------------------------------------------------------------------+----------------------+
+    | i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/BMA_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg[5]         | FLOP_LATCH.flop.FDRE |
+    | i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/BMA_EXP_DELAY/i_pipe/i_no_versal_es1_workaround.DSP_i_64 | LUT.others.LUT6      |
+    | i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/i_no_versal_es1_workaround.DSP                | MULT.dsp.DSP48E1     |
+    | i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/BMA_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg[5]         | FLOP_LATCH.flop.FDRE |
+    | i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/BMA_EXP_DELAY/i_pipe/i_no_versal_es1_workaround.DSP_i_64 | LUT.others.LUT6      |
+    | i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/i_no_versal_es1_workaround.DSP                | MULT.dsp.DSP48E1     |
+    | i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/BMA_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg[5]         | FLOP_LATCH.flop.FDRE |
+    | i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/BMA_EXP_DELAY/i_pipe/i_no_versal_es1_workaround.DSP_i_64 | LUT.others.LUT6      |
+    | i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/i_no_versal_es1_workaround.DSP                | MULT.dsp.DSP48E1     |
+    | i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/BMA_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg[5]         | FLOP_LATCH.flop.FDRE |
+    | i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/BMA_EXP_DELAY/i_pipe/i_no_versal_es1_workaround.DSP_i_64 | LUT.others.LUT6      |
+    | i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/i_no_versal_es1_workaround.DSP                | MULT.dsp.DSP48E1     |
+    | i_synth/ADDSUB_OP.ADDSUB/DSP.OP/A_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[0]                             | FLOP_LATCH.flop.FDRE |
+    | i_synth/ADDSUB_OP.ADDSUB/DSP.OP/A_IP_DELAY/i_pipe/i_no_versal_es1_workaround.DSP_i_40                     | LUT.others.LUT3      |
+    | i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/i_no_versal_es1_workaround.DSP                | MULT.dsp.DSP48E1     |
+    +-----------------------------------------------------------------------------------------------------------+----------------------+
 
-    +-----------------------------------------------------------------------------------------------------------+------------------+
-    | Path3 Cells                                                                                               | Primitive Type   |
-    +-----------------------------------------------------------------------------------------------------------+------------------+
-    | grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U17/tmp_product__0 | MULT.dsp.DSP48E1 |
-    | grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U17/buff0_reg      | MULT.dsp.DSP48E1 |
-    | grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U17/tmp_product__0 | MULT.dsp.DSP48E1 |
-    | grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U17/buff0_reg      | MULT.dsp.DSP48E1 |
-    | grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U17/tmp_product__0 | MULT.dsp.DSP48E1 |
-    | grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U17/buff0_reg      | MULT.dsp.DSP48E1 |
-    | grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U17/tmp_product__0 | MULT.dsp.DSP48E1 |
-    | grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U17/buff0_reg      | MULT.dsp.DSP48E1 |
-    | grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U17/tmp_product__0 | MULT.dsp.DSP48E1 |
-    | grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U17/buff0_reg      | MULT.dsp.DSP48E1 |
-    +-----------------------------------------------------------------------------------------------------------+------------------+
+    +-----------------------------------------------------------------------------------------------------------+----------------------+
+    | Path3 Cells                                                                                               | Primitive Type       |
+    +-----------------------------------------------------------------------------------------------------------+----------------------+
+    | i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/BMA_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg[5]         | FLOP_LATCH.flop.FDRE |
+    | i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/BMA_EXP_DELAY/i_pipe/i_no_versal_es1_workaround.DSP_i_64 | LUT.others.LUT6      |
+    | i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/i_no_versal_es1_workaround.DSP                | MULT.dsp.DSP48E1     |
+    | i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/BMA_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg[5]         | FLOP_LATCH.flop.FDRE |
+    | i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/BMA_EXP_DELAY/i_pipe/i_no_versal_es1_workaround.DSP_i_64 | LUT.others.LUT6      |
+    | i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/i_no_versal_es1_workaround.DSP                | MULT.dsp.DSP48E1     |
+    | i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/BMA_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg[5]         | FLOP_LATCH.flop.FDRE |
+    | i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/BMA_EXP_DELAY/i_pipe/i_no_versal_es1_workaround.DSP_i_64 | LUT.others.LUT6      |
+    | i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/i_no_versal_es1_workaround.DSP                | MULT.dsp.DSP48E1     |
+    | i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/BMA_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg[5]         | FLOP_LATCH.flop.FDRE |
+    | i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/BMA_EXP_DELAY/i_pipe/i_no_versal_es1_workaround.DSP_i_64 | LUT.others.LUT6      |
+    | i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/i_no_versal_es1_workaround.DSP                | MULT.dsp.DSP48E1     |
+    | i_synth/ADDSUB_OP.ADDSUB/DSP.OP/A_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[0]                             | FLOP_LATCH.flop.FDRE |
+    | i_synth/ADDSUB_OP.ADDSUB/DSP.OP/A_IP_DELAY/i_pipe/i_no_versal_es1_workaround.DSP_i_40                     | LUT.others.LUT3      |
+    | i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/i_no_versal_es1_workaround.DSP                | MULT.dsp.DSP48E1     |
+    +-----------------------------------------------------------------------------------------------------------+----------------------+
 
-    +-----------------------------------------------------------------------------------------------------------+------------------+
-    | Path4 Cells                                                                                               | Primitive Type   |
-    +-----------------------------------------------------------------------------------------------------------+------------------+
-    | grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U17/tmp_product__0 | MULT.dsp.DSP48E1 |
-    | grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U17/buff0_reg      | MULT.dsp.DSP48E1 |
-    | grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U17/tmp_product__0 | MULT.dsp.DSP48E1 |
-    | grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U17/buff0_reg      | MULT.dsp.DSP48E1 |
-    | grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U17/tmp_product__0 | MULT.dsp.DSP48E1 |
-    | grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U17/buff0_reg      | MULT.dsp.DSP48E1 |
-    | grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U17/tmp_product__0 | MULT.dsp.DSP48E1 |
-    | grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U17/buff0_reg      | MULT.dsp.DSP48E1 |
-    | grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U17/tmp_product__0 | MULT.dsp.DSP48E1 |
-    | grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U17/buff0_reg      | MULT.dsp.DSP48E1 |
-    +-----------------------------------------------------------------------------------------------------------+------------------+
+    +-----------------------------------------------------------------------------------------------------------+----------------------+
+    | Path4 Cells                                                                                               | Primitive Type       |
+    +-----------------------------------------------------------------------------------------------------------+----------------------+
+    | i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/BMA_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg[5]         | FLOP_LATCH.flop.FDRE |
+    | i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/BMA_EXP_DELAY/i_pipe/i_no_versal_es1_workaround.DSP_i_64 | LUT.others.LUT6      |
+    | i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/i_no_versal_es1_workaround.DSP                | MULT.dsp.DSP48E1     |
+    | i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/BMA_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg[5]         | FLOP_LATCH.flop.FDRE |
+    | i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/BMA_EXP_DELAY/i_pipe/i_no_versal_es1_workaround.DSP_i_64 | LUT.others.LUT6      |
+    | i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/i_no_versal_es1_workaround.DSP                | MULT.dsp.DSP48E1     |
+    | i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/BMA_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg[5]         | FLOP_LATCH.flop.FDRE |
+    | i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/BMA_EXP_DELAY/i_pipe/i_no_versal_es1_workaround.DSP_i_64 | LUT.others.LUT6      |
+    | i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/i_no_versal_es1_workaround.DSP                | MULT.dsp.DSP48E1     |
+    | i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/BMA_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg[5]         | FLOP_LATCH.flop.FDRE |
+    | i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/BMA_EXP_DELAY/i_pipe/i_no_versal_es1_workaround.DSP_i_64 | LUT.others.LUT6      |
+    | i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/i_no_versal_es1_workaround.DSP                | MULT.dsp.DSP48E1     |
+    | i_synth/ADDSUB_OP.ADDSUB/DSP.OP/A_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[0]                             | FLOP_LATCH.flop.FDRE |
+    | i_synth/ADDSUB_OP.ADDSUB/DSP.OP/A_IP_DELAY/i_pipe/i_no_versal_es1_workaround.DSP_i_40                     | LUT.others.LUT3      |
+    | i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/i_no_versal_es1_workaround.DSP                | MULT.dsp.DSP48E1     |
+    +-----------------------------------------------------------------------------------------------------------+----------------------+
 
-    +-----------------------------------------------------------------------------------------------------------+------------------+
-    | Path5 Cells                                                                                               | Primitive Type   |
-    +-----------------------------------------------------------------------------------------------------------+------------------+
-    | grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U17/tmp_product__0 | MULT.dsp.DSP48E1 |
-    | grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U17/buff0_reg      | MULT.dsp.DSP48E1 |
-    | grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U17/tmp_product__0 | MULT.dsp.DSP48E1 |
-    | grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U17/buff0_reg      | MULT.dsp.DSP48E1 |
-    | grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U17/tmp_product__0 | MULT.dsp.DSP48E1 |
-    | grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U17/buff0_reg      | MULT.dsp.DSP48E1 |
-    | grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U17/tmp_product__0 | MULT.dsp.DSP48E1 |
-    | grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U17/buff0_reg      | MULT.dsp.DSP48E1 |
-    | grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U17/tmp_product__0 | MULT.dsp.DSP48E1 |
-    | grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U17/buff0_reg      | MULT.dsp.DSP48E1 |
-    +-----------------------------------------------------------------------------------------------------------+------------------+
+    +-----------------------------------------------------------------------------------------------------------+----------------------+
+    | Path5 Cells                                                                                               | Primitive Type       |
+    +-----------------------------------------------------------------------------------------------------------+----------------------+
+    | i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/BMA_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg[5]         | FLOP_LATCH.flop.FDRE |
+    | i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/BMA_EXP_DELAY/i_pipe/i_no_versal_es1_workaround.DSP_i_64 | LUT.others.LUT6      |
+    | i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/i_no_versal_es1_workaround.DSP                | MULT.dsp.DSP48E1     |
+    | i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/BMA_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg[5]         | FLOP_LATCH.flop.FDRE |
+    | i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/BMA_EXP_DELAY/i_pipe/i_no_versal_es1_workaround.DSP_i_64 | LUT.others.LUT6      |
+    | i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/i_no_versal_es1_workaround.DSP                | MULT.dsp.DSP48E1     |
+    | i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/BMA_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg[5]         | FLOP_LATCH.flop.FDRE |
+    | i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/BMA_EXP_DELAY/i_pipe/i_no_versal_es1_workaround.DSP_i_64 | LUT.others.LUT6      |
+    | i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/i_no_versal_es1_workaround.DSP                | MULT.dsp.DSP48E1     |
+    | i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/BMA_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg[5]         | FLOP_LATCH.flop.FDRE |
+    | i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/BMA_EXP_DELAY/i_pipe/i_no_versal_es1_workaround.DSP_i_64 | LUT.others.LUT6      |
+    | i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/i_no_versal_es1_workaround.DSP                | MULT.dsp.DSP48E1     |
+    | i_synth/ADDSUB_OP.ADDSUB/DSP.OP/A_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[0]                             | FLOP_LATCH.flop.FDRE |
+    | i_synth/ADDSUB_OP.ADDSUB/DSP.OP/A_IP_DELAY/i_pipe/i_no_versal_es1_workaround.DSP_i_40                     | LUT.others.LUT3      |
+    | i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/i_no_versal_es1_workaround.DSP                | MULT.dsp.DSP48E1     |
+    +-----------------------------------------------------------------------------------------------------------+----------------------+
 
 
 ================================================================
 == RTL Synthesis Vivado Reports
 ================================================================
-+--------------------------+----------------------------------------------------------------------------+
-| Report Type              | Report Location                                                            |
-+--------------------------+----------------------------------------------------------------------------+
-| design_analysis          | impl/verilog/report/matrix_cyclic_block_design_analysis_synth.rpt          |
-| failfast                 | impl/verilog/report/matrix_cyclic_block_failfast_synth.rpt                 |
-| power                    | impl/verilog/report/matrix_cyclic_block_power_synth.rpt                    |
-| timing                   | impl/verilog/report/matrix_cyclic_block_timing_synth.rpt                   |
-| timing_paths             | impl/verilog/report/matrix_cyclic_block_timing_paths_synth.rpt             |
-| utilization              | impl/verilog/report/matrix_cyclic_block_utilization_synth.rpt              |
-| utilization_hierarchical | impl/verilog/report/matrix_cyclic_block_utilization_hierarchical_synth.rpt |
-+--------------------------+----------------------------------------------------------------------------+
++--------------------------+------------------------------------------------------------------+
+| Report Type              | Report Location                                                  |
++--------------------------+------------------------------------------------------------------+
+| design_analysis          | impl/verilog/report/flashattn_design_analysis_synth.rpt          |
+| failfast                 | impl/verilog/report/flashattn_failfast_synth.rpt                 |
+| power                    | impl/verilog/report/flashattn_power_synth.rpt                    |
+| timing                   | impl/verilog/report/flashattn_timing_synth.rpt                   |
+| timing_paths             | impl/verilog/report/flashattn_timing_paths_synth.rpt             |
+| utilization              | impl/verilog/report/flashattn_utilization_synth.rpt              |
+| utilization_hierarchical | impl/verilog/report/flashattn_utilization_hierarchical_synth.rpt |
++--------------------------+------------------------------------------------------------------+
 
 

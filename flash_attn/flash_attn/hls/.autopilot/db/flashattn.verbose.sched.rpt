@@ -1,0 +1,163 @@
+
+
+================================================================
+== Vitis HLS Report for 'flashattn'
+================================================================
+* Date:           Wed Apr  9 14:21:23 2025
+
+* Version:        2024.2 (Build 5238294 on Nov  8 2024)
+* Project:        flash_attn
+* Solution:       hls (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z020-clg400-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  7.256 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+-----------+-----------+------+------+---------+
+    |  Latency (cycles) |   Latency (absolute)  |   Interval  | Pipeline|
+    |   min   |   max   |    min    |    max    |  min |  max |   Type  |
+    +---------+---------+-----------+-----------+------+------+---------+
+    |     8212|     8212|  82.120 us|  82.120 us|  8213|  8213|       no|
+    +---------+---------+-----------+-----------+------+------+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 1
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 4
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 4 
+4 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 3.25>
+ST_1 : Operation 5 [1/1] (0.00ns)   --->   "%Q_tile = alloca i64 1" [flashattn.cpp:17]   --->   Operation 5 'alloca' 'Q_tile' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%K_tile = alloca i64 1" [flashattn.cpp:18]   --->   Operation 6 'alloca' 'K_tile' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%V_tile = alloca i64 1" [flashattn.cpp:19]   --->   Operation 7 'alloca' 'V_tile' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 8 [2/2] (3.25ns)   --->   "%call_ln0 = call void @flashattn_Pipeline_Read_Q_VITIS_LOOP_25_1, i32 %Q_tile, i32 %Q_tile_in_V_data_V, i4 %Q_tile_in_V_keep_V, i4 %Q_tile_in_V_strb_V, i1 %Q_tile_in_V_last_V"   --->   Operation 8 'call' 'call_ln0' <Predicate = true> <Delay = 3.25> <CoreType = "Generic">   --->   Generic Core
+ST_1 : Operation 9 [2/2] (3.25ns)   --->   "%call_ln0 = call void @flashattn_Pipeline_Read_K_and_V_VITIS_LOOP_35_2, i32 %K_tile, i32 %V_tile, i32 %K_tile_in_V_data_V, i4 %K_tile_in_V_keep_V, i4 %K_tile_in_V_strb_V, i1 %K_tile_in_V_last_V, i32 %V_tile_in_V_data_V, i4 %V_tile_in_V_keep_V, i4 %V_tile_in_V_strb_V, i1 %V_tile_in_V_last_V"   --->   Operation 9 'call' 'call_ln0' <Predicate = true> <Delay = 3.25> <CoreType = "Generic">   --->   Generic Core
+
+State 2 <SV = 1> <Delay = 0.00>
+ST_2 : Operation 10 [1/2] (0.00ns)   --->   "%call_ln0 = call void @flashattn_Pipeline_Read_Q_VITIS_LOOP_25_1, i32 %Q_tile, i32 %Q_tile_in_V_data_V, i4 %Q_tile_in_V_keep_V, i4 %Q_tile_in_V_strb_V, i1 %Q_tile_in_V_last_V"   --->   Operation 10 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_2 : Operation 11 [1/2] (0.00ns)   --->   "%call_ln0 = call void @flashattn_Pipeline_Read_K_and_V_VITIS_LOOP_35_2, i32 %K_tile, i32 %V_tile, i32 %K_tile_in_V_data_V, i4 %K_tile_in_V_keep_V, i4 %K_tile_in_V_strb_V, i1 %K_tile_in_V_last_V, i32 %V_tile_in_V_data_V, i4 %V_tile_in_V_keep_V, i4 %V_tile_in_V_strb_V, i1 %V_tile_in_V_last_V"   --->   Operation 11 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 3 <SV = 2> <Delay = 0.00>
+ST_3 : Operation 12 [2/2] (0.00ns)   --->   "%call_ln0 = call void @flashattn_Pipeline_Attention_Loop_VITIS_LOOP_48_3, i32 %Q_tile, i32 %K_tile, i32 %V_tile, i32 %O_tile_out_V_data_V, i4 %O_tile_out_V_keep_V, i4 %O_tile_out_V_strb_V, i1 %O_tile_out_V_last_V"   --->   Operation 12 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 4 <SV = 3> <Delay = 7.25>
+ST_4 : Operation 13 [1/1] (0.00ns)   --->   "%spectopmodule_ln3 = spectopmodule void @_ssdm_op_SpecTopModule, void @empty_5" [flashattn.cpp:3]   --->   Operation 13 'spectopmodule' 'spectopmodule_ln3' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 14 [1/1] (0.00ns)   --->   "%specinterface_ln3 = specinterface void @_ssdm_op_SpecInterface, i32 0, void @empty_6, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0, i32 0" [flashattn.cpp:3]   --->   Operation 14 'specinterface' 'specinterface_ln3' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 15 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %Q_tile_in_V_data_V, i4 %Q_tile_in_V_keep_V, i4 %Q_tile_in_V_strb_V, i1 %Q_tile_in_V_last_V, void @empty, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0, i32 0"   --->   Operation 15 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 16 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i32 %Q_tile_in_V_data_V"   --->   Operation 16 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 17 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i4 %Q_tile_in_V_keep_V"   --->   Operation 17 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 18 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i4 %Q_tile_in_V_strb_V"   --->   Operation 18 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 19 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i1 %Q_tile_in_V_last_V"   --->   Operation 19 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 20 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %K_tile_in_V_data_V, i4 %K_tile_in_V_keep_V, i4 %K_tile_in_V_strb_V, i1 %K_tile_in_V_last_V, void @empty, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0, i32 0"   --->   Operation 20 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 21 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i32 %K_tile_in_V_data_V"   --->   Operation 21 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 22 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i4 %K_tile_in_V_keep_V"   --->   Operation 22 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 23 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i4 %K_tile_in_V_strb_V"   --->   Operation 23 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 24 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i1 %K_tile_in_V_last_V"   --->   Operation 24 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 25 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %V_tile_in_V_data_V, i4 %V_tile_in_V_keep_V, i4 %V_tile_in_V_strb_V, i1 %V_tile_in_V_last_V, void @empty, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0, i32 0"   --->   Operation 25 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 26 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i32 %V_tile_in_V_data_V"   --->   Operation 26 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 27 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i4 %V_tile_in_V_keep_V"   --->   Operation 27 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 28 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i4 %V_tile_in_V_strb_V"   --->   Operation 28 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 29 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i1 %V_tile_in_V_last_V"   --->   Operation 29 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 30 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %O_tile_out_V_data_V, i4 %O_tile_out_V_keep_V, i4 %O_tile_out_V_strb_V, i1 %O_tile_out_V_last_V, void @empty, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0, i32 0"   --->   Operation 30 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 31 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i32 %O_tile_out_V_data_V"   --->   Operation 31 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 32 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i4 %O_tile_out_V_keep_V"   --->   Operation 32 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 33 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i4 %O_tile_out_V_strb_V"   --->   Operation 33 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 34 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i1 %O_tile_out_V_last_V"   --->   Operation 34 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 35 [1/1] (0.00ns)   --->   "%specaxissidechannel_ln23 = specaxissidechannel void @_ssdm_op_SpecAXISSideChannel, i32 %O_tile_out_V_data_V, i4 %O_tile_out_V_keep_V, i4 %O_tile_out_V_strb_V, i1 0, i1 %O_tile_out_V_last_V, i1 0, i1 0, void @empty_1" [flashattn.cpp:23]   --->   Operation 35 'specaxissidechannel' 'specaxissidechannel_ln23' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 36 [1/1] (0.00ns)   --->   "%specaxissidechannel_ln23 = specaxissidechannel void @_ssdm_op_SpecAXISSideChannel, i32 %Q_tile_in_V_data_V, i4 %Q_tile_in_V_keep_V, i4 %Q_tile_in_V_strb_V, i1 0, i1 %Q_tile_in_V_last_V, i1 0, i1 0, void @empty_2" [flashattn.cpp:23]   --->   Operation 36 'specaxissidechannel' 'specaxissidechannel_ln23' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 37 [1/1] (0.00ns)   --->   "%specaxissidechannel_ln23 = specaxissidechannel void @_ssdm_op_SpecAXISSideChannel, i32 %K_tile_in_V_data_V, i4 %K_tile_in_V_keep_V, i4 %K_tile_in_V_strb_V, i1 0, i1 %K_tile_in_V_last_V, i1 0, i1 0, void @empty_3" [flashattn.cpp:23]   --->   Operation 37 'specaxissidechannel' 'specaxissidechannel_ln23' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 38 [1/1] (0.00ns)   --->   "%specaxissidechannel_ln23 = specaxissidechannel void @_ssdm_op_SpecAXISSideChannel, i32 %V_tile_in_V_data_V, i4 %V_tile_in_V_keep_V, i4 %V_tile_in_V_strb_V, i1 0, i1 %V_tile_in_V_last_V, i1 0, i1 0, void @empty_4" [flashattn.cpp:23]   --->   Operation 38 'specaxissidechannel' 'specaxissidechannel_ln23' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 39 [1/2] (7.25ns)   --->   "%call_ln0 = call void @flashattn_Pipeline_Attention_Loop_VITIS_LOOP_48_3, i32 %Q_tile, i32 %K_tile, i32 %V_tile, i32 %O_tile_out_V_data_V, i4 %O_tile_out_V_keep_V, i4 %O_tile_out_V_strb_V, i1 %O_tile_out_V_last_V"   --->   Operation 39 'call' 'call_ln0' <Predicate = true> <Delay = 7.25> <CoreType = "Generic">   --->   Generic Core
+ST_4 : Operation 40 [1/1] (0.00ns)   --->   "%ret_ln59 = ret" [flashattn.cpp:59]   --->   Operation 40 'ret' 'ret_ln59' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10.000ns, clock uncertainty: 2.700ns.
+
+ <State 1>: 3.254ns
+The critical path consists of the following:
+	'alloca' operation 32 bit ('Q_tile', flashattn.cpp:17) [39]  (0.000 ns)
+	'call' operation 0 bit ('call_ln0') to 'flashattn_Pipeline_Read_Q_VITIS_LOOP_25_1' [46]  (3.254 ns)
+
+ <State 2>: 0.000ns
+The critical path consists of the following:
+
+ <State 3>: 0.000ns
+The critical path consists of the following:
+
+ <State 4>: 7.256ns
+The critical path consists of the following:
+	'call' operation 0 bit ('call_ln0') to 'flashattn_Pipeline_Attention_Loop_VITIS_LOOP_48_3' [48]  (7.256 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

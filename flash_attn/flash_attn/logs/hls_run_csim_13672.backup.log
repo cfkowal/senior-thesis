@@ -1,0 +1,100 @@
+  **** HLS Build v2024.2 5238294
+INFO: [HLS 200-2005] Using work_dir C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn/flash_attn 
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+WARNING: [HLS 200-2001] file not found 'flashattn.h.cpp' see [hls] from C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn/hls_config.cfg(11)
+INFO: [HLS 200-1465] Applying ini 'syn.file=flashattn.h.cpp' from C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn/hls_config.cfg(11)
+WARNING: [HLS 200-40] Cannot find design file 'flashattn.h.cpp'
+INFO: [HLS 200-1465] Applying ini 'syn.file=flashattn.cpp' from C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn/hls_config.cfg(12)
+INFO: [HLS 200-10] Adding design file 'C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn/flashattn.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'tb.file=flashattn.h' from C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn/hls_config.cfg(9)
+INFO: [HLS 200-10] Adding test bench file 'C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn/flashattn.h' to the project
+INFO: [HLS 200-1465] Applying ini 'tb.file=flashattn_tb.cpp' from C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn/hls_config.cfg(10)
+INFO: [HLS 200-10] Adding test bench file 'C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn/flashattn_tb.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.top=flashattn' from C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn/hls_config.cfg(7)
+INFO: [HLS 200-1465] Applying ini 'flow_target=vivado' from C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn/hls_config.cfg(4)
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying ini 'part=xc7z020clg400-1' from C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn/hls_config.cfg(1)
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg400-1'
+INFO: [HLS 200-1465] Applying ini 'package.output.format=ip_catalog' from C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn/hls_config.cfg(5)
+INFO: [HLS 200-1465] Applying ini 'syn.interface.s_axilite_data64=1' from C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn/hls_config.cfg(8)
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch CLANG as the compiler.
+INFO: [HLS 200-2036] Building debug C Simulation binaries
+   Compiling ../../../../flashattn_tb.cpp in debug mode
+csim.mk:88: recipe for target 'obj/flashattn_tb.o' failed
+In file included from ../../../../flashattn_tb.cpp:2:
+In file included from ../../../../flashattn.h:6:
+In file included from C:/Xilinx/Vitis/2024.2/include/ap_axi_sdata.h:15:
+In file included from C:/Xilinx/Vitis/2024.2/include/ap_int.h:10:
+In file included from C:/Xilinx/Vitis/2024.2/include/etc/ap_common.h:658:
+In file included from C:/Xilinx/Vitis/2024.2/include/etc/ap_private.h:68:
+In file included from C:/Xilinx/Vitis/2024.2/include/hls_half.h:26:
+In file included from C:/Xilinx/Vitis/2024.2/include/etc/hls_half_fpo.h:19:
+In file included from C:/Xilinx/Vitis/2024.2/include/hls_fpo.h:140:
+In file included from C:/Xilinx/Vitis/2024.2/include/floating_point_v7_1_bitacc_cmodel.h:150:
+C:/Xilinx/Vitis/2024.2/include/gmp.h:58:9: warning: '__GMP_LIBGMP_DLL' macro redefined [-Wmacro-redefined]
+#define __GMP_LIBGMP_DLL  0
+        ^
+C:/Xilinx/Vitis/2024.2/include/floating_point_v7_1_bitacc_cmodel.h:142:9: note: previous definition is here
+#define __GMP_LIBGMP_DLL 1
+        ^
+In file included from ../../../../flashattn_tb.cpp:2:
+../../../../flashattn.h:13:21: error: expected ';' after top level declarator
+typedef float data_t
+                    ^
+                    ;
+../../../../flashattn.h:18:78: error: unknown type name 'dstream'; did you mean 'd_stream'?
+void flashattn(d_stream &Q_tile_in,d_stream &K_tile_in, d_stream &V_tile_in, dstream &O_tile_out);
+                                                                             ^~~~~~~
+                                                                             d_stream
+../../../../flashattn.h:16:34: note: 'd_stream' declared here
+typedef hls::stream<data_t_pack> d_stream;
+                                 ^
+../../../../flashattn_tb.cpp:11:25: error: expected ';' in 'for' statement specifier
+    for (int i = 0; i < tile_q_len * head_dim; i++) {
+                        ^
+../../../../flashattn.h:9:23: note: expanded from macro 'tile_q_len'
+#define tile_q_len 64 # number of Q vectors in a tile
+                      ^
+../../../../flashattn_tb.cpp:11:25: error: expected expression
+../../../../flashattn.h:9:23: note: expanded from macro 'tile_q_len'
+#define tile_q_len 64 # number of Q vectors in a tile
+                      ^
+../../../../flashattn_tb.cpp:11:25: error: expected ')'
+../../../../flashattn.h:9:23: note: expanded from macro 'tile_q_len'
+#define tile_q_len 64 # number of Q vectors in a tile
+                      ^
+../../../../flashattn_tb.cpp:11:9: note: to match this '('
+    for (int i = 0; i < tile_q_len * head_dim; i++) {
+        ^
+../../../../flashattn_tb.cpp:11:48: error: use of undeclared identifier 'i'
+    for (int i = 0; i < tile_q_len * head_dim; i++) {
+                                               ^
+../../../../flashattn_tb.cpp:32:25: error: expected ';' in 'for' statement specifier
+    for (int i = 0; i < tile_q_len * head_dim; i++) {
+                        ^
+../../../../flashattn.h:9:23: note: expanded from macro 'tile_q_len'
+#define tile_q_len 64 # number of Q vectors in a tile
+                      ^
+../../../../flashattn_tb.cpp:32:25: error: expected expression
+../../../../flashattn.h:9:23: note: expanded from macro 'tile_q_len'
+#define tile_q_len 64 # number of Q vectors in a tile
+                      ^
+../../../../flashattn_tb.cpp:32:25: error: expected ')'
+../../../../flashattn.h:9:23: note: expanded from macro 'tile_q_len'
+#define tile_q_len 64 # number of Q vectors in a tile
+                      ^
+../../../../flashattn_tb.cpp:32:9: note: to match this '('
+    for (int i = 0; i < tile_q_len * head_dim; i++) {
+        ^
+../../../../flashattn_tb.cpp:32:48: error: use of undeclared identifier 'i'
+    for (int i = 0; i < tile_q_len * head_dim; i++) {
+                                               ^
+1 warning and 10 errors generated.
+make: *** [obj/flashattn_tb.o] Error 1
+ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s).
+INFO: [SIM 211-3] *************** CSIM finish ***************
+ERROR: 4
+INFO: [HLS 200-112] Total CPU user time: 2 seconds. Total CPU system time: 1 seconds. Total elapsed time: 4.638 seconds; peak allocated memory: 259.375 MB.

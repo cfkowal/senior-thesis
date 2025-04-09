@@ -4,13 +4,13 @@
 # IP: c:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn/flash_attn/hls/impl/verilog/project.srcs/sources_1/bd/bd_0/ip/bd_0_hls_inst_0/bd_0_hls_inst_0.xci
 # IP: The module: 'bd_0_hls_inst_0' is the root of the design. Do not add the DONT_TOUCH constraint.
 
-# XDC: c:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn/flash_attn/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ip/bd_0_hls_inst_0/constraints/matrix_cyclic_block_ooc.xdc
+# XDC: c:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn/flash_attn/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ip/bd_0_hls_inst_0/constraints/flashattn_ooc.xdc
 # XDC: The top module name and the constraint reference have the same name: 'bd_0_hls_inst_0'. Do not add the DONT_TOUCH constraint.
 set_property KEEP_HIERARCHY SOFT [get_cells inst -quiet] -quiet
 
 # IP: c:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn/flash_attn/hls/impl/verilog/project.srcs/sources_1/bd/bd_0/ip/bd_0_hls_inst_0/bd_0_hls_inst_0.xci
 # IP: The module: 'bd_0_hls_inst_0' is the root of the design. Do not add the DONT_TOUCH constraint.
 
-# XDC: c:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn/flash_attn/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ip/bd_0_hls_inst_0/constraints/matrix_cyclic_block_ooc.xdc
+# XDC: c:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn/flash_attn/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ip/bd_0_hls_inst_0/constraints/flashattn_ooc.xdc
 # XDC: The top module name and the constraint reference have the same name: 'bd_0_hls_inst_0'. Do not add the DONT_TOUCH constraint.
 #dup# set_property KEEP_HIERARCHY SOFT [get_cells inst -quiet] -quiet

@@ -1,5 +1,5 @@
 
-set TopModule "matrix_cyclic_block"
+set TopModule "flashattn"
 set ClockPeriod 10
 set ClockList ap_clk
 set AxiliteClockList {}
@@ -9,7 +9,7 @@ set PipelineFlag 0
 set DataflowTaskPipelineFlag 1
 set TrivialPipelineFlag 0
 set noPortSwitchingFlag 0
-set FloatingPointFlag 0
+set FloatingPointFlag 1
 set FftOrFirFlag 0
 set NbRWValue 0
 set intNbAccess 0
@@ -24,7 +24,7 @@ set ResetRegisterNum 0
 set FsmEncStyle onehot
 set MaxFanout 0
 set RtlPrefix {}
-set RtlSubPrefix matrix_cyclic_block_
+set RtlSubPrefix flashattn_
 set ExtraCCFlags {}
 set ExtraCLdFlags {}
 set SynCheckOptions {}
@@ -43,15 +43,15 @@ set SCTraceFileName mytrace
 set SCTraceFileFormat vcd
 set SCTraceOption all
 set TargetInfo xc7z020:-clg400:-1
-set SourceFiles {sc {} c ../../loop_pipeline.cpp}
+set SourceFiles {sc {} c ../../flashattn.cpp}
 set SourceFlags {sc {} c {{}}}
 set DirectiveFile {}
-set TBFiles {verilog C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn/loop_pipeline_tb.cpp bc C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn/loop_pipeline_tb.cpp vhdl C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn/loop_pipeline_tb.cpp sc C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn/loop_pipeline_tb.cpp cas C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn/loop_pipeline_tb.cpp c {}}
+set TBFiles {verilog {C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn/flashattn_tb.cpp C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn/flashattn.h} bc {C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn/flashattn_tb.cpp C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn/flashattn.h} sc {C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn/flashattn_tb.cpp C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn/flashattn.h} vhdl {C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn/flashattn_tb.cpp C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn/flashattn.h} c {} cas {C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn/flashattn_tb.cpp C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn/flashattn.h}}
 set SpecLanguage C
 set TVInFiles {bc {} c {} sc {} cas {} vhdl {} verilog {}}
 set TVOutFiles {bc {} c {} sc {} cas {} vhdl {} verilog {}}
-set TBTops {verilog {} bc {} vhdl {} sc {} cas {} c {}}
-set TBInstNames {verilog {} bc {} vhdl {} sc {} cas {} c {}}
+set TBTops {verilog {} bc {} sc {} vhdl {} c {} cas {}}
+set TBInstNames {verilog {} bc {} sc {} vhdl {} c {} cas {}}
 set XDCFiles {}
 set ExtraGlobalOptions {"area_timing" 1 "clock_gate" 1 "impl_flow" map "power_gate" 0}
 set TBTVFileNotFound {}

@@ -8,7 +8,7 @@
 #
 # Settings for Vivado implementation flow
 #
-set top_module matrix_cyclic_block
+set top_module flashattn
 set language verilog
 set family zynq
 set device xc7z020

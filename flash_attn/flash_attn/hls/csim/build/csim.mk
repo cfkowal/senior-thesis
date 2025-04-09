@@ -23,7 +23,7 @@ __USE_VCXX_CLANG__ = 1
 
 ObjDir = obj
 
-HLS_SOURCES = ../../../../loop_pipeline_tb.cpp ../../../../loop_pipeline.cpp
+HLS_SOURCES = ../../../../flashattn_tb.cpp ../../../../flashattn.cpp
 
 override TARGET := csim.exe
 
@@ -84,14 +84,14 @@ all: $(TARGET)
 
 
 
-$(ObjDir)/loop_pipeline_tb.o: ../../../../loop_pipeline_tb.cpp $(ObjDir)/.dir csim.mk
-	$(Echo) "   Compiling ../../../../loop_pipeline_tb.cpp in $(BuildMode) mode" $(AVE_DIR_DLOG)
+$(ObjDir)/flashattn_tb.o: ../../../../flashattn_tb.cpp $(ObjDir)/.dir csim.mk
+	$(Echo) "   Compiling ../../../../flashattn_tb.cpp in $(BuildMode) mode" $(AVE_DIR_DLOG)
 	$(Verb)  $(CXX) -std=gnu++14 ${CCFLAG} -c -MMD -Wno-unknown-pragmas -Wno-unknown-pragmas  $(IFLAG) $(DFLAG) $< -o $@ ; \
 
--include $(ObjDir)/loop_pipeline_tb.d
+-include $(ObjDir)/flashattn_tb.d
 
-$(ObjDir)/loop_pipeline.o: ../../../../loop_pipeline.cpp $(ObjDir)/.dir csim.mk
-	$(Echo) "   Compiling ../../../../loop_pipeline.cpp in $(BuildMode) mode" $(AVE_DIR_DLOG)
+$(ObjDir)/flashattn.o: ../../../../flashattn.cpp $(ObjDir)/.dir csim.mk
+	$(Echo) "   Compiling ../../../../flashattn.cpp in $(BuildMode) mode" $(AVE_DIR_DLOG)
 	$(Verb)  $(CXX) -std=gnu++14 ${CCFLAG} -c -MMD  $(IFLAG) $(DFLAG) $< -o $@ ; \
 
--include $(ObjDir)/loop_pipeline.d
+-include $(ObjDir)/flashattn.d

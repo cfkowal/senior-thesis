@@ -83,14 +83,18 @@ proc check_tvin_file {} {
 		puts stdout "[debug_prompt arg check_sim.tcl] start...";
 	}
     set rtlfilelist {
-         "c.matrix_cyclic_block.autotvin_stream_in_V_data_V.dat"
-         "c.matrix_cyclic_block.autotvin_stream_in_V_keep_V.dat"
-         "c.matrix_cyclic_block.autotvin_stream_in_V_strb_V.dat"
-         "c.matrix_cyclic_block.autotvin_stream_in_V_last_V.dat"
-         "c.matrix_cyclic_block.autotvin_stream_in2_V_data_V.dat"
-         "c.matrix_cyclic_block.autotvin_stream_in2_V_keep_V.dat"
-         "c.matrix_cyclic_block.autotvin_stream_in2_V_strb_V.dat"
-         "c.matrix_cyclic_block.autotvin_stream_in2_V_last_V.dat"
+         "c.flashattn.autotvin_Q_tile_in_V_data_V.dat"
+         "c.flashattn.autotvin_Q_tile_in_V_keep_V.dat"
+         "c.flashattn.autotvin_Q_tile_in_V_strb_V.dat"
+         "c.flashattn.autotvin_Q_tile_in_V_last_V.dat"
+         "c.flashattn.autotvin_K_tile_in_V_data_V.dat"
+         "c.flashattn.autotvin_K_tile_in_V_keep_V.dat"
+         "c.flashattn.autotvin_K_tile_in_V_strb_V.dat"
+         "c.flashattn.autotvin_K_tile_in_V_last_V.dat"
+         "c.flashattn.autotvin_V_tile_in_V_data_V.dat"
+         "c.flashattn.autotvin_V_tile_in_V_keep_V.dat"
+         "c.flashattn.autotvin_V_tile_in_V_strb_V.dat"
+         "c.flashattn.autotvin_V_tile_in_V_last_V.dat"
     }
     foreach rtlfile $rtlfilelist {
         if {[file isfile $rtlfile]} {
@@ -110,10 +114,10 @@ proc check_tvout_file {} {
 		puts stdout "[debug_prompt arg check_sim.tcl] start...";
 	}
     set rtlfilelist {
-         "rtl.matrix_cyclic_block.autotvout_stream_out_V_data_V.dat"
-         "rtl.matrix_cyclic_block.autotvout_stream_out_V_keep_V.dat"
-         "rtl.matrix_cyclic_block.autotvout_stream_out_V_strb_V.dat"
-         "rtl.matrix_cyclic_block.autotvout_stream_out_V_last_V.dat"
+         "rtl.flashattn.autotvout_O_tile_out_V_data_V.dat"
+         "rtl.flashattn.autotvout_O_tile_out_V_keep_V.dat"
+         "rtl.flashattn.autotvout_O_tile_out_V_strb_V.dat"
+         "rtl.flashattn.autotvout_O_tile_out_V_last_V.dat"
     }
     foreach rtlfile $rtlfilelist {
         if {[file isfile $rtlfile]} {

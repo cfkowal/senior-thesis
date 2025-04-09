@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
-| Date         : Mon Apr  7 11:44:39 2025
+| Date         : Wed Apr  9 14:28:24 2025
 | Host         : DESKTOP-I99LGQ1 running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file bd_0_wrapper_control_sets_placed.rpt
 | Design       : bd_0_wrapper
@@ -23,11 +23,11 @@ Table of Contents
 +----------------------------------------------------------+-------+
 |                          Status                          | Count |
 +----------------------------------------------------------+-------+
-| Total control sets                                       |    17 |
-|    Minimum number of control sets                        |    17 |
+| Total control sets                                       |    13 |
+|    Minimum number of control sets                        |    13 |
 |    Addition due to synthesis replication                 |     0 |
 |    Addition due to physical synthesis replication        |     0 |
-| Unused register locations in slices containing registers |    30 |
+| Unused register locations in slices containing registers |    37 |
 +----------------------------------------------------------+-------+
 * Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
 ** Run report_qor_suggestions for automated merging and remapping suggestions
@@ -39,15 +39,15 @@ Table of Contents
 +--------------------+-------+
 |       Fanout       | Count |
 +--------------------+-------+
-| Total control sets |    17 |
+| Total control sets |    13 |
 | >= 0 to < 4        |     0 |
-| >= 4 to < 6        |     4 |
-| >= 6 to < 8        |     2 |
+| >= 4 to < 6        |     0 |
+| >= 6 to < 8        |     0 |
 | >= 8 to < 10       |     1 |
 | >= 10 to < 12      |     0 |
-| >= 12 to < 14      |     0 |
-| >= 14 to < 16      |     0 |
-| >= 16              |    10 |
+| >= 12 to < 14      |     8 |
+| >= 14 to < 16      |     1 |
+| >= 16              |     3 |
 +--------------------+-------+
 * Control sets can be remapped at either synth_design or opt_design
 
@@ -58,38 +58,34 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |               7 |            3 |
+| No           | No                    | No                     |              40 |           20 |
 | No           | No                    | Yes                    |               0 |            0 |
-| No           | Yes                   | No                     |               8 |            2 |
-| Yes          | No                    | No                     |             244 |           64 |
+| No           | Yes                   | No                     |              12 |            7 |
+| Yes          | No                    | No                     |             535 |          174 |
 | Yes          | No                    | Yes                    |               0 |            0 |
-| Yes          | Yes                   | No                     |              15 |            6 |
+| Yes          | Yes                   | No                     |              48 |           17 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 
 
 4. Detailed Control Set Information
 -----------------------------------
 
-+--------------+----------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+----------------+--------------+
-| Clock Signal |                                                                       Enable Signal                                                                      |                                                                     Set/Reset Signal                                                                    | Slice Load Count | Bel Load Count | Bels / Slice |
-+--------------+----------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+----------------+--------------+
-|  ap_clk      | bd_0_i/hls_inst/inst/grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U18/ap_block_pp0_stage0_subdone              | bd_0_i/hls_inst/inst/grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/flow_control_loop_pipe_sequential_init_U/ap_rst_n_0            |                2 |              4 |         2.00 |
-|  ap_clk      | bd_0_i/hls_inst/inst/grp_matrix_cyclic_block_Pipeline_read_A_and_B_VITIS_LOOP_28_1_fu_90/flow_control_loop_pipe_sequential_init_U/indvar_flatten_fu_92   |                                                                                                                                                         |                1 |              5 |         5.00 |
-|  ap_clk      | bd_0_i/hls_inst/inst/grp_matrix_cyclic_block_Pipeline_read_A_and_B_VITIS_LOOP_28_1_fu_90/i_fu_88                                                         | bd_0_i/hls_inst/inst/grp_matrix_cyclic_block_Pipeline_read_A_and_B_VITIS_LOOP_28_1_fu_90/flow_control_loop_pipe_sequential_init_U/stream_in_TVALID_0[0] |                2 |              5 |         2.50 |
-|  ap_clk      | bd_0_i/hls_inst/inst/grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/flow_control_loop_pipe_sequential_init_U/indvar_flatten14_fu_90 |                                                                                                                                                         |                2 |              5 |         2.50 |
-|  ap_clk      | bd_0_i/hls_inst/inst/grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/i_fu_86                                                         | bd_0_i/hls_inst/inst/grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/flow_control_loop_pipe_sequential_init_U/SR[0]                 |                2 |              6 |         3.00 |
-|  ap_clk      |                                                                                                                                                          |                                                                                                                                                         |                3 |              7 |         2.33 |
-|  ap_clk      |                                                                                                                                                          | bd_0_i/hls_inst/inst/grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/flow_control_loop_pipe_sequential_init_U/ap_rst_n_0            |                2 |              8 |         4.00 |
-|  ap_clk      | bd_0_i/hls_inst/inst/grp_matrix_cyclic_block_Pipeline_read_A_and_B_VITIS_LOOP_28_1_fu_90/j_fu_84_reg[0]_0                                                |                                                                                                                                                         |                8 |             32 |         4.00 |
-|  ap_clk      | bd_0_i/hls_inst/inst/grp_matrix_cyclic_block_Pipeline_read_A_and_B_VITIS_LOOP_28_1_fu_90/i_fu_88_reg[1]_1                                                |                                                                                                                                                         |                8 |             32 |         4.00 |
-|  ap_clk      | bd_0_i/hls_inst/inst/grp_matrix_cyclic_block_Pipeline_read_A_and_B_VITIS_LOOP_28_1_fu_90/i_fu_88_reg[1]_3                                                |                                                                                                                                                         |                8 |             32 |         4.00 |
-|  ap_clk      | bd_0_i/hls_inst/inst/grp_matrix_cyclic_block_Pipeline_read_A_and_B_VITIS_LOOP_28_1_fu_90/j_fu_84_reg[0]_1                                                |                                                                                                                                                         |                8 |             32 |         4.00 |
-|  ap_clk      | bd_0_i/hls_inst/inst/grp_matrix_cyclic_block_Pipeline_read_A_and_B_VITIS_LOOP_28_1_fu_90/j_fu_84_reg[1]_0                                                |                                                                                                                                                         |                8 |             32 |         4.00 |
-|  ap_clk      | bd_0_i/hls_inst/inst/grp_matrix_cyclic_block_Pipeline_read_A_and_B_VITIS_LOOP_28_1_fu_90/p_0_in                                                          |                                                                                                                                                         |                8 |             32 |         4.00 |
-|  ap_clk      | bd_0_i/hls_inst/inst/grp_matrix_cyclic_block_Pipeline_read_A_and_B_VITIS_LOOP_28_1_fu_90/i_fu_88_reg[1]_2                                                |                                                                                                                                                         |                8 |             32 |         4.00 |
-|  ap_clk      | bd_0_i/hls_inst/inst/grp_matrix_cyclic_block_Pipeline_read_A_and_B_VITIS_LOOP_28_1_fu_90/i_fu_88_reg[1]_0                                                |                                                                                                                                                         |                8 |             32 |         4.00 |
-|  ap_clk      | bd_0_i/hls_inst/inst/grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/icmp_ln38_reg_498_pp0_iter4_reg_reg[0]_0                        |                                                                                                                                                         |                9 |             33 |         3.67 |
-|  ap_clk      | bd_0_i/hls_inst/inst/grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U18/ap_block_pp0_stage0_subdone              |                                                                                                                                                         |               52 |            204 |         3.92 |
-+--------------+----------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+----------------+--------------+
++--------------+---------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------+------------------+----------------+--------------+
+| Clock Signal |                                                                   Enable Signal                                                                   |                                                            Set/Reset Signal                                                           | Slice Load Count | Bel Load Count | Bels / Slice |
++--------------+---------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------+------------------+----------------+--------------+
+|  ap_clk      | bd_0_i/hls_inst/inst/grp_flashattn_Pipeline_Attention_Loop_VITIS_LOOP_48_3_fu_120/fadd_32ns_32ns_32_5_full_dsp_1_U16/E[0]                         | bd_0_i/hls_inst/inst/grp_flashattn_Pipeline_Attention_Loop_VITIS_LOOP_48_3_fu_120/flow_control_loop_pipe_sequential_init_U/ap_rst_n_0 |                4 |              8 |         2.00 |
+|  ap_clk      |                                                                                                                                                   | bd_0_i/hls_inst/inst/grp_flashattn_Pipeline_Attention_Loop_VITIS_LOOP_48_3_fu_120/flow_control_loop_pipe_sequential_init_U/ap_rst_n_0 |                7 |             12 |         1.71 |
+|  ap_clk      | bd_0_i/hls_inst/inst/grp_flashattn_Pipeline_Attention_Loop_VITIS_LOOP_48_3_fu_120/flow_control_loop_pipe_sequential_init_U/indvar_flatten13_fu_76 |                                                                                                                                       |                4 |             13 |         3.25 |
+|  ap_clk      | bd_0_i/hls_inst/inst/grp_flashattn_Pipeline_Read_K_and_V_VITIS_LOOP_35_2_fu_96/flow_control_loop_pipe_sequential_init_U/indvar_flatten6_fu_78     |                                                                                                                                       |                4 |             13 |         3.25 |
+|  ap_clk      | bd_0_i/hls_inst/inst/grp_flashattn_Pipeline_Read_K_and_V_VITIS_LOOP_35_2_fu_96/flow_control_loop_pipe_sequential_init_U/E[0]                      |                                                                                                                                       |                4 |             13 |         3.25 |
+|  ap_clk      | bd_0_i/hls_inst/inst/grp_flashattn_Pipeline_Read_K_and_V_VITIS_LOOP_35_2_fu_96/col_fu_70                                                          | bd_0_i/hls_inst/inst/grp_flashattn_Pipeline_Read_K_and_V_VITIS_LOOP_35_2_fu_96/flow_control_loop_pipe_sequential_init_U/SR[0]         |                4 |             13 |         3.25 |
+|  ap_clk      | bd_0_i/hls_inst/inst/grp_flashattn_Pipeline_Read_Q_VITIS_LOOP_25_1_fu_82/flow_control_loop_pipe_sequential_init_U/indvar_flatten_fu_66            |                                                                                                                                       |                3 |             13 |         4.33 |
+|  ap_clk      | bd_0_i/hls_inst/inst/grp_flashattn_Pipeline_Read_Q_VITIS_LOOP_25_1_fu_82/col_fu_58                                                                | bd_0_i/hls_inst/inst/grp_flashattn_Pipeline_Read_Q_VITIS_LOOP_25_1_fu_82/flow_control_loop_pipe_sequential_init_U/SR[0]               |                4 |             13 |         3.25 |
+|  ap_clk      | bd_0_i/hls_inst/inst/grp_flashattn_Pipeline_Read_Q_VITIS_LOOP_25_1_fu_82/ap_block_pp0_stage0_subdone                                              |                                                                                                                                       |                5 |             13 |         2.60 |
+|  ap_clk      | bd_0_i/hls_inst/inst/grp_flashattn_Pipeline_Attention_Loop_VITIS_LOOP_48_3_fu_120/col_fu_68                                                       | bd_0_i/hls_inst/inst/grp_flashattn_Pipeline_Attention_Loop_VITIS_LOOP_48_3_fu_120/flow_control_loop_pipe_sequential_init_U/SR[0]      |                5 |             14 |         2.80 |
+|  ap_clk      |                                                                                                                                                   |                                                                                                                                       |               20 |             40 |         2.00 |
+|  ap_clk      | bd_0_i/hls_inst/inst/grp_flashattn_Pipeline_Attention_Loop_VITIS_LOOP_48_3_fu_120/fadd_32ns_32ns_32_5_full_dsp_1_U16/E[0]                         |                                                                                                                                       |               59 |            204 |         3.46 |
+|  ap_clk      | bd_0_i/hls_inst/inst/grp_flashattn_Pipeline_Attention_Loop_VITIS_LOOP_48_3_fu_120/fadd_32ns_32ns_32_5_full_dsp_1_U16/ce_r                         |                                                                                                                                       |               95 |            282 |         2.97 |
++--------------+---------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------+------------------+----------------+--------------+
 
 

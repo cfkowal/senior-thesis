@@ -9,13 +9,13 @@ WARNING: C:/Xilinx/Vivado/2024.2/tps/win64/jre11.0.16_1 does not exist.
   **** SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
   **** IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
   **** SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
-  **** Start of session at: Mon Apr  7 11:42:27 2025
+  **** Start of session at: Wed Apr  9 14:25:53 2025
     ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
     ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 
 source bd_0_hls_inst_0.tcl -notrace
-INFO: Dispatch client connection id - 62120
-create_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 620.508 ; gain = 193.250
+INFO: Dispatch client connection id - 64925
+create_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 618.367 ; gain = 189.523
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn/flash_attn/hls/impl/ip'.
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2024.2/data/ip'.
@@ -29,122 +29,193 @@ INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020
 INFO: [Device 21-403] Loading part xc7z020clg400-1
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 13716
+INFO: [Synth 8-7075] Helper process launched with PID 14680
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1328.859 ; gain = 466.945
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1328.977 ; gain = 467.426
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'bd_0_hls_inst_0' [c:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn/flash_attn/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ip/bd_0_hls_inst_0/synth/bd_0_hls_inst_0.v:53]
-INFO: [Synth 8-6157] synthesizing module 'matrix_cyclic_block' [c:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn/flash_attn/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/2877/hdl/verilog/matrix_cyclic_block.v:9]
-INFO: [Synth 8-6157] synthesizing module 'matrix_cyclic_block_A_RAM_AUTO_1R1W' [c:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn/flash_attn/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/2877/hdl/verilog/matrix_cyclic_block_A_RAM_AUTO_1R1W.v:7]
-INFO: [Synth 8-6155] done synthesizing module 'matrix_cyclic_block_A_RAM_AUTO_1R1W' (0#1) [c:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn/flash_attn/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/2877/hdl/verilog/matrix_cyclic_block_A_RAM_AUTO_1R1W.v:7]
-INFO: [Synth 8-6157] synthesizing module 'matrix_cyclic_block_matrix_cyclic_block_Pipeline_read_A_and_B_VITIS_LOOP_28_1' [c:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn/flash_attn/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/2877/hdl/verilog/matrix_cyclic_block_matrix_cyclic_block_Pipeline_read_A_and_B_VITIS_LOOP_28_1.v:9]
-INFO: [Synth 8-6157] synthesizing module 'matrix_cyclic_block_flow_control_loop_pipe_sequential_init' [c:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn/flash_attn/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/2877/hdl/verilog/matrix_cyclic_block_flow_control_loop_pipe_sequential_init.v:11]
-INFO: [Synth 8-6155] done synthesizing module 'matrix_cyclic_block_flow_control_loop_pipe_sequential_init' (0#1) [c:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn/flash_attn/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/2877/hdl/verilog/matrix_cyclic_block_flow_control_loop_pipe_sequential_init.v:11]
-INFO: [Synth 8-6155] done synthesizing module 'matrix_cyclic_block_matrix_cyclic_block_Pipeline_read_A_and_B_VITIS_LOOP_28_1' (0#1) [c:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn/flash_attn/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/2877/hdl/verilog/matrix_cyclic_block_matrix_cyclic_block_Pipeline_read_A_and_B_VITIS_LOOP_28_1.v:9]
-INFO: [Synth 8-6157] synthesizing module 'matrix_cyclic_block_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2' [c:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn/flash_attn/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/2877/hdl/verilog/matrix_cyclic_block_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2.v:9]
-INFO: [Synth 8-6157] synthesizing module 'matrix_cyclic_block_mul_32s_32s_32_2_1' [c:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn/flash_attn/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/2877/hdl/verilog/matrix_cyclic_block_mul_32s_32s_32_2_1.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'matrix_cyclic_block_mul_32s_32s_32_2_1' (0#1) [c:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn/flash_attn/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/2877/hdl/verilog/matrix_cyclic_block_mul_32s_32s_32_2_1.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'matrix_cyclic_block_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2' (0#1) [c:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn/flash_attn/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/2877/hdl/verilog/matrix_cyclic_block_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2.v:9]
-INFO: [Synth 8-6155] done synthesizing module 'matrix_cyclic_block' (0#1) [c:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn/flash_attn/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/2877/hdl/verilog/matrix_cyclic_block.v:9]
+INFO: [Synth 8-6157] synthesizing module 'flashattn' [c:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn/flash_attn/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/a6db/hdl/verilog/flashattn.v:9]
+INFO: [Synth 8-6157] synthesizing module 'flashattn_Q_tile_RAM_AUTO_1R1W' [c:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn/flash_attn/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/a6db/hdl/verilog/flashattn_Q_tile_RAM_AUTO_1R1W.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'flashattn_Q_tile_RAM_AUTO_1R1W' (0#1) [c:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn/flash_attn/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/a6db/hdl/verilog/flashattn_Q_tile_RAM_AUTO_1R1W.v:7]
+INFO: [Synth 8-6157] synthesizing module 'flashattn_flashattn_Pipeline_Read_Q_VITIS_LOOP_25_1' [c:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn/flash_attn/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/a6db/hdl/verilog/flashattn_flashattn_Pipeline_Read_Q_VITIS_LOOP_25_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'flashattn_flow_control_loop_pipe_sequential_init' [c:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn/flash_attn/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/a6db/hdl/verilog/flashattn_flow_control_loop_pipe_sequential_init.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'flashattn_flow_control_loop_pipe_sequential_init' (0#1) [c:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn/flash_attn/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/a6db/hdl/verilog/flashattn_flow_control_loop_pipe_sequential_init.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'flashattn_flashattn_Pipeline_Read_Q_VITIS_LOOP_25_1' (0#1) [c:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn/flash_attn/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/a6db/hdl/verilog/flashattn_flashattn_Pipeline_Read_Q_VITIS_LOOP_25_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'flashattn_flashattn_Pipeline_Read_K_and_V_VITIS_LOOP_35_2' [c:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn/flash_attn/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/a6db/hdl/verilog/flashattn_flashattn_Pipeline_Read_K_and_V_VITIS_LOOP_35_2.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'flashattn_flashattn_Pipeline_Read_K_and_V_VITIS_LOOP_35_2' (0#1) [c:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn/flash_attn/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/a6db/hdl/verilog/flashattn_flashattn_Pipeline_Read_K_and_V_VITIS_LOOP_35_2.v:9]
+INFO: [Synth 8-6157] synthesizing module 'flashattn_flashattn_Pipeline_Attention_Loop_VITIS_LOOP_48_3' [c:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn/flash_attn/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/a6db/hdl/verilog/flashattn_flashattn_Pipeline_Attention_Loop_VITIS_LOOP_48_3.v:9]
+INFO: [Synth 8-6157] synthesizing module 'flashattn_fadd_32ns_32ns_32_5_full_dsp_1' [c:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn/flash_attn/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/a6db/hdl/verilog/flashattn_fadd_32ns_32ns_32_5_full_dsp_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'flashattn_fadd_32ns_32ns_32_5_full_dsp_1_ip' [c:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn/flash_attn/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/a6db/hdl/ip/flashattn_fadd_32ns_32ns_32_5_full_dsp_1_ip.v:53]
+INFO: [Synth 8-6157] synthesizing module 'LUT1' [C:/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:84087]
+INFO: [Synth 8-6155] done synthesizing module 'LUT1' (0#1) [C:/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:84087]
+INFO: [Synth 8-6155] done synthesizing module 'flashattn_fadd_32ns_32ns_32_5_full_dsp_1_ip' (0#1) [c:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn/flash_attn/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/a6db/hdl/ip/flashattn_fadd_32ns_32ns_32_5_full_dsp_1_ip.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'flashattn_fadd_32ns_32ns_32_5_full_dsp_1' (0#1) [c:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn/flash_attn/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/a6db/hdl/verilog/flashattn_fadd_32ns_32ns_32_5_full_dsp_1.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'flashattn_flashattn_Pipeline_Attention_Loop_VITIS_LOOP_48_3' (0#1) [c:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn/flash_attn/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/a6db/hdl/verilog/flashattn_flashattn_Pipeline_Attention_Loop_VITIS_LOOP_48_3.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'flashattn' (0#1) [c:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn/flash_attn/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/a6db/hdl/verilog/flashattn.v:9]
 INFO: [Synth 8-6155] done synthesizing module 'bd_0_hls_inst_0' (0#1) [c:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn/flash_attn/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ip/bd_0_hls_inst_0/synth/bd_0_hls_inst_0.v:53]
 INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
-WARNING: [Synth 8-7129] Port reset in module matrix_cyclic_block_mul_32s_32s_32_2_1 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port stream_in_TKEEP[3] in module matrix_cyclic_block_matrix_cyclic_block_Pipeline_read_A_and_B_VITIS_LOOP_28_1 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port stream_in_TKEEP[2] in module matrix_cyclic_block_matrix_cyclic_block_Pipeline_read_A_and_B_VITIS_LOOP_28_1 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port stream_in_TKEEP[1] in module matrix_cyclic_block_matrix_cyclic_block_Pipeline_read_A_and_B_VITIS_LOOP_28_1 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port stream_in_TKEEP[0] in module matrix_cyclic_block_matrix_cyclic_block_Pipeline_read_A_and_B_VITIS_LOOP_28_1 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port stream_in_TSTRB[3] in module matrix_cyclic_block_matrix_cyclic_block_Pipeline_read_A_and_B_VITIS_LOOP_28_1 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port stream_in_TSTRB[2] in module matrix_cyclic_block_matrix_cyclic_block_Pipeline_read_A_and_B_VITIS_LOOP_28_1 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port stream_in_TSTRB[1] in module matrix_cyclic_block_matrix_cyclic_block_Pipeline_read_A_and_B_VITIS_LOOP_28_1 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port stream_in_TSTRB[0] in module matrix_cyclic_block_matrix_cyclic_block_Pipeline_read_A_and_B_VITIS_LOOP_28_1 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port stream_in_TLAST[0] in module matrix_cyclic_block_matrix_cyclic_block_Pipeline_read_A_and_B_VITIS_LOOP_28_1 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port stream_in2_TKEEP[3] in module matrix_cyclic_block_matrix_cyclic_block_Pipeline_read_A_and_B_VITIS_LOOP_28_1 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port stream_in2_TKEEP[2] in module matrix_cyclic_block_matrix_cyclic_block_Pipeline_read_A_and_B_VITIS_LOOP_28_1 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port stream_in2_TKEEP[1] in module matrix_cyclic_block_matrix_cyclic_block_Pipeline_read_A_and_B_VITIS_LOOP_28_1 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port stream_in2_TKEEP[0] in module matrix_cyclic_block_matrix_cyclic_block_Pipeline_read_A_and_B_VITIS_LOOP_28_1 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port stream_in2_TSTRB[3] in module matrix_cyclic_block_matrix_cyclic_block_Pipeline_read_A_and_B_VITIS_LOOP_28_1 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port stream_in2_TSTRB[2] in module matrix_cyclic_block_matrix_cyclic_block_Pipeline_read_A_and_B_VITIS_LOOP_28_1 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port stream_in2_TSTRB[1] in module matrix_cyclic_block_matrix_cyclic_block_Pipeline_read_A_and_B_VITIS_LOOP_28_1 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port stream_in2_TSTRB[0] in module matrix_cyclic_block_matrix_cyclic_block_Pipeline_read_A_and_B_VITIS_LOOP_28_1 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port stream_in2_TLAST[0] in module matrix_cyclic_block_matrix_cyclic_block_Pipeline_read_A_and_B_VITIS_LOOP_28_1 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port reset in module matrix_cyclic_block_A_RAM_AUTO_1R1W is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_10_viv__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_10_viv__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_10_viv__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_10_viv__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_10_viv__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_10_viv__parameterized55 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_10_viv__parameterized55 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_10_viv__parameterized55 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_10_viv__parameterized55 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_10_viv__parameterized55 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DEC_OP_STATE[11] in module flt_dec_op is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DEC_OP_STATE[10] in module flt_dec_op is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DEC_OP_STATE[9] in module flt_dec_op is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DEC_OP_STATE[8] in module flt_dec_op is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module flt_dec_op is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module flt_dec_op is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_10_viv__parameterized37 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_10_viv__parameterized37 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_10_viv__parameterized37 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_10_viv__parameterized35 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_10_viv__parameterized35 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_10_viv__parameterized35 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_10_viv__parameterized35 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_10_viv__parameterized35 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port B[8] in module carry_chain__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_10_viv__parameterized43 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_10_viv__parameterized43 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_10_viv__parameterized43 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_10_viv__parameterized43 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_10_viv__parameterized43 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_10_viv__parameterized53 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_10_viv__parameterized53 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_10_viv__parameterized53 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_10_viv__parameterized53 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_10_viv__parameterized53 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_10_viv__parameterized51 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_10_viv__parameterized51 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_10_viv__parameterized51 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_10_viv__parameterized51 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_10_viv__parameterized51 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_10_viv__parameterized49 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_10_viv__parameterized49 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_10_viv__parameterized49 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_10_viv__parameterized49 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_10_viv__parameterized49 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_10_viv__parameterized47 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_10_viv__parameterized47 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_10_viv__parameterized47 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_10_viv__parameterized47 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_10_viv__parameterized47 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_10_viv__parameterized31 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_10_viv__parameterized31 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_10_viv__parameterized31 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_10_viv__parameterized45 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_10_viv__parameterized45 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_10_viv__parameterized45 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_10_viv__parameterized41 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_10_viv__parameterized41 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_10_viv__parameterized41 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_10_viv__parameterized39 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_10_viv__parameterized39 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_10_viv__parameterized39 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_10_viv__parameterized17 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_10_viv__parameterized17 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_10_viv__parameterized17 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_10_viv__parameterized33 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_10_viv__parameterized33 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_10_viv__parameterized33 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_10_viv__parameterized9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_10_viv__parameterized9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_10_viv__parameterized9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_10_viv__parameterized9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_10_viv__parameterized9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CARRYS_OUT[14] in module carry_chain__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CARRYS_OUT[13] in module carry_chain__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CARRYS_OUT[12] in module carry_chain__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CARRYS_OUT[11] in module carry_chain__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CARRYS_OUT[10] in module carry_chain__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CARRYS_OUT[9] in module carry_chain__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CARRYS_OUT[8] in module carry_chain__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CARRYS_OUT[7] in module carry_chain__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CARRYS_OUT[6] in module carry_chain__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CARRYS_OUT[5] in module carry_chain__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CARRYS_OUT[4] in module carry_chain__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CARRYS_OUT[3] in module carry_chain__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CARRYS_OUT[2] in module carry_chain__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CARRYS_OUT[1] in module carry_chain__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CARRYS_OUT[0] in module carry_chain__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_10_viv__parameterized11 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_10_viv__parameterized11 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_10_viv__parameterized11 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_10_viv__parameterized11 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_10_viv__parameterized11 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CARRYS_OUT[2] in module carry_chain__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CARRYS_OUT[1] in module carry_chain__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CARRYS_OUT[0] in module carry_chain__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CARRYS_OUT[0] in module compare_eq_im__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[31] in module special_detect is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ZERO_ALIGN in module flt_add_exp_sp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ROUND_EXP_INC in module flt_add_exp_sp is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1444.766 ; gain = 582.852
+Finished RTL Elaboration : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1540.535 ; gain = 678.984
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1444.766 ; gain = 582.852
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1540.535 ; gain = 678.984
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1444.766 ; gain = 582.852
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1540.535 ; gain = 678.984
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.018 . Memory (MB): peak = 1444.766 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.074 . Memory (MB): peak = 1540.535 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 166 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [c:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn/flash_attn/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ip/bd_0_hls_inst_0/constraints/matrix_cyclic_block_ooc.xdc] for cell 'inst'
-Finished Parsing XDC File [c:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn/flash_attn/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ip/bd_0_hls_inst_0/constraints/matrix_cyclic_block_ooc.xdc] for cell 'inst'
+Parsing XDC File [c:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn/flash_attn/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ip/bd_0_hls_inst_0/constraints/flashattn_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [c:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn/flash_attn/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ip/bd_0_hls_inst_0/constraints/flashattn_ooc.xdc] for cell 'inst'
 Parsing XDC File [C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn/flash_attn/hls/impl/verilog/project.runs/bd_0_hls_inst_0_synth_1/dont_touch.xdc]
 Finished Parsing XDC File [C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn/flash_attn/hls/impl/verilog/project.runs/bd_0_hls_inst_0_synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1536.039 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1556.473 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
-No Unisim elements were transformed.
+  A total of 6 instances were transformed.
+  FDE => FDRE: 6 instances
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.026 . Memory (MB): peak = 1536.039 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.070 . Memory (MB): peak = 1557.164 ; gain = 0.691
 INFO: [Designutils 20-5008] Incremental synthesis strategy off
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1536.039 ; gain = 674.125
+Finished Constraint Validation : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1557.164 ; gain = 695.613
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z020clg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1536.039 ; gain = 674.125
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1557.164 ; gain = 695.613
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 Applied set_property KEEP_HIERARCHY = SOFT for inst. (constraint file  C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn/flash_attn/hls/impl/verilog/project.runs/bd_0_hls_inst_0_synth_1/dont_touch.xdc, line 9).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1536.039 ; gain = 674.125
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1557.164 ; gain = 695.613
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
 INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
 INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1536.039 ; gain = 674.125
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1557.164 ; gain = 695.613
 ---------------------------------------------------------------------------------
+INFO: [Synth 8-223] decloning instance 'flashattn_fadd_32ns_32ns_32_5_full_dsp_1:/flashattn_fadd_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.ALIGN_ADD/SUB_DELAY' (delay__parameterized0) to 'flashattn_fadd_32ns_32ns_32_5_full_dsp_1:/flashattn_fadd_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.ALIGN_ADD/SUB_ADD_IP_DELAY'
+INFO: [Synth 8-223] decloning instance 'flashattn_fadd_32ns_32ns_32_5_full_dsp_1:/flashattn_fadd_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized0) to 'flashattn_fadd_32ns_32ns_32_5_full_dsp_1:/flashattn_fadd_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/DELAY_ACCUM_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'flashattn_fadd_32ns_32ns_32_5_full_dsp_1:/flashattn_fadd_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized0) to 'flashattn_fadd_32ns_32ns_32_5_full_dsp_1:/flashattn_fadd_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/DELAY_ACCUM_INPUT_OVERFLOW'
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
 ---------------------------------------------------------------------------------
-Detailed RTL Component Info : 
-+---Adders : 
-	   4 Input   32 Bit       Adders := 1     
-	   2 Input    5 Bit       Adders := 2     
-	   2 Input    3 Bit       Adders := 6     
-+---Registers : 
-	               32 Bit    Registers := 25    
-	                5 Bit    Registers := 2     
-	                4 Bit    Registers := 3     
-	                3 Bit    Registers := 4     
-	                1 Bit    Registers := 32    
-+---Multipliers : 
-	              32x32  Multipliers := 4     
-+---RAMs : 
-	              128 Bit	(4 X 32 bit)          RAMs := 8     
-+---Muxes : 
-	   2 Input   32 Bit        Muxes := 2     
-	   6 Input    4 Bit        Muxes := 1     
-	   2 Input    4 Bit        Muxes := 4     
-	   2 Input    3 Bit        Muxes := 1     
-	   2 Input    2 Bit        Muxes := 8     
-	   2 Input    1 Bit        Muxes := 28    
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -161,348 +232,30 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
-DSP Report: Generating DSP grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U17/tmp_product, operation Mode is: A''*B''.
-DSP Report: register B_U/q0_reg is absorbed into DSP grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U17/tmp_product.
-DSP Report: register grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/B_load_reg_551_reg is absorbed into DSP grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U17/tmp_product.
-DSP Report: register grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U17/tmp_product is absorbed into DSP grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U17/tmp_product.
-DSP Report: register grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U17/tmp_product is absorbed into DSP grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U17/tmp_product.
-DSP Report: operator grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U17/tmp_product is absorbed into DSP grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U17/tmp_product.
-DSP Report: operator grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U17/tmp_product is absorbed into DSP grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U17/tmp_product.
-DSP Report: Generating DSP grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U17/buff0_reg, operation Mode is: (PCIN>>17)+A''*B''.
-DSP Report: register A_U/q0_reg is absorbed into DSP grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U17/buff0_reg.
-DSP Report: register grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/A_load7_fu_106_reg is absorbed into DSP grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U17/buff0_reg.
-DSP Report: register B_U/q0_reg is absorbed into DSP grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U17/buff0_reg.
-DSP Report: register grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/B_load_reg_551_reg is absorbed into DSP grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U17/buff0_reg.
-DSP Report: register grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U17/buff0_reg is absorbed into DSP grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U17/buff0_reg.
-DSP Report: operator grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U17/tmp_product is absorbed into DSP grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U17/buff0_reg.
-DSP Report: operator grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U17/tmp_product is absorbed into DSP grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U17/buff0_reg.
-DSP Report: Generating DSP grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U17/tmp_product, operation Mode is: A''*B''.
-DSP Report: register grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U17/tmp_product is absorbed into DSP grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U17/tmp_product.
-DSP Report: register grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U17/tmp_product is absorbed into DSP grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U17/tmp_product.
-DSP Report: register grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U17/tmp_product is absorbed into DSP grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U17/tmp_product.
-DSP Report: register grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U17/tmp_product is absorbed into DSP grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U17/tmp_product.
-DSP Report: operator grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U17/tmp_product is absorbed into DSP grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U17/tmp_product.
-DSP Report: operator grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U17/tmp_product is absorbed into DSP grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U17/tmp_product.
-DSP Report: Generating DSP grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U17/buff0_reg, operation Mode is: (PCIN>>17)+A''*B''.
-DSP Report: register A_U/q0_reg is absorbed into DSP grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U17/buff0_reg.
-DSP Report: register grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/A_load7_fu_106_reg is absorbed into DSP grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U17/buff0_reg.
-DSP Report: register grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U17/buff0_reg is absorbed into DSP grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U17/buff0_reg.
-DSP Report: register grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U17/buff0_reg is absorbed into DSP grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U17/buff0_reg.
-DSP Report: register grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U17/buff0_reg is absorbed into DSP grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U17/buff0_reg.
-DSP Report: operator grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U17/tmp_product is absorbed into DSP grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U17/buff0_reg.
-DSP Report: operator grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U17/tmp_product is absorbed into DSP grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U17/buff0_reg.
-DSP Report: Generating DSP grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U20/tmp_product, operation Mode is: A''*B''.
-DSP Report: register B_3_U/q0_reg is absorbed into DSP grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U20/tmp_product.
-DSP Report: register grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/B_3_load_reg_566_reg is absorbed into DSP grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U20/tmp_product.
-DSP Report: register grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U20/tmp_product is absorbed into DSP grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U20/tmp_product.
-DSP Report: register grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U20/tmp_product is absorbed into DSP grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U20/tmp_product.
-DSP Report: operator grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U20/tmp_product is absorbed into DSP grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U20/tmp_product.
-DSP Report: operator grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U20/tmp_product is absorbed into DSP grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U20/tmp_product.
-DSP Report: Generating DSP grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U20/buff0_reg, operation Mode is: (PCIN>>17)+A''*B''.
-DSP Report: register A_3_U/q0_reg is absorbed into DSP grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U20/buff0_reg.
-DSP Report: register grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/A_3_load1_fu_94_reg is absorbed into DSP grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U20/buff0_reg.
-DSP Report: register B_3_U/q0_reg is absorbed into DSP grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U20/buff0_reg.
-DSP Report: register grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/B_3_load_reg_566_reg is absorbed into DSP grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U20/buff0_reg.
-DSP Report: register grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U20/buff0_reg is absorbed into DSP grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U20/buff0_reg.
-DSP Report: operator grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U20/tmp_product is absorbed into DSP grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U20/buff0_reg.
-DSP Report: operator grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U20/tmp_product is absorbed into DSP grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U20/buff0_reg.
-DSP Report: Generating DSP grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U20/tmp_product, operation Mode is: A''*B''.
-DSP Report: register grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U20/tmp_product is absorbed into DSP grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U20/tmp_product.
-DSP Report: register grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U20/tmp_product is absorbed into DSP grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U20/tmp_product.
-DSP Report: register grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U20/tmp_product is absorbed into DSP grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U20/tmp_product.
-DSP Report: register grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U20/tmp_product is absorbed into DSP grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U20/tmp_product.
-DSP Report: operator grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U20/tmp_product is absorbed into DSP grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U20/tmp_product.
-DSP Report: operator grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U20/tmp_product is absorbed into DSP grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U20/tmp_product.
-DSP Report: Generating DSP grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U20/buff0_reg, operation Mode is: (PCIN>>17)+A''*B''.
-DSP Report: register A_3_U/q0_reg is absorbed into DSP grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U20/buff0_reg.
-DSP Report: register grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/A_3_load1_fu_94_reg is absorbed into DSP grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U20/buff0_reg.
-DSP Report: register grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U20/buff0_reg is absorbed into DSP grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U20/buff0_reg.
-DSP Report: register grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U20/buff0_reg is absorbed into DSP grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U20/buff0_reg.
-DSP Report: register grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U20/buff0_reg is absorbed into DSP grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U20/buff0_reg.
-DSP Report: operator grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U20/tmp_product is absorbed into DSP grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U20/buff0_reg.
-DSP Report: operator grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U20/tmp_product is absorbed into DSP grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U20/buff0_reg.
-DSP Report: Generating DSP grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U19/tmp_product, operation Mode is: A''*B''.
-DSP Report: register B_1_U/q0_reg is absorbed into DSP grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U19/tmp_product.
-DSP Report: register grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/B_1_load_reg_556_reg is absorbed into DSP grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U19/tmp_product.
-DSP Report: register grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U19/tmp_product is absorbed into DSP grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U19/tmp_product.
-DSP Report: register grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U19/tmp_product is absorbed into DSP grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U19/tmp_product.
-DSP Report: operator grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U19/tmp_product is absorbed into DSP grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U19/tmp_product.
-DSP Report: operator grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U19/tmp_product is absorbed into DSP grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U19/tmp_product.
-DSP Report: Generating DSP grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U19/buff0_reg, operation Mode is: (PCIN>>17)+A''*B''.
-DSP Report: register A_1_U/q0_reg is absorbed into DSP grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U19/buff0_reg.
-DSP Report: register grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/A_1_load5_fu_102_reg is absorbed into DSP grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U19/buff0_reg.
-DSP Report: register B_1_U/q0_reg is absorbed into DSP grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U19/buff0_reg.
-DSP Report: register grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/B_1_load_reg_556_reg is absorbed into DSP grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U19/buff0_reg.
-DSP Report: register grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U19/buff0_reg is absorbed into DSP grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U19/buff0_reg.
-DSP Report: operator grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U19/tmp_product is absorbed into DSP grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U19/buff0_reg.
-DSP Report: operator grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U19/tmp_product is absorbed into DSP grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U19/buff0_reg.
-DSP Report: Generating DSP grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U19/tmp_product, operation Mode is: A''*B''.
-DSP Report: register grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U19/tmp_product is absorbed into DSP grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U19/tmp_product.
-DSP Report: register grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U19/tmp_product is absorbed into DSP grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U19/tmp_product.
-DSP Report: register grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U19/tmp_product is absorbed into DSP grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U19/tmp_product.
-DSP Report: register grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U19/tmp_product is absorbed into DSP grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U19/tmp_product.
-DSP Report: operator grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U19/tmp_product is absorbed into DSP grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U19/tmp_product.
-DSP Report: operator grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U19/tmp_product is absorbed into DSP grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U19/tmp_product.
-DSP Report: Generating DSP grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U19/buff0_reg, operation Mode is: (PCIN>>17)+A''*B''.
-DSP Report: register A_1_U/q0_reg is absorbed into DSP grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U19/buff0_reg.
-DSP Report: register grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/A_1_load5_fu_102_reg is absorbed into DSP grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U19/buff0_reg.
-DSP Report: register grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U19/buff0_reg is absorbed into DSP grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U19/buff0_reg.
-DSP Report: register grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U19/buff0_reg is absorbed into DSP grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U19/buff0_reg.
-DSP Report: register grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U19/buff0_reg is absorbed into DSP grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U19/buff0_reg.
-DSP Report: operator grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U19/tmp_product is absorbed into DSP grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U19/buff0_reg.
-DSP Report: operator grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U19/tmp_product is absorbed into DSP grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U19/buff0_reg.
-DSP Report: Generating DSP grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U18/tmp_product, operation Mode is: A''*B''.
-DSP Report: register B_2_U/q0_reg is absorbed into DSP grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U18/tmp_product.
-DSP Report: register grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/B_2_load_reg_561_reg is absorbed into DSP grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U18/tmp_product.
-DSP Report: register grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U18/tmp_product is absorbed into DSP grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U18/tmp_product.
-DSP Report: register grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U18/tmp_product is absorbed into DSP grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U18/tmp_product.
-DSP Report: operator grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U18/tmp_product is absorbed into DSP grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U18/tmp_product.
-DSP Report: operator grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U18/tmp_product is absorbed into DSP grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U18/tmp_product.
-DSP Report: Generating DSP grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U18/buff0_reg, operation Mode is: (PCIN>>17)+A''*B''.
-DSP Report: register A_2_U/q0_reg is absorbed into DSP grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U18/buff0_reg.
-DSP Report: register grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/A_2_load3_fu_98_reg is absorbed into DSP grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U18/buff0_reg.
-DSP Report: register B_2_U/q0_reg is absorbed into DSP grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U18/buff0_reg.
-DSP Report: register grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/B_2_load_reg_561_reg is absorbed into DSP grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U18/buff0_reg.
-DSP Report: register grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U18/buff0_reg is absorbed into DSP grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U18/buff0_reg.
-DSP Report: operator grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U18/tmp_product is absorbed into DSP grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U18/buff0_reg.
-DSP Report: operator grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U18/tmp_product is absorbed into DSP grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U18/buff0_reg.
-DSP Report: Generating DSP grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U18/tmp_product, operation Mode is: A''*B''.
-DSP Report: register grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U18/tmp_product is absorbed into DSP grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U18/tmp_product.
-DSP Report: register grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U18/tmp_product is absorbed into DSP grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U18/tmp_product.
-DSP Report: register grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U18/tmp_product is absorbed into DSP grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U18/tmp_product.
-DSP Report: register grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U18/tmp_product is absorbed into DSP grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U18/tmp_product.
-DSP Report: operator grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U18/tmp_product is absorbed into DSP grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U18/tmp_product.
-DSP Report: operator grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U18/tmp_product is absorbed into DSP grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U18/tmp_product.
-DSP Report: Generating DSP grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U18/buff0_reg, operation Mode is: (PCIN>>17)+A''*B''.
-DSP Report: register A_2_U/q0_reg is absorbed into DSP grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U18/buff0_reg.
-DSP Report: register grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/A_2_load3_fu_98_reg is absorbed into DSP grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U18/buff0_reg.
-DSP Report: register grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U18/buff0_reg is absorbed into DSP grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U18/buff0_reg.
-DSP Report: register grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U18/buff0_reg is absorbed into DSP grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U18/buff0_reg.
-DSP Report: register grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U18/buff0_reg is absorbed into DSP grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U18/buff0_reg.
-DSP Report: operator grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U18/tmp_product is absorbed into DSP grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U18/buff0_reg.
-DSP Report: operator grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U18/tmp_product is absorbed into DSP grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U18/buff0_reg.
-WARNING: [Synth 8-7129] Port stream_in_TKEEP[3] in module matrix_cyclic_block is either unconnected or has no load
-WARNING: [Synth 8-7129] Port stream_in_TKEEP[2] in module matrix_cyclic_block is either unconnected or has no load
-WARNING: [Synth 8-7129] Port stream_in_TKEEP[1] in module matrix_cyclic_block is either unconnected or has no load
-WARNING: [Synth 8-7129] Port stream_in_TKEEP[0] in module matrix_cyclic_block is either unconnected or has no load
-WARNING: [Synth 8-7129] Port stream_in_TSTRB[3] in module matrix_cyclic_block is either unconnected or has no load
-WARNING: [Synth 8-7129] Port stream_in_TSTRB[2] in module matrix_cyclic_block is either unconnected or has no load
-WARNING: [Synth 8-7129] Port stream_in_TSTRB[1] in module matrix_cyclic_block is either unconnected or has no load
-WARNING: [Synth 8-7129] Port stream_in_TSTRB[0] in module matrix_cyclic_block is either unconnected or has no load
-WARNING: [Synth 8-7129] Port stream_in_TLAST[0] in module matrix_cyclic_block is either unconnected or has no load
-WARNING: [Synth 8-7129] Port stream_in2_TKEEP[3] in module matrix_cyclic_block is either unconnected or has no load
-WARNING: [Synth 8-7129] Port stream_in2_TKEEP[2] in module matrix_cyclic_block is either unconnected or has no load
-WARNING: [Synth 8-7129] Port stream_in2_TKEEP[1] in module matrix_cyclic_block is either unconnected or has no load
-WARNING: [Synth 8-7129] Port stream_in2_TKEEP[0] in module matrix_cyclic_block is either unconnected or has no load
-WARNING: [Synth 8-7129] Port stream_in2_TSTRB[3] in module matrix_cyclic_block is either unconnected or has no load
-WARNING: [Synth 8-7129] Port stream_in2_TSTRB[2] in module matrix_cyclic_block is either unconnected or has no load
-WARNING: [Synth 8-7129] Port stream_in2_TSTRB[1] in module matrix_cyclic_block is either unconnected or has no load
-WARNING: [Synth 8-7129] Port stream_in2_TSTRB[0] in module matrix_cyclic_block is either unconnected or has no load
-WARNING: [Synth 8-7129] Port stream_in2_TLAST[0] in module matrix_cyclic_block is either unconnected or has no load
-WARNING: [Synth 8-3332] Sequential element (grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U17/buff0_reg[47]) is unused and will be removed from module matrix_cyclic_block.
-WARNING: [Synth 8-3332] Sequential element (grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U17/buff0_reg[46]) is unused and will be removed from module matrix_cyclic_block.
-WARNING: [Synth 8-3332] Sequential element (grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U17/buff0_reg[45]) is unused and will be removed from module matrix_cyclic_block.
-WARNING: [Synth 8-3332] Sequential element (grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U17/buff0_reg[44]) is unused and will be removed from module matrix_cyclic_block.
-WARNING: [Synth 8-3332] Sequential element (grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U17/buff0_reg[43]) is unused and will be removed from module matrix_cyclic_block.
-WARNING: [Synth 8-3332] Sequential element (grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U17/buff0_reg[42]) is unused and will be removed from module matrix_cyclic_block.
-WARNING: [Synth 8-3332] Sequential element (grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U17/buff0_reg[41]) is unused and will be removed from module matrix_cyclic_block.
-WARNING: [Synth 8-3332] Sequential element (grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U17/buff0_reg[40]) is unused and will be removed from module matrix_cyclic_block.
-WARNING: [Synth 8-3332] Sequential element (grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U17/buff0_reg[39]) is unused and will be removed from module matrix_cyclic_block.
-WARNING: [Synth 8-3332] Sequential element (grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U17/buff0_reg[38]) is unused and will be removed from module matrix_cyclic_block.
-WARNING: [Synth 8-3332] Sequential element (grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U17/buff0_reg[37]) is unused and will be removed from module matrix_cyclic_block.
-WARNING: [Synth 8-3332] Sequential element (grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U17/buff0_reg[36]) is unused and will be removed from module matrix_cyclic_block.
-WARNING: [Synth 8-3332] Sequential element (grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U17/buff0_reg[35]) is unused and will be removed from module matrix_cyclic_block.
-WARNING: [Synth 8-3332] Sequential element (grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U17/buff0_reg[34]) is unused and will be removed from module matrix_cyclic_block.
-WARNING: [Synth 8-3332] Sequential element (grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U17/buff0_reg[33]) is unused and will be removed from module matrix_cyclic_block.
-WARNING: [Synth 8-3332] Sequential element (grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U17/buff0_reg[32]) is unused and will be removed from module matrix_cyclic_block.
-WARNING: [Synth 8-3332] Sequential element (grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U17/buff0_reg[31]) is unused and will be removed from module matrix_cyclic_block.
-WARNING: [Synth 8-3332] Sequential element (grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U17/buff0_reg[30]) is unused and will be removed from module matrix_cyclic_block.
-WARNING: [Synth 8-3332] Sequential element (grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U17/buff0_reg[29]) is unused and will be removed from module matrix_cyclic_block.
-WARNING: [Synth 8-3332] Sequential element (grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U17/buff0_reg[28]) is unused and will be removed from module matrix_cyclic_block.
-WARNING: [Synth 8-3332] Sequential element (grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U17/buff0_reg[27]) is unused and will be removed from module matrix_cyclic_block.
-WARNING: [Synth 8-3332] Sequential element (grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U17/buff0_reg[26]) is unused and will be removed from module matrix_cyclic_block.
-WARNING: [Synth 8-3332] Sequential element (grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U17/buff0_reg[25]) is unused and will be removed from module matrix_cyclic_block.
-WARNING: [Synth 8-3332] Sequential element (grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U17/buff0_reg[24]) is unused and will be removed from module matrix_cyclic_block.
-WARNING: [Synth 8-3332] Sequential element (grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U17/buff0_reg[23]) is unused and will be removed from module matrix_cyclic_block.
-WARNING: [Synth 8-3332] Sequential element (grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U17/buff0_reg[22]) is unused and will be removed from module matrix_cyclic_block.
-WARNING: [Synth 8-3332] Sequential element (grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U17/buff0_reg[21]) is unused and will be removed from module matrix_cyclic_block.
-WARNING: [Synth 8-3332] Sequential element (grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U17/buff0_reg[20]) is unused and will be removed from module matrix_cyclic_block.
-WARNING: [Synth 8-3332] Sequential element (grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U17/buff0_reg[19]) is unused and will be removed from module matrix_cyclic_block.
-WARNING: [Synth 8-3332] Sequential element (grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U17/buff0_reg[18]) is unused and will be removed from module matrix_cyclic_block.
-WARNING: [Synth 8-3332] Sequential element (grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U17/buff0_reg[17]) is unused and will be removed from module matrix_cyclic_block.
-WARNING: [Synth 8-3332] Sequential element (grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U17/buff0_reg[16]) is unused and will be removed from module matrix_cyclic_block.
-WARNING: [Synth 8-3332] Sequential element (grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U17/buff0_reg[15]) is unused and will be removed from module matrix_cyclic_block.
-WARNING: [Synth 8-3332] Sequential element (grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U17/buff0_reg[47]__0) is unused and will be removed from module matrix_cyclic_block.
-WARNING: [Synth 8-3332] Sequential element (grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U17/buff0_reg[46]__0) is unused and will be removed from module matrix_cyclic_block.
-WARNING: [Synth 8-3332] Sequential element (grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U17/buff0_reg[45]__0) is unused and will be removed from module matrix_cyclic_block.
-WARNING: [Synth 8-3332] Sequential element (grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U17/buff0_reg[44]__0) is unused and will be removed from module matrix_cyclic_block.
-WARNING: [Synth 8-3332] Sequential element (grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U17/buff0_reg[43]__0) is unused and will be removed from module matrix_cyclic_block.
-WARNING: [Synth 8-3332] Sequential element (grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U17/buff0_reg[42]__0) is unused and will be removed from module matrix_cyclic_block.
-WARNING: [Synth 8-3332] Sequential element (grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U17/buff0_reg[41]__0) is unused and will be removed from module matrix_cyclic_block.
-WARNING: [Synth 8-3332] Sequential element (grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U17/buff0_reg[40]__0) is unused and will be removed from module matrix_cyclic_block.
-WARNING: [Synth 8-3332] Sequential element (grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U17/buff0_reg[39]__0) is unused and will be removed from module matrix_cyclic_block.
-WARNING: [Synth 8-3332] Sequential element (grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U17/buff0_reg[38]__0) is unused and will be removed from module matrix_cyclic_block.
-WARNING: [Synth 8-3332] Sequential element (grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U17/buff0_reg[37]__0) is unused and will be removed from module matrix_cyclic_block.
-WARNING: [Synth 8-3332] Sequential element (grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U17/buff0_reg[36]__0) is unused and will be removed from module matrix_cyclic_block.
-WARNING: [Synth 8-3332] Sequential element (grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U17/buff0_reg[35]__0) is unused and will be removed from module matrix_cyclic_block.
-WARNING: [Synth 8-3332] Sequential element (grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U17/buff0_reg[34]__0) is unused and will be removed from module matrix_cyclic_block.
-WARNING: [Synth 8-3332] Sequential element (grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U17/buff0_reg[33]__0) is unused and will be removed from module matrix_cyclic_block.
-WARNING: [Synth 8-3332] Sequential element (grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U17/buff0_reg[32]__0) is unused and will be removed from module matrix_cyclic_block.
-WARNING: [Synth 8-3332] Sequential element (grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U17/buff0_reg[31]__0) is unused and will be removed from module matrix_cyclic_block.
-WARNING: [Synth 8-3332] Sequential element (grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U17/buff0_reg[30]__0) is unused and will be removed from module matrix_cyclic_block.
-WARNING: [Synth 8-3332] Sequential element (grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U17/buff0_reg[29]__0) is unused and will be removed from module matrix_cyclic_block.
-WARNING: [Synth 8-3332] Sequential element (grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U17/buff0_reg[28]__0) is unused and will be removed from module matrix_cyclic_block.
-WARNING: [Synth 8-3332] Sequential element (grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U17/buff0_reg[27]__0) is unused and will be removed from module matrix_cyclic_block.
-WARNING: [Synth 8-3332] Sequential element (grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U17/buff0_reg[26]__0) is unused and will be removed from module matrix_cyclic_block.
-WARNING: [Synth 8-3332] Sequential element (grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U17/buff0_reg[25]__0) is unused and will be removed from module matrix_cyclic_block.
-WARNING: [Synth 8-3332] Sequential element (grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U17/buff0_reg[24]__0) is unused and will be removed from module matrix_cyclic_block.
-WARNING: [Synth 8-3332] Sequential element (grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U17/buff0_reg[23]__0) is unused and will be removed from module matrix_cyclic_block.
-WARNING: [Synth 8-3332] Sequential element (grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U17/buff0_reg[22]__0) is unused and will be removed from module matrix_cyclic_block.
-WARNING: [Synth 8-3332] Sequential element (grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U17/buff0_reg[21]__0) is unused and will be removed from module matrix_cyclic_block.
-WARNING: [Synth 8-3332] Sequential element (grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U17/buff0_reg[20]__0) is unused and will be removed from module matrix_cyclic_block.
-WARNING: [Synth 8-3332] Sequential element (grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U17/buff0_reg[19]__0) is unused and will be removed from module matrix_cyclic_block.
-WARNING: [Synth 8-3332] Sequential element (grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U17/buff0_reg[18]__0) is unused and will be removed from module matrix_cyclic_block.
-WARNING: [Synth 8-3332] Sequential element (grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U17/buff0_reg[17]__0) is unused and will be removed from module matrix_cyclic_block.
-WARNING: [Synth 8-3332] Sequential element (grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U20/buff0_reg[47]) is unused and will be removed from module matrix_cyclic_block.
-WARNING: [Synth 8-3332] Sequential element (grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U20/buff0_reg[46]) is unused and will be removed from module matrix_cyclic_block.
-WARNING: [Synth 8-3332] Sequential element (grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U20/buff0_reg[45]) is unused and will be removed from module matrix_cyclic_block.
-WARNING: [Synth 8-3332] Sequential element (grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U20/buff0_reg[44]) is unused and will be removed from module matrix_cyclic_block.
-WARNING: [Synth 8-3332] Sequential element (grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U20/buff0_reg[43]) is unused and will be removed from module matrix_cyclic_block.
-WARNING: [Synth 8-3332] Sequential element (grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U20/buff0_reg[42]) is unused and will be removed from module matrix_cyclic_block.
-WARNING: [Synth 8-3332] Sequential element (grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U20/buff0_reg[41]) is unused and will be removed from module matrix_cyclic_block.
-WARNING: [Synth 8-3332] Sequential element (grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U20/buff0_reg[40]) is unused and will be removed from module matrix_cyclic_block.
-WARNING: [Synth 8-3332] Sequential element (grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U20/buff0_reg[39]) is unused and will be removed from module matrix_cyclic_block.
-WARNING: [Synth 8-3332] Sequential element (grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U20/buff0_reg[38]) is unused and will be removed from module matrix_cyclic_block.
-WARNING: [Synth 8-3332] Sequential element (grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U20/buff0_reg[37]) is unused and will be removed from module matrix_cyclic_block.
-WARNING: [Synth 8-3332] Sequential element (grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U20/buff0_reg[36]) is unused and will be removed from module matrix_cyclic_block.
-WARNING: [Synth 8-3332] Sequential element (grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U20/buff0_reg[35]) is unused and will be removed from module matrix_cyclic_block.
-WARNING: [Synth 8-3332] Sequential element (grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U20/buff0_reg[34]) is unused and will be removed from module matrix_cyclic_block.
-WARNING: [Synth 8-3332] Sequential element (grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U20/buff0_reg[33]) is unused and will be removed from module matrix_cyclic_block.
-WARNING: [Synth 8-3332] Sequential element (grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U20/buff0_reg[32]) is unused and will be removed from module matrix_cyclic_block.
-WARNING: [Synth 8-3332] Sequential element (grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U20/buff0_reg[31]) is unused and will be removed from module matrix_cyclic_block.
-WARNING: [Synth 8-3332] Sequential element (grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U20/buff0_reg[30]) is unused and will be removed from module matrix_cyclic_block.
-WARNING: [Synth 8-3332] Sequential element (grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U20/buff0_reg[29]) is unused and will be removed from module matrix_cyclic_block.
-WARNING: [Synth 8-3332] Sequential element (grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U20/buff0_reg[28]) is unused and will be removed from module matrix_cyclic_block.
-WARNING: [Synth 8-3332] Sequential element (grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U20/buff0_reg[27]) is unused and will be removed from module matrix_cyclic_block.
-WARNING: [Synth 8-3332] Sequential element (grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U20/buff0_reg[26]) is unused and will be removed from module matrix_cyclic_block.
-WARNING: [Synth 8-3332] Sequential element (grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U20/buff0_reg[25]) is unused and will be removed from module matrix_cyclic_block.
-WARNING: [Synth 8-3332] Sequential element (grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U20/buff0_reg[24]) is unused and will be removed from module matrix_cyclic_block.
-WARNING: [Synth 8-3332] Sequential element (grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U20/buff0_reg[23]) is unused and will be removed from module matrix_cyclic_block.
-WARNING: [Synth 8-3332] Sequential element (grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U20/buff0_reg[22]) is unused and will be removed from module matrix_cyclic_block.
-WARNING: [Synth 8-3332] Sequential element (grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U20/buff0_reg[21]) is unused and will be removed from module matrix_cyclic_block.
-WARNING: [Synth 8-3332] Sequential element (grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U20/buff0_reg[20]) is unused and will be removed from module matrix_cyclic_block.
-WARNING: [Synth 8-3332] Sequential element (grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U20/buff0_reg[19]) is unused and will be removed from module matrix_cyclic_block.
-WARNING: [Synth 8-3332] Sequential element (grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U20/buff0_reg[18]) is unused and will be removed from module matrix_cyclic_block.
-WARNING: [Synth 8-3332] Sequential element (grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U20/buff0_reg[17]) is unused and will be removed from module matrix_cyclic_block.
-WARNING: [Synth 8-3332] Sequential element (grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U20/buff0_reg[16]) is unused and will be removed from module matrix_cyclic_block.
-WARNING: [Synth 8-3332] Sequential element (grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U20/buff0_reg[15]) is unused and will be removed from module matrix_cyclic_block.
-WARNING: [Synth 8-3332] Sequential element (grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U20/buff0_reg[47]__0) is unused and will be removed from module matrix_cyclic_block.
-WARNING: [Synth 8-3332] Sequential element (grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U20/buff0_reg[46]__0) is unused and will be removed from module matrix_cyclic_block.
-WARNING: [Synth 8-3332] Sequential element (grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U20/buff0_reg[45]__0) is unused and will be removed from module matrix_cyclic_block.
-INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[1]) is unused and will be removed from module floating_point_v7_1_19_viv__1.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[0]) is unused and will be removed from module floating_point_v7_1_19_viv__1.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[1]) is unused and will be removed from module floating_point_v7_1_19_viv.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[0]) is unused and will be removed from module floating_point_v7_1_19_viv.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1536.039 ; gain = 674.125
----------------------------------------------------------------------------------
- Sort Area is  grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U17/tmp_product_a : 0 0 : 3173 5940 : Used 1 time 0
- Sort Area is  grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U17/tmp_product_a : 0 1 : 2767 5940 : Used 1 time 0
- Sort Area is  grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U18/tmp_product_0 : 0 0 : 3173 5940 : Used 1 time 0
- Sort Area is  grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U18/tmp_product_0 : 0 1 : 2767 5940 : Used 1 time 0
- Sort Area is  grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U19/tmp_product_6 : 0 0 : 3173 5940 : Used 1 time 0
- Sort Area is  grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U19/tmp_product_6 : 0 1 : 2767 5940 : Used 1 time 0
- Sort Area is  grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U20/tmp_product_8 : 0 0 : 3173 5940 : Used 1 time 0
- Sort Area is  grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U20/tmp_product_8 : 0 1 : 2767 5940 : Used 1 time 0
- Sort Area is  grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U17/tmp_product_b : 0 0 : 2700 5293 : Used 1 time 0
- Sort Area is  grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U17/tmp_product_b : 0 1 : 2593 5293 : Used 1 time 0
- Sort Area is  grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U18/tmp_product_3 : 0 0 : 2700 5293 : Used 1 time 0
- Sort Area is  grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U18/tmp_product_3 : 0 1 : 2593 5293 : Used 1 time 0
- Sort Area is  grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U19/tmp_product_7 : 0 0 : 2700 5293 : Used 1 time 0
- Sort Area is  grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U19/tmp_product_7 : 0 1 : 2593 5293 : Used 1 time 0
- Sort Area is  grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U20/tmp_product_9 : 0 0 : 2700 5293 : Used 1 time 0
- Sort Area is  grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U20/tmp_product_9 : 0 1 : 2593 5293 : Used 1 time 0
----------------------------------------------------------------------------------
-Start ROM, RAM, DSP, Shift Register and Retiming Reporting
----------------------------------------------------------------------------------
-
-Distributed RAM: Preliminary Mapping Report (see note below)
-+------------+---------------+-----------+----------------------+----------------+
-|Module Name | RTL Object    | Inference | Size (Depth x Width) | Primitives     | 
-+------------+---------------+-----------+----------------------+----------------+
-|inst        | A_U/ram_reg   | Implied   | 4 x 32               | RAM16X1S x 32  | 
-|inst        | B_U/ram_reg   | Implied   | 4 x 32               | RAM16X1S x 32  | 
-|inst        | A_3_U/ram_reg | Implied   | 4 x 32               | RAM16X1S x 32  | 
-|inst        | B_3_U/ram_reg | Implied   | 4 x 32               | RAM16X1S x 32  | 
-|inst        | A_1_U/ram_reg | Implied   | 4 x 32               | RAM16X1S x 32  | 
-|inst        | B_1_U/ram_reg | Implied   | 4 x 32               | RAM16X1S x 32  | 
-|inst        | A_2_U/ram_reg | Implied   | 4 x 32               | RAM16X1S x 32  | 
-|inst        | B_2_U/ram_reg | Implied   | 4 x 32               | RAM16X1S x 32  | 
-+------------+---------------+-----------+----------------------+----------------+
-
-Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
-
-DSP: Preliminary Mapping Report (see note below. The ' indicates corresponding REG is set)
-+--------------------+--------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
-|Module Name         | DSP Mapping        | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
-+--------------------+--------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
-|matrix_cyclic_block | A''*B''            | 18     | 15     | -      | -      | 48     | 2    | 2    | -    | -    | -     | 0    | 0    | 
-|matrix_cyclic_block | (PCIN>>17)+A''*B'' | 15     | 15     | -      | -      | 48     | 2    | 2    | -    | -    | -     | 0    | 1    | 
-|matrix_cyclic_block | A''*B''            | 18     | 18     | -      | -      | 48     | 2    | 2    | -    | -    | -     | 0    | 0    | 
-|matrix_cyclic_block | (PCIN>>17)+A''*B'' | 18     | 15     | -      | -      | 48     | 2    | 2    | -    | -    | -     | 0    | 1    | 
-|matrix_cyclic_block | A''*B''            | 18     | 15     | -      | -      | 48     | 2    | 2    | -    | -    | -     | 0    | 0    | 
-|matrix_cyclic_block | (PCIN>>17)+A''*B'' | 15     | 15     | -      | -      | 48     | 2    | 2    | -    | -    | -     | 0    | 1    | 
-|matrix_cyclic_block | A''*B''            | 18     | 18     | -      | -      | 48     | 2    | 2    | -    | -    | -     | 0    | 0    | 
-|matrix_cyclic_block | (PCIN>>17)+A''*B'' | 18     | 15     | -      | -      | 48     | 2    | 2    | -    | -    | -     | 0    | 1    | 
-|matrix_cyclic_block | A''*B''            | 18     | 15     | -      | -      | 48     | 2    | 2    | -    | -    | -     | 0    | 0    | 
-|matrix_cyclic_block | (PCIN>>17)+A''*B'' | 15     | 15     | -      | -      | 48     | 2    | 2    | -    | -    | -     | 0    | 1    | 
-|matrix_cyclic_block | A''*B''            | 18     | 18     | -      | -      | 48     | 2    | 2    | -    | -    | -     | 0    | 0    | 
-|matrix_cyclic_block | (PCIN>>17)+A''*B'' | 18     | 15     | -      | -      | 48     | 2    | 2    | -    | -    | -     | 0    | 1    | 
-|matrix_cyclic_block | A''*B''            | 18     | 15     | -      | -      | 48     | 2    | 2    | -    | -    | -     | 0    | 0    | 
-|matrix_cyclic_block | (PCIN>>17)+A''*B'' | 15     | 15     | -      | -      | 48     | 2    | 2    | -    | -    | -     | 0    | 1    | 
-|matrix_cyclic_block | A''*B''            | 18     | 18     | -      | -      | 48     | 2    | 2    | -    | -    | -     | 0    | 0    | 
-|matrix_cyclic_block | (PCIN>>17)+A''*B'' | 18     | 15     | -      | -      | 48     | 2    | 2    | -    | -    | -     | 0    | 1    | 
-+--------------------+--------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
-
-Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
----------------------------------------------------------------------------------
-Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 1557.164 ; gain = 695.613
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1686.133 ; gain = 824.219
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:32 ; elapsed = 00:00:34 . Memory (MB): peak = 1703.926 ; gain = 842.375
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:23 ; elapsed = 00:00:23 . Memory (MB): peak = 1689.422 ; gain = 827.508
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start ROM, RAM, DSP, Shift Register and Retiming Reporting
----------------------------------------------------------------------------------
-
-Distributed RAM: Final Mapping Report
-+------------+---------------+-----------+----------------------+----------------+
-|Module Name | RTL Object    | Inference | Size (Depth x Width) | Primitives     | 
-+------------+---------------+-----------+----------------------+----------------+
-|inst        | A_U/ram_reg   | Implied   | 4 x 32               | RAM16X1S x 32  | 
-|inst        | B_U/ram_reg   | Implied   | 4 x 32               | RAM16X1S x 32  | 
-|inst        | A_3_U/ram_reg | Implied   | 4 x 32               | RAM16X1S x 32  | 
-|inst        | B_3_U/ram_reg | Implied   | 4 x 32               | RAM16X1S x 32  | 
-|inst        | A_1_U/ram_reg | Implied   | 4 x 32               | RAM16X1S x 32  | 
-|inst        | B_1_U/ram_reg | Implied   | 4 x 32               | RAM16X1S x 32  | 
-|inst        | A_2_U/ram_reg | Implied   | 4 x 32               | RAM16X1S x 32  | 
-|inst        | B_2_U/ram_reg | Implied   | 4 x 32               | RAM16X1S x 32  | 
-+------------+---------------+-----------+----------------------+----------------+
-
----------------------------------------------------------------------------------
-Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+Finished Timing Optimization : Time (s): cpu = 00:00:33 ; elapsed = 00:00:34 . Memory (MB): peak = 1737.504 ; gain = 875.953
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:23 ; elapsed = 00:00:23 . Memory (MB): peak = 1718.059 ; gain = 856.145
+Finished Technology Mapping : Time (s): cpu = 00:00:33 ; elapsed = 00:00:35 . Memory (MB): peak = 1739.145 ; gain = 877.594
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -520,75 +273,51 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 1914.762 ; gain = 1052.848
+Finished IO Insertion : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 1933.059 ; gain = 1071.508
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 1914.762 ; gain = 1052.848
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 1933.059 ; gain = 1071.508
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 1914.762 ; gain = 1052.848
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 1933.059 ; gain = 1071.508
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 1914.762 ; gain = 1052.848
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 1933.059 ; gain = 1071.508
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 1914.762 ; gain = 1052.848
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 1936.020 ; gain = 1074.469
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 1914.762 ; gain = 1052.848
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start ROM, RAM, DSP, Shift Register and Retiming Reporting
----------------------------------------------------------------------------------
-
-Static Shift Register Report:
-+--------------------+------------------------------------------------------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
-|Module Name         | RTL Name                                                                                                         | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
-+--------------------+------------------------------------------------------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
-|matrix_cyclic_block | grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/icmp_ln38_reg_498_pp0_iter4_reg_reg[0]       | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
-|matrix_cyclic_block | grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/valueout_last_1_reg_232_pp0_iter4_reg_reg[0] | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
-|matrix_cyclic_block | grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/ap_loop_exit_ready_pp0_iter4_reg_reg         | 4      | 1     | NO           | NO                 | YES               | 1      | 0       | 
-+--------------------+------------------------------------------------------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
-
----------------------------------------------------------------------------------
-Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 1936.020 ; gain = 1074.469
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
 ---------------------------------------------------------------------------------
 
 DSP Final Report (the ' indicates corresponding REG is set)
-+--------------------+---------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
-|Module Name         | DSP Mapping         | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
-+--------------------+---------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
-|matrix_cyclic_block | (A''*B'')'          | 17     | 18     | -      | -      | 48     | 2    | 2    | -    | -    | -     | 0    | 1    | 
-|matrix_cyclic_block | A''*B''             | 17     | 17     | -      | -      | 48     | 2    | 2    | -    | -    | -     | 0    | 0    | 
-|matrix_cyclic_block | (PCIN>>17+A''*B'')' | 17     | 18     | -      | -      | 48     | 2    | 2    | -    | -    | -     | 0    | 1    | 
-|matrix_cyclic_block | (A''*B'')'          | 17     | 18     | -      | -      | 48     | 2    | 2    | -    | -    | -     | 0    | 1    | 
-|matrix_cyclic_block | A''*B''             | 17     | 17     | -      | -      | 48     | 2    | 2    | -    | -    | -     | 0    | 0    | 
-|matrix_cyclic_block | (PCIN>>17+A''*B'')' | 17     | 18     | -      | -      | 48     | 2    | 2    | -    | -    | -     | 0    | 1    | 
-|matrix_cyclic_block | (A''*B'')'          | 17     | 18     | -      | -      | 48     | 2    | 2    | -    | -    | -     | 0    | 1    | 
-|matrix_cyclic_block | A''*B''             | 17     | 17     | -      | -      | 48     | 2    | 2    | -    | -    | -     | 0    | 0    | 
-|matrix_cyclic_block | (PCIN>>17+A''*B'')' | 17     | 18     | -      | -      | 48     | 2    | 2    | -    | -    | -     | 0    | 1    | 
-|matrix_cyclic_block | (A''*B'')'          | 17     | 18     | -      | -      | 48     | 2    | 2    | -    | -    | -     | 0    | 1    | 
-|matrix_cyclic_block | A''*B''             | 17     | 17     | -      | -      | 48     | 2    | 2    | -    | -    | -     | 0    | 0    | 
-|matrix_cyclic_block | (PCIN>>17+A''*B'')' | 17     | 18     | -      | -      | 48     | 2    | 2    | -    | -    | -     | 0    | 1    | 
-+--------------------+---------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
++-----------------------------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name                        | DSP Mapping | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++-----------------------------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|dsp48e1_wrapper_91                 | Dynamic     | -      | -      | -      | -      | 40     | -    | -    | -    | -    | 0     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized0_45 | C+A'*B'     | 24     | 16     | 35     | -      | 35     | 1    | 1    | 0    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper                    | Dynamic     | -      | -      | -      | -      | 40     | -    | -    | -    | -    | 0     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized0    | C+A'*B'     | 24     | 16     | 35     | -      | 35     | 1    | 1    | 0    | -    | -     | 0    | 0    | 
++-----------------------------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
 
 
 Report BlackBoxes: 
@@ -601,46 +330,50 @@ Report Cell Usage:
 +------+---------+------+
 |      |Cell     |Count |
 +------+---------+------+
-|1     |CARRY4   |    24|
-|2     |DSP48E1  |    12|
-|4     |LUT1     |     3|
-|5     |LUT2     |    71|
-|6     |LUT3     |    45|
-|7     |LUT4     |    20|
-|8     |LUT5     |    42|
-|9     |LUT6     |    83|
-|10    |RAM16X1S |   256|
-|11    |SRL16E   |     3|
-|12    |FDRE     |   273|
-|13    |FDSE     |     1|
+|1     |CARRY4   |    21|
+|2     |DSP48E1  |     4|
+|4     |LUT1     |    16|
+|5     |LUT2     |    70|
+|6     |LUT3     |   312|
+|7     |LUT4     |   131|
+|8     |LUT5     |   201|
+|9     |LUT6     |   107|
+|10    |MUXCY    |   116|
+|11    |RAMB36E1 |    12|
+|12    |SRL16E   |    16|
+|13    |XORCY    |    34|
+|14    |FDE      |     6|
+|15    |FDRE     |   632|
+|16    |FDSE     |     1|
 +------+---------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 1914.762 ; gain = 1052.848
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 1936.020 ; gain = 1074.469
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 275 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:19 ; elapsed = 00:00:25 . Memory (MB): peak = 1914.762 ; gain = 961.574
-Synthesis Optimization Complete : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 1914.762 ; gain = 1052.848
+Synthesis finished with 0 errors, 0 critical warnings and 132 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:22 ; elapsed = 00:00:35 . Memory (MB): peak = 1936.020 ; gain = 1057.840
+Synthesis Optimization Complete : Time (s): cpu = 00:00:37 ; elapsed = 00:00:38 . Memory (MB): peak = 1936.020 ; gain = 1074.469
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.017 . Memory (MB): peak = 1923.883 ; gain = 0.000
-INFO: [Netlist 29-17] Analyzing 292 Unisim elements for replacement
-INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.045 . Memory (MB): peak = 1936.020 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 193 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1927.566 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1936.410 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
-  A total of 256 instances were transformed.
-  RAM16X1S => RAM32X1S (RAMS32): 256 instances
+  A total of 38 instances were transformed.
+  (MUXCY,XORCY) => CARRY4: 32 instances
+  FDE => FDRE: 6 instances
 
-Synth Design complete | Checksum: e4a0f09a
+Synth Design complete | Checksum: d3ebf860
 INFO: [Common 17-83] Releasing license: Synthesis
-38 Infos, 140 Warnings, 0 Critical Warnings and 0 Errors encountered.
+53 Infos, 102 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 1927.566 ; gain = 1290.441
-Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1927.566 ; gain = 0.000
+synth_design: Time (s): cpu = 00:00:41 ; elapsed = 00:00:43 . Memory (MB): peak = 1936.410 ; gain = 1299.695
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1936.410 ; gain = 0.000
 INFO: [Common 17-1381] The checkpoint 'C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn/flash_attn/hls/impl/verilog/project.runs/bd_0_hls_inst_0_synth_1/bd_0_hls_inst_0.dcp' has been generated.
-INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP bd_0_hls_inst_0, cache-ID = bb3eb2b191a21922
-INFO: [Coretcl 2-1174] Renamed 17 cell refs.
-Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1927.566 ; gain = 0.000
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP bd_0_hls_inst_0, cache-ID = 773b27e7c7377626
+INFO: [Coretcl 2-1174] Renamed 150 cell refs.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1936.410 ; gain = 0.000
 INFO: [Common 17-1381] The checkpoint 'C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn/flash_attn/hls/impl/verilog/project.runs/bd_0_hls_inst_0_synth_1/bd_0_hls_inst_0.dcp' has been generated.
 INFO: [Vivado 12-24828] Executing command : report_utilization -file bd_0_hls_inst_0_utilization_synth.rpt -pb bd_0_hls_inst_0_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Mon Apr  7 11:43:09 2025...
+INFO: [Common 17-206] Exiting Vivado at Wed Apr  9 14:26:49 2025...

@@ -1,0 +1,58 @@
+from pynq import Overlay
+from pynq import allocate
+import numpy as np
+import time
+
+hw = Overlay("flashattn_bd.bit")
+
+dma_q = hw.axi_dma_0.sendchannel
+dma_k = hw.axi_dma_1.sendchannel
+dma_v = hw.axi_dma_2.sendchannel
+dma_o = hw.axi_dma_3.recvchannel
+
+TILE_Q = 64
+HEAD_DIM = 64
+NUM_ELEMENTS = TILE_Q * HEAD_DIM
+
+q_buf = allocate(shape=(NUM_ELEMENTS,), dtype=np.float32)
+k_buf = allocate(shape=(NUM_ELEMENTS,), dtype=np.float32)
+v_buf = allocate(shape=(NUM_ELEMENTS,), dtype=np.float32)
+o_buf = allocate(shape=(NUM_ELEMENTS,), dtype=np.float32)
+
+for i in range(NUM_ELEMENTS):
+    q_buf[i] = float(i)
+    k_buf[i] = float(i + 1000)
+    v_buf[i] = float(i + 2000)
+
+# Start timing
+start_time = time.time()
+    
+dma_q.transfer(q_buf)
+dma_k.transfer(k_buf)
+dma_v.transfer(v_buf)
+dma_o.transfer(o_buf)
+
+dma_q.wait()
+dma_k.wait()
+dma_v.wait()
+dma_o.wait()
+
+# Stop timing
+end_time = time.time()
+elapsed_ms = (end_time - start_time) * 1000
+
+# Simple verification
+print("Verifying output:")
+error = False
+for i in range(NUM_ELEMENTS):
+    expected = 3 * i + 3000
+    if not np.isclose(o_buf[i], expected):
+        print(f"Mismatch at {i}: got {o_buf[i]}, expected {expected}")
+        error = True
+
+if not error:
+    print("All outputs match expected values.")
+else:
+    print("Output verification failed.")
+
+print(f"Execution time: {elapsed_ms}ms")

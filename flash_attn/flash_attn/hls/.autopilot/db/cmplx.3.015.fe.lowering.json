@@ -1,17 +1,17 @@
 {
   "0": {
-    "basicblocks": 19,
+    "basicblocks": 13,
     "calls": "",
-    "file": "loop_pipeline.cpp",
-    "fileloc": 6,
-    "instructions": 157,
+    "file": "flashattn.cpp",
+    "fileloc": 3,
+    "instructions": 108,
     "loads": {
-      "L": 10
+      "L": 6
     },
-    "name": "matrix_cyclic_block",
+    "name": "flashattn",
     "stores": {
-      "L": 11
+      "L": 6
     },
-    "total_instructions": 157
+    "total_instructions": 116
   }
 }
