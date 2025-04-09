@@ -1,0 +1,493 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
+| Date         : Mon Apr  7 09:50:34 2025
+| Host         : DESKTOP-I99LGQ1 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'flash_loop_pipeline_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of flash_loop_pipeline_0_0 (xilinx.com:hls:loop_pipeline:1.0) from (Rev. 2114028686) to (Rev. 2114029353)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
+| Date         : Sun Apr  6 22:29:47 2025
+| Host         : DESKTOP-I99LGQ1 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'flash_loop_pipeline_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of flash_loop_pipeline_0_0 (xilinx.com:hls:loop_pipeline:1.0) from (Rev. 2114020810) to (Rev. 2114028686)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Interface Information
+------------------------
+
+Detected external interface differences while upgrading 'flash_loop_pipeline_0_0'.
+
+
+-Upgrade has removed interface 'ap_ctrl'
+
+-Upgrade has added interface 'out_r' (xilinx.com:interface:axis:1.0)
+
+-Upgrade has added interface 'strm' (xilinx.com:interface:axis:1.0)
+
+
+3. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'flash_loop_pipeline_0_0'. These changes may impact your design.
+
+
+-Upgrade has removed port 'A_address0'
+
+-Upgrade has removed port 'A_address1'
+
+-Upgrade has removed port 'A_ce0'
+
+-Upgrade has removed port 'A_ce1'
+
+-Upgrade has removed port 'A_q0'
+
+-Upgrade has removed port 'A_q1'
+
+-Upgrade has removed port 'ap_done'
+
+-Upgrade has removed port 'ap_idle'
+
+-Upgrade has removed port 'ap_ready'
+
+-Upgrade has removed port 'ap_return'
+
+-Upgrade has removed port 'ap_rst'
+
+-Upgrade has removed port 'ap_start'
+
+-Upgrade has added port 'ap_rst_n'
+
+-Upgrade has added port 'out_r_TDATA'
+
+-Upgrade has added port 'out_r_TKEEP'
+
+-Upgrade has added port 'out_r_TLAST'
+
+-Upgrade has added port 'out_r_TREADY'
+
+-Upgrade has added port 'out_r_TSTRB'
+
+-Upgrade has added port 'out_r_TVALID'
+
+-Upgrade has added port 'strm_TDATA'
+
+-Upgrade has added port 'strm_TKEEP'
+
+-Upgrade has added port 'strm_TLAST'
+
+-Upgrade has added port 'strm_TREADY'
+
+-Upgrade has added port 'strm_TSTRB'
+
+-Upgrade has added port 'strm_TVALID'
+
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
+| Date         : Fri Mar 21 00:42:24 2025
+| Host         : DESKTOP-I99LGQ1 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'flash_attn_block_simple_test_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of flash_attn_block_simple_test_0_0 (xilinx.com:hls:simple_test:1.0) from (Rev. 2114004341) to (Rev. 2114004342)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Interface Information
+------------------------
+
+Detected external interface differences while upgrading 'flash_attn_block_simple_test_0_0'.
+
+
+-Upgrade has added interface 'm_axi_gmem0' (xilinx.com:interface:aximm:1.0)
+
+-Upgrade has added interface 'm_axi_gmem1' (xilinx.com:interface:aximm:1.0)
+
+
+3. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'flash_attn_block_simple_test_0_0'. These changes may impact your design.
+
+
+-Upgrade has added port 'm_axi_gmem0_ARADDR'
+
+-Upgrade has added port 'm_axi_gmem0_ARBURST'
+
+-Upgrade has added port 'm_axi_gmem0_ARCACHE'
+
+-Upgrade has added port 'm_axi_gmem0_ARID'
+
+-Upgrade has added port 'm_axi_gmem0_ARLEN'
+
+-Upgrade has added port 'm_axi_gmem0_ARLOCK'
+
+-Upgrade has added port 'm_axi_gmem0_ARPROT'
+
+-Upgrade has added port 'm_axi_gmem0_ARQOS'
+
+-Upgrade has added port 'm_axi_gmem0_ARREADY'
+
+-Upgrade has added port 'm_axi_gmem0_ARREGION'
+
+-Upgrade has added port 'm_axi_gmem0_ARSIZE'
+
+-Upgrade has added port 'm_axi_gmem0_ARVALID'
+
+-Upgrade has added port 'm_axi_gmem0_AWADDR'
+
+-Upgrade has added port 'm_axi_gmem0_AWBURST'
+
+-Upgrade has added port 'm_axi_gmem0_AWCACHE'
+
+-Upgrade has added port 'm_axi_gmem0_AWID'
+
+-Upgrade has added port 'm_axi_gmem0_AWLEN'
+
+-Upgrade has added port 'm_axi_gmem0_AWLOCK'
+
+-Upgrade has added port 'm_axi_gmem0_AWPROT'
+
+-Upgrade has added port 'm_axi_gmem0_AWQOS'
+
+-Upgrade has added port 'm_axi_gmem0_AWREADY'
+
+-Upgrade has added port 'm_axi_gmem0_AWREGION'
+
+-Upgrade has added port 'm_axi_gmem0_AWSIZE'
+
+-Upgrade has added port 'm_axi_gmem0_AWVALID'
+
+-Upgrade has added port 'm_axi_gmem0_BID'
+
+-Upgrade has added port 'm_axi_gmem0_BREADY'
+
+-Upgrade has added port 'm_axi_gmem0_BRESP'
+
+-Upgrade has added port 'm_axi_gmem0_BVALID'
+
+-Upgrade has added port 'm_axi_gmem0_RDATA'
+
+-Upgrade has added port 'm_axi_gmem0_RID'
+
+-Upgrade has added port 'm_axi_gmem0_RLAST'
+
+-Upgrade has added port 'm_axi_gmem0_RREADY'
+
+-Upgrade has added port 'm_axi_gmem0_RRESP'
+
+-Upgrade has added port 'm_axi_gmem0_RVALID'
+
+-Upgrade has added port 'm_axi_gmem0_WDATA'
+
+-Upgrade has added port 'm_axi_gmem0_WID'
+
+-Upgrade has added port 'm_axi_gmem0_WLAST'
+
+-Upgrade has added port 'm_axi_gmem0_WREADY'
+
+-Upgrade has added port 'm_axi_gmem0_WSTRB'
+
+-Upgrade has added port 'm_axi_gmem0_WVALID'
+
+-Upgrade has added port 'm_axi_gmem1_ARADDR'
+
+-Upgrade has added port 'm_axi_gmem1_ARBURST'
+
+-Upgrade has added port 'm_axi_gmem1_ARCACHE'
+
+-Upgrade has added port 'm_axi_gmem1_ARID'
+
+-Upgrade has added port 'm_axi_gmem1_ARLEN'
+
+-Upgrade has added port 'm_axi_gmem1_ARLOCK'
+
+-Upgrade has added port 'm_axi_gmem1_ARPROT'
+
+-Upgrade has added port 'm_axi_gmem1_ARQOS'
+
+-Upgrade has added port 'm_axi_gmem1_ARREADY'
+
+-Upgrade has added port 'm_axi_gmem1_ARREGION'
+
+-Upgrade has added port 'm_axi_gmem1_ARSIZE'
+
+-Upgrade has added port 'm_axi_gmem1_ARVALID'
+
+-Upgrade has added port 'm_axi_gmem1_AWADDR'
+
+-Upgrade has added port 'm_axi_gmem1_AWBURST'
+
+-Upgrade has added port 'm_axi_gmem1_AWCACHE'
+
+-Upgrade has added port 'm_axi_gmem1_AWID'
+
+-Upgrade has added port 'm_axi_gmem1_AWLEN'
+
+-Upgrade has added port 'm_axi_gmem1_AWLOCK'
+
+-Upgrade has added port 'm_axi_gmem1_AWPROT'
+
+-Upgrade has added port 'm_axi_gmem1_AWQOS'
+
+-Upgrade has added port 'm_axi_gmem1_AWREADY'
+
+-Upgrade has added port 'm_axi_gmem1_AWREGION'
+
+-Upgrade has added port 'm_axi_gmem1_AWSIZE'
+
+-Upgrade has added port 'm_axi_gmem1_AWVALID'
+
+-Upgrade has added port 'm_axi_gmem1_BID'
+
+-Upgrade has added port 'm_axi_gmem1_BREADY'
+
+-Upgrade has added port 'm_axi_gmem1_BRESP'
+
+-Upgrade has added port 'm_axi_gmem1_BVALID'
+
+-Upgrade has added port 'm_axi_gmem1_RDATA'
+
+-Upgrade has added port 'm_axi_gmem1_RID'
+
+-Upgrade has added port 'm_axi_gmem1_RLAST'
+
+-Upgrade has added port 'm_axi_gmem1_RREADY'
+
+-Upgrade has added port 'm_axi_gmem1_RRESP'
+
+-Upgrade has added port 'm_axi_gmem1_RVALID'
+
+-Upgrade has added port 'm_axi_gmem1_WDATA'
+
+-Upgrade has added port 'm_axi_gmem1_WID'
+
+-Upgrade has added port 'm_axi_gmem1_WLAST'
+
+-Upgrade has added port 'm_axi_gmem1_WREADY'
+
+-Upgrade has added port 'm_axi_gmem1_WSTRB'
+
+-Upgrade has added port 'm_axi_gmem1_WVALID'
+
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
+| Date         : Fri Mar 21 00:41:23 2025
+| Host         : DESKTOP-I99LGQ1 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'flash_attn_block_simple_test_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of flash_attn_block_simple_test_0_0 (xilinx.com:hls:simple_test:1.0) from (Rev. 2114004338) to (Rev. 2114004341)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
+| Date         : Fri Mar 21 00:05:07 2025
+| Host         : DESKTOP-I99LGQ1 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'flash_attn_block_array_passthrough_0_3'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of flash_attn_block_array_passthrough_0_3 (xilinx.com:hls:array_passthrough:1.0) from (Rev. 2114004297) to (Rev. 2114004304)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Interface Information
+------------------------
+
+Detected external interface differences while upgrading 'flash_attn_block_array_passthrough_0_3'.
+
+
+-Upgrade has removed interface 'ap_ctrl'
+
+
+3. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'flash_attn_block_array_passthrough_0_3'. These changes may impact your design.
+
+
+-Upgrade has removed port 'ap_done'
+
+-Upgrade has removed port 'ap_idle'
+
+-Upgrade has removed port 'ap_ready'
+
+-Upgrade has removed port 'ap_start'
+
+-Upgrade has added port 'interrupt'
+
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
+| Date         : Thu Mar 20 23:58:24 2025
+| Host         : DESKTOP-I99LGQ1 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'flash_attn_block_array_passthrough_0_3'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of flash_attn_block_array_passthrough_0_3 (xilinx.com:hls:array_passthrough:1.0) from (Rev. 2114004293) to (Rev. 2114004297)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Interface Information
+------------------------
+
+Detected external interface differences while upgrading 'flash_attn_block_array_passthrough_0_3'.
+
+
+-Upgrade has added interface 'ap_ctrl' (xilinx.com:interface:acc_handshake:1.0)
+
+
+3. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'flash_attn_block_array_passthrough_0_3'. These changes may impact your design.
+
+
+-Upgrade has removed port 'interrupt'
+
+-Upgrade has added port 'ap_done'
+
+-Upgrade has added port 'ap_idle'
+
+-Upgrade has added port 'ap_ready'
+
+-Upgrade has added port 'ap_start'
+
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
+| Date         : Thu Mar 20 23:55:20 2025
+| Host         : DESKTOP-I99LGQ1 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'flash_attn_block_array_passthrough_0_2'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of flash_attn_block_array_passthrough_0_2 (xilinx.com:hls:array_passthrough:1.0) from (Rev. 2114004279) to (Rev. 2114004293)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'flash_attn_block_array_passthrough_0_2'. These changes may impact your design.
+
+
+-Upgrade has added port 'interrupt'
+
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
+| Date         : Thu Mar 20 23:40:06 2025
+| Host         : DESKTOP-I99LGQ1 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'flash_attn_block_array_passthrough_0_1'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of flash_attn_block_array_passthrough_0_1 (xilinx.com:hls:array_passthrough:1.0) from (Rev. 2114004219) to (Rev. 2114004279)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'flash_attn_block_array_passthrough_0_1'. These changes may impact your design.
+
+
+-Upgrade has removed port 'interrupt'
+
+

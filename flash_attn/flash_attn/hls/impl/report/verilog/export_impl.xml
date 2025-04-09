@@ -1,0 +1,202 @@
+<profile>
+  <RunData>
+    <RUN_TYPE>impl</RUN_TYPE>
+    <VIVADO_VERSION>v.2024.2</VIVADO_VERSION>
+    <ROOT_MODULE_CELL>bd_0_i/hls_inst</ROOT_MODULE_CELL>
+  </RunData>
+  <TimingReport>
+    <TargetClockPeriod>10.000</TargetClockPeriod>
+    <AchievedClockPeriod>6.870</AchievedClockPeriod>
+    <CLOCK_NAME>ap_clk</CLOCK_NAME>
+    <CP_FINAL>6.870</CP_FINAL>
+    <CP_ROUTE>6.870</CP_ROUTE>
+    <CP_SYNTH>5.745</CP_SYNTH>
+    <CP_TARGET>10.000</CP_TARGET>
+    <SLACK_FINAL>3.130</SLACK_FINAL>
+    <SLACK_ROUTE>3.130</SLACK_ROUTE>
+    <SLACK_SYNTH>4.255</SLACK_SYNTH>
+    <TIMING_MET>TRUE</TIMING_MET>
+    <TNS_FINAL>0.000</TNS_FINAL>
+    <TNS_ROUTE>0.000</TNS_ROUTE>
+    <TNS_SYNTH>0.000</TNS_SYNTH>
+    <WNS_FINAL>3.130</WNS_FINAL>
+    <WNS_ROUTE>3.130</WNS_ROUTE>
+    <WNS_SYNTH>4.255</WNS_SYNTH>
+  </TimingReport>
+  <AreaReport>
+    <Resources>
+      <BRAM>0</BRAM>
+      <CLB>0</CLB>
+      <DSP>12</DSP>
+      <FF>274</FF>
+      <LATCH>0</LATCH>
+      <LUT>469</LUT>
+      <SLICE>147</SLICE>
+      <SRL>3</SRL>
+      <URAM>0</URAM>
+    </Resources>
+    <AvailableResources>
+      <BRAM>280</BRAM>
+      <CLB>0</CLB>
+      <DSP>220</DSP>
+      <FF>106400</FF>
+      <LUT>53200</LUT>
+      <SLICE>13300</SLICE>
+      <URAM>0</URAM>
+    </AvailableResources>
+  </AreaReport>
+  <RtlModules>
+    <RtlModule CELL="inst" DEPTH="0" IS_TOP="1" TYPE="function" MODULENAME="matrix_cyclic_block" DISPNAME="inst" RTLNAME="matrix_cyclic_block">
+      <SubModules count="10">A_1_U A_2_U A_3_U A_U B_1_U B_2_U B_3_U B_U grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126 grp_matrix_cyclic_block_Pipeline_read_A_and_B_VITIS_LOOP_28_1_fu_90</SubModules>
+      <Resources DSP="12" FF="274" LUT="469"/>
+      <LocalResources FF="39"/>
+    </RtlModule>
+    <RtlModule CELL="inst/A_1_U" DEPTH="1" TYPE="resource" MODULENAME="A_RAM_AUTO_1R1W" DISPNAME="A_1_U" RTLNAME="matrix_cyclic_block_A_RAM_AUTO_1R1W">
+      <Resources LUT="32"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="A_1_U" SOURCE="loop_pipeline.cpp:22" STORAGESIZE="32 4 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="A_1" VISIBLE="true"/>
+    </RtlModule>
+    <RtlModule CELL="inst/A_2_U" DEPTH="1" TYPE="resource" MODULENAME="A_RAM_AUTO_1R1W" DISPNAME="A_2_U" RTLNAME="matrix_cyclic_block_A_RAM_AUTO_1R1W">
+      <Resources LUT="32"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="A_2_U" SOURCE="loop_pipeline.cpp:22" STORAGESIZE="32 4 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="A_2" VISIBLE="true"/>
+    </RtlModule>
+    <RtlModule CELL="inst/A_3_U" DEPTH="1" TYPE="resource" MODULENAME="A_RAM_AUTO_1R1W" DISPNAME="A_3_U" RTLNAME="matrix_cyclic_block_A_RAM_AUTO_1R1W">
+      <Resources LUT="32"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="A_3_U" SOURCE="loop_pipeline.cpp:22" STORAGESIZE="32 4 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="A_3" VISIBLE="true"/>
+    </RtlModule>
+    <RtlModule CELL="inst/A_U" DEPTH="1" TYPE="resource" MODULENAME="A_RAM_AUTO_1R1W" DISPNAME="A_U" RTLNAME="matrix_cyclic_block_A_RAM_AUTO_1R1W">
+      <Resources LUT="32"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="A_U" SOURCE="loop_pipeline.cpp:22" STORAGESIZE="32 4 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="A" VISIBLE="true"/>
+    </RtlModule>
+    <RtlModule CELL="inst/B_1_U" DEPTH="1" TYPE="resource" MODULENAME="A_RAM_AUTO_1R1W" DISPNAME="B_1_U" RTLNAME="matrix_cyclic_block_A_RAM_AUTO_1R1W">
+      <Resources LUT="32"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="B_1_U" SOURCE="loop_pipeline.cpp:23" STORAGESIZE="32 4 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="B_1" VISIBLE="true"/>
+    </RtlModule>
+    <RtlModule CELL="inst/B_2_U" DEPTH="1" TYPE="resource" MODULENAME="A_RAM_AUTO_1R1W" DISPNAME="B_2_U" RTLNAME="matrix_cyclic_block_A_RAM_AUTO_1R1W">
+      <Resources LUT="32"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="B_2_U" SOURCE="loop_pipeline.cpp:23" STORAGESIZE="32 4 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="B_2" VISIBLE="true"/>
+    </RtlModule>
+    <RtlModule CELL="inst/B_3_U" DEPTH="1" TYPE="resource" MODULENAME="A_RAM_AUTO_1R1W" DISPNAME="B_3_U" RTLNAME="matrix_cyclic_block_A_RAM_AUTO_1R1W">
+      <Resources LUT="32"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="B_3_U" SOURCE="loop_pipeline.cpp:23" STORAGESIZE="32 4 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="B_3" VISIBLE="true"/>
+    </RtlModule>
+    <RtlModule CELL="inst/B_U" DEPTH="1" TYPE="resource" MODULENAME="A_RAM_AUTO_1R1W" DISPNAME="B_U" RTLNAME="matrix_cyclic_block_A_RAM_AUTO_1R1W">
+      <Resources LUT="32"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="B_U" SOURCE="loop_pipeline.cpp:23" STORAGESIZE="32 4 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="B" VISIBLE="true"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126" DEPTH="1" TYPE="function" MODULENAME="matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2" DISPNAME="grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126" RTLNAME="matrix_cyclic_block_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2">
+      <SubModules count="5">flow_control_loop_pipe_sequential_init_U mul_32s_32s_32_2_1_U17 mul_32s_32s_32_2_1_U18 mul_32s_32s_32_2_1_U19 mul_32s_32s_32_2_1_U20</SubModules>
+      <Resources DSP="12" FF="222" LUT="189"/>
+      <LocalResources FF="152" LUT="114"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/flow_control_loop_pipe_sequential_init_U" DEPTH="2" TYPE="rtl" MODULENAME="flow_control_loop_pipe_sequential_init" DISPNAME="flow_control_loop_pipe_sequential_init_U" RTLNAME="matrix_cyclic_block_flow_control_loop_pipe_sequential_init">
+      <Resources FF="2" LUT="13"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U17" DEPTH="2" TYPE="resource" MODULENAME="mul_32s_32s_32_2_1" DISPNAME="mul_32s_32s_32_2_1_U17" RTLNAME="matrix_cyclic_block_mul_32s_32s_32_2_1">
+      <Resources DSP="3" FF="17" LUT="15"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="3" ID="" IMPL="auto" LATENCY="1" LOOP="Matrix_Loop_VITIS_LOOP_39_2" OPTYPE="mul" PRAGMA="" RTLNAME="mul_32s_32s_32_2_1_U17" SOURCE="loop_pipeline.cpp:42" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln42" VISIBLE="true"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U18" DEPTH="2" TYPE="resource" MODULENAME="mul_32s_32s_32_2_1" DISPNAME="mul_32s_32s_32_2_1_U18" RTLNAME="matrix_cyclic_block_mul_32s_32s_32_2_1">
+      <Resources DSP="3" FF="17" LUT="18"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="3" ID="" IMPL="auto" LATENCY="1" LOOP="Matrix_Loop_VITIS_LOOP_39_2" OPTYPE="mul" PRAGMA="" RTLNAME="mul_32s_32s_32_2_1_U18" SOURCE="loop_pipeline.cpp:42" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln42_1" VISIBLE="true"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U19" DEPTH="2" TYPE="resource" MODULENAME="mul_32s_32s_32_2_1" DISPNAME="mul_32s_32s_32_2_1_U19" RTLNAME="matrix_cyclic_block_mul_32s_32s_32_2_1">
+      <Resources DSP="3" FF="17" LUT="15"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="3" ID="" IMPL="auto" LATENCY="1" LOOP="Matrix_Loop_VITIS_LOOP_39_2" OPTYPE="mul" PRAGMA="" RTLNAME="mul_32s_32s_32_2_1_U19" SOURCE="loop_pipeline.cpp:42" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln42_2" VISIBLE="true"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U20" DEPTH="2" TYPE="resource" MODULENAME="mul_32s_32s_32_2_1" DISPNAME="mul_32s_32s_32_2_1_U20" RTLNAME="matrix_cyclic_block_mul_32s_32s_32_2_1">
+      <Resources DSP="3" FF="17" LUT="15"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="3" ID="" IMPL="auto" LATENCY="1" LOOP="Matrix_Loop_VITIS_LOOP_39_2" OPTYPE="mul" PRAGMA="" RTLNAME="mul_32s_32s_32_2_1_U20" SOURCE="loop_pipeline.cpp:42" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln42_3" VISIBLE="true"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_matrix_cyclic_block_Pipeline_read_A_and_B_VITIS_LOOP_28_1_fu_90" DEPTH="1" TYPE="function" MODULENAME="matrix_cyclic_block_Pipeline_read_A_and_B_VITIS_LOOP_28_1" DISPNAME="grp_matrix_cyclic_block_Pipeline_read_A_and_B_VITIS_LOOP_28_1_fu_90" RTLNAME="matrix_cyclic_block_matrix_cyclic_block_Pipeline_read_A_and_B_VITIS_LOOP_28_1">
+      <SubModules count="1">flow_control_loop_pipe_sequential_init_U</SubModules>
+      <Resources FF="13" LUT="24"/>
+      <LocalResources FF="11" LUT="11"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_matrix_cyclic_block_Pipeline_read_A_and_B_VITIS_LOOP_28_1_fu_90/flow_control_loop_pipe_sequential_init_U" DEPTH="2" TYPE="rtl" MODULENAME="flow_control_loop_pipe_sequential_init" DISPNAME="flow_control_loop_pipe_sequential_init_U" RTLNAME="matrix_cyclic_block_flow_control_loop_pipe_sequential_init">
+      <Resources FF="2" LUT="13"/>
+    </RtlModule>
+  </RtlModules>
+  <TimingPaths>
+    <TPATH DATAPATH_DELAY="6.336" DATAPATH_LOGIC_DELAY="1.593" DATAPATH_NET_DELAY="4.743" ENDPOINT_PIN="grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U18/tmp_product__0/B[2]" LOGIC_LEVELS="3" MAX_FANOUT="128" SLACK="3.130" STARTPOINT_PIN="grp_matrix_cyclic_block_Pipeline_read_A_and_B_VITIS_LOOP_28_1_fu_90/j_fu_84_reg[1]/C">
+      <CELL NAME="grp_matrix_cyclic_block_Pipeline_read_A_and_B_VITIS_LOOP_28_1_fu_90/j_fu_84_reg[1]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" FILE_NAME="matrix_cyclic_block_matrix_cyclic_block_Pipeline_read_A_and_B_VITIS_LOOP_28_1.v" LINE_NUMBER="257" MODULE_INSTNAME="grp_matrix_cyclic_block_Pipeline_read_A_and_B_VITIS_LOOP_28_1_fu_90" IS_FUNCINST="0"/>
+      <CELL NAME="grp_matrix_cyclic_block_Pipeline_read_A_and_B_VITIS_LOOP_28_1_fu_90/i_fu_88[0]_i_1" PRIMITIVE_TYPE="LUT.others.LUT4" FILE_NAME="matrix_cyclic_block_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69" MODULE_INSTNAME="grp_matrix_cyclic_block_Pipeline_read_A_and_B_VITIS_LOOP_28_1_fu_90" IS_FUNCINST="0"/>
+      <CELL NAME="grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/ram_reg_0_3_0_0_i_2" PRIMITIVE_TYPE="LUT.others.LUT6" FILE_NAME="matrix_cyclic_block_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69" MODULE_INSTNAME="grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126" IS_FUNCINST="0"/>
+      <CELL NAME="A_2_U/ram_reg_0_3_2_2/SP" PRIMITIVE_TYPE="DMEM.dram.RAM32X1S" FILE_NAME="" LINE_NUMBER="" MODULE_INSTNAME="A_2_U" IS_FUNCINST="0"/>
+      <CELL NAME="grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U18/tmp_product__0" PRIMITIVE_TYPE="MULT.dsp.DSP48E1" FILE_NAME="matrix_cyclic_block_mul_32s_32s_32_2_1.v" LINE_NUMBER="50" MODULE_INSTNAME="mul_32s_32s_32_2_1_U18" IS_FUNCINST="0"/>
+      <MODULE_INSTANCES>grp_matrix_cyclic_block_Pipeline_read_A_and_B_VITIS_LOOP_28_1_fu_90 grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126 A_2_U mul_32s_32s_32_2_1_U18</MODULE_INSTANCES>
+    </TPATH>
+    <TPATH DATAPATH_DELAY="6.273" DATAPATH_LOGIC_DELAY="1.593" DATAPATH_NET_DELAY="4.680" ENDPOINT_PIN="grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U18/tmp_product/A[2]" LOGIC_LEVELS="3" MAX_FANOUT="128" SLACK="3.281" STARTPOINT_PIN="grp_matrix_cyclic_block_Pipeline_read_A_and_B_VITIS_LOOP_28_1_fu_90/j_fu_84_reg[1]/C">
+      <CELL NAME="grp_matrix_cyclic_block_Pipeline_read_A_and_B_VITIS_LOOP_28_1_fu_90/j_fu_84_reg[1]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" FILE_NAME="matrix_cyclic_block_matrix_cyclic_block_Pipeline_read_A_and_B_VITIS_LOOP_28_1.v" LINE_NUMBER="257" MODULE_INSTNAME="grp_matrix_cyclic_block_Pipeline_read_A_and_B_VITIS_LOOP_28_1_fu_90" IS_FUNCINST="0"/>
+      <CELL NAME="grp_matrix_cyclic_block_Pipeline_read_A_and_B_VITIS_LOOP_28_1_fu_90/i_fu_88[0]_i_1" PRIMITIVE_TYPE="LUT.others.LUT4" FILE_NAME="matrix_cyclic_block_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69" MODULE_INSTNAME="grp_matrix_cyclic_block_Pipeline_read_A_and_B_VITIS_LOOP_28_1_fu_90" IS_FUNCINST="0"/>
+      <CELL NAME="grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/ram_reg_0_3_0_0_i_2" PRIMITIVE_TYPE="LUT.others.LUT6" FILE_NAME="matrix_cyclic_block_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69" MODULE_INSTNAME="grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126" IS_FUNCINST="0"/>
+      <CELL NAME="A_2_U/ram_reg_0_3_2_2/SP" PRIMITIVE_TYPE="DMEM.dram.RAM32X1S" FILE_NAME="" LINE_NUMBER="" MODULE_INSTNAME="A_2_U" IS_FUNCINST="0"/>
+      <CELL NAME="grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U18/tmp_product" PRIMITIVE_TYPE="MULT.dsp.DSP48E1" FILE_NAME="matrix_cyclic_block_A_RAM_AUTO_1R1W.v" LINE_NUMBER="43" MODULE_INSTNAME="mul_32s_32s_32_2_1_U18" IS_FUNCINST="0"/>
+      <MODULE_INSTANCES>grp_matrix_cyclic_block_Pipeline_read_A_and_B_VITIS_LOOP_28_1_fu_90 grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126 A_2_U mul_32s_32s_32_2_1_U18</MODULE_INSTANCES>
+    </TPATH>
+    <TPATH DATAPATH_DELAY="6.139" DATAPATH_LOGIC_DELAY="1.220" DATAPATH_NET_DELAY="4.919" ENDPOINT_PIN="grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U18/tmp_product__0/B[13]" LOGIC_LEVELS="3" MAX_FANOUT="128" SLACK="3.327" STARTPOINT_PIN="grp_matrix_cyclic_block_Pipeline_read_A_and_B_VITIS_LOOP_28_1_fu_90/j_fu_84_reg[1]/C">
+      <CELL NAME="grp_matrix_cyclic_block_Pipeline_read_A_and_B_VITIS_LOOP_28_1_fu_90/j_fu_84_reg[1]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" FILE_NAME="matrix_cyclic_block_matrix_cyclic_block_Pipeline_read_A_and_B_VITIS_LOOP_28_1.v" LINE_NUMBER="257" MODULE_INSTNAME="grp_matrix_cyclic_block_Pipeline_read_A_and_B_VITIS_LOOP_28_1_fu_90" IS_FUNCINST="0"/>
+      <CELL NAME="grp_matrix_cyclic_block_Pipeline_read_A_and_B_VITIS_LOOP_28_1_fu_90/i_fu_88[0]_i_1" PRIMITIVE_TYPE="LUT.others.LUT4" FILE_NAME="matrix_cyclic_block_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69" MODULE_INSTNAME="grp_matrix_cyclic_block_Pipeline_read_A_and_B_VITIS_LOOP_28_1_fu_90" IS_FUNCINST="0"/>
+      <CELL NAME="grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/ram_reg_0_3_0_0_i_2" PRIMITIVE_TYPE="LUT.others.LUT6" FILE_NAME="matrix_cyclic_block_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69" MODULE_INSTNAME="grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126" IS_FUNCINST="0"/>
+      <CELL NAME="A_2_U/ram_reg_0_3_13_13/SP" PRIMITIVE_TYPE="DMEM.dram.RAM32X1S" FILE_NAME="" LINE_NUMBER="" MODULE_INSTNAME="A_2_U" IS_FUNCINST="0"/>
+      <CELL NAME="grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U18/tmp_product__0" PRIMITIVE_TYPE="MULT.dsp.DSP48E1" FILE_NAME="matrix_cyclic_block_mul_32s_32s_32_2_1.v" LINE_NUMBER="50" MODULE_INSTNAME="mul_32s_32s_32_2_1_U18" IS_FUNCINST="0"/>
+      <MODULE_INSTANCES>grp_matrix_cyclic_block_Pipeline_read_A_and_B_VITIS_LOOP_28_1_fu_90 grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126 A_2_U mul_32s_32s_32_2_1_U18</MODULE_INSTANCES>
+    </TPATH>
+    <TPATH DATAPATH_DELAY="6.125" DATAPATH_LOGIC_DELAY="1.874" DATAPATH_NET_DELAY="4.251" ENDPOINT_PIN="grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U18/tmp_product__0/B[8]" LOGIC_LEVELS="3" MAX_FANOUT="128" SLACK="3.341" STARTPOINT_PIN="grp_matrix_cyclic_block_Pipeline_read_A_and_B_VITIS_LOOP_28_1_fu_90/j_fu_84_reg[1]/C">
+      <CELL NAME="grp_matrix_cyclic_block_Pipeline_read_A_and_B_VITIS_LOOP_28_1_fu_90/j_fu_84_reg[1]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" FILE_NAME="matrix_cyclic_block_matrix_cyclic_block_Pipeline_read_A_and_B_VITIS_LOOP_28_1.v" LINE_NUMBER="257" MODULE_INSTNAME="grp_matrix_cyclic_block_Pipeline_read_A_and_B_VITIS_LOOP_28_1_fu_90" IS_FUNCINST="0"/>
+      <CELL NAME="grp_matrix_cyclic_block_Pipeline_read_A_and_B_VITIS_LOOP_28_1_fu_90/i_fu_88[0]_i_1" PRIMITIVE_TYPE="LUT.others.LUT4" FILE_NAME="matrix_cyclic_block_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69" MODULE_INSTNAME="grp_matrix_cyclic_block_Pipeline_read_A_and_B_VITIS_LOOP_28_1_fu_90" IS_FUNCINST="0"/>
+      <CELL NAME="grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/ram_reg_0_3_0_0_i_2" PRIMITIVE_TYPE="LUT.others.LUT6" FILE_NAME="matrix_cyclic_block_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69" MODULE_INSTNAME="grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126" IS_FUNCINST="0"/>
+      <CELL NAME="A_2_U/ram_reg_0_3_8_8/SP" PRIMITIVE_TYPE="DMEM.dram.RAM32X1S" FILE_NAME="" LINE_NUMBER="" MODULE_INSTNAME="A_2_U" IS_FUNCINST="0"/>
+      <CELL NAME="grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U18/tmp_product__0" PRIMITIVE_TYPE="MULT.dsp.DSP48E1" FILE_NAME="matrix_cyclic_block_mul_32s_32s_32_2_1.v" LINE_NUMBER="50" MODULE_INSTNAME="mul_32s_32s_32_2_1_U18" IS_FUNCINST="0"/>
+      <MODULE_INSTANCES>grp_matrix_cyclic_block_Pipeline_read_A_and_B_VITIS_LOOP_28_1_fu_90 grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126 A_2_U mul_32s_32s_32_2_1_U18</MODULE_INSTANCES>
+    </TPATH>
+    <TPATH DATAPATH_DELAY="6.205" DATAPATH_LOGIC_DELAY="1.201" DATAPATH_NET_DELAY="5.004" ENDPOINT_PIN="grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U18/tmp_product/A[5]" LOGIC_LEVELS="3" MAX_FANOUT="128" SLACK="3.349" STARTPOINT_PIN="grp_matrix_cyclic_block_Pipeline_read_A_and_B_VITIS_LOOP_28_1_fu_90/j_fu_84_reg[1]/C">
+      <CELL NAME="grp_matrix_cyclic_block_Pipeline_read_A_and_B_VITIS_LOOP_28_1_fu_90/j_fu_84_reg[1]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" FILE_NAME="matrix_cyclic_block_matrix_cyclic_block_Pipeline_read_A_and_B_VITIS_LOOP_28_1.v" LINE_NUMBER="257" MODULE_INSTNAME="grp_matrix_cyclic_block_Pipeline_read_A_and_B_VITIS_LOOP_28_1_fu_90" IS_FUNCINST="0"/>
+      <CELL NAME="grp_matrix_cyclic_block_Pipeline_read_A_and_B_VITIS_LOOP_28_1_fu_90/i_fu_88[0]_i_1" PRIMITIVE_TYPE="LUT.others.LUT4" FILE_NAME="matrix_cyclic_block_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69" MODULE_INSTNAME="grp_matrix_cyclic_block_Pipeline_read_A_and_B_VITIS_LOOP_28_1_fu_90" IS_FUNCINST="0"/>
+      <CELL NAME="grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/ram_reg_0_3_0_0_i_2" PRIMITIVE_TYPE="LUT.others.LUT6" FILE_NAME="matrix_cyclic_block_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69" MODULE_INSTNAME="grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126" IS_FUNCINST="0"/>
+      <CELL NAME="A_2_U/ram_reg_0_3_5_5/SP" PRIMITIVE_TYPE="DMEM.dram.RAM32X1S" FILE_NAME="" LINE_NUMBER="" MODULE_INSTNAME="A_2_U" IS_FUNCINST="0"/>
+      <CELL NAME="grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U18/tmp_product" PRIMITIVE_TYPE="MULT.dsp.DSP48E1" FILE_NAME="matrix_cyclic_block_A_RAM_AUTO_1R1W.v" LINE_NUMBER="43" MODULE_INSTNAME="mul_32s_32s_32_2_1_U18" IS_FUNCINST="0"/>
+      <MODULE_INSTANCES>grp_matrix_cyclic_block_Pipeline_read_A_and_B_VITIS_LOOP_28_1_fu_90 grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126 A_2_U mul_32s_32s_32_2_1_U18</MODULE_INSTANCES>
+    </TPATH>
+  </TimingPaths>
+  <VivadoReportFiles>
+    <ReportFile TYPE="design_analysis" PATH="verilog/report/matrix_cyclic_block_design_analysis_routed.rpt"/>
+    <ReportFile TYPE="failfast" PATH="verilog/report/matrix_cyclic_block_failfast_routed.rpt"/>
+    <ReportFile TYPE="power" PATH="verilog/report/matrix_cyclic_block_power_routed.rpt"/>
+    <ReportFile TYPE="status" PATH="verilog/report/matrix_cyclic_block_status_routed.rpt"/>
+    <ReportFile TYPE="timing" PATH="verilog/report/matrix_cyclic_block_timing_routed.rpt"/>
+    <ReportFile TYPE="timing_paths" PATH="verilog/report/matrix_cyclic_block_timing_paths_routed.rpt"/>
+    <ReportFile TYPE="utilization" PATH="verilog/report/matrix_cyclic_block_utilization_routed.rpt"/>
+    <ReportFile TYPE="utilization_hierarchical" PATH="verilog/report/matrix_cyclic_block_utilization_hierarchical_routed.rpt"/>
+  </VivadoReportFiles>
+  <GeneralInfo NAME="General Information">
+    <item NAME="Date" VALUE="Mon Apr 07 11:45:15 -0400 2025"/>
+    <item NAME="Version" VALUE="2024.2 (Build 5238294 on Nov  8 2024)"/>
+    <item NAME="Project" VALUE="flash_attn"/>
+    <item NAME="Solution" VALUE="hls (Vivado IP Flow Target)"/>
+    <item NAME="Product family" VALUE="zynq"/>
+    <item NAME="Target device" VALUE="xc7z020-clg400-1"/>
+  </GeneralInfo>
+  <RunOptions NAME="Run Constraints &amp; Options">
+    <General NAME="Design Constraints &amp; Options">
+      <item NAME="Place &amp; Route target clock" VALUE="10 ns"/>
+      <item NAME="C-Synthesis target clock" VALUE=""/>
+      <item NAME="C-Synthesis uncertainty" VALUE="27%"/>
+      <item NAME="config_export -ip_xdc_file" VALUE=""/>
+      <item NAME="config_export -ip_xdc_ooc_file" VALUE=""/>
+    </General>
+    <Syn NAME="RTL Synthesis Options">
+      <item NAME="config_export -vivado_synth_strategy" VALUE="default"/>
+      <item NAME="config_export -vivado_synth_design_args" VALUE="-directive sdx_optimization_effort_high"/>
+    </Syn>
+    <Impl NAME="Place &amp; Route Options">
+      <item NAME="config_export -vivado_impl_strategy" VALUE="default"/>
+      <item NAME="config_export -vivado_phys_opt" VALUE="auto"/>
+      <item NAME="config_export -vivado_pblock" VALUE=""/>
+    </Impl>
+    <Reporting NAME="Reporting Options">
+      <item NAME="config_export -vivado_report_level" VALUE="2"/>
+      <item NAME="config_export -vivado_max_timing_paths" VALUE="10"/>
+    </Reporting>
+  </RunOptions>
+</profile>
+

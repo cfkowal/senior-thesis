@@ -1,0 +1,299 @@
+================================================================
+== Vivado Place & Route Results
+================================================================
++ General Information:
+    * Date:            Mon Apr 07 11:45:15 -0400 2025
+    * Version:         2024.2 (Build 5238294 on Nov  8 2024)
+    * Project:         flash_attn
+    * Solution:        hls (Vivado IP Flow Target)
+    * Product family:  zynq
+    * Target device:   xc7z020-clg400-1
+
+
+================================================================
+== Run Constraints & Options
+================================================================
++ Design Constraints & Options:
+    * Place & Route target clock:  10 ns
+    * C-Synthesis uncertainty:     27%
+
++ RTL Synthesis Options:
+    * config_export -vivado_synth_strategy:     default
+    * config_export -vivado_synth_design_args:  -directive sdx_optimization_effort_high
+
++ Place & Route Options:
+    * config_export -vivado_impl_strategy:  default
+    * config_export -vivado_phys_opt:       auto
+
++ Reporting Options:
+    * config_export -vivado_report_level:      2
+    * config_export -vivado_max_timing_paths:  10
+
+
+================================================================
+== Place & Route Resource Summary
+================================================================
+LUT:              469
+FF:               274
+DSP:              12
+BRAM:             0
+URAM:             0
+SRL:              3
+
+
+================================================================
+== Place & Route Timing Summary
+================================================================
+* Timing was met
++----------------+-------------+
+| Timing         | Period (ns) |
++----------------+-------------+
+| Target         | 10.000      |
+| Post-Synthesis | 5.745       |
+| Post-Route     | 6.870       |
++----------------+-------------+
+
+
+================================================================
+== Place & Route Resources
+================================================================
++---------------------------------------------------------------------------+-----+-----+-----+------+------+-----+--------+------+---------+----------+--------+
+| Name                                                                      | LUT | FF  | DSP | BRAM | URAM | SRL | Pragma | Impl | Latency | Variable | Source |
++---------------------------------------------------------------------------+-----+-----+-----+------+------+-----+--------+------+---------+----------+--------+
+| inst                                                                      | 469 | 274 | 12  |      |      |     |        |      |         |          |        |
+|   (inst)                                                                  |     | 39  |     |      |      |     |        |      |         |          |        |
+|   A_1_U                                                                   | 32  |     |     |      |      |     |        |      |         |          |        |
+|   A_2_U                                                                   | 32  |     |     |      |      |     |        |      |         |          |        |
+|   A_3_U                                                                   | 32  |     |     |      |      |     |        |      |         |          |        |
+|   A_U                                                                     | 32  |     |     |      |      |     |        |      |         |          |        |
+|   B_1_U                                                                   | 32  |     |     |      |      |     |        |      |         |          |        |
+|   B_2_U                                                                   | 32  |     |     |      |      |     |        |      |         |          |        |
+|   B_3_U                                                                   | 32  |     |     |      |      |     |        |      |         |          |        |
+|   B_U                                                                     | 32  |     |     |      |      |     |        |      |         |          |        |
+|   grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126     | 189 | 222 | 12  |      |      |     |        |      |         |          |        |
+|     (grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126) | 114 | 152 |     |      |      |     |        |      |         |          |        |
+|     mul_32s_32s_32_2_1_U17                                                | 15  | 17  | 3   |      |      |     |        |      |         |          |        |
+|     mul_32s_32s_32_2_1_U18                                                | 18  | 17  | 3   |      |      |     |        |      |         |          |        |
+|     mul_32s_32s_32_2_1_U19                                                | 15  | 17  | 3   |      |      |     |        |      |         |          |        |
+|     mul_32s_32s_32_2_1_U20                                                | 15  | 17  | 3   |      |      |     |        |      |         |          |        |
+|   grp_matrix_cyclic_block_Pipeline_read_A_and_B_VITIS_LOOP_28_1_fu_90     | 24  | 13  |     |      |      |     |        |      |         |          |        |
+|     (grp_matrix_cyclic_block_Pipeline_read_A_and_B_VITIS_LOOP_28_1_fu_90) | 11  | 11  |     |      |      |     |        |      |         |          |        |
+|     flow_control_loop_pipe_sequential_init_U                              | 13  | 2   |     |      |      |     |        |      |         |          |        |
++---------------------------------------------------------------------------+-----+-----+-----+------+------+-----+--------+------+---------+----------+--------+
+
+
+================================================================
+== Place & Route Fail Fast
+================================================================
++-----------------------------------------------------------+-----------+--------+--------+
+| Criteria                                                  | Guideline | Actual | Status |
++-----------------------------------------------------------+-----------+--------+--------+
+| LUT                                                       | 70%       | 0.88%  | OK     |
+| FD                                                        | 50%       | 0.26%  | OK     |
+| LUTRAM+SRL                                                | 25%       | 1.49%  | OK     |
+| MUXF7                                                     | 15%       | 0.00%  | OK     |
+| DSP                                                       | 80%       | 5.45%  | OK     |
+| RAMB/FIFO                                                 | 80%       | 0.00%  | OK     |
+| DSP+RAMB+URAM (Avg)                                       | 70%       | 5.45%  | OK     |
+| BUFGCE* + BUFGCTRL                                        | 24        | 0      | OK     |
+| DONT_TOUCH (cells/nets)                                   | 0         | 0      | OK     |
+| MARK_DEBUG (nets)                                         | 0         | 0      | OK     |
+| Control Sets                                              | 998       | 17     | OK     |
+| Average Fanout for modules > 100k cells                   | 4         | 1.88   | OK     |
+| Max Average Fanout for modules > 100k cells               | 4         | 0      | OK     |
+| Non-FD high fanout nets > 10k loads                       | 0         | 0      | OK     |
++-----------------------------------------------------------+-----------+--------+--------+
+| TIMING-6 (No common primary clock between related clocks) | 0         | 0      | OK     |
+| TIMING-7 (No common node between related clocks)          | 0         | 0      | OK     |
+| TIMING-8 (No common period between related clocks)        | 0         | 0      | OK     |
+| TIMING-14 (LUT on the clock tree)                         | 0         | 0      | OK     |
+| TIMING-35 (No common node in paths with the same clock)   | 0         | 0      | OK     |
++-----------------------------------------------------------+-----------+--------+--------+
+| Number of paths above max LUT budgeting (0.575ns)         | 0         | 0      | OK     |
+| Number of paths above max Net budgeting (0.403ns)         | 0         | 0      | OK     |
++-----------------------------------------------------------+-----------+--------+--------+
+
+
+================================================================
+== Place & Route Timing Paths
+================================================================
+* Timing was met
++-------+-------+--------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------+--------------+------------+----------------+----------------+--------------+
+| Path  | SLACK | STARTPOINT PIN                                                                       | ENDPOINT PIN                                                                                                    | LOGIC LEVELS | MAX FANOUT | DATAPATH DELAY | DATAPATH LOGIC | DATAPATH NET |
+|       |       |                                                                                      |                                                                                                                 |              |            |                |          DELAY |        DELAY |
++-------+-------+--------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------+--------------+------------+----------------+----------------+--------------+
+| Path1 | 3.130 | grp_matrix_cyclic_block_Pipeline_read_A_and_B_VITIS_LOOP_28_1_fu_90/j_fu_84_reg[1]/C | grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U18/tmp_product__0/B[2]  |            3 |        128 |          6.336 |          1.593 |        4.743 |
+| Path2 | 3.281 | grp_matrix_cyclic_block_Pipeline_read_A_and_B_VITIS_LOOP_28_1_fu_90/j_fu_84_reg[1]/C | grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U18/tmp_product/A[2]     |            3 |        128 |          6.273 |          1.593 |        4.680 |
+| Path3 | 3.327 | grp_matrix_cyclic_block_Pipeline_read_A_and_B_VITIS_LOOP_28_1_fu_90/j_fu_84_reg[1]/C | grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U18/tmp_product__0/B[13] |            3 |        128 |          6.139 |          1.220 |        4.919 |
+| Path4 | 3.341 | grp_matrix_cyclic_block_Pipeline_read_A_and_B_VITIS_LOOP_28_1_fu_90/j_fu_84_reg[1]/C | grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U18/tmp_product__0/B[8]  |            3 |        128 |          6.125 |          1.874 |        4.251 |
+| Path5 | 3.349 | grp_matrix_cyclic_block_Pipeline_read_A_and_B_VITIS_LOOP_28_1_fu_90/j_fu_84_reg[1]/C | grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U18/tmp_product/A[5]     |            3 |        128 |          6.205 |          1.201 |        5.004 |
++-------+-------+--------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------+--------------+------------+----------------+----------------+--------------+
+
+    +-----------------------------------------------------------------------------------------------------------+----------------------+
+    | Path1 Cells                                                                                               | Primitive Type       |
+    +-----------------------------------------------------------------------------------------------------------+----------------------+
+    | grp_matrix_cyclic_block_Pipeline_read_A_and_B_VITIS_LOOP_28_1_fu_90/j_fu_84_reg[1]                        | FLOP_LATCH.flop.FDRE |
+    | grp_matrix_cyclic_block_Pipeline_read_A_and_B_VITIS_LOOP_28_1_fu_90/i_fu_88[0]_i_1                        | LUT.others.LUT4      |
+    | grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/ram_reg_0_3_0_0_i_2                   | LUT.others.LUT6      |
+    | A_2_U/ram_reg_0_3_2_2/SP                                                                                  | DMEM.dram.RAM32X1S   |
+    | grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U18/tmp_product__0 | MULT.dsp.DSP48E1     |
+    | grp_matrix_cyclic_block_Pipeline_read_A_and_B_VITIS_LOOP_28_1_fu_90/j_fu_84_reg[1]                        | FLOP_LATCH.flop.FDRE |
+    | grp_matrix_cyclic_block_Pipeline_read_A_and_B_VITIS_LOOP_28_1_fu_90/i_fu_88[0]_i_1                        | LUT.others.LUT4      |
+    | grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/ram_reg_0_3_0_0_i_2                   | LUT.others.LUT6      |
+    | A_2_U/ram_reg_0_3_2_2/SP                                                                                  | DMEM.dram.RAM32X1S   |
+    | grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U18/tmp_product    | MULT.dsp.DSP48E1     |
+    | grp_matrix_cyclic_block_Pipeline_read_A_and_B_VITIS_LOOP_28_1_fu_90/j_fu_84_reg[1]                        | FLOP_LATCH.flop.FDRE |
+    | grp_matrix_cyclic_block_Pipeline_read_A_and_B_VITIS_LOOP_28_1_fu_90/i_fu_88[0]_i_1                        | LUT.others.LUT4      |
+    | grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/ram_reg_0_3_0_0_i_2                   | LUT.others.LUT6      |
+    | A_2_U/ram_reg_0_3_13_13/SP                                                                                | DMEM.dram.RAM32X1S   |
+    | grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U18/tmp_product__0 | MULT.dsp.DSP48E1     |
+    | grp_matrix_cyclic_block_Pipeline_read_A_and_B_VITIS_LOOP_28_1_fu_90/j_fu_84_reg[1]                        | FLOP_LATCH.flop.FDRE |
+    | grp_matrix_cyclic_block_Pipeline_read_A_and_B_VITIS_LOOP_28_1_fu_90/i_fu_88[0]_i_1                        | LUT.others.LUT4      |
+    | grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/ram_reg_0_3_0_0_i_2                   | LUT.others.LUT6      |
+    | A_2_U/ram_reg_0_3_8_8/SP                                                                                  | DMEM.dram.RAM32X1S   |
+    | grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U18/tmp_product__0 | MULT.dsp.DSP48E1     |
+    | grp_matrix_cyclic_block_Pipeline_read_A_and_B_VITIS_LOOP_28_1_fu_90/j_fu_84_reg[1]                        | FLOP_LATCH.flop.FDRE |
+    | grp_matrix_cyclic_block_Pipeline_read_A_and_B_VITIS_LOOP_28_1_fu_90/i_fu_88[0]_i_1                        | LUT.others.LUT4      |
+    | grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/ram_reg_0_3_0_0_i_2                   | LUT.others.LUT6      |
+    | A_2_U/ram_reg_0_3_5_5/SP                                                                                  | DMEM.dram.RAM32X1S   |
+    | grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U18/tmp_product    | MULT.dsp.DSP48E1     |
+    +-----------------------------------------------------------------------------------------------------------+----------------------+
+
+    +-----------------------------------------------------------------------------------------------------------+----------------------+
+    | Path2 Cells                                                                                               | Primitive Type       |
+    +-----------------------------------------------------------------------------------------------------------+----------------------+
+    | grp_matrix_cyclic_block_Pipeline_read_A_and_B_VITIS_LOOP_28_1_fu_90/j_fu_84_reg[1]                        | FLOP_LATCH.flop.FDRE |
+    | grp_matrix_cyclic_block_Pipeline_read_A_and_B_VITIS_LOOP_28_1_fu_90/i_fu_88[0]_i_1                        | LUT.others.LUT4      |
+    | grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/ram_reg_0_3_0_0_i_2                   | LUT.others.LUT6      |
+    | A_2_U/ram_reg_0_3_2_2/SP                                                                                  | DMEM.dram.RAM32X1S   |
+    | grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U18/tmp_product__0 | MULT.dsp.DSP48E1     |
+    | grp_matrix_cyclic_block_Pipeline_read_A_and_B_VITIS_LOOP_28_1_fu_90/j_fu_84_reg[1]                        | FLOP_LATCH.flop.FDRE |
+    | grp_matrix_cyclic_block_Pipeline_read_A_and_B_VITIS_LOOP_28_1_fu_90/i_fu_88[0]_i_1                        | LUT.others.LUT4      |
+    | grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/ram_reg_0_3_0_0_i_2                   | LUT.others.LUT6      |
+    | A_2_U/ram_reg_0_3_2_2/SP                                                                                  | DMEM.dram.RAM32X1S   |
+    | grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U18/tmp_product    | MULT.dsp.DSP48E1     |
+    | grp_matrix_cyclic_block_Pipeline_read_A_and_B_VITIS_LOOP_28_1_fu_90/j_fu_84_reg[1]                        | FLOP_LATCH.flop.FDRE |
+    | grp_matrix_cyclic_block_Pipeline_read_A_and_B_VITIS_LOOP_28_1_fu_90/i_fu_88[0]_i_1                        | LUT.others.LUT4      |
+    | grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/ram_reg_0_3_0_0_i_2                   | LUT.others.LUT6      |
+    | A_2_U/ram_reg_0_3_13_13/SP                                                                                | DMEM.dram.RAM32X1S   |
+    | grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U18/tmp_product__0 | MULT.dsp.DSP48E1     |
+    | grp_matrix_cyclic_block_Pipeline_read_A_and_B_VITIS_LOOP_28_1_fu_90/j_fu_84_reg[1]                        | FLOP_LATCH.flop.FDRE |
+    | grp_matrix_cyclic_block_Pipeline_read_A_and_B_VITIS_LOOP_28_1_fu_90/i_fu_88[0]_i_1                        | LUT.others.LUT4      |
+    | grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/ram_reg_0_3_0_0_i_2                   | LUT.others.LUT6      |
+    | A_2_U/ram_reg_0_3_8_8/SP                                                                                  | DMEM.dram.RAM32X1S   |
+    | grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U18/tmp_product__0 | MULT.dsp.DSP48E1     |
+    | grp_matrix_cyclic_block_Pipeline_read_A_and_B_VITIS_LOOP_28_1_fu_90/j_fu_84_reg[1]                        | FLOP_LATCH.flop.FDRE |
+    | grp_matrix_cyclic_block_Pipeline_read_A_and_B_VITIS_LOOP_28_1_fu_90/i_fu_88[0]_i_1                        | LUT.others.LUT4      |
+    | grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/ram_reg_0_3_0_0_i_2                   | LUT.others.LUT6      |
+    | A_2_U/ram_reg_0_3_5_5/SP                                                                                  | DMEM.dram.RAM32X1S   |
+    | grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U18/tmp_product    | MULT.dsp.DSP48E1     |
+    +-----------------------------------------------------------------------------------------------------------+----------------------+
+
+    +-----------------------------------------------------------------------------------------------------------+----------------------+
+    | Path3 Cells                                                                                               | Primitive Type       |
+    +-----------------------------------------------------------------------------------------------------------+----------------------+
+    | grp_matrix_cyclic_block_Pipeline_read_A_and_B_VITIS_LOOP_28_1_fu_90/j_fu_84_reg[1]                        | FLOP_LATCH.flop.FDRE |
+    | grp_matrix_cyclic_block_Pipeline_read_A_and_B_VITIS_LOOP_28_1_fu_90/i_fu_88[0]_i_1                        | LUT.others.LUT4      |
+    | grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/ram_reg_0_3_0_0_i_2                   | LUT.others.LUT6      |
+    | A_2_U/ram_reg_0_3_2_2/SP                                                                                  | DMEM.dram.RAM32X1S   |
+    | grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U18/tmp_product__0 | MULT.dsp.DSP48E1     |
+    | grp_matrix_cyclic_block_Pipeline_read_A_and_B_VITIS_LOOP_28_1_fu_90/j_fu_84_reg[1]                        | FLOP_LATCH.flop.FDRE |
+    | grp_matrix_cyclic_block_Pipeline_read_A_and_B_VITIS_LOOP_28_1_fu_90/i_fu_88[0]_i_1                        | LUT.others.LUT4      |
+    | grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/ram_reg_0_3_0_0_i_2                   | LUT.others.LUT6      |
+    | A_2_U/ram_reg_0_3_2_2/SP                                                                                  | DMEM.dram.RAM32X1S   |
+    | grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U18/tmp_product    | MULT.dsp.DSP48E1     |
+    | grp_matrix_cyclic_block_Pipeline_read_A_and_B_VITIS_LOOP_28_1_fu_90/j_fu_84_reg[1]                        | FLOP_LATCH.flop.FDRE |
+    | grp_matrix_cyclic_block_Pipeline_read_A_and_B_VITIS_LOOP_28_1_fu_90/i_fu_88[0]_i_1                        | LUT.others.LUT4      |
+    | grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/ram_reg_0_3_0_0_i_2                   | LUT.others.LUT6      |
+    | A_2_U/ram_reg_0_3_13_13/SP                                                                                | DMEM.dram.RAM32X1S   |
+    | grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U18/tmp_product__0 | MULT.dsp.DSP48E1     |
+    | grp_matrix_cyclic_block_Pipeline_read_A_and_B_VITIS_LOOP_28_1_fu_90/j_fu_84_reg[1]                        | FLOP_LATCH.flop.FDRE |
+    | grp_matrix_cyclic_block_Pipeline_read_A_and_B_VITIS_LOOP_28_1_fu_90/i_fu_88[0]_i_1                        | LUT.others.LUT4      |
+    | grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/ram_reg_0_3_0_0_i_2                   | LUT.others.LUT6      |
+    | A_2_U/ram_reg_0_3_8_8/SP                                                                                  | DMEM.dram.RAM32X1S   |
+    | grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U18/tmp_product__0 | MULT.dsp.DSP48E1     |
+    | grp_matrix_cyclic_block_Pipeline_read_A_and_B_VITIS_LOOP_28_1_fu_90/j_fu_84_reg[1]                        | FLOP_LATCH.flop.FDRE |
+    | grp_matrix_cyclic_block_Pipeline_read_A_and_B_VITIS_LOOP_28_1_fu_90/i_fu_88[0]_i_1                        | LUT.others.LUT4      |
+    | grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/ram_reg_0_3_0_0_i_2                   | LUT.others.LUT6      |
+    | A_2_U/ram_reg_0_3_5_5/SP                                                                                  | DMEM.dram.RAM32X1S   |
+    | grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U18/tmp_product    | MULT.dsp.DSP48E1     |
+    +-----------------------------------------------------------------------------------------------------------+----------------------+
+
+    +-----------------------------------------------------------------------------------------------------------+----------------------+
+    | Path4 Cells                                                                                               | Primitive Type       |
+    +-----------------------------------------------------------------------------------------------------------+----------------------+
+    | grp_matrix_cyclic_block_Pipeline_read_A_and_B_VITIS_LOOP_28_1_fu_90/j_fu_84_reg[1]                        | FLOP_LATCH.flop.FDRE |
+    | grp_matrix_cyclic_block_Pipeline_read_A_and_B_VITIS_LOOP_28_1_fu_90/i_fu_88[0]_i_1                        | LUT.others.LUT4      |
+    | grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/ram_reg_0_3_0_0_i_2                   | LUT.others.LUT6      |
+    | A_2_U/ram_reg_0_3_2_2/SP                                                                                  | DMEM.dram.RAM32X1S   |
+    | grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U18/tmp_product__0 | MULT.dsp.DSP48E1     |
+    | grp_matrix_cyclic_block_Pipeline_read_A_and_B_VITIS_LOOP_28_1_fu_90/j_fu_84_reg[1]                        | FLOP_LATCH.flop.FDRE |
+    | grp_matrix_cyclic_block_Pipeline_read_A_and_B_VITIS_LOOP_28_1_fu_90/i_fu_88[0]_i_1                        | LUT.others.LUT4      |
+    | grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/ram_reg_0_3_0_0_i_2                   | LUT.others.LUT6      |
+    | A_2_U/ram_reg_0_3_2_2/SP                                                                                  | DMEM.dram.RAM32X1S   |
+    | grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U18/tmp_product    | MULT.dsp.DSP48E1     |
+    | grp_matrix_cyclic_block_Pipeline_read_A_and_B_VITIS_LOOP_28_1_fu_90/j_fu_84_reg[1]                        | FLOP_LATCH.flop.FDRE |
+    | grp_matrix_cyclic_block_Pipeline_read_A_and_B_VITIS_LOOP_28_1_fu_90/i_fu_88[0]_i_1                        | LUT.others.LUT4      |
+    | grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/ram_reg_0_3_0_0_i_2                   | LUT.others.LUT6      |
+    | A_2_U/ram_reg_0_3_13_13/SP                                                                                | DMEM.dram.RAM32X1S   |
+    | grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U18/tmp_product__0 | MULT.dsp.DSP48E1     |
+    | grp_matrix_cyclic_block_Pipeline_read_A_and_B_VITIS_LOOP_28_1_fu_90/j_fu_84_reg[1]                        | FLOP_LATCH.flop.FDRE |
+    | grp_matrix_cyclic_block_Pipeline_read_A_and_B_VITIS_LOOP_28_1_fu_90/i_fu_88[0]_i_1                        | LUT.others.LUT4      |
+    | grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/ram_reg_0_3_0_0_i_2                   | LUT.others.LUT6      |
+    | A_2_U/ram_reg_0_3_8_8/SP                                                                                  | DMEM.dram.RAM32X1S   |
+    | grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U18/tmp_product__0 | MULT.dsp.DSP48E1     |
+    | grp_matrix_cyclic_block_Pipeline_read_A_and_B_VITIS_LOOP_28_1_fu_90/j_fu_84_reg[1]                        | FLOP_LATCH.flop.FDRE |
+    | grp_matrix_cyclic_block_Pipeline_read_A_and_B_VITIS_LOOP_28_1_fu_90/i_fu_88[0]_i_1                        | LUT.others.LUT4      |
+    | grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/ram_reg_0_3_0_0_i_2                   | LUT.others.LUT6      |
+    | A_2_U/ram_reg_0_3_5_5/SP                                                                                  | DMEM.dram.RAM32X1S   |
+    | grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U18/tmp_product    | MULT.dsp.DSP48E1     |
+    +-----------------------------------------------------------------------------------------------------------+----------------------+
+
+    +-----------------------------------------------------------------------------------------------------------+----------------------+
+    | Path5 Cells                                                                                               | Primitive Type       |
+    +-----------------------------------------------------------------------------------------------------------+----------------------+
+    | grp_matrix_cyclic_block_Pipeline_read_A_and_B_VITIS_LOOP_28_1_fu_90/j_fu_84_reg[1]                        | FLOP_LATCH.flop.FDRE |
+    | grp_matrix_cyclic_block_Pipeline_read_A_and_B_VITIS_LOOP_28_1_fu_90/i_fu_88[0]_i_1                        | LUT.others.LUT4      |
+    | grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/ram_reg_0_3_0_0_i_2                   | LUT.others.LUT6      |
+    | A_2_U/ram_reg_0_3_2_2/SP                                                                                  | DMEM.dram.RAM32X1S   |
+    | grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U18/tmp_product__0 | MULT.dsp.DSP48E1     |
+    | grp_matrix_cyclic_block_Pipeline_read_A_and_B_VITIS_LOOP_28_1_fu_90/j_fu_84_reg[1]                        | FLOP_LATCH.flop.FDRE |
+    | grp_matrix_cyclic_block_Pipeline_read_A_and_B_VITIS_LOOP_28_1_fu_90/i_fu_88[0]_i_1                        | LUT.others.LUT4      |
+    | grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/ram_reg_0_3_0_0_i_2                   | LUT.others.LUT6      |
+    | A_2_U/ram_reg_0_3_2_2/SP                                                                                  | DMEM.dram.RAM32X1S   |
+    | grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U18/tmp_product    | MULT.dsp.DSP48E1     |
+    | grp_matrix_cyclic_block_Pipeline_read_A_and_B_VITIS_LOOP_28_1_fu_90/j_fu_84_reg[1]                        | FLOP_LATCH.flop.FDRE |
+    | grp_matrix_cyclic_block_Pipeline_read_A_and_B_VITIS_LOOP_28_1_fu_90/i_fu_88[0]_i_1                        | LUT.others.LUT4      |
+    | grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/ram_reg_0_3_0_0_i_2                   | LUT.others.LUT6      |
+    | A_2_U/ram_reg_0_3_13_13/SP                                                                                | DMEM.dram.RAM32X1S   |
+    | grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U18/tmp_product__0 | MULT.dsp.DSP48E1     |
+    | grp_matrix_cyclic_block_Pipeline_read_A_and_B_VITIS_LOOP_28_1_fu_90/j_fu_84_reg[1]                        | FLOP_LATCH.flop.FDRE |
+    | grp_matrix_cyclic_block_Pipeline_read_A_and_B_VITIS_LOOP_28_1_fu_90/i_fu_88[0]_i_1                        | LUT.others.LUT4      |
+    | grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/ram_reg_0_3_0_0_i_2                   | LUT.others.LUT6      |
+    | A_2_U/ram_reg_0_3_8_8/SP                                                                                  | DMEM.dram.RAM32X1S   |
+    | grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U18/tmp_product__0 | MULT.dsp.DSP48E1     |
+    | grp_matrix_cyclic_block_Pipeline_read_A_and_B_VITIS_LOOP_28_1_fu_90/j_fu_84_reg[1]                        | FLOP_LATCH.flop.FDRE |
+    | grp_matrix_cyclic_block_Pipeline_read_A_and_B_VITIS_LOOP_28_1_fu_90/i_fu_88[0]_i_1                        | LUT.others.LUT4      |
+    | grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/ram_reg_0_3_0_0_i_2                   | LUT.others.LUT6      |
+    | A_2_U/ram_reg_0_3_5_5/SP                                                                                  | DMEM.dram.RAM32X1S   |
+    | grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U18/tmp_product    | MULT.dsp.DSP48E1     |
+    +-----------------------------------------------------------------------------------------------------------+----------------------+
+
+
+================================================================
+== Place & Route Vivado Reports
+================================================================
++--------------------------+-----------------------------------------------------------------------------+
+| Report Type              | Report Location                                                             |
++--------------------------+-----------------------------------------------------------------------------+
+| design_analysis          | impl/verilog/report/matrix_cyclic_block_design_analysis_routed.rpt          |
+| failfast                 | impl/verilog/report/matrix_cyclic_block_failfast_routed.rpt                 |
+| power                    | impl/verilog/report/matrix_cyclic_block_power_routed.rpt                    |
+| status                   | impl/verilog/report/matrix_cyclic_block_status_routed.rpt                   |
+| timing                   | impl/verilog/report/matrix_cyclic_block_timing_routed.rpt                   |
+| timing_paths             | impl/verilog/report/matrix_cyclic_block_timing_paths_routed.rpt             |
+| utilization              | impl/verilog/report/matrix_cyclic_block_utilization_routed.rpt              |
+| utilization_hierarchical | impl/verilog/report/matrix_cyclic_block_utilization_hierarchical_routed.rpt |
++--------------------------+-----------------------------------------------------------------------------+
+
+

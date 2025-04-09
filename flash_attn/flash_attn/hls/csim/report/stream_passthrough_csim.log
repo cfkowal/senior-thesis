@@ -1,0 +1,29 @@
+INFO: [SIM 2] *************** CSIM start ***************
+INFO: [SIM 4] CSIM will launch CLANG as the compiler.
+   Compiling ../../../../flash_attn_tb.cpp in debug mode
+   Compiling ../../../../flash_attn.cpp in debug mode
+   Generating csim.exe
+Creating test data with 2 columns and 4 rows
+Input[0][0] = 0
+Input[0][1] = 1
+Input[0][2] = 2
+Input[0][3] = 3
+Input[1][0] = 100
+Input[1][1] = 101
+Input[1][2] = 102
+Input[1][3] = 103
+
+Checking output data:
+Output[0][0] = 0
+Output[0][1] = 1
+Output[0][2] = 2
+Output[0][3] = 3
+Output[1][0] = 100
+Output[1][1] = 101
+Output[1][2] = 102
+Output[1][3] = 103
+
+Test PASSED!
+INFO [HLS SIM]: The maximum depth reached by any hls::stream() instance in the design is 8
+INFO: [SIM 1] CSim done with 0 errors.
+INFO: [SIM 3] *************** CSIM finish ***************

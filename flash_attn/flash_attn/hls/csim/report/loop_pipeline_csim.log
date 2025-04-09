@@ -1,0 +1,40 @@
+INFO: [SIM 2] *************** CSIM start ***************
+INFO: [SIM 4] CSIM will launch CLANG as the compiler.
+   Compiling ../../../../loop_pipeline_tb.cpp in debug mode
+   Compiling ../../../../loop_pipeline.cpp in debug mode
+   Generating csim.exe
+dataout[0] is 56
+
+dataout[1] is 62
+
+dataout[2] is 68
+
+dataout[3] is 74
+
+dataout[4] is 152
+
+dataout[5] is 174
+
+dataout[6] is 196
+
+dataout[7] is 218
+
+dataout[8] is 248
+
+dataout[9] is 286
+
+dataout[10] is 324
+
+dataout[11] is 362
+
+dataout[12] is 344
+
+dataout[13] is 398
+
+dataout[14] is 452
+
+dataout[15] is 506
+
+INFO [HLS SIM]: The maximum depth reached by any hls::stream() instance in the design is 16
+INFO: [SIM 1] CSim done with 0 errors.
+INFO: [SIM 3] *************** CSIM finish ***************

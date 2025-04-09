@@ -1,0 +1,70 @@
+  **** HLS Build v2024.2 5238294
+INFO: [HLS 200-2005] Using work_dir C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn/flash_attn 
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying ini 'syn.file=loop_pipeline.h' from C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn/hls_config.cfg(9)
+INFO: [HLS 200-10] Adding design file 'C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn/loop_pipeline.h' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=loop_pipeline.cpp' from C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn/hls_config.cfg(10)
+INFO: [HLS 200-10] Adding design file 'C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn/loop_pipeline.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'tb.file=loop_pipeline_tb.cpp' from C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn/hls_config.cfg(11)
+INFO: [HLS 200-10] Adding test bench file 'C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn/loop_pipeline_tb.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.top=loop_pipeline' from C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn/hls_config.cfg(7)
+INFO: [HLS 200-1465] Applying ini 'flow_target=vivado' from C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn/hls_config.cfg(4)
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying ini 'part=xc7z020clg400-1' from C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn/hls_config.cfg(1)
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg400-1'
+INFO: [HLS 200-1465] Applying ini 'package.output.format=ip_catalog' from C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn/hls_config.cfg(5)
+INFO: [HLS 200-1465] Applying ini 'syn.interface.s_axilite_data64=1' from C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn/hls_config.cfg(8)
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch CLANG as the compiler.
+INFO: [HLS 200-2036] Building debug C Simulation binaries
+   Compiling ../../../../loop_pipeline_tb.cpp in debug mode
+   Compiling ../../../../loop_pipeline.cpp in debug mode
+   Generating csim.exe
+In file included from ../../../../loop_pipeline_tb.cpp:4:
+In file included from ../../../../loop_pipeline.h:1:
+In file included from C:/Xilinx/Vitis/2024.2/include/ap_axi_sdata.h:15:
+In file included from C:/Xilinx/Vitis/2024.2/include/ap_int.h:10:
+In file included from C:/Xilinx/Vitis/2024.2/include/etc/ap_common.h:658:
+In file included from C:/Xilinx/Vitis/2024.2/include/etc/ap_private.h:68:
+In file included from C:/Xilinx/Vitis/2024.2/include/hls_half.h:26:
+In file included from C:/Xilinx/Vitis/2024.2/include/etc/hls_half_fpo.h:19:
+In file included from C:/Xilinx/Vitis/2024.2/include/hls_fpo.h:140:
+In file included from C:/Xilinx/Vitis/2024.2/include/floating_point_v7_1_bitacc_cmodel.h:150:
+C:/Xilinx/Vitis/2024.2/include/gmp.h:58:9: warning: '__GMP_LIBGMP_DLL' macro redefined [-Wmacro-redefined]
+#define __GMP_LIBGMP_DLL  0
+        ^
+C:/Xilinx/Vitis/2024.2/include/floating_point_v7_1_bitacc_cmodel.h:142:9: note: previous definition is here
+#define __GMP_LIBGMP_DLL 1
+        ^
+1 warning generated.
+In file included from ../../../../loop_pipeline.cpp:2:
+In file included from ../../../../loop_pipeline.h:1:
+In file included from C:/Xilinx/Vitis/2024.2/include/ap_axi_sdata.h:15:
+In file included from C:/Xilinx/Vitis/2024.2/include/ap_int.h:10:
+In file included from C:/Xilinx/Vitis/2024.2/include/etc/ap_common.h:658:
+In file included from C:/Xilinx/Vitis/2024.2/include/etc/ap_private.h:68:
+In file included from C:/Xilinx/Vitis/2024.2/include/hls_half.h:26:
+In file included from C:/Xilinx/Vitis/2024.2/include/etc/hls_half_fpo.h:19:
+In file included from C:/Xilinx/Vitis/2024.2/include/hls_fpo.h:140:
+In file included from C:/Xilinx/Vitis/2024.2/include/floating_point_v7_1_bitacc_cmodel.h:150:
+C:/Xilinx/Vitis/2024.2/include/gmp.h:58:9: warning: '__GMP_LIBGMP_DLL' macro redefined [-Wmacro-redefined]
+#define __GMP_LIBGMP_DLL  0
+        ^
+C:/Xilinx/Vitis/2024.2/include/floating_point_v7_1_bitacc_cmodel.h:142:9: note: previous definition is here
+#define __GMP_LIBGMP_DLL 1
+        ^
+1 warning generated.
+
+Sending Column 0:
+Sent value: 0
+Sent value: 1
+Sent value: 2
+Sent value: 3
+Sent value: 4
+Sent value: 5
+Sent value: 6
+Sent value: 7
+Sent value: 8
+Sent value: 9

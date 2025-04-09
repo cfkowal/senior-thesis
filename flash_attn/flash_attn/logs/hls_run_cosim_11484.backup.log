@@ -1,0 +1,156 @@
+  **** HLS Build v2024.2 5238294
+INFO: [HLS 200-2005] Using work_dir C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn/flash_attn 
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg400-1'
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying ini 'syn.file=loop_pipeline.h' from C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn/hls_config.cfg(9)
+INFO: [HLS 200-10] Adding design file 'C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn/loop_pipeline.h' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=loop_pipeline.cpp' from C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn/hls_config.cfg(10)
+INFO: [HLS 200-10] Adding design file 'C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn/loop_pipeline.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'tb.file=loop_pipeline_tb.cpp' from C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn/hls_config.cfg(11)
+INFO: [HLS 200-10] Adding test bench file 'C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn/loop_pipeline_tb.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.top=loop_pipeline' from C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn/hls_config.cfg(7)
+INFO: [HLS 200-1465] Applying ini 'flow_target=vivado' from C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn/hls_config.cfg(4)
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying ini 'part=xc7z020clg400-1' from C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn/hls_config.cfg(1)
+INFO: [HLS 200-1465] Applying ini 'package.output.format=ip_catalog' from C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn/hls_config.cfg(5)
+INFO: [HLS 200-1465] Applying ini 'syn.interface.s_axilite_data64=1' from C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn/hls_config.cfg(8)
+INFO: [COSIM 212-47] Using XSIM for RTL simulation.
+INFO: [COSIM 212-14] Instrumenting C test bench ...
+   Build using "C:/Xilinx/Vitis/2024.2/vcxx/libexec/clang++"
+   Compiling loop_pipeline.cpp_pre.cpp.tb.cpp
+   Compiling apatb_loop_pipeline.cpp
+   Compiling apatb_loop_pipeline_util.cpp
+   Compiling loop_pipeline_tb.cpp_pre.cpp.tb.cpp
+   Compiling apatb_loop_pipeline_ir.ll
+   Generating cosim.tv.exe
+INFO: [COSIM 212-302] Starting C TB testing ... 
+Result: 10
+Result: 11
+Result: 12
+Result: 13
+Result: 14
+Result: 15
+Result: 16
+Result: 17
+Result: 18
+Result: 19
+INFO [HLS SIM]: The maximum depth reached by any hls::stream() instance in the design is 10
+INFO: [COSIM 212-333] Generating C post check test bench ...
+INFO: [COSIM 212-12] Generating RTL test bench ...
+INFO: [COSIM 212-1] *** C/RTL co-simulation file generation completed. ***
+INFO: [COSIM 212-323] Starting verilog simulation. 
+INFO: [COSIM 212-15] Starting XSIM ...
+
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\sim\verilog>set PATH= 
+
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\sim\verilog>call C:/Xilinx/Vivado/2024.2/bin/xelab xil_defaultlib.apatb_loop_pipeline_top glbl -Oenable_linking_all_libraries  -prj loop_pipeline.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims_ver -L xpm  -L floating_point_v7_0_24 -L floating_point_v7_1_19 --lib "ieee_proposed=./ieee_proposed" -s loop_pipeline  
+Vivado Simulator v2024.2.0
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2024.2/bin/unwrapped/win64.o/xelab.exe xil_defaultlib.apatb_loop_pipeline_top glbl -Oenable_linking_all_libraries -prj loop_pipeline.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims_ver -L xpm -L floating_point_v7_0_24 -L floating_point_v7_1_19 --lib ieee_proposed=./ieee_proposed -s loop_pipeline 
+Multi-threading is on. Using 14 slave threads.
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn/flash_attn/hls/sim/verilog/glbl.v" into library work
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn/flash_attn/hls/sim/verilog/AESL_axi_s_out_r.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_axi_s_out_r
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn/flash_attn/hls/sim/verilog/AESL_axi_s_strm.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_axi_s_strm
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn/flash_attn/hls/sim/verilog/AESL_deadlock_idx0_monitor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_deadlock_idx0_monitor
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn/flash_attn/hls/sim/verilog/AESL_deadlock_kernel_monitor_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_deadlock_kernel_monitor_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn/flash_attn/hls/sim/verilog/AESL_fifo.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fifo
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn/flash_attn/hls/sim/verilog/loop_pipeline.autotb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module apatb_loop_pipeline_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn/flash_attn/hls/sim/verilog/loop_pipeline.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module loop_pipeline
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn/flash_attn/hls/sim/verilog/loop_pipeline_regslice_both.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module loop_pipeline_regslice_both
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn/flash_attn/hls/sim/verilog/dataflow_monitor.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dataflow_monitor
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package xil_defaultlib.$unit_dataflow_monitor_sv
+Compiling module xil_defaultlib.loop_pipeline_regslice_both(Data...
+Compiling module xil_defaultlib.loop_pipeline_regslice_both(Data...
+Compiling module xil_defaultlib.loop_pipeline_regslice_both(Data...
+Compiling module xil_defaultlib.loop_pipeline
+Compiling module xil_defaultlib.fifo(DEPTH=2,WIDTH=32)
+Compiling module xil_defaultlib.fifo(DEPTH=2,WIDTH=4)
+Compiling module xil_defaultlib.fifo(DEPTH=2,WIDTH=1)
+Compiling module xil_defaultlib.AESL_axi_s_strm
+Compiling module xil_defaultlib.AESL_axi_s_out_r
+Compiling module xil_defaultlib.AESL_deadlock_idx0_monitor
+Compiling module xil_defaultlib.AESL_deadlock_kernel_monitor_top...
+Compiling module xil_defaultlib.nodf_module_intf_default
+Compiling module xil_defaultlib.dataflow_monitor
+Compiling module xil_defaultlib.apatb_loop_pipeline_top
+Compiling module work.glbl
+Built simulation snapshot loop_pipeline
+
+****** xsim v2024.2 (64-bit)
+  **** SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+  **** IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+  **** SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+  **** Start of session at: Sun Apr  6 22:24:31 2025
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source xsim.dir/loop_pipeline/xsim_script.tcl
+# xsim {loop_pipeline} -autoloadwcfg -tclbatch {loop_pipeline.tcl}
+Time resolution is 1 ps
+source loop_pipeline.tcl
+## run all
+////////////////////////////////////////////////////////////////////////////////////
+// Inter-Transaction Progress: Completed Transaction / Total Transaction
+// Intra-Transaction Progress: Measured Latency / Latency Estimation * 100%
+//
+// RTL Simulation : "Inter-Transaction Progress" ["Intra-Transaction Progress"] @ "Simulation Time"
+////////////////////////////////////////////////////////////////////////////////////
+// RTL Simulation : 0 / 10 [0.00%] @ "125000"
+// RTL Simulation : 1 / 10 [100.00%] @ "165000"
+// RTL Simulation : 2 / 10 [100.00%] @ "175000"
+// RTL Simulation : 3 / 10 [100.00%] @ "185000"
+// RTL Simulation : 4 / 10 [100.00%] @ "195000"
+// RTL Simulation : 5 / 10 [100.00%] @ "205000"
+// RTL Simulation : 6 / 10 [100.00%] @ "215000"
+// RTL Simulation : 7 / 10 [100.00%] @ "225000"
+// RTL Simulation : 8 / 10 [100.00%] @ "235000"
+// RTL Simulation : 9 / 10 [100.00%] @ "245000"
+// RTL Simulation : 10 / 10 [100.00%] @ "255000"
+////////////////////////////////////////////////////////////////////////////////////
+$finish called at time : 315 ns : File "C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn/flash_attn/hls/sim/verilog/loop_pipeline.autotb.v" Line 250
+## quit
+INFO: [Common 17-206] Exiting xsim at Sun Apr  6 22:24:33 2025...
+INFO: [COSIM 212-316] Starting C post checking ...
+WARNING: [SIM 212-201] RTL produces unknown value 'x' or 'X' on some port, possible cause: There are uninitialized variables in the design.
+WARNING: [SIM 212-201] RTL produces unknown value 'x' or 'X' on some port, possible cause: There are uninitialized variables in the design.
+WARNING: [SIM 212-201] RTL produces unknown value 'x' or 'X' on some port, possible cause: There are uninitialized variables in the design.
+WARNING: [SIM 212-201] RTL produces unknown value 'x' or 'X' on some port, possible cause: There are uninitialized variables in the design.
+WARNING: [SIM 212-201] RTL produces unknown value 'x' or 'X' on some port, possible cause: There are uninitialized variables in the design.
+WARNING: [SIM 212-201] RTL produces unknown value 'x' or 'X' on some port, possible cause: There are uninitialized variables in the design.
+WARNING: [SIM 212-201] RTL produces unknown value 'x' or 'X' on some port, possible cause: There are uninitialized variables in the design.
+WARNING: [SIM 212-201] RTL produces unknown value 'x' or 'X' on some port, possible cause: There are uninitialized variables in the design.
+WARNING: [SIM 212-201] RTL produces unknown value 'x' or 'X' on some port, possible cause: There are uninitialized variables in the design.
+WARNING: [SIM 212-201] RTL produces unknown value 'x' or 'X' on some port, possible cause: There are uninitialized variables in the design.
+Result: 10
+Result: 11
+Result: 12
+Result: 13
+Result: 14
+Result: 15
+Result: 16
+Result: 17
+Result: 18
+Result: 19
+INFO [HLS SIM]: The maximum depth reached by any hls::stream() instance in the design is 10
+INFO: [COSIM 212-1000] *** C/RTL co-simulation finished: PASS ***
+INFO: [HLS 200-112] Total CPU user time: 3 seconds. Total CPU system time: 1 seconds. Total elapsed time: 28.702 seconds; peak allocated memory: 329.375 MB.
+INFO: [vitis-run 60-791] Total elapsed time: 0h 0m 32s

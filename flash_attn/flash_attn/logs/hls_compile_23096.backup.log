@@ -1,0 +1,108 @@
+  **** HLS Build v2024.2 5238294
+INFO: [HLS 200-2005] Using work_dir C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn/flash_attn 
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying ini 'syn.file=flash_attn.cpp' from C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn/hls_config.cfg(7)
+INFO: [HLS 200-10] Adding design file 'C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn/flash_attn.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=flash_attn.h' from C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn/hls_config.cfg(8)
+INFO: [HLS 200-10] Adding design file 'C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn/flash_attn.h' to the project
+INFO: [HLS 200-1465] Applying ini 'tb.file=flash_attn_tb.cpp' from C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn/hls_config.cfg(9)
+INFO: [HLS 200-10] Adding test bench file 'C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn/flash_attn_tb.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.top=array_passthrough' from C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn/hls_config.cfg(10)
+INFO: [HLS 200-1465] Applying ini 'flow_target=vivado' from C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn/hls_config.cfg(4)
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying ini 'part=xc7z020clg400-1' from C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn/hls_config.cfg(1)
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg400-1'
+INFO: [HLS 200-1465] Applying ini 'package.output.format=ip_catalog' from C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn/hls_config.cfg(5)
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 2 seconds. CPU system time: 1 seconds. Elapsed time: 2.809 seconds; current allocated memory: 258.832 MB.
+INFO: [HLS 200-10] Analyzing design file 'flash_attn.cpp' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 4.387 seconds; current allocated memory: 261.617 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 200-1995] There were 146 instructions in the design after the 'Compile/Link' phase of compilation. See the Design Size Report for more details: C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn/flash_attn/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 115 instructions in the design after the 'Unroll/Inline (step 1)' phase of compilation. See the Design Size Report for more details: C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn/flash_attn/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 80 instructions in the design after the 'Unroll/Inline (step 2)' phase of compilation. See the Design Size Report for more details: C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn/flash_attn/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 85 instructions in the design after the 'Unroll/Inline (step 3)' phase of compilation. See the Design Size Report for more details: C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn/flash_attn/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 85 instructions in the design after the 'Unroll/Inline (step 4)' phase of compilation. See the Design Size Report for more details: C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn/flash_attn/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 179 instructions in the design after the 'Array/Struct (step 1)' phase of compilation. See the Design Size Report for more details: C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn/flash_attn/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 165 instructions in the design after the 'Array/Struct (step 2)' phase of compilation. See the Design Size Report for more details: C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn/flash_attn/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 165 instructions in the design after the 'Array/Struct (step 3)' phase of compilation. See the Design Size Report for more details: C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn/flash_attn/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 165 instructions in the design after the 'Array/Struct (step 4)' phase of compilation. See the Design Size Report for more details: C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn/flash_attn/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 177 instructions in the design after the 'Array/Struct (step 5)' phase of compilation. See the Design Size Report for more details: C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn/flash_attn/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 177 instructions in the design after the 'Performance (step 1)' phase of compilation. See the Design Size Report for more details: C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn/flash_attn/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 177 instructions in the design after the 'Performance (step 2)' phase of compilation. See the Design Size Report for more details: C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn/flash_attn/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 177 instructions in the design after the 'Performance (step 3)' phase of compilation. See the Design Size Report for more details: C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn/flash_attn/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 177 instructions in the design after the 'Performance (step 4)' phase of compilation. See the Design Size Report for more details: C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn/flash_attn/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 206 instructions in the design after the 'HW Transforms (step 1)' phase of compilation. See the Design Size Report for more details: C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn/flash_attn/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 215 instructions in the design after the 'HW Transforms (step 2)' phase of compilation. See the Design Size Report for more details: C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn/flash_attn/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_38_2' is marked as complete unroll implied by the pipeline pragma (flash_attn.cpp:38:19)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_51_3' is marked as complete unroll implied by the pipeline pragma (flash_attn.cpp:51:19)
+INFO: [HLS 214-248] Applying array_partition to 'col_buf1': Complete partitioning on dimension 2. (flash_attn.cpp:23:10)
+INFO: [HLS 214-248] Applying array_partition to 'col_buf2': Complete partitioning on dimension 2. (flash_attn.cpp:24:13)
+INFO: [HLS 214-248] Applying array_partition to 'col_buf3': Complete partitioning on dimension 2. (flash_attn.cpp:25:13)
+INFO: [HLS 214-115] Multiple burst reads of variable length and bit width 32 in loop 'VITIS_LOOP_38_2'(flash_attn.cpp:38:19) has been inferred on bundle 'gmem0'. These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings. (flash_attn.cpp:38:19)
+INFO: [HLS 214-115] Multiple burst reads of variable length and bit width 32 in loop 'VITIS_LOOP_38_2'(flash_attn.cpp:38:19) has been inferred on bundle 'gmem1'. These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings. (flash_attn.cpp:38:19)
+INFO: [HLS 214-115] Multiple burst reads of variable length and bit width 32 in loop 'VITIS_LOOP_38_2'(flash_attn.cpp:38:19) has been inferred on bundle 'gmem2'. These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings. (flash_attn.cpp:38:19)
+INFO: [HLS 214-115] Multiple burst writes of variable length and bit width 32 in loop 'VITIS_LOOP_51_3'(flash_attn.cpp:51:19) has been inferred on bundle 'gmem3'. These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings. (flash_attn.cpp:51:19)
+INFO: [HLS 214-115] Multiple burst writes of variable length and bit width 32 in loop 'VITIS_LOOP_51_3'(flash_attn.cpp:51:19) has been inferred on bundle 'gmem4'. These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings. (flash_attn.cpp:51:19)
+INFO: [HLS 214-115] Multiple burst writes of variable length and bit width 32 in loop 'VITIS_LOOP_51_3'(flash_attn.cpp:51:19) has been inferred on bundle 'gmem5'. These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings. (flash_attn.cpp:51:19)
+WARNING: [HLS 214-187] Cannot unroll loop 'VITIS_LOOP_38_2' (flash_attn.cpp:38:19) in function 'array_passthrough' as it has a variable trip count (flash_attn.cpp:38:19)
+WARNING: [HLS 214-187] Cannot unroll loop 'VITIS_LOOP_51_3' (flash_attn.cpp:51:19) in function 'array_passthrough' as it has a variable trip count (flash_attn.cpp:51:19)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 8.813 seconds; current allocated memory: 264.109 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.004 seconds; current allocated memory: 264.113 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.041 seconds; current allocated memory: 269.344 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.032 seconds; current allocated memory: 272.027 MB.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.077 seconds; current allocated memory: 294.465 MB.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.075 seconds; current allocated memory: 294.469 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'array_passthrough' ...
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'array_passthrough' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+WARNING: [SCHED 204-65] Unable to satisfy pipeline directive for loop 'col_load': contains subloop(s) that are not unrolled or flattened.
+WARNING: [SCHED 204-65] Unable to satisfy pipeline directive for loop 'col_store': contains subloop(s) that are not unrolled or flattened.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.21 seconds; current allocated memory: 294.469 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.079 seconds; current allocated memory: 294.469 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'array_passthrough' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low.
+INFO: [RTGEN 206-500] Setting interface mode on port 'array_passthrough/gmem0' to 'm_axi'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'array_passthrough/gmem1' to 'm_axi'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'array_passthrough/gmem2' to 'm_axi'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'array_passthrough/gmem3' to 'm_axi'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'array_passthrough/gmem4' to 'm_axi'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'array_passthrough/gmem5' to 'm_axi'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'array_passthrough/in_array1' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'array_passthrough/in_array2' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'array_passthrough/in_array3' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'array_passthrough/out_array1' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'array_passthrough/out_array2' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'array_passthrough/out_array3' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'array_passthrough/num_cols_per_batch' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'array_passthrough' to 's_axilite & ap_ctrl_none'.
+INFO: [RTGEN 206-100] Bundling port 'num_cols_per_batch' and 'return' to AXI-Lite port control.
+INFO: [RTGEN 206-100] Bundling port 'in_array1', 'in_array2', 'in_array3', 'out_array1', 'out_array2' and 'out_array3' to AXI-Lite port control_r.
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_9_2_32_1_1': 3 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'array_passthrough'.
+INFO: [RTMG 210-278] Implementing memory 'array_passthrough_col_buf1_RAM_AUTO_1R1W' using auto RAMs.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.308 seconds; current allocated memory: 299.934 MB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.872 seconds; current allocated memory: 306.805 MB.
+INFO: [HLS 200-1603] Design has inferred MAXI bursts and missed bursts, see Vitis HLS GUI synthesis summary report for detailed information.
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 1 seconds. CPU system time: 1 seconds. Elapsed time: 1.393 seconds; current allocated memory: 315.086 MB.
+INFO: [VHDL 208-304] Generating VHDL RTL for array_passthrough.
+INFO: [VLOG 209-307] Generating Verilog RTL for array_passthrough.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 136.99 MHz
+INFO: [HLS 200-112] Total CPU user time: 4 seconds. Total CPU system time: 2 seconds. Total elapsed time: 21.988 seconds; peak allocated memory: 315.145 MB.
+INFO: [v++ 60-791] Total elapsed time: 0h 0m 26s

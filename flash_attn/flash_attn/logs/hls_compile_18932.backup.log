@@ -1,0 +1,36 @@
+  **** HLS Build v2024.2 5238294
+INFO: [HLS 200-2005] Using work_dir C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn/flash_attn 
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying ini 'syn.file=loop_pipeline.h' from C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn/hls_config.cfg(9)
+INFO: [HLS 200-10] Adding design file 'C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn/loop_pipeline.h' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=loop_pipeline.cpp' from C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn/hls_config.cfg(10)
+INFO: [HLS 200-10] Adding design file 'C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn/loop_pipeline.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'tb.file=loop_pipeline_tb.cpp' from C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn/hls_config.cfg(11)
+INFO: [HLS 200-10] Adding test bench file 'C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn/loop_pipeline_tb.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.top=loop_pipeline' from C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn/hls_config.cfg(7)
+INFO: [HLS 200-1465] Applying ini 'flow_target=vivado' from C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn/hls_config.cfg(4)
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying ini 'part=xc7z020clg400-1' from C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn/hls_config.cfg(1)
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg400-1'
+INFO: [HLS 200-1465] Applying ini 'package.output.format=ip_catalog' from C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn/hls_config.cfg(5)
+INFO: [HLS 200-1465] Applying ini 'syn.interface.s_axilite_data64=1' from C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn/hls_config.cfg(8)
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 2 seconds. CPU system time: 1 seconds. Elapsed time: 2.836 seconds; current allocated memory: 258.805 MB.
+INFO: [HLS 200-10] Analyzing design file 'loop_pipeline.cpp' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 5.632 seconds; current allocated memory: 261.441 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 200-1995] There were 26 instructions in the design after the 'Compile/Link' phase of compilation. See the Design Size Report for more details: C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn/flash_attn/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,526 instructions in the design after the 'Unroll/Inline (step 1)' phase of compilation. See the Design Size Report for more details: C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn/flash_attn/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 782 instructions in the design after the 'Unroll/Inline (step 2)' phase of compilation. See the Design Size Report for more details: C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn/flash_attn/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 782 instructions in the design after the 'Unroll/Inline (step 3)' phase of compilation. See the Design Size Report for more details: C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn/flash_attn/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 782 instructions in the design after the 'Unroll/Inline (step 4)' phase of compilation. See the Design Size Report for more details: C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn/flash_attn/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 214-291] Loop 'LOOP_I' is marked as complete unroll implied by the pipeline pragma (loop_pipeline.cpp:11:5)
+INFO: [HLS 214-291] Loop 'LOOP_J' is marked as complete unroll implied by the pipeline pragma (loop_pipeline.cpp:13:9)
+INFO: [HLS 214-186] Unrolling loop 'LOOP_I' (loop_pipeline.cpp:11:5) in function 'loop_pipeline' completely with a factor of 20 (loop_pipeline.cpp:3:0)
+INFO: [HLS 214-186] Unrolling loop 'LOOP_J' (loop_pipeline.cpp:13:9) in function 'loop_pipeline' completely with a factor of 20 (loop_pipeline.cpp:3:0)
+INFO: [HLS 214-248] Applying array_partition to 'A': Complete partitioning on dimension 1. (loop_pipeline.cpp:3:0)
+ERROR: [HLS 214-384] in function 'loop_pipeline(int*) (.8)': Cannot apply array transformation pragma/directive because of full array load/store. (loop_pipeline.cpp:14:20)
+ERROR: [HLS 200-1715] Encountered problem during source synthesis
+ERROR: Pre-synthesis failed.
+INFO: [HLS 200-112] Total CPU user time: 2 seconds. Total CPU system time: 1 seconds. Total elapsed time: 16.103 seconds; peak allocated memory: 262.562 MB.

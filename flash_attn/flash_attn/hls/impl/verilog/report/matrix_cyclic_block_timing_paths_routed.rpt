@@ -1,0 +1,547 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
+| Date         : Mon Apr  7 11:45:11 2025
+| Host         : DESKTOP-I99LGQ1 running 64-bit major release  (build 9200)
+| Command      : report_timing -max_paths 10 -file ./report/matrix_cyclic_block_timing_paths_routed.rpt
+| Design       : bd_0_wrapper
+| Device       : 7z020-clg400
+| Speed File   : -1  PRODUCTION 1.12 2019-11-22
+| Design State : Routed
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Timing Report
+
+Slack (MET) :             3.130ns  (required time - arrival time)
+  Source:                 bd_0_i/hls_inst/inst/grp_matrix_cyclic_block_Pipeline_read_A_and_B_VITIS_LOOP_28_1_fu_90/j_fu_84_reg[1]/C
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            bd_0_i/hls_inst/inst/grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U18/tmp_product__0/B[2]
+                            (rising edge-triggered cell DSP48E1 clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (ap_clk rise@10.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        6.336ns  (logic 1.593ns (25.139%)  route 4.743ns (74.861%))
+  Logic Levels:           3  (LUT4=1 LUT6=1 RAMS32=1)
+  Clock Path Skew:        -0.049ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.924ns = ( 10.924 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.973ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=544, unset)          0.973     0.973    bd_0_i/hls_inst/inst/grp_matrix_cyclic_block_Pipeline_read_A_and_B_VITIS_LOOP_28_1_fu_90/ap_clk
+    SLICE_X29Y44         FDRE                                         r  bd_0_i/hls_inst/inst/grp_matrix_cyclic_block_Pipeline_read_A_and_B_VITIS_LOOP_28_1_fu_90/j_fu_84_reg[1]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X29Y44         FDRE (Prop_fdre_C_Q)         0.419     1.392 r  bd_0_i/hls_inst/inst/grp_matrix_cyclic_block_Pipeline_read_A_and_B_VITIS_LOOP_28_1_fu_90/j_fu_84_reg[1]/Q
+                         net (fo=10, routed)          0.715     2.107    bd_0_i/hls_inst/inst/grp_matrix_cyclic_block_Pipeline_read_A_and_B_VITIS_LOOP_28_1_fu_90/Q[1]
+    SLICE_X29Y44         LUT4 (Prop_lut4_I2_O)        0.324     2.431 r  bd_0_i/hls_inst/inst/grp_matrix_cyclic_block_Pipeline_read_A_and_B_VITIS_LOOP_28_1_fu_90/i_fu_88[0]_i_1/O
+                         net (fo=2, routed)           0.293     2.724    bd_0_i/hls_inst/inst/grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/buff0_reg_4[0]
+    SLICE_X29Y45         LUT6 (Prop_lut6_I5_O)        0.353     3.077 r  bd_0_i/hls_inst/inst/grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/ram_reg_0_3_0_0_i_2/O
+                         net (fo=128, routed)         2.831     5.908    bd_0_i/hls_inst/inst/A_2_U/ram_reg_0_3_2_2/A0
+    SLICE_X18Y38         RAMS32 (Prop_rams32_ADR0_O)
+                                                      0.497     6.405 r  bd_0_i/hls_inst/inst/A_2_U/ram_reg_0_3_2_2/SP/O
+                         net (fo=2, routed)           0.904     7.309    bd_0_i/hls_inst/inst/grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U18/buff0_reg_0[2]
+    DSP48_X1Y14          DSP48E1                                      r  bd_0_i/hls_inst/inst/grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U18/tmp_product__0/B[2]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)    10.000    10.000 r  
+                                                      0.000    10.000 r  ap_clk (IN)
+                         net (fo=544, unset)          0.924    10.924    bd_0_i/hls_inst/inst/grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U18/ap_clk
+    DSP48_X1Y14          DSP48E1                                      r  bd_0_i/hls_inst/inst/grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U18/tmp_product__0/CLK
+                         clock pessimism              0.000    10.924    
+                         clock uncertainty           -0.035    10.889    
+    DSP48_X1Y14          DSP48E1 (Setup_dsp48e1_CLK_B[2])
+                                                     -0.450    10.439    bd_0_i/hls_inst/inst/grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U18/tmp_product__0
+  -------------------------------------------------------------------
+                         required time                         10.439    
+                         arrival time                          -7.309    
+  -------------------------------------------------------------------
+                         slack                                  3.130    
+
+Slack (MET) :             3.281ns  (required time - arrival time)
+  Source:                 bd_0_i/hls_inst/inst/grp_matrix_cyclic_block_Pipeline_read_A_and_B_VITIS_LOOP_28_1_fu_90/j_fu_84_reg[1]/C
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            bd_0_i/hls_inst/inst/grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U18/tmp_product/A[2]
+                            (rising edge-triggered cell DSP48E1 clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (ap_clk rise@10.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        6.273ns  (logic 1.593ns (25.392%)  route 4.680ns (74.608%))
+  Logic Levels:           3  (LUT4=1 LUT6=1 RAMS32=1)
+  Clock Path Skew:        -0.049ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.924ns = ( 10.924 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.973ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=544, unset)          0.973     0.973    bd_0_i/hls_inst/inst/grp_matrix_cyclic_block_Pipeline_read_A_and_B_VITIS_LOOP_28_1_fu_90/ap_clk
+    SLICE_X29Y44         FDRE                                         r  bd_0_i/hls_inst/inst/grp_matrix_cyclic_block_Pipeline_read_A_and_B_VITIS_LOOP_28_1_fu_90/j_fu_84_reg[1]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X29Y44         FDRE (Prop_fdre_C_Q)         0.419     1.392 r  bd_0_i/hls_inst/inst/grp_matrix_cyclic_block_Pipeline_read_A_and_B_VITIS_LOOP_28_1_fu_90/j_fu_84_reg[1]/Q
+                         net (fo=10, routed)          0.715     2.107    bd_0_i/hls_inst/inst/grp_matrix_cyclic_block_Pipeline_read_A_and_B_VITIS_LOOP_28_1_fu_90/Q[1]
+    SLICE_X29Y44         LUT4 (Prop_lut4_I2_O)        0.324     2.431 r  bd_0_i/hls_inst/inst/grp_matrix_cyclic_block_Pipeline_read_A_and_B_VITIS_LOOP_28_1_fu_90/i_fu_88[0]_i_1/O
+                         net (fo=2, routed)           0.293     2.724    bd_0_i/hls_inst/inst/grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/buff0_reg_4[0]
+    SLICE_X29Y45         LUT6 (Prop_lut6_I5_O)        0.353     3.077 r  bd_0_i/hls_inst/inst/grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/ram_reg_0_3_0_0_i_2/O
+                         net (fo=128, routed)         2.831     5.908    bd_0_i/hls_inst/inst/A_2_U/ram_reg_0_3_2_2/A0
+    SLICE_X18Y38         RAMS32 (Prop_rams32_ADR0_O)
+                                                      0.497     6.405 r  bd_0_i/hls_inst/inst/A_2_U/ram_reg_0_3_2_2/SP/O
+                         net (fo=2, routed)           0.841     7.246    bd_0_i/hls_inst/inst/grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U18/buff0_reg_0[2]
+    DSP48_X1Y13          DSP48E1                                      r  bd_0_i/hls_inst/inst/grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U18/tmp_product/A[2]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)    10.000    10.000 r  
+                                                      0.000    10.000 r  ap_clk (IN)
+                         net (fo=544, unset)          0.924    10.924    bd_0_i/hls_inst/inst/grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U18/ap_clk
+    DSP48_X1Y13          DSP48E1                                      r  bd_0_i/hls_inst/inst/grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U18/tmp_product/CLK
+                         clock pessimism              0.000    10.924    
+                         clock uncertainty           -0.035    10.889    
+    DSP48_X1Y13          DSP48E1 (Setup_dsp48e1_CLK_A[2])
+                                                     -0.362    10.527    bd_0_i/hls_inst/inst/grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U18/tmp_product
+  -------------------------------------------------------------------
+                         required time                         10.527    
+                         arrival time                          -7.246    
+  -------------------------------------------------------------------
+                         slack                                  3.281    
+
+Slack (MET) :             3.327ns  (required time - arrival time)
+  Source:                 bd_0_i/hls_inst/inst/grp_matrix_cyclic_block_Pipeline_read_A_and_B_VITIS_LOOP_28_1_fu_90/j_fu_84_reg[1]/C
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            bd_0_i/hls_inst/inst/grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U18/tmp_product__0/B[13]
+                            (rising edge-triggered cell DSP48E1 clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (ap_clk rise@10.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        6.139ns  (logic 1.220ns (19.872%)  route 4.919ns (80.128%))
+  Logic Levels:           3  (LUT4=1 LUT6=1 RAMS32=1)
+  Clock Path Skew:        -0.049ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.924ns = ( 10.924 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.973ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=544, unset)          0.973     0.973    bd_0_i/hls_inst/inst/grp_matrix_cyclic_block_Pipeline_read_A_and_B_VITIS_LOOP_28_1_fu_90/ap_clk
+    SLICE_X29Y44         FDRE                                         r  bd_0_i/hls_inst/inst/grp_matrix_cyclic_block_Pipeline_read_A_and_B_VITIS_LOOP_28_1_fu_90/j_fu_84_reg[1]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X29Y44         FDRE (Prop_fdre_C_Q)         0.419     1.392 r  bd_0_i/hls_inst/inst/grp_matrix_cyclic_block_Pipeline_read_A_and_B_VITIS_LOOP_28_1_fu_90/j_fu_84_reg[1]/Q
+                         net (fo=10, routed)          0.715     2.107    bd_0_i/hls_inst/inst/grp_matrix_cyclic_block_Pipeline_read_A_and_B_VITIS_LOOP_28_1_fu_90/Q[1]
+    SLICE_X29Y44         LUT4 (Prop_lut4_I2_O)        0.324     2.431 r  bd_0_i/hls_inst/inst/grp_matrix_cyclic_block_Pipeline_read_A_and_B_VITIS_LOOP_28_1_fu_90/i_fu_88[0]_i_1/O
+                         net (fo=2, routed)           0.293     2.724    bd_0_i/hls_inst/inst/grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/buff0_reg_4[0]
+    SLICE_X29Y45         LUT6 (Prop_lut6_I5_O)        0.353     3.077 r  bd_0_i/hls_inst/inst/grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/ram_reg_0_3_0_0_i_2/O
+                         net (fo=128, routed)         3.199     6.275    bd_0_i/hls_inst/inst/A_2_U/ram_reg_0_3_13_13/A0
+    SLICE_X18Y34         RAMS32 (Prop_rams32_ADR0_O)
+                                                      0.124     6.399 r  bd_0_i/hls_inst/inst/A_2_U/ram_reg_0_3_13_13/SP/O
+                         net (fo=2, routed)           0.713     7.112    bd_0_i/hls_inst/inst/grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U18/buff0_reg_0[13]
+    DSP48_X1Y14          DSP48E1                                      r  bd_0_i/hls_inst/inst/grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U18/tmp_product__0/B[13]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)    10.000    10.000 r  
+                                                      0.000    10.000 r  ap_clk (IN)
+                         net (fo=544, unset)          0.924    10.924    bd_0_i/hls_inst/inst/grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U18/ap_clk
+    DSP48_X1Y14          DSP48E1                                      r  bd_0_i/hls_inst/inst/grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U18/tmp_product__0/CLK
+                         clock pessimism              0.000    10.924    
+                         clock uncertainty           -0.035    10.889    
+    DSP48_X1Y14          DSP48E1 (Setup_dsp48e1_CLK_B[13])
+                                                     -0.450    10.439    bd_0_i/hls_inst/inst/grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U18/tmp_product__0
+  -------------------------------------------------------------------
+                         required time                         10.439    
+                         arrival time                          -7.112    
+  -------------------------------------------------------------------
+                         slack                                  3.327    
+
+Slack (MET) :             3.341ns  (required time - arrival time)
+  Source:                 bd_0_i/hls_inst/inst/grp_matrix_cyclic_block_Pipeline_read_A_and_B_VITIS_LOOP_28_1_fu_90/j_fu_84_reg[1]/C
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            bd_0_i/hls_inst/inst/grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U18/tmp_product__0/B[8]
+                            (rising edge-triggered cell DSP48E1 clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (ap_clk rise@10.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        6.125ns  (logic 1.874ns (30.596%)  route 4.251ns (69.404%))
+  Logic Levels:           3  (LUT4=1 LUT6=1 RAMS32=1)
+  Clock Path Skew:        -0.049ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.924ns = ( 10.924 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.973ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=544, unset)          0.973     0.973    bd_0_i/hls_inst/inst/grp_matrix_cyclic_block_Pipeline_read_A_and_B_VITIS_LOOP_28_1_fu_90/ap_clk
+    SLICE_X29Y44         FDRE                                         r  bd_0_i/hls_inst/inst/grp_matrix_cyclic_block_Pipeline_read_A_and_B_VITIS_LOOP_28_1_fu_90/j_fu_84_reg[1]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X29Y44         FDRE (Prop_fdre_C_Q)         0.419     1.392 r  bd_0_i/hls_inst/inst/grp_matrix_cyclic_block_Pipeline_read_A_and_B_VITIS_LOOP_28_1_fu_90/j_fu_84_reg[1]/Q
+                         net (fo=10, routed)          0.715     2.107    bd_0_i/hls_inst/inst/grp_matrix_cyclic_block_Pipeline_read_A_and_B_VITIS_LOOP_28_1_fu_90/Q[1]
+    SLICE_X29Y44         LUT4 (Prop_lut4_I2_O)        0.324     2.431 r  bd_0_i/hls_inst/inst/grp_matrix_cyclic_block_Pipeline_read_A_and_B_VITIS_LOOP_28_1_fu_90/i_fu_88[0]_i_1/O
+                         net (fo=2, routed)           0.293     2.724    bd_0_i/hls_inst/inst/grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/buff0_reg_4[0]
+    SLICE_X29Y45         LUT6 (Prop_lut6_I5_O)        0.353     3.077 r  bd_0_i/hls_inst/inst/grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/ram_reg_0_3_0_0_i_2/O
+                         net (fo=128, routed)         2.539     5.616    bd_0_i/hls_inst/inst/A_2_U/ram_reg_0_3_8_8/A0
+    SLICE_X18Y35         RAMS32 (Prop_rams32_ADR0_O)
+                                                      0.778     6.394 r  bd_0_i/hls_inst/inst/A_2_U/ram_reg_0_3_8_8/SP/O
+                         net (fo=2, routed)           0.705     7.098    bd_0_i/hls_inst/inst/grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U18/buff0_reg_0[8]
+    DSP48_X1Y14          DSP48E1                                      r  bd_0_i/hls_inst/inst/grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U18/tmp_product__0/B[8]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)    10.000    10.000 r  
+                                                      0.000    10.000 r  ap_clk (IN)
+                         net (fo=544, unset)          0.924    10.924    bd_0_i/hls_inst/inst/grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U18/ap_clk
+    DSP48_X1Y14          DSP48E1                                      r  bd_0_i/hls_inst/inst/grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U18/tmp_product__0/CLK
+                         clock pessimism              0.000    10.924    
+                         clock uncertainty           -0.035    10.889    
+    DSP48_X1Y14          DSP48E1 (Setup_dsp48e1_CLK_B[8])
+                                                     -0.450    10.439    bd_0_i/hls_inst/inst/grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U18/tmp_product__0
+  -------------------------------------------------------------------
+                         required time                         10.439    
+                         arrival time                          -7.098    
+  -------------------------------------------------------------------
+                         slack                                  3.341    
+
+Slack (MET) :             3.349ns  (required time - arrival time)
+  Source:                 bd_0_i/hls_inst/inst/grp_matrix_cyclic_block_Pipeline_read_A_and_B_VITIS_LOOP_28_1_fu_90/j_fu_84_reg[1]/C
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            bd_0_i/hls_inst/inst/grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U18/tmp_product/A[5]
+                            (rising edge-triggered cell DSP48E1 clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (ap_clk rise@10.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        6.205ns  (logic 1.201ns (19.356%)  route 5.004ns (80.644%))
+  Logic Levels:           3  (LUT4=1 LUT6=1 RAMS32=1)
+  Clock Path Skew:        -0.049ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.924ns = ( 10.924 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.973ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=544, unset)          0.973     0.973    bd_0_i/hls_inst/inst/grp_matrix_cyclic_block_Pipeline_read_A_and_B_VITIS_LOOP_28_1_fu_90/ap_clk
+    SLICE_X29Y44         FDRE                                         r  bd_0_i/hls_inst/inst/grp_matrix_cyclic_block_Pipeline_read_A_and_B_VITIS_LOOP_28_1_fu_90/j_fu_84_reg[1]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X29Y44         FDRE (Prop_fdre_C_Q)         0.419     1.392 r  bd_0_i/hls_inst/inst/grp_matrix_cyclic_block_Pipeline_read_A_and_B_VITIS_LOOP_28_1_fu_90/j_fu_84_reg[1]/Q
+                         net (fo=10, routed)          0.715     2.107    bd_0_i/hls_inst/inst/grp_matrix_cyclic_block_Pipeline_read_A_and_B_VITIS_LOOP_28_1_fu_90/Q[1]
+    SLICE_X29Y44         LUT4 (Prop_lut4_I2_O)        0.324     2.431 r  bd_0_i/hls_inst/inst/grp_matrix_cyclic_block_Pipeline_read_A_and_B_VITIS_LOOP_28_1_fu_90/i_fu_88[0]_i_1/O
+                         net (fo=2, routed)           0.293     2.724    bd_0_i/hls_inst/inst/grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/buff0_reg_4[0]
+    SLICE_X29Y45         LUT6 (Prop_lut6_I5_O)        0.353     3.077 r  bd_0_i/hls_inst/inst/grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/ram_reg_0_3_0_0_i_2/O
+                         net (fo=128, routed)         2.853     5.929    bd_0_i/hls_inst/inst/A_2_U/ram_reg_0_3_5_5/A0
+    SLICE_X22Y35         RAMS32 (Prop_rams32_ADR0_O)
+                                                      0.105     6.034 r  bd_0_i/hls_inst/inst/A_2_U/ram_reg_0_3_5_5/SP/O
+                         net (fo=2, routed)           1.143     7.178    bd_0_i/hls_inst/inst/grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U18/buff0_reg_0[5]
+    DSP48_X1Y13          DSP48E1                                      r  bd_0_i/hls_inst/inst/grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U18/tmp_product/A[5]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)    10.000    10.000 r  
+                                                      0.000    10.000 r  ap_clk (IN)
+                         net (fo=544, unset)          0.924    10.924    bd_0_i/hls_inst/inst/grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U18/ap_clk
+    DSP48_X1Y13          DSP48E1                                      r  bd_0_i/hls_inst/inst/grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U18/tmp_product/CLK
+                         clock pessimism              0.000    10.924    
+                         clock uncertainty           -0.035    10.889    
+    DSP48_X1Y13          DSP48E1 (Setup_dsp48e1_CLK_A[5])
+                                                     -0.362    10.527    bd_0_i/hls_inst/inst/grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U18/tmp_product
+  -------------------------------------------------------------------
+                         required time                         10.527    
+                         arrival time                          -7.178    
+  -------------------------------------------------------------------
+                         slack                                  3.349    
+
+Slack (MET) :             3.410ns  (required time - arrival time)
+  Source:                 bd_0_i/hls_inst/inst/grp_matrix_cyclic_block_Pipeline_read_A_and_B_VITIS_LOOP_28_1_fu_90/j_fu_84_reg[1]/C
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            bd_0_i/hls_inst/inst/grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U18/tmp_product/A[7]
+                            (rising edge-triggered cell DSP48E1 clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (ap_clk rise@10.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        6.144ns  (logic 1.884ns (30.666%)  route 4.260ns (69.334%))
+  Logic Levels:           3  (LUT4=1 LUT6=1 RAMS32=1)
+  Clock Path Skew:        -0.049ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.924ns = ( 10.924 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.973ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=544, unset)          0.973     0.973    bd_0_i/hls_inst/inst/grp_matrix_cyclic_block_Pipeline_read_A_and_B_VITIS_LOOP_28_1_fu_90/ap_clk
+    SLICE_X29Y44         FDRE                                         r  bd_0_i/hls_inst/inst/grp_matrix_cyclic_block_Pipeline_read_A_and_B_VITIS_LOOP_28_1_fu_90/j_fu_84_reg[1]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X29Y44         FDRE (Prop_fdre_C_Q)         0.419     1.392 r  bd_0_i/hls_inst/inst/grp_matrix_cyclic_block_Pipeline_read_A_and_B_VITIS_LOOP_28_1_fu_90/j_fu_84_reg[1]/Q
+                         net (fo=10, routed)          0.715     2.107    bd_0_i/hls_inst/inst/grp_matrix_cyclic_block_Pipeline_read_A_and_B_VITIS_LOOP_28_1_fu_90/Q[1]
+    SLICE_X29Y44         LUT4 (Prop_lut4_I2_O)        0.324     2.431 r  bd_0_i/hls_inst/inst/grp_matrix_cyclic_block_Pipeline_read_A_and_B_VITIS_LOOP_28_1_fu_90/i_fu_88[0]_i_1/O
+                         net (fo=2, routed)           0.293     2.724    bd_0_i/hls_inst/inst/grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/buff0_reg_4[0]
+    SLICE_X29Y45         LUT6 (Prop_lut6_I5_O)        0.353     3.077 r  bd_0_i/hls_inst/inst/grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/ram_reg_0_3_0_0_i_2/O
+                         net (fo=128, routed)         2.539     5.616    bd_0_i/hls_inst/inst/A_2_U/ram_reg_0_3_7_7/A0
+    SLICE_X18Y35         RAMS32 (Prop_rams32_ADR0_O)
+                                                      0.788     6.404 r  bd_0_i/hls_inst/inst/A_2_U/ram_reg_0_3_7_7/SP/O
+                         net (fo=2, routed)           0.713     7.117    bd_0_i/hls_inst/inst/grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U18/buff0_reg_0[7]
+    DSP48_X1Y13          DSP48E1                                      r  bd_0_i/hls_inst/inst/grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U18/tmp_product/A[7]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)    10.000    10.000 r  
+                                                      0.000    10.000 r  ap_clk (IN)
+                         net (fo=544, unset)          0.924    10.924    bd_0_i/hls_inst/inst/grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U18/ap_clk
+    DSP48_X1Y13          DSP48E1                                      r  bd_0_i/hls_inst/inst/grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U18/tmp_product/CLK
+                         clock pessimism              0.000    10.924    
+                         clock uncertainty           -0.035    10.889    
+    DSP48_X1Y13          DSP48E1 (Setup_dsp48e1_CLK_A[7])
+                                                     -0.362    10.527    bd_0_i/hls_inst/inst/grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U18/tmp_product
+  -------------------------------------------------------------------
+                         required time                         10.527    
+                         arrival time                          -7.117    
+  -------------------------------------------------------------------
+                         slack                                  3.410    
+
+Slack (MET) :             3.411ns  (required time - arrival time)
+  Source:                 bd_0_i/hls_inst/inst/grp_matrix_cyclic_block_Pipeline_read_A_and_B_VITIS_LOOP_28_1_fu_90/j_fu_84_reg[1]/C
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            bd_0_i/hls_inst/inst/grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U18/buff0_reg/B[16]
+                            (rising edge-triggered cell DSP48E1 clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (ap_clk rise@10.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        6.055ns  (logic 1.220ns (20.148%)  route 4.835ns (79.852%))
+  Logic Levels:           3  (LUT4=1 LUT6=1 RAMS32=1)
+  Clock Path Skew:        -0.049ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.924ns = ( 10.924 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.973ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=544, unset)          0.973     0.973    bd_0_i/hls_inst/inst/grp_matrix_cyclic_block_Pipeline_read_A_and_B_VITIS_LOOP_28_1_fu_90/ap_clk
+    SLICE_X29Y44         FDRE                                         r  bd_0_i/hls_inst/inst/grp_matrix_cyclic_block_Pipeline_read_A_and_B_VITIS_LOOP_28_1_fu_90/j_fu_84_reg[1]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X29Y44         FDRE (Prop_fdre_C_Q)         0.419     1.392 r  bd_0_i/hls_inst/inst/grp_matrix_cyclic_block_Pipeline_read_A_and_B_VITIS_LOOP_28_1_fu_90/j_fu_84_reg[1]/Q
+                         net (fo=10, routed)          0.715     2.107    bd_0_i/hls_inst/inst/grp_matrix_cyclic_block_Pipeline_read_A_and_B_VITIS_LOOP_28_1_fu_90/Q[1]
+    SLICE_X29Y44         LUT4 (Prop_lut4_I2_O)        0.324     2.431 r  bd_0_i/hls_inst/inst/grp_matrix_cyclic_block_Pipeline_read_A_and_B_VITIS_LOOP_28_1_fu_90/i_fu_88[0]_i_1/O
+                         net (fo=2, routed)           0.293     2.724    bd_0_i/hls_inst/inst/grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/buff0_reg_4[0]
+    SLICE_X29Y45         LUT6 (Prop_lut6_I5_O)        0.353     3.077 r  bd_0_i/hls_inst/inst/grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/ram_reg_0_3_0_0_i_2/O
+                         net (fo=128, routed)         2.853     5.929    bd_0_i/hls_inst/inst/A_2_U/ram_reg_0_3_31_31/A0
+    SLICE_X22Y35         RAMS32 (Prop_rams32_ADR0_O)
+                                                      0.124     6.053 r  bd_0_i/hls_inst/inst/A_2_U/ram_reg_0_3_31_31/SP/O
+                         net (fo=4, routed)           0.975     7.028    bd_0_i/hls_inst/inst/grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U18/buff0_reg_0[31]
+    DSP48_X1Y15          DSP48E1                                      r  bd_0_i/hls_inst/inst/grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U18/buff0_reg/B[16]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)    10.000    10.000 r  
+                                                      0.000    10.000 r  ap_clk (IN)
+                         net (fo=544, unset)          0.924    10.924    bd_0_i/hls_inst/inst/grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U18/ap_clk
+    DSP48_X1Y15          DSP48E1                                      r  bd_0_i/hls_inst/inst/grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U18/buff0_reg/CLK
+                         clock pessimism              0.000    10.924    
+                         clock uncertainty           -0.035    10.889    
+    DSP48_X1Y15          DSP48E1 (Setup_dsp48e1_CLK_B[16])
+                                                     -0.450    10.439    bd_0_i/hls_inst/inst/grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U18/buff0_reg
+  -------------------------------------------------------------------
+                         required time                         10.439    
+                         arrival time                          -7.028    
+  -------------------------------------------------------------------
+                         slack                                  3.411    
+
+Slack (MET) :             3.411ns  (required time - arrival time)
+  Source:                 bd_0_i/hls_inst/inst/grp_matrix_cyclic_block_Pipeline_read_A_and_B_VITIS_LOOP_28_1_fu_90/j_fu_84_reg[1]/C
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            bd_0_i/hls_inst/inst/grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U18/buff0_reg/B[17]
+                            (rising edge-triggered cell DSP48E1 clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (ap_clk rise@10.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        6.055ns  (logic 1.220ns (20.148%)  route 4.835ns (79.852%))
+  Logic Levels:           3  (LUT4=1 LUT6=1 RAMS32=1)
+  Clock Path Skew:        -0.049ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.924ns = ( 10.924 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.973ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=544, unset)          0.973     0.973    bd_0_i/hls_inst/inst/grp_matrix_cyclic_block_Pipeline_read_A_and_B_VITIS_LOOP_28_1_fu_90/ap_clk
+    SLICE_X29Y44         FDRE                                         r  bd_0_i/hls_inst/inst/grp_matrix_cyclic_block_Pipeline_read_A_and_B_VITIS_LOOP_28_1_fu_90/j_fu_84_reg[1]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X29Y44         FDRE (Prop_fdre_C_Q)         0.419     1.392 r  bd_0_i/hls_inst/inst/grp_matrix_cyclic_block_Pipeline_read_A_and_B_VITIS_LOOP_28_1_fu_90/j_fu_84_reg[1]/Q
+                         net (fo=10, routed)          0.715     2.107    bd_0_i/hls_inst/inst/grp_matrix_cyclic_block_Pipeline_read_A_and_B_VITIS_LOOP_28_1_fu_90/Q[1]
+    SLICE_X29Y44         LUT4 (Prop_lut4_I2_O)        0.324     2.431 r  bd_0_i/hls_inst/inst/grp_matrix_cyclic_block_Pipeline_read_A_and_B_VITIS_LOOP_28_1_fu_90/i_fu_88[0]_i_1/O
+                         net (fo=2, routed)           0.293     2.724    bd_0_i/hls_inst/inst/grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/buff0_reg_4[0]
+    SLICE_X29Y45         LUT6 (Prop_lut6_I5_O)        0.353     3.077 r  bd_0_i/hls_inst/inst/grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/ram_reg_0_3_0_0_i_2/O
+                         net (fo=128, routed)         2.853     5.929    bd_0_i/hls_inst/inst/A_2_U/ram_reg_0_3_31_31/A0
+    SLICE_X22Y35         RAMS32 (Prop_rams32_ADR0_O)
+                                                      0.124     6.053 r  bd_0_i/hls_inst/inst/A_2_U/ram_reg_0_3_31_31/SP/O
+                         net (fo=4, routed)           0.975     7.028    bd_0_i/hls_inst/inst/grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U18/buff0_reg_0[31]
+    DSP48_X1Y15          DSP48E1                                      r  bd_0_i/hls_inst/inst/grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U18/buff0_reg/B[17]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)    10.000    10.000 r  
+                                                      0.000    10.000 r  ap_clk (IN)
+                         net (fo=544, unset)          0.924    10.924    bd_0_i/hls_inst/inst/grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U18/ap_clk
+    DSP48_X1Y15          DSP48E1                                      r  bd_0_i/hls_inst/inst/grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U18/buff0_reg/CLK
+                         clock pessimism              0.000    10.924    
+                         clock uncertainty           -0.035    10.889    
+    DSP48_X1Y15          DSP48E1 (Setup_dsp48e1_CLK_B[17])
+                                                     -0.450    10.439    bd_0_i/hls_inst/inst/grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U18/buff0_reg
+  -------------------------------------------------------------------
+                         required time                         10.439    
+                         arrival time                          -7.028    
+  -------------------------------------------------------------------
+                         slack                                  3.411    
+
+Slack (MET) :             3.414ns  (required time - arrival time)
+  Source:                 bd_0_i/hls_inst/inst/grp_matrix_cyclic_block_Pipeline_read_A_and_B_VITIS_LOOP_28_1_fu_90/j_fu_84_reg[1]/C
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            bd_0_i/hls_inst/inst/grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U18/buff0_reg/B[12]
+                            (rising edge-triggered cell DSP48E1 clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (ap_clk rise@10.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        6.052ns  (logic 1.603ns (26.486%)  route 4.449ns (73.514%))
+  Logic Levels:           3  (LUT4=1 LUT6=1 RAMS32=1)
+  Clock Path Skew:        -0.049ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.924ns = ( 10.924 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.973ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=544, unset)          0.973     0.973    bd_0_i/hls_inst/inst/grp_matrix_cyclic_block_Pipeline_read_A_and_B_VITIS_LOOP_28_1_fu_90/ap_clk
+    SLICE_X29Y44         FDRE                                         r  bd_0_i/hls_inst/inst/grp_matrix_cyclic_block_Pipeline_read_A_and_B_VITIS_LOOP_28_1_fu_90/j_fu_84_reg[1]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X29Y44         FDRE (Prop_fdre_C_Q)         0.419     1.392 r  bd_0_i/hls_inst/inst/grp_matrix_cyclic_block_Pipeline_read_A_and_B_VITIS_LOOP_28_1_fu_90/j_fu_84_reg[1]/Q
+                         net (fo=10, routed)          0.715     2.107    bd_0_i/hls_inst/inst/grp_matrix_cyclic_block_Pipeline_read_A_and_B_VITIS_LOOP_28_1_fu_90/Q[1]
+    SLICE_X29Y44         LUT4 (Prop_lut4_I2_O)        0.324     2.431 r  bd_0_i/hls_inst/inst/grp_matrix_cyclic_block_Pipeline_read_A_and_B_VITIS_LOOP_28_1_fu_90/i_fu_88[0]_i_1/O
+                         net (fo=2, routed)           0.293     2.724    bd_0_i/hls_inst/inst/grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/buff0_reg_4[0]
+    SLICE_X29Y45         LUT6 (Prop_lut6_I5_O)        0.353     3.077 r  bd_0_i/hls_inst/inst/grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/ram_reg_0_3_0_0_i_2/O
+                         net (fo=128, routed)         2.831     5.908    bd_0_i/hls_inst/inst/A_2_U/ram_reg_0_3_29_29/A0
+    SLICE_X18Y38         RAMS32 (Prop_rams32_ADR0_O)
+                                                      0.507     6.415 r  bd_0_i/hls_inst/inst/A_2_U/ram_reg_0_3_29_29/SP/O
+                         net (fo=1, routed)           0.610     7.025    bd_0_i/hls_inst/inst/grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U18/buff0_reg_0[29]
+    DSP48_X1Y15          DSP48E1                                      r  bd_0_i/hls_inst/inst/grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U18/buff0_reg/B[12]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)    10.000    10.000 r  
+                                                      0.000    10.000 r  ap_clk (IN)
+                         net (fo=544, unset)          0.924    10.924    bd_0_i/hls_inst/inst/grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U18/ap_clk
+    DSP48_X1Y15          DSP48E1                                      r  bd_0_i/hls_inst/inst/grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U18/buff0_reg/CLK
+                         clock pessimism              0.000    10.924    
+                         clock uncertainty           -0.035    10.889    
+    DSP48_X1Y15          DSP48E1 (Setup_dsp48e1_CLK_B[12])
+                                                     -0.450    10.439    bd_0_i/hls_inst/inst/grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U18/buff0_reg
+  -------------------------------------------------------------------
+                         required time                         10.439    
+                         arrival time                          -7.025    
+  -------------------------------------------------------------------
+                         slack                                  3.414    
+
+Slack (MET) :             3.427ns  (required time - arrival time)
+  Source:                 bd_0_i/hls_inst/inst/grp_matrix_cyclic_block_Pipeline_read_A_and_B_VITIS_LOOP_28_1_fu_90/j_fu_84_reg[1]/C
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            bd_0_i/hls_inst/inst/grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U18/tmp_product/A[8]
+                            (rising edge-triggered cell DSP48E1 clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (ap_clk rise@10.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        6.127ns  (logic 1.874ns (30.588%)  route 4.253ns (69.412%))
+  Logic Levels:           3  (LUT4=1 LUT6=1 RAMS32=1)
+  Clock Path Skew:        -0.049ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.924ns = ( 10.924 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.973ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=544, unset)          0.973     0.973    bd_0_i/hls_inst/inst/grp_matrix_cyclic_block_Pipeline_read_A_and_B_VITIS_LOOP_28_1_fu_90/ap_clk
+    SLICE_X29Y44         FDRE                                         r  bd_0_i/hls_inst/inst/grp_matrix_cyclic_block_Pipeline_read_A_and_B_VITIS_LOOP_28_1_fu_90/j_fu_84_reg[1]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X29Y44         FDRE (Prop_fdre_C_Q)         0.419     1.392 r  bd_0_i/hls_inst/inst/grp_matrix_cyclic_block_Pipeline_read_A_and_B_VITIS_LOOP_28_1_fu_90/j_fu_84_reg[1]/Q
+                         net (fo=10, routed)          0.715     2.107    bd_0_i/hls_inst/inst/grp_matrix_cyclic_block_Pipeline_read_A_and_B_VITIS_LOOP_28_1_fu_90/Q[1]
+    SLICE_X29Y44         LUT4 (Prop_lut4_I2_O)        0.324     2.431 r  bd_0_i/hls_inst/inst/grp_matrix_cyclic_block_Pipeline_read_A_and_B_VITIS_LOOP_28_1_fu_90/i_fu_88[0]_i_1/O
+                         net (fo=2, routed)           0.293     2.724    bd_0_i/hls_inst/inst/grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/buff0_reg_4[0]
+    SLICE_X29Y45         LUT6 (Prop_lut6_I5_O)        0.353     3.077 r  bd_0_i/hls_inst/inst/grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/ram_reg_0_3_0_0_i_2/O
+                         net (fo=128, routed)         2.539     5.616    bd_0_i/hls_inst/inst/A_2_U/ram_reg_0_3_8_8/A0
+    SLICE_X18Y35         RAMS32 (Prop_rams32_ADR0_O)
+                                                      0.778     6.394 r  bd_0_i/hls_inst/inst/A_2_U/ram_reg_0_3_8_8/SP/O
+                         net (fo=2, routed)           0.706     7.100    bd_0_i/hls_inst/inst/grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U18/buff0_reg_0[8]
+    DSP48_X1Y13          DSP48E1                                      r  bd_0_i/hls_inst/inst/grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U18/tmp_product/A[8]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)    10.000    10.000 r  
+                                                      0.000    10.000 r  ap_clk (IN)
+                         net (fo=544, unset)          0.924    10.924    bd_0_i/hls_inst/inst/grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U18/ap_clk
+    DSP48_X1Y13          DSP48E1                                      r  bd_0_i/hls_inst/inst/grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U18/tmp_product/CLK
+                         clock pessimism              0.000    10.924    
+                         clock uncertainty           -0.035    10.889    
+    DSP48_X1Y13          DSP48E1 (Setup_dsp48e1_CLK_A[8])
+                                                     -0.362    10.527    bd_0_i/hls_inst/inst/grp_matrix_cyclic_block_Pipeline_Matrix_Loop_VITIS_LOOP_39_2_fu_126/mul_32s_32s_32_2_1_U18/tmp_product
+  -------------------------------------------------------------------
+                         required time                         10.527    
+                         arrival time                          -7.100    
+  -------------------------------------------------------------------
+                         slack                                  3.427    
+
+
+
+

@@ -1,0 +1,17 @@
+{
+  "0": {
+    "basicblocks": 18,
+    "calls": "",
+    "file": "loop_pipeline.cpp",
+    "fileloc": 6,
+    "instructions": 147,
+    "loads": {
+      "L": 4
+    },
+    "name": "matrix_cyclic_block",
+    "stores": {
+      "L": 4
+    },
+    "total_instructions": 147
+  }
+}

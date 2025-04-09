@@ -1,0 +1,293 @@
+  **** HLS Build v2024.2 5238294
+INFO: [HLS 200-2005] Using work_dir C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn/flash_attn 
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying ini 'syn.file=loop_pipeline.h' from C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn/hls_config.cfg(9)
+INFO: [HLS 200-10] Adding design file 'C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn/loop_pipeline.h' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=loop_pipeline.cpp' from C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn/hls_config.cfg(10)
+INFO: [HLS 200-10] Adding design file 'C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn/loop_pipeline.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'tb.file=loop_pipeline_tb.cpp' from C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn/hls_config.cfg(11)
+INFO: [HLS 200-10] Adding test bench file 'C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn/loop_pipeline_tb.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.top=loop_pipeline' from C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn/hls_config.cfg(7)
+INFO: [HLS 200-1465] Applying ini 'flow_target=vivado' from C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn/hls_config.cfg(4)
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying ini 'part=xc7z020clg400-1' from C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn/hls_config.cfg(1)
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg400-1'
+INFO: [HLS 200-1465] Applying ini 'package.output.format=ip_catalog' from C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn/hls_config.cfg(5)
+INFO: [HLS 200-1465] Applying ini 'syn.interface.s_axilite_data64=1' from C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn/hls_config.cfg(8)
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch CLANG as the compiler.
+INFO: [HLS 200-2036] Building debug C Simulation binaries
+   Compiling ../../../../loop_pipeline_tb.cpp in debug mode
+   Compiling ../../../../loop_pipeline.cpp in debug mode
+   Generating csim.exe
+In file included from ../../../../loop_pipeline_tb.cpp:4:
+In file included from ../../../../loop_pipeline.h:1:
+In file included from C:/Xilinx/Vitis/2024.2/include/ap_axi_sdata.h:15:
+In file included from C:/Xilinx/Vitis/2024.2/include/ap_int.h:10:
+In file included from C:/Xilinx/Vitis/2024.2/include/etc/ap_common.h:658:
+In file included from C:/Xilinx/Vitis/2024.2/include/etc/ap_private.h:68:
+In file included from C:/Xilinx/Vitis/2024.2/include/hls_half.h:26:
+In file included from C:/Xilinx/Vitis/2024.2/include/etc/hls_half_fpo.h:19:
+In file included from C:/Xilinx/Vitis/2024.2/include/hls_fpo.h:140:
+In file included from C:/Xilinx/Vitis/2024.2/include/floating_point_v7_1_bitacc_cmodel.h:150:
+C:/Xilinx/Vitis/2024.2/include/gmp.h:58:9: warning: '__GMP_LIBGMP_DLL' macro redefined [-Wmacro-redefined]
+#define __GMP_LIBGMP_DLL  0
+        ^
+C:/Xilinx/Vitis/2024.2/include/floating_point_v7_1_bitacc_cmodel.h:142:9: note: previous definition is here
+#define __GMP_LIBGMP_DLL 1
+        ^
+1 warning generated.
+In file included from ../../../../loop_pipeline.cpp:2:
+In file included from ../../../../loop_pipeline.h:1:
+In file included from C:/Xilinx/Vitis/2024.2/include/ap_axi_sdata.h:15:
+In file included from C:/Xilinx/Vitis/2024.2/include/ap_int.h:10:
+In file included from C:/Xilinx/Vitis/2024.2/include/etc/ap_common.h:658:
+In file included from C:/Xilinx/Vitis/2024.2/include/etc/ap_private.h:68:
+In file included from C:/Xilinx/Vitis/2024.2/include/hls_half.h:26:
+In file included from C:/Xilinx/Vitis/2024.2/include/etc/hls_half_fpo.h:19:
+In file included from C:/Xilinx/Vitis/2024.2/include/hls_fpo.h:140:
+In file included from C:/Xilinx/Vitis/2024.2/include/floating_point_v7_1_bitacc_cmodel.h:150:
+C:/Xilinx/Vitis/2024.2/include/gmp.h:58:9: warning: '__GMP_LIBGMP_DLL' macro redefined [-Wmacro-redefined]
+#define __GMP_LIBGMP_DLL  0
+        ^
+C:/Xilinx/Vitis/2024.2/include/floating_point_v7_1_bitacc_cmodel.h:142:9: note: previous definition is here
+#define __GMP_LIBGMP_DLL 1
+        ^
+1 warning generated.
+
+Processing Column 0:
+Sent: 0
+Sent: 1
+Sent: 2
+Sent: 3
+Sent: 4
+Sent: 5
+Sent: 6
+Sent: 7
+Sent: 8
+Sent: 9
+Reading results for column 0:
+Received: 1 Last=0
+Received: 2 Last=0
+Received: 3 Last=0
+Received: 4 Last=0
+Received: 5 Last=0
+Received: 6 Last=0
+Received: 7 Last=0
+Received: 8 Last=0
+Received: 9 Last=0
+Received: 10 Last=1
+
+Processing Column 1:
+Sent: 10
+Sent: 11
+Sent: 12
+Sent: 13
+Sent: 14
+Sent: 15
+Sent: 16
+Sent: 17
+Sent: 18
+Sent: 19
+Reading results for column 1:
+Received: 11 Last=0
+Received: 12 Last=0
+Received: 13 Last=0
+Received: 14 Last=0
+Received: 15 Last=0
+Received: 16 Last=0
+Received: 17 Last=0
+Received: 18 Last=0
+Received: 19 Last=0
+Received: 20 Last=1
+
+Processing Column 2:
+Sent: 20
+Sent: 21
+Sent: 22
+Sent: 23
+Sent: 24
+Sent: 25
+Sent: 26
+Sent: 27
+Sent: 28
+Sent: 29
+Reading results for column 2:
+Received: 21 Last=0
+Received: 22 Last=0
+Received: 23 Last=0
+Received: 24 Last=0
+Received: 25 Last=0
+Received: 26 Last=0
+Received: 27 Last=0
+Received: 28 Last=0
+Received: 29 Last=0
+Received: 30 Last=1
+
+Processing Column 3:
+Sent: 30
+Sent: 31
+Sent: 32
+Sent: 33
+Sent: 34
+Sent: 35
+Sent: 36
+Sent: 37
+Sent: 38
+Sent: 39
+Reading results for column 3:
+Received: 31 Last=0
+Received: 32 Last=0
+Received: 33 Last=0
+Received: 34 Last=0
+Received: 35 Last=0
+Received: 36 Last=0
+Received: 37 Last=0
+Received: 38 Last=0
+Received: 39 Last=0
+Received: 40 Last=1
+
+Processing Column 4:
+Sent: 40
+Sent: 41
+Sent: 42
+Sent: 43
+Sent: 44
+Sent: 45
+Sent: 46
+Sent: 47
+Sent: 48
+Sent: 49
+Reading results for column 4:
+Received: 41 Last=0
+Received: 42 Last=0
+Received: 43 Last=0
+Received: 44 Last=0
+Received: 45 Last=0
+Received: 46 Last=0
+Received: 47 Last=0
+Received: 48 Last=0
+Received: 49 Last=0
+Received: 50 Last=1
+
+Processing Column 5:
+Sent: 50
+Sent: 51
+Sent: 52
+Sent: 53
+Sent: 54
+Sent: 55
+Sent: 56
+Sent: 57
+Sent: 58
+Sent: 59
+Reading results for column 5:
+Received: 51 Last=0
+Received: 52 Last=0
+Received: 53 Last=0
+Received: 54 Last=0
+Received: 55 Last=0
+Received: 56 Last=0
+Received: 57 Last=0
+Received: 58 Last=0
+Received: 59 Last=0
+Received: 60 Last=1
+
+Processing Column 6:
+Sent: 60
+Sent: 61
+Sent: 62
+Sent: 63
+Sent: 64
+Sent: 65
+Sent: 66
+Sent: 67
+Sent: 68
+Sent: 69
+Reading results for column 6:
+Received: 61 Last=0
+Received: 62 Last=0
+Received: 63 Last=0
+Received: 64 Last=0
+Received: 65 Last=0
+Received: 66 Last=0
+Received: 67 Last=0
+Received: 68 Last=0
+Received: 69 Last=0
+Received: 70 Last=1
+
+Processing Column 7:
+Sent: 70
+Sent: 71
+Sent: 72
+Sent: 73
+Sent: 74
+Sent: 75
+Sent: 76
+Sent: 77
+Sent: 78
+Sent: 79
+Reading results for column 7:
+Received: 71 Last=0
+Received: 72 Last=0
+Received: 73 Last=0
+Received: 74 Last=0
+Received: 75 Last=0
+Received: 76 Last=0
+Received: 77 Last=0
+Received: 78 Last=0
+Received: 79 Last=0
+Received: 80 Last=1
+
+Processing Column 8:
+Sent: 80
+Sent: 81
+Sent: 82
+Sent: 83
+Sent: 84
+Sent: 85
+Sent: 86
+Sent: 87
+Sent: 88
+Sent: 89
+Reading results for column 8:
+Received: 81 Last=0
+Received: 82 Last=0
+Received: 83 Last=0
+Received: 84 Last=0
+Received: 85 Last=0
+Received: 86 Last=0
+Received: 87 Last=0
+Received: 88 Last=0
+Received: 89 Last=0
+Received: 90 Last=1
+
+Processing Column 9:
+Sent: 90
+Sent: 91
+Sent: 92
+Sent: 93
+Sent: 94
+Sent: 95
+Sent: 96
+Sent: 97
+Sent: 98
+Sent: 99
+Reading results for column 9:
+Received: 91 Last=0
+Received: 92 Last=0
+Received: 93 Last=0
+Received: 94 Last=0
+Received: 95 Last=0
+Received: 96 Last=0
+Received: 97 Last=0
+Received: 98 Last=0
+Received: 99 Last=0
+Received: 100 Last=1
+INFO [HLS SIM]: The maximum depth reached by any hls::stream() instance in the design is 10
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-112] Total CPU user time: 2 seconds. Total CPU system time: 1 seconds. Total elapsed time: 7.699 seconds; peak allocated memory: 259.383 MB.
+INFO: [vitis-run 60-791] Total elapsed time: 0h 0m 11s

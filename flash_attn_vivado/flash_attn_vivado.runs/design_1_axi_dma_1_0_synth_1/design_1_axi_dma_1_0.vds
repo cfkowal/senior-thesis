@@ -1,0 +1,39 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Mon Apr  7 12:50:26 2025
+# Process ID         : 17568
+# Current directory  : C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn_vivado/flash_attn_vivado.runs/design_1_axi_dma_1_0_synth_1
+# Command line       : vivado.exe -log design_1_axi_dma_1_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_axi_dma_1_0.tcl
+# Log file           : C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn_vivado/flash_attn_vivado.runs/design_1_axi_dma_1_0_synth_1/design_1_axi_dma_1_0.vds
+# Journal file       : C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn_vivado/flash_attn_vivado.runs/design_1_axi_dma_1_0_synth_1\vivado.jou
+# Running On         : DESKTOP-I99LGQ1
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 19045
+# Processor Detail   : 11th Gen Intel(R) Core(TM) i7-11700KF @ 3.60GHz
+# CPU Frequency      : 3600 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 16
+# Host memory        : 34222 MB
+# Swap memory        : 5100 MB
+# Total Virtual      : 39322 MB
+# Available Virtual  : 19401 MB
+#-----------------------------------------------------------
+source design_1_axi_dma_1_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 619.262 ; gain = 192.059
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn/flash_attn'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2024.2/data/ip'.
+WARNING: [IP_Flow 19-4995] The host OS only allows 260 characters in a normal path. The IP cache path is more than 80 characters. If you experience issues with IP caching, please consider changing the IP cache to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. 
+Current IP cache path is c:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn_vivado/flash_attn_vivado.cache/ip 
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_axi_dma_1_0
+INFO: [IP_Flow 19-6922] IPCACHE: Exporting cached entry 6e5aadf3d3a6fc56 to dir: C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn_vivado/flash_attn_vivado.runs/design_1_axi_dma_1_0_synth_1
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn_vivado/flash_attn_vivado.cache/ip/2024.2/6/e/6e5aadf3d3a6fc56/design_1_axi_dma_0_0.dcp to C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn_vivado/flash_attn_vivado.runs/design_1_axi_dma_1_0_synth_1/design_1_axi_dma_1_0.dcp.
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn_vivado/flash_attn_vivado.cache/ip/2024.2/6/e/6e5aadf3d3a6fc56/design_1_axi_dma_0_0_sim_netlist.v to C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn_vivado/flash_attn_vivado.runs/design_1_axi_dma_1_0_synth_1/design_1_axi_dma_1_0_sim_netlist.v.
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn_vivado/flash_attn_vivado.cache/ip/2024.2/6/e/6e5aadf3d3a6fc56/design_1_axi_dma_0_0_sim_netlist.vhdl to C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn_vivado/flash_attn_vivado.runs/design_1_axi_dma_1_0_synth_1/design_1_axi_dma_1_0_sim_netlist.vhdl.
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn_vivado/flash_attn_vivado.cache/ip/2024.2/6/e/6e5aadf3d3a6fc56/design_1_axi_dma_0_0_stub.v to C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn_vivado/flash_attn_vivado.runs/design_1_axi_dma_1_0_synth_1/design_1_axi_dma_1_0_stub.v.
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn_vivado/flash_attn_vivado.cache/ip/2024.2/6/e/6e5aadf3d3a6fc56/design_1_axi_dma_0_0_stub.vhdl to C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn_vivado/flash_attn_vivado.runs/design_1_axi_dma_1_0_synth_1/design_1_axi_dma_1_0_stub.vhdl.
+INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP design_1_axi_dma_1_0, cache-ID = 6e5aadf3d3a6fc56.
+INFO: [Common 17-206] Exiting Vivado at Mon Apr  7 12:50:36 2025...

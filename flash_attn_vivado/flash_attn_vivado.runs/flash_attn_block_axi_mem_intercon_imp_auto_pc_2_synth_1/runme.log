@@ -1,0 +1,4 @@
+
+*** Running vivado
+    with args -log flash_attn_block_axi_mem_intercon_imp_auto_pc_2.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source flash_attn_block_axi_mem_intercon_imp_auto_pc_2.tcl
+

@@ -1,0 +1,699 @@
+  **** HLS Build v2024.2 5238294
+INFO: [HLS 200-2005] Using work_dir C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn/flash_attn 
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg400-1'
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying ini 'syn.file=loop_pipeline.h' from C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn/hls_config.cfg(9)
+INFO: [HLS 200-10] Adding design file 'C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn/loop_pipeline.h' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=loop_pipeline.cpp' from C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn/hls_config.cfg(10)
+INFO: [HLS 200-10] Adding design file 'C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn/loop_pipeline.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'tb.file=loop_pipeline_tb.cpp' from C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn/hls_config.cfg(11)
+INFO: [HLS 200-10] Adding test bench file 'C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn/loop_pipeline_tb.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.top=loop_pipeline' from C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn/hls_config.cfg(7)
+INFO: [HLS 200-1465] Applying ini 'flow_target=vivado' from C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn/hls_config.cfg(4)
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying ini 'part=xc7z020clg400-1' from C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn/hls_config.cfg(1)
+INFO: [HLS 200-1465] Applying ini 'package.output.format=ip_catalog' from C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn/hls_config.cfg(5)
+INFO: [HLS 200-1465] Applying ini 'syn.interface.s_axilite_data64=1' from C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn/hls_config.cfg(8)
+INFO: [COSIM 212-47] Using XSIM for RTL simulation.
+INFO: [COSIM 212-14] Instrumenting C test bench ...
+   Build using "C:/Xilinx/Vitis/2024.2/vcxx/libexec/clang++"
+   Compiling loop_pipeline.cpp_pre.cpp.tb.cpp
+   Compiling apatb_loop_pipeline.cpp
+   Compiling apatb_loop_pipeline_util.cpp
+   Compiling loop_pipeline_tb.cpp_pre.cpp.tb.cpp
+   Compiling apatb_loop_pipeline_ir.ll
+   Generating cosim.tv.exe
+INFO: [COSIM 212-302] Starting C TB testing ... 
+
+Processing Column 0:
+Sent: 0
+Sent: 1
+Sent: 2
+Sent: 3
+Sent: 4
+Sent: 5
+Sent: 6
+Sent: 7
+Sent: 8
+Sent: 9
+Reading results for column 0:
+Received: 1 Last=0
+Received: 2 Last=0
+Received: 3 Last=0
+Received: 4 Last=0
+Received: 5 Last=0
+Received: 6 Last=0
+Received: 7 Last=0
+Received: 8 Last=0
+Received: 9 Last=0
+Received: 10 Last=1
+
+Processing Column 1:
+Sent: 10
+Sent: 11
+Sent: 12
+Sent: 13
+Sent: 14
+Sent: 15
+Sent: 16
+Sent: 17
+Sent: 18
+Sent: 19
+Reading results for column 1:
+Received: 11 Last=0
+Received: 12 Last=0
+Received: 13 Last=0
+Received: 14 Last=0
+Received: 15 Last=0
+Received: 16 Last=0
+Received: 17 Last=0
+Received: 18 Last=0
+Received: 19 Last=0
+Received: 20 Last=1
+
+Processing Column 2:
+Sent: 20
+Sent: 21
+Sent: 22
+Sent: 23
+Sent: 24
+Sent: 25
+Sent: 26
+Sent: 27
+Sent: 28
+Sent: 29
+Reading results for column 2:
+Received: 21 Last=0
+Received: 22 Last=0
+Received: 23 Last=0
+Received: 24 Last=0
+Received: 25 Last=0
+Received: 26 Last=0
+Received: 27 Last=0
+Received: 28 Last=0
+Received: 29 Last=0
+Received: 30 Last=1
+
+Processing Column 3:
+Sent: 30
+Sent: 31
+Sent: 32
+Sent: 33
+Sent: 34
+Sent: 35
+Sent: 36
+Sent: 37
+Sent: 38
+Sent: 39
+Reading results for column 3:
+Received: 31 Last=0
+Received: 32 Last=0
+Received: 33 Last=0
+Received: 34 Last=0
+Received: 35 Last=0
+Received: 36 Last=0
+Received: 37 Last=0
+Received: 38 Last=0
+Received: 39 Last=0
+Received: 40 Last=1
+
+Processing Column 4:
+Sent: 40
+Sent: 41
+Sent: 42
+Sent: 43
+Sent: 44
+Sent: 45
+Sent: 46
+Sent: 47
+Sent: 48
+Sent: 49
+Reading results for column 4:
+Received: 41 Last=0
+Received: 42 Last=0
+Received: 43 Last=0
+Received: 44 Last=0
+Received: 45 Last=0
+Received: 46 Last=0
+Received: 47 Last=0
+Received: 48 Last=0
+Received: 49 Last=0
+Received: 50 Last=1
+
+Processing Column 5:
+Sent: 50
+Sent: 51
+Sent: 52
+Sent: 53
+Sent: 54
+Sent: 55
+Sent: 56
+Sent: 57
+Sent: 58
+Sent: 59
+Reading results for column 5:
+Received: 51 Last=0
+Received: 52 Last=0
+Received: 53 Last=0
+Received: 54 Last=0
+Received: 55 Last=0
+Received: 56 Last=0
+Received: 57 Last=0
+Received: 58 Last=0
+Received: 59 Last=0
+Received: 60 Last=1
+
+Processing Column 6:
+Sent: 60
+Sent: 61
+Sent: 62
+Sent: 63
+Sent: 64
+Sent: 65
+Sent: 66
+Sent: 67
+Sent: 68
+Sent: 69
+Reading results for column 6:
+Received: 61 Last=0
+Received: 62 Last=0
+Received: 63 Last=0
+Received: 64 Last=0
+Received: 65 Last=0
+Received: 66 Last=0
+Received: 67 Last=0
+Received: 68 Last=0
+Received: 69 Last=0
+Received: 70 Last=1
+
+Processing Column 7:
+Sent: 70
+Sent: 71
+Sent: 72
+Sent: 73
+Sent: 74
+Sent: 75
+Sent: 76
+Sent: 77
+Sent: 78
+Sent: 79
+Reading results for column 7:
+Received: 71 Last=0
+Received: 72 Last=0
+Received: 73 Last=0
+Received: 74 Last=0
+Received: 75 Last=0
+Received: 76 Last=0
+Received: 77 Last=0
+Received: 78 Last=0
+Received: 79 Last=0
+Received: 80 Last=1
+
+Processing Column 8:
+Sent: 80
+Sent: 81
+Sent: 82
+Sent: 83
+Sent: 84
+Sent: 85
+Sent: 86
+Sent: 87
+Sent: 88
+Sent: 89
+Reading results for column 8:
+Received: 81 Last=0
+Received: 82 Last=0
+Received: 83 Last=0
+Received: 84 Last=0
+Received: 85 Last=0
+Received: 86 Last=0
+Received: 87 Last=0
+Received: 88 Last=0
+Received: 89 Last=0
+Received: 90 Last=1
+
+Processing Column 9:
+Sent: 90
+Sent: 91
+Sent: 92
+Sent: 93
+Sent: 94
+Sent: 95
+Sent: 96
+Sent: 97
+Sent: 98
+Sent: 99
+Reading results for column 9:
+Received: 91 Last=0
+Received: 92 Last=0
+Received: 93 Last=0
+Received: 94 Last=0
+Received: 95 Last=0
+Received: 96 Last=0
+Received: 97 Last=0
+Received: 98 Last=0
+Received: 99 Last=0
+Received: 100 Last=1
+INFO [HLS SIM]: The maximum depth reached by any hls::stream() instance in the design is 10
+INFO: [COSIM 212-333] Generating C post check test bench ...
+INFO: [COSIM 212-12] Generating RTL test bench ...
+INFO: [COSIM 212-1] *** C/RTL co-simulation file generation completed. ***
+INFO: [COSIM 212-323] Starting verilog simulation. 
+INFO: [COSIM 212-15] Starting XSIM ...
+
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\sim\verilog>set PATH= 
+
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\sim\verilog>call C:/Xilinx/Vivado/2024.2/bin/xelab xil_defaultlib.apatb_loop_pipeline_top glbl -Oenable_linking_all_libraries  -prj loop_pipeline.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims_ver -L xpm  -L floating_point_v7_0_24 -L floating_point_v7_1_19 --lib "ieee_proposed=./ieee_proposed" -s loop_pipeline  
+Vivado Simulator v2024.2.0
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2024.2/bin/unwrapped/win64.o/xelab.exe xil_defaultlib.apatb_loop_pipeline_top glbl -Oenable_linking_all_libraries -prj loop_pipeline.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims_ver -L xpm -L floating_point_v7_0_24 -L floating_point_v7_1_19 --lib ieee_proposed=./ieee_proposed -s loop_pipeline 
+Multi-threading is on. Using 14 slave threads.
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn/flash_attn/hls/sim/verilog/glbl.v" into library work
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn/flash_attn/hls/sim/verilog/AESL_axi_s_out_r.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_axi_s_out_r
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn/flash_attn/hls/sim/verilog/AESL_axi_s_strm.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_axi_s_strm
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn/flash_attn/hls/sim/verilog/AESL_deadlock_idx0_monitor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_deadlock_idx0_monitor
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn/flash_attn/hls/sim/verilog/AESL_deadlock_kernel_monitor_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_deadlock_kernel_monitor_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn/flash_attn/hls/sim/verilog/AESL_fifo.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fifo
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn/flash_attn/hls/sim/verilog/loop_pipeline.autotb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module apatb_loop_pipeline_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn/flash_attn/hls/sim/verilog/loop_pipeline.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module loop_pipeline
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn/flash_attn/hls/sim/verilog/loop_pipeline_regslice_both.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module loop_pipeline_regslice_both
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn/flash_attn/hls/sim/verilog/dataflow_monitor.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dataflow_monitor
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package xil_defaultlib.$unit_dataflow_monitor_sv
+Compiling module xil_defaultlib.loop_pipeline_regslice_both(Data...
+Compiling module xil_defaultlib.loop_pipeline_regslice_both(Data...
+Compiling module xil_defaultlib.loop_pipeline_regslice_both(Data...
+Compiling module xil_defaultlib.loop_pipeline
+Compiling module xil_defaultlib.fifo(DEPTH=2,WIDTH=32)
+Compiling module xil_defaultlib.fifo(DEPTH=2,WIDTH=4)
+Compiling module xil_defaultlib.fifo(DEPTH=2,WIDTH=1)
+Compiling module xil_defaultlib.AESL_axi_s_strm
+Compiling module xil_defaultlib.fifo(DEPTH=10,WIDTH=32)
+Compiling module xil_defaultlib.fifo(DEPTH=10,WIDTH=4)
+Compiling module xil_defaultlib.fifo(DEPTH=10,WIDTH=1)
+Compiling module xil_defaultlib.AESL_axi_s_out_r
+Compiling module xil_defaultlib.AESL_deadlock_idx0_monitor
+Compiling module xil_defaultlib.AESL_deadlock_kernel_monitor_top...
+Compiling module xil_defaultlib.nodf_module_intf_default
+Compiling module xil_defaultlib.dataflow_monitor
+Compiling module xil_defaultlib.apatb_loop_pipeline_top
+Compiling module work.glbl
+Built simulation snapshot loop_pipeline
+
+****** xsim v2024.2 (64-bit)
+  **** SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+  **** IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+  **** SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+  **** Start of session at: Mon Apr  7 09:30:45 2025
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source xsim.dir/loop_pipeline/xsim_script.tcl
+# xsim {loop_pipeline} -autoloadwcfg -tclbatch {loop_pipeline.tcl}
+Time resolution is 1 ps
+source loop_pipeline.tcl
+## run all
+////////////////////////////////////////////////////////////////////////////////////
+// Inter-Transaction Progress: Completed Transaction / Total Transaction
+// Intra-Transaction Progress: Measured Latency / Latency Estimation * 100%
+//
+// RTL Simulation : "Inter-Transaction Progress" ["Intra-Transaction Progress"] @ "Simulation Time"
+////////////////////////////////////////////////////////////////////////////////////
+// RTL Simulation : 0 / 100 [0.00%] @ "125000"
+// RTL Simulation : 1 / 100 [100.00%] @ "135000"
+// RTL Simulation : 2 / 100 [100.00%] @ "145000"
+// RTL Simulation : 3 / 100 [100.00%] @ "155000"
+// RTL Simulation : 4 / 100 [100.00%] @ "165000"
+// RTL Simulation : 5 / 100 [100.00%] @ "175000"
+// RTL Simulation : 6 / 100 [100.00%] @ "185000"
+// RTL Simulation : 7 / 100 [100.00%] @ "195000"
+// RTL Simulation : 8 / 100 [100.00%] @ "205000"
+// RTL Simulation : 9 / 100 [100.00%] @ "215000"
+// RTL Simulation : 10 / 100 [263.64%] @ "1165000"
+// RTL Simulation : 11 / 100 [181.82%] @ "1175000"
+// RTL Simulation : 12 / 100 [100.00%] @ "1185000"
+// RTL Simulation : 13 / 100 [18.18%] @ "1195000"
+// RTL Simulation : 14 / 100 [100.00%] @ "1205000"
+// RTL Simulation : 15 / 100 [100.00%] @ "1215000"
+// RTL Simulation : 16 / 100 [100.00%] @ "1225000"
+// RTL Simulation : 17 / 100 [100.00%] @ "1235000"
+// RTL Simulation : 18 / 100 [100.00%] @ "1245000"
+// RTL Simulation : 19 / 100 [100.00%] @ "1255000"
+// RTL Simulation : 20 / 100 [263.64%] @ "2165000"
+// RTL Simulation : 21 / 100 [181.82%] @ "2175000"
+// RTL Simulation : 22 / 100 [100.00%] @ "2185000"
+// RTL Simulation : 23 / 100 [18.18%] @ "2195000"
+// RTL Simulation : 24 / 100 [100.00%] @ "2205000"
+// RTL Simulation : 25 / 100 [100.00%] @ "2215000"
+// RTL Simulation : 26 / 100 [100.00%] @ "2225000"
+// RTL Simulation : 27 / 100 [100.00%] @ "2235000"
+// RTL Simulation : 28 / 100 [100.00%] @ "2245000"
+// RTL Simulation : 29 / 100 [100.00%] @ "2255000"
+// RTL Simulation : 30 / 100 [263.64%] @ "3165000"
+// RTL Simulation : 31 / 100 [181.82%] @ "3175000"
+// RTL Simulation : 32 / 100 [100.00%] @ "3185000"
+// RTL Simulation : 33 / 100 [18.18%] @ "3195000"
+// RTL Simulation : 34 / 100 [100.00%] @ "3205000"
+// RTL Simulation : 35 / 100 [100.00%] @ "3215000"
+// RTL Simulation : 36 / 100 [100.00%] @ "3225000"
+// RTL Simulation : 37 / 100 [100.00%] @ "3235000"
+// RTL Simulation : 38 / 100 [100.00%] @ "3245000"
+// RTL Simulation : 39 / 100 [100.00%] @ "3255000"
+// RTL Simulation : 40 / 100 [263.64%] @ "4165000"
+// RTL Simulation : 41 / 100 [181.82%] @ "4175000"
+// RTL Simulation : 42 / 100 [100.00%] @ "4185000"
+// RTL Simulation : 43 / 100 [18.18%] @ "4195000"
+// RTL Simulation : 44 / 100 [100.00%] @ "4205000"
+// RTL Simulation : 45 / 100 [100.00%] @ "4215000"
+// RTL Simulation : 46 / 100 [100.00%] @ "4225000"
+// RTL Simulation : 47 / 100 [100.00%] @ "4235000"
+// RTL Simulation : 48 / 100 [100.00%] @ "4245000"
+// RTL Simulation : 49 / 100 [100.00%] @ "4255000"
+// RTL Simulation : 50 / 100 [263.64%] @ "5165000"
+// RTL Simulation : 51 / 100 [181.82%] @ "5175000"
+// RTL Simulation : 52 / 100 [100.00%] @ "5185000"
+// RTL Simulation : 53 / 100 [18.18%] @ "5195000"
+// RTL Simulation : 54 / 100 [100.00%] @ "5205000"
+// RTL Simulation : 55 / 100 [100.00%] @ "5215000"
+// RTL Simulation : 56 / 100 [100.00%] @ "5225000"
+// RTL Simulation : 57 / 100 [100.00%] @ "5235000"
+// RTL Simulation : 58 / 100 [100.00%] @ "5245000"
+// RTL Simulation : 59 / 100 [100.00%] @ "5255000"
+// RTL Simulation : 60 / 100 [263.64%] @ "6165000"
+// RTL Simulation : 61 / 100 [181.82%] @ "6175000"
+// RTL Simulation : 62 / 100 [100.00%] @ "6185000"
+// RTL Simulation : 63 / 100 [18.18%] @ "6195000"
+// RTL Simulation : 64 / 100 [100.00%] @ "6205000"
+// RTL Simulation : 65 / 100 [100.00%] @ "6215000"
+// RTL Simulation : 66 / 100 [100.00%] @ "6225000"
+// RTL Simulation : 67 / 100 [100.00%] @ "6235000"
+// RTL Simulation : 68 / 100 [100.00%] @ "6245000"
+// RTL Simulation : 69 / 100 [100.00%] @ "6255000"
+// RTL Simulation : 70 / 100 [263.64%] @ "7165000"
+// RTL Simulation : 71 / 100 [181.82%] @ "7175000"
+// RTL Simulation : 72 / 100 [100.00%] @ "7185000"
+// RTL Simulation : 73 / 100 [18.18%] @ "7195000"
+// RTL Simulation : 74 / 100 [100.00%] @ "7205000"
+// RTL Simulation : 75 / 100 [100.00%] @ "7215000"
+// RTL Simulation : 76 / 100 [100.00%] @ "7225000"
+// RTL Simulation : 77 / 100 [100.00%] @ "7235000"
+// RTL Simulation : 78 / 100 [100.00%] @ "7245000"
+// RTL Simulation : 79 / 100 [100.00%] @ "7255000"
+// RTL Simulation : 80 / 100 [263.64%] @ "8165000"
+// RTL Simulation : 81 / 100 [181.82%] @ "8175000"
+// RTL Simulation : 82 / 100 [100.00%] @ "8185000"
+// RTL Simulation : 83 / 100 [18.18%] @ "8195000"
+// RTL Simulation : 84 / 100 [100.00%] @ "8205000"
+// RTL Simulation : 85 / 100 [100.00%] @ "8215000"
+// RTL Simulation : 86 / 100 [100.00%] @ "8225000"
+// RTL Simulation : 87 / 100 [100.00%] @ "8235000"
+// RTL Simulation : 88 / 100 [100.00%] @ "8245000"
+// RTL Simulation : 89 / 100 [100.00%] @ "8255000"
+// RTL Simulation : 90 / 100 [263.64%] @ "9165000"
+// RTL Simulation : 91 / 100 [181.82%] @ "9175000"
+// RTL Simulation : 92 / 100 [100.00%] @ "9185000"
+// RTL Simulation : 93 / 100 [18.18%] @ "9195000"
+// RTL Simulation : 94 / 100 [100.00%] @ "9205000"
+// RTL Simulation : 95 / 100 [100.00%] @ "9215000"
+// RTL Simulation : 96 / 100 [100.00%] @ "9225000"
+// RTL Simulation : 97 / 100 [100.00%] @ "9235000"
+// RTL Simulation : 98 / 100 [100.00%] @ "9245000"
+// RTL Simulation : 99 / 100 [100.00%] @ "9255000"
+// RTL Simulation : 100 / 100 [100.00%] @ "10165000"
+////////////////////////////////////////////////////////////////////////////////////
+$finish called at time : 10225 ns : File "C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn/flash_attn/hls/sim/verilog/loop_pipeline.autotb.v" Line 250
+## quit
+INFO: [Common 17-206] Exiting xsim at Mon Apr  7 09:30:46 2025...
+INFO: [COSIM 212-316] Starting C post checking ...
+WARNING: [SIM 212-201] RTL produces unknown value 'x' or 'X' on some port, possible cause: There are uninitialized variables in the design.
+WARNING: [SIM 212-201] RTL produces unknown value 'x' or 'X' on some port, possible cause: There are uninitialized variables in the design.
+WARNING: [SIM 212-201] RTL produces unknown value 'x' or 'X' on some port, possible cause: There are uninitialized variables in the design.
+WARNING: [SIM 212-201] RTL produces unknown value 'x' or 'X' on some port, possible cause: There are uninitialized variables in the design.
+WARNING: [SIM 212-201] RTL produces unknown value 'x' or 'X' on some port, possible cause: There are uninitialized variables in the design.
+WARNING: [SIM 212-201] RTL produces unknown value 'x' or 'X' on some port, possible cause: There are uninitialized variables in the design.
+WARNING: [SIM 212-201] RTL produces unknown value 'x' or 'X' on some port, possible cause: There are uninitialized variables in the design.
+WARNING: [SIM 212-201] RTL produces unknown value 'x' or 'X' on some port, possible cause: There are uninitialized variables in the design.
+WARNING: [SIM 212-201] RTL produces unknown value 'x' or 'X' on some port, possible cause: There are uninitialized variables in the design.
+WARNING: [SIM 212-201] RTL produces unknown value 'x' or 'X' on some port, possible cause: There are uninitialized variables in the design.
+WARNING: [SIM 212-201] RTL produces unknown value 'x' or 'X' on some port, possible cause: There are uninitialized variables in the design.
+WARNING: [SIM 212-201] RTL produces unknown value 'x' or 'X' on some port, possible cause: There are uninitialized variables in the design.
+WARNING: [SIM 212-201] RTL produces unknown value 'x' or 'X' on some port, possible cause: There are uninitialized variables in the design.
+WARNING: [SIM 212-201] RTL produces unknown value 'x' or 'X' on some port, possible cause: There are uninitialized variables in the design.
+WARNING: [SIM 212-201] RTL produces unknown value 'x' or 'X' on some port, possible cause: There are uninitialized variables in the design.
+WARNING: [SIM 212-201] RTL produces unknown value 'x' or 'X' on some port, possible cause: There are uninitialized variables in the design.
+WARNING: [SIM 212-201] RTL produces unknown value 'x' or 'X' on some port, possible cause: There are uninitialized variables in the design.
+WARNING: [SIM 212-201] RTL produces unknown value 'x' or 'X' on some port, possible cause: There are uninitialized variables in the design.
+WARNING: [SIM 212-201] RTL produces unknown value 'x' or 'X' on some port, possible cause: There are uninitialized variables in the design.
+WARNING: [SIM 212-201] RTL produces unknown value 'x' or 'X' on some port, possible cause: There are uninitialized variables in the design.
+
+Processing Column 0:
+Sent: 0
+Sent: 1
+Sent: 2
+Sent: 3
+Sent: 4
+Sent: 5
+Sent: 6
+Sent: 7
+Sent: 8
+Sent: 9
+Reading results for column 0:
+Received: 1 Last=0
+Received: 2 Last=0
+Received: 3 Last=0
+Received: 4 Last=0
+Received: 5 Last=0
+Received: 6 Last=0
+Received: 7 Last=0
+Received: 8 Last=0
+Received: 9 Last=0
+Received: 10 Last=1
+
+Processing Column 1:
+Sent: 10
+Sent: 11
+Sent: 12
+Sent: 13
+Sent: 14
+Sent: 15
+Sent: 16
+Sent: 17
+Sent: 18
+Sent: 19
+Reading results for column 1:
+Received: 11 Last=0
+Received: 12 Last=0
+Received: 13 Last=0
+Received: 14 Last=0
+Received: 15 Last=0
+Received: 16 Last=0
+Received: 17 Last=0
+Received: 18 Last=0
+Received: 19 Last=0
+Received: 20 Last=1
+
+Processing Column 2:
+Sent: 20
+Sent: 21
+Sent: 22
+Sent: 23
+Sent: 24
+Sent: 25
+Sent: 26
+Sent: 27
+Sent: 28
+Sent: 29
+Reading results for column 2:
+Received: 21 Last=0
+Received: 22 Last=0
+Received: 23 Last=0
+Received: 24 Last=0
+Received: 25 Last=0
+Received: 26 Last=0
+Received: 27 Last=0
+Received: 28 Last=0
+Received: 29 Last=0
+Received: 30 Last=1
+
+Processing Column 3:
+Sent: 30
+Sent: 31
+Sent: 32
+Sent: 33
+Sent: 34
+Sent: 35
+Sent: 36
+Sent: 37
+Sent: 38
+Sent: 39
+Reading results for column 3:
+Received: 31 Last=0
+Received: 32 Last=0
+Received: 33 Last=0
+Received: 34 Last=0
+Received: 35 Last=0
+Received: 36 Last=0
+Received: 37 Last=0
+Received: 38 Last=0
+Received: 39 Last=0
+Received: 40 Last=1
+
+Processing Column 4:
+Sent: 40
+Sent: 41
+Sent: 42
+Sent: 43
+Sent: 44
+Sent: 45
+Sent: 46
+Sent: 47
+Sent: 48
+Sent: 49
+Reading results for column 4:
+Received: 41 Last=0
+Received: 42 Last=0
+Received: 43 Last=0
+Received: 44 Last=0
+Received: 45 Last=0
+Received: 46 Last=0
+Received: 47 Last=0
+Received: 48 Last=0
+Received: 49 Last=0
+Received: 50 Last=1
+
+Processing Column 5:
+Sent: 50
+Sent: 51
+Sent: 52
+Sent: 53
+Sent: 54
+Sent: 55
+Sent: 56
+Sent: 57
+Sent: 58
+Sent: 59
+Reading results for column 5:
+Received: 51 Last=0
+Received: 52 Last=0
+Received: 53 Last=0
+Received: 54 Last=0
+Received: 55 Last=0
+Received: 56 Last=0
+Received: 57 Last=0
+Received: 58 Last=0
+Received: 59 Last=0
+Received: 60 Last=1
+
+Processing Column 6:
+Sent: 60
+Sent: 61
+Sent: 62
+Sent: 63
+Sent: 64
+Sent: 65
+Sent: 66
+Sent: 67
+Sent: 68
+Sent: 69
+Reading results for column 6:
+Received: 61 Last=0
+Received: 62 Last=0
+Received: 63 Last=0
+Received: 64 Last=0
+Received: 65 Last=0
+Received: 66 Last=0
+Received: 67 Last=0
+Received: 68 Last=0
+Received: 69 Last=0
+Received: 70 Last=1
+
+Processing Column 7:
+Sent: 70
+Sent: 71
+Sent: 72
+Sent: 73
+Sent: 74
+Sent: 75
+Sent: 76
+Sent: 77
+Sent: 78
+Sent: 79
+Reading results for column 7:
+Received: 71 Last=0
+Received: 72 Last=0
+Received: 73 Last=0
+Received: 74 Last=0
+Received: 75 Last=0
+Received: 76 Last=0
+Received: 77 Last=0
+Received: 78 Last=0
+Received: 79 Last=0
+Received: 80 Last=1
+
+Processing Column 8:
+Sent: 80
+Sent: 81
+Sent: 82
+Sent: 83
+Sent: 84
+Sent: 85
+Sent: 86
+Sent: 87
+Sent: 88
+Sent: 89
+Reading results for column 8:
+Received: 81 Last=0
+Received: 82 Last=0
+Received: 83 Last=0
+Received: 84 Last=0
+Received: 85 Last=0
+Received: 86 Last=0
+Received: 87 Last=0
+Received: 88 Last=0
+Received: 89 Last=0
+Received: 90 Last=1
+
+Processing Column 9:
+Sent: 90
+Sent: 91
+Sent: 92
+Sent: 93
+Sent: 94
+Sent: 95
+Sent: 96
+Sent: 97
+Sent: 98
+Sent: 99
+Reading results for column 9:
+Received: 91 Last=0
+Received: 92 Last=0
+Received: 93 Last=0
+Received: 94 Last=0
+Received: 95 Last=0
+Received: 96 Last=0
+Received: 97 Last=0
+Received: 98 Last=0
+Received: 99 Last=0
+Received: 100 Last=1
+INFO [HLS SIM]: The maximum depth reached by any hls::stream() instance in the design is 10
+INFO: [COSIM 212-1000] *** C/RTL co-simulation finished: PASS ***
+INFO: [HLS 200-112] Total CPU user time: 3 seconds. Total CPU system time: 1 seconds. Total elapsed time: 31.981 seconds; peak allocated memory: 329.660 MB.
+INFO: [vitis-run 60-791] Total elapsed time: 0h 0m 36s
