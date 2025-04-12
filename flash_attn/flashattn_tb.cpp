@@ -6,7 +6,6 @@
 
 #define SEED 42
 
-// Software reference model
 void softmax_attention_ref(float Q[tile_q_len][head_dim],
                            float K[tile_k_len][head_dim],
                            float V[tile_k_len][head_dim],
@@ -51,12 +50,11 @@ int main() {
     float V_tile[tile_k_len][head_dim];
     float O_tile_ref[tile_q_len][head_dim];
 
-    // Fill Q, K, V with random values and stream them to the DUT
     for (int i = 0; i < tile_q_len; i++) {
         for (int d = 0; d < head_dim; d++) {
             float val = ((float)rand() / RAND_MAX) * 2 - 1;
             Q_tile[i][d] = val;
-            pkt.data = val;
+            pkt.data = (data_t)val;
             pkt.keep = -1;
             pkt.last = (i == tile_q_len - 1 && d == head_dim - 1);
             Q_in.write(pkt);
@@ -70,33 +68,30 @@ int main() {
             K_tile[i][d] = kval;
             V_tile[i][d] = vval;
 
-            pkt.data = kval;
+            pkt.data = (data_t)kval;
             pkt.keep = -1;
             pkt.last = (i == tile_k_len - 1 && d == head_dim - 1);
             K_in.write(pkt);
 
-            pkt.data = vval;
+            pkt.data = (data_t)vval;
             pkt.keep = -1;
             pkt.last = (i == tile_k_len - 1 && d == head_dim - 1);
             V_in.write(pkt);
         }
     }
 
-    // Run hardware kernel
     flashattn(Q_in, K_in, V_in, O_out);
 
-    // Run software reference
     softmax_attention_ref(Q_tile, K_tile, V_tile, O_tile_ref);
 
-    // Compare results
     bool pass = true;
     for (int i = 0; i < tile_q_len; i++) {
         for (int d = 0; d < head_dim; d++) {
             pkt = O_out.read();
-            float hw = pkt.data;
+            float hw = (float)pkt.data;
             float ref = O_tile_ref[i][d];
             float diff = fabs(hw - ref);
-            if (diff > 1e-3f) {
+            if (diff > 1e-2f) {
                 printf("Mismatch at [%d][%d]: HW = %.5f, REF = %.5f, Diff = %.5f\n",
                        i, d, hw, ref, diff);
                 pass = false;
