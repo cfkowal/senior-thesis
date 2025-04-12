@@ -8,17 +8,26 @@ void flashattn(d_stream &Q_tile_in, d_stream &K_tile_in, d_stream &V_tile_in, d_
 #pragma HLS INTERFACE mode=AXIS port=K_tile_in register_mode=off
 #pragma HLS INTERFACE mode=AXIS port=O_tile_out register_mode=off
 
+    
+    
 
+    // Setup AXI packets
     data_t_pack Q_in, K_in, V_in, O_out;
-
-    Q_in.keep = K_in.keep = V_in.keep = O_out.keep = -1;
+    Q_in.keep = K_in.keep = V_in.keep = O_out.keep = -1; 
     Q_in.last = K_in.last = V_in.last = O_out.last = 0;
 
-    data_t Q_tile[tile_q_len][head_dim];
-    data_t K_tile[tile_k_len][head_dim];
-    data_t V_tile[tile_k_len][head_dim];
+    // Establish BRAM buffers
+    data_t Q_tile[tile_q_len][head_dim]; // Q tile buffer
+    data_t K_tile[tile_k_len][head_dim]; // K tile buffer
+    data_t V_tile[tile_k_len][head_dim]; // V tile buffer
     data_t O_tile[tile_q_len][head_dim];
 
+    // Initialize per-query accumulators
+    data_t row_max[tile_q_len];
+    data_t exp_sum[tile_q_len];
+    data_t output_accum[tile_q_len][head_dim];
+
+// Read in the Q tile from the input stream
 Read_Q:
 	for(int row = 0; row < tile_q_len; row++)
 	{
@@ -29,6 +38,7 @@ Read_Q:
 		}
 	}
 
+// Read in the K and V tiles from the input stream
 Read_K_and_V:
     for(int row = 0; row < tile_k_len; row++)
 	{
@@ -42,18 +52,78 @@ Read_K_and_V:
 		}
 	}
 
-Attention_Loop:
-    for(int row = 0; row < tile_q_len; row++)
-	{
-		for(int col = 0; col < head_dim; col++)
-		{
-           O_out.data = Q_tile[row][col] + K_tile[row][col] + V_tile[row][col];
-           O_out.keep = -1;
-           O_out.last = (row == tile_q_len - 1) && (col == head_dim - 1);
-
-           O_tile_out.write(O_out);
-		}
-	}
 
 
+Init_Accumulators:
+    for (int q = 0; q < tile_q_len; q++) 
+    {
+        row_max[q] = -INFINITY;
+        exp_sum[q] = 0;
+        for (int d = 0; d < head_dim; d++) 
+        {
+            output_accum[q][d] = 0;
+        }
+    }
+
+
+Compute_Online_Softmax:
+    for (int k = 0; k < tile_k_len; k++) 
+    {
+        for (int q = 0; q < tile_q_len; q++) 
+        {
+#pragma HLS PIPELINE II=1
+
+            // Compute dot(Q[q], K[k])
+            data_t score = 0;
+            for (int d = 0; d < head_dim; d++) 
+            {
+//#pragma HLS UNROLL factor=4
+                score += Q_tile[q][d] * K_tile[k][d];
+            }
+
+            // FlashAttention-style max correction
+            data_t new_max = row_max[q];
+            bool max_updated = false;
+            if (score > row_max[q]) 
+            {
+                new_max = score;
+                max_updated = true;
+            }
+
+            // Compute exp(score - current max)
+            data_t exp_val = hls::expf(score - new_max);
+
+            // Rescale if max changed
+            if (max_updated) 
+            {
+                data_t scale = hls::expf(row_max[q] - new_max);
+                exp_sum[q] *= scale;
+                for (int d = 0; d < head_dim; d++) {
+                    output_accum[q][d] *= scale;
+                }
+                row_max[q] = new_max;
+            }
+
+            // Update exp_sum and output accumulation
+            exp_sum[q] += exp_val;
+            for (int d = 0; d < head_dim; d++) 
+            {
+                output_accum[q][d] += exp_val * V_tile[k][d];
+            }
+        }
+    }
+
+
+Normalize_And_Stream_Output:
+    for (int q = 0; q < tile_q_len; q++) 
+    {
+        for (int d = 0; d < head_dim; d++) 
+        {
+            data_t final_output = output_accum[q][d] / exp_sum[q];
+            O_out.data = final_output;
+            O_out.keep = -1;
+            O_out.last = (q == tile_q_len - 1) && (d == head_dim - 1);
+            O_tile_out.write(O_out);
+        }
+    }
 }

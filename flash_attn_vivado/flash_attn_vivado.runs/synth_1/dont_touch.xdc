@@ -4,9 +4,6 @@
 # Block Designs: bd/flashattn_bd/flashattn_bd.bd
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==flashattn_bd || ORIG_REF_NAME==flashattn_bd} -quiet] -quiet
 
-# IP: bd/flashattn_bd/ip/flashattn_bd_flashattn_0_0/flashattn_bd_flashattn_0_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==flashattn_bd_flashattn_0_0 || ORIG_REF_NAME==flashattn_bd_flashattn_0_0} -quiet] -quiet
-
 # IP: bd/flashattn_bd/ip/flashattn_bd_processing_system7_0_0/flashattn_bd_processing_system7_0_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==flashattn_bd_processing_system7_0_0 || ORIG_REF_NAME==flashattn_bd_processing_system7_0_0} -quiet] -quiet
 
@@ -33,6 +30,9 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==flashattn_b
 
 # IP: bd/flashattn_bd/ip/flashattn_bd_axi_interconnect_0_0/flashattn_bd_axi_interconnect_0_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==flashattn_bd_axi_interconnect_0_0 || ORIG_REF_NAME==flashattn_bd_axi_interconnect_0_0} -quiet] -quiet
+
+# IP: bd/flashattn_bd/ip/flashattn_bd_flashattn_0_1/flashattn_bd_flashattn_0_1.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==flashattn_bd_flashattn_0_1 || ORIG_REF_NAME==flashattn_bd_flashattn_0_1} -quiet] -quiet
 
 # IP: bd/flashattn_bd/ip/flashattn_bd_axi_interconnect_0_imp_auto_us_0/flashattn_bd_axi_interconnect_0_imp_auto_us_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==flashattn_bd_axi_interconnect_0_imp_auto_us_0 || ORIG_REF_NAME==flashattn_bd_axi_interconnect_0_imp_auto_us_0} -quiet] -quiet

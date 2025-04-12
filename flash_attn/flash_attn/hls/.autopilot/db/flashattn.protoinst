@@ -3,7 +3,7 @@
 	"modules": {
 		"flashattn": {
 			"proto_instances": {
-				"grp_flashattn_Pipeline_Attention_Loop_VITIS_LOOP_48_3_fu_120/grp_flashattn_Pipeline_Attention_Loop_VITIS_LOOP_48_3_fu_120_activity": {
+				"grp_flashattn_Pipeline_Compute_Online_Softmax_VITIS_LOOP_72_4_fu_1658/grp_flashattn_Pipeline_Compute_Online_Softmax_VITIS_LOOP_72_4_fu_1658_activity": {
 					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
 					"ports": {
 						"AP_CLK": { "actual": "ap_clk"},
@@ -13,7 +13,7 @@
 						"AP_START": { "actual": "ap_start"}
 					}
 				},
-				"grp_flashattn_Pipeline_Read_K_and_V_VITIS_LOOP_35_2_fu_96/grp_flashattn_Pipeline_Read_K_and_V_VITIS_LOOP_35_2_fu_96_activity": {
+				"grp_flashattn_Pipeline_Init_Accumulators_fu_1522/grp_flashattn_Pipeline_Init_Accumulators_fu_1522_activity": {
 					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
 					"ports": {
 						"AP_CLK": { "actual": "ap_clk"},
@@ -23,7 +23,27 @@
 						"AP_START": { "actual": "ap_start"}
 					}
 				},
-				"grp_flashattn_Pipeline_Read_Q_VITIS_LOOP_25_1_fu_82/grp_flashattn_Pipeline_Read_Q_VITIS_LOOP_25_1_fu_82_activity": {
+				"grp_flashattn_Pipeline_Normalize_And_Stream_Output_VITIS_LOOP_120_8_fu_1920/grp_flashattn_Pipeline_Normalize_And_Stream_Output_VITIS_LOOP_120_8_fu_1920_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				},
+				"grp_flashattn_Pipeline_Read_K_and_V_VITIS_LOOP_45_2_fu_1246/grp_flashattn_Pipeline_Read_K_and_V_VITIS_LOOP_45_2_fu_1246_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				},
+				"grp_flashattn_Pipeline_Read_Q_VITIS_LOOP_34_1_fu_1106/grp_flashattn_Pipeline_Read_Q_VITIS_LOOP_34_1_fu_1106_activity": {
 					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
 					"ports": {
 						"AP_CLK": { "actual": "ap_clk"},

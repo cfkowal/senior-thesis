@@ -7,7 +7,7 @@
 <Project Product="Vivado" Version="7" Minor="68" Path="C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn/flash_attn/hls/impl/ip/hdl/ip.tmp/subcore_proj.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
-    <Option Name="Id" Val="f1b32e22b1a94abf9f1e22afd852c137"/>
+    <Option Name="Id" Val="433b21a489514afb936e34ef691b4680"/>
     <Option Name="Part" Val="xc7z020clg400-1"/>
     <Option Name="CompiledLibDir" Val="$PCACHEDIR/compile_simlib"/>
     <Option Name="CompiledLibDirXSim" Val=""/>
@@ -90,6 +90,41 @@
     <FileSet Name="sources_1" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
       <Filter Type="Srcs"/>
       <File Path="$PSRCDIR/sources_1/ip/flashattn_fadd_32ns_32ns_32_5_full_dsp_1_ip/flashattn_fadd_32ns_32ns_32_5_full_dsp_1_ip.xci">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/ip/flashattn_faddfsub_32ns_32ns_32_5_full_dsp_1_ip/flashattn_faddfsub_32ns_32ns_32_5_full_dsp_1_ip.xci">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/ip/flashattn_fcmp_32ns_32ns_1_2_no_dsp_1_ip/flashattn_fcmp_32ns_32ns_1_2_no_dsp_1_ip.xci">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/ip/flashattn_fdiv_32ns_32ns_32_16_no_dsp_1_ip/flashattn_fdiv_32ns_32ns_32_16_no_dsp_1_ip.xci">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/ip/flashattn_fexp_32ns_32ns_32_10_full_dsp_1_ip/flashattn_fexp_32ns_32ns_32_10_full_dsp_1_ip.xci">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/ip/flashattn_fmul_32ns_32ns_32_4_max_dsp_1_ip/flashattn_fmul_32ns_32ns_32_4_max_dsp_1_ip.xci">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>

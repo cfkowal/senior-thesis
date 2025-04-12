@@ -1,7 +1,7 @@
 {
   "design": {
     "design_info": {
-      "boundary_crc": "0xCC6CFA53F622E079",
+      "boundary_crc": "0xCC6CFA53B4580162",
       "device": "xc7z020clg400-1",
       "gen_directory": "../../../../flash_attn_vivado.gen/sources_1/bd/flashattn_bd",
       "name": "flashattn_bd",
@@ -11,7 +11,6 @@
       "validated": "true"
     },
     "design_tree": {
-      "flashattn_0": "",
       "processing_system7_0": "",
       "axi_dma_0": "",
       "axi_dma_1": "",
@@ -36,7 +35,8 @@
         "m00_couplers": {
           "auto_pc": ""
         }
-      }
+      },
+      "flashattn_0": ""
     },
     "interface_ports": {
       "DDR": {
@@ -209,13 +209,6 @@
       }
     },
     "components": {
-      "flashattn_0": {
-        "vlnv": "xilinx.com:hls:flashattn:1.0",
-        "ip_revision": "2114032525",
-        "xci_name": "flashattn_bd_flashattn_0_0",
-        "xci_path": "ip\\flashattn_bd_flashattn_0_0\\flashattn_bd_flashattn_0_0.xci",
-        "inst_hier_path": "flashattn_0"
-      },
       "processing_system7_0": {
         "vlnv": "xilinx.com:ip:processing_system7:5.5",
         "ip_revision": "6",
@@ -3024,6 +3017,13 @@
             ]
           }
         }
+      },
+      "flashattn_0": {
+        "vlnv": "xilinx.com:hls:flashattn:1.0",
+        "ip_revision": "2114035711",
+        "xci_name": "flashattn_bd_flashattn_0_1",
+        "xci_path": "ip\\flashattn_bd_flashattn_0_1\\flashattn_bd_flashattn_0_1.xci",
+        "inst_hier_path": "flashattn_0"
       }
     },
     "interface_nets": {
@@ -3135,7 +3135,6 @@
           "axi_dma_1/s_axi_lite_aclk",
           "axi_dma_2/s_axi_lite_aclk",
           "axi_dma_3/s_axi_lite_aclk",
-          "flashattn_0/ap_clk",
           "axi_dma_0/m_axi_mm2s_aclk",
           "axi_dma_1/m_axi_mm2s_aclk",
           "axi_dma_2/m_axi_mm2s_aclk",
@@ -3146,7 +3145,8 @@
           "axi_interconnect_0/S02_ACLK",
           "axi_interconnect_0/S01_ACLK",
           "axi_interconnect_0/S00_ACLK",
-          "processing_system7_0/S_AXI_HP0_ACLK"
+          "processing_system7_0/S_AXI_HP0_ACLK",
+          "flashattn_0/ap_clk"
         ]
       },
       "processing_system7_0_FCLK_RESET0_N": {
@@ -3163,13 +3163,13 @@
           "axi_dma_1/axi_resetn",
           "axi_dma_2/axi_resetn",
           "axi_dma_3/axi_resetn",
-          "flashattn_0/ap_rst_n",
           "axi_interconnect_0/ARESETN",
           "axi_interconnect_0/M00_ARESETN",
           "axi_interconnect_0/S03_ARESETN",
           "axi_interconnect_0/S02_ARESETN",
           "axi_interconnect_0/S01_ARESETN",
-          "axi_interconnect_0/S00_ARESETN"
+          "axi_interconnect_0/S00_ARESETN",
+          "flashattn_0/ap_rst_n"
         ]
       }
     },

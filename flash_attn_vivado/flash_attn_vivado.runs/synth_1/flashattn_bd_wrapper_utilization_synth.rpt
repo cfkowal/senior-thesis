@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
-| Date         : Wed Apr  9 15:05:39 2025
+| Date         : Fri Apr 11 19:41:39 2025
 | Host         : DESKTOP-I99LGQ1 running 64-bit major release  (build 9200)
 | Command      : report_utilization -file flashattn_bd_wrapper_utilization_synth.rpt -pb flashattn_bd_wrapper_utilization_synth.pb
 | Design       : flashattn_bd_wrapper
@@ -159,7 +159,7 @@ Warning! For any ECO changes, please run place_design if there are unplaced inst
 +-----------------------------------------------+------+
 | flashattn_bd_rst_ps7_0_100M_0                 |    1 |
 | flashattn_bd_processing_system7_0_0           |    1 |
-| flashattn_bd_flashattn_0_0                    |    1 |
+| flashattn_bd_flashattn_0_1                    |    1 |
 | flashattn_bd_axi_smc_0                        |    1 |
 | flashattn_bd_axi_interconnect_0_imp_xbar_0    |    1 |
 | flashattn_bd_axi_interconnect_0_imp_auto_us_3 |    1 |

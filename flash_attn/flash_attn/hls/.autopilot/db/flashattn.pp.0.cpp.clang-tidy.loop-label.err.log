@@ -1,1 +1,3 @@
-clang-tidy applied 7 of 7 suggested fixes.
+26 errors generated.
+Error while processing C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp.
+clang-tidy applied 137 of 137 suggested fixes.

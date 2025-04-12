@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'flashattn'" level="0">
-<item name = "Date">Wed Apr  9 14:21:23 2025
+<item name = "Date">Fri Apr 11 19:30:28 2025
 </item>
 <item name = "Version">2024.2 (Build 5238294 on Nov  8 2024)</item>
 <item name = "Project">flash_attn</item>
@@ -24,16 +24,18 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">8212, 8212, 82.120 us, 82.120 us, 8213, 8213, no</column>
+<column name="">6529, 6529, 65.290 us, 65.290 us, 6530, 6530, no</column>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
-<column name="grp_flashattn_Pipeline_Read_Q_VITIS_LOOP_25_1_fu_82">flashattn_Pipeline_Read_Q_VITIS_LOOP_25_1, 4099, 4099, 40.990 us, 40.990 us, 4097, 4097, loop auto-rewind stp (delay=0 clock cycles(s))</column>
-<column name="grp_flashattn_Pipeline_Read_K_and_V_VITIS_LOOP_35_2_fu_96">flashattn_Pipeline_Read_K_and_V_VITIS_LOOP_35_2, 4099, 4099, 40.990 us, 40.990 us, 4097, 4097, loop auto-rewind stp (delay=0 clock cycles(s))</column>
-<column name="grp_flashattn_Pipeline_Attention_Loop_VITIS_LOOP_48_3_fu_120">flashattn_Pipeline_Attention_Loop_VITIS_LOOP_48_3, 4110, 4110, 41.100 us, 41.100 us, 4097, 4097, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_flashattn_Pipeline_Read_Q_VITIS_LOOP_34_1_fu_1106">flashattn_Pipeline_Read_Q_VITIS_LOOP_34_1, 2051, 2051, 20.510 us, 20.510 us, 2049, 2049, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_flashattn_Pipeline_Read_K_and_V_VITIS_LOOP_45_2_fu_1246">flashattn_Pipeline_Read_K_and_V_VITIS_LOOP_45_2, 2051, 2051, 20.510 us, 20.510 us, 2049, 2049, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_flashattn_Pipeline_Init_Accumulators_fu_1522">flashattn_Pipeline_Init_Accumulators, 34, 34, 0.340 us, 0.340 us, 33, 33, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_flashattn_Pipeline_Compute_Online_Softmax_VITIS_LOOP_72_4_fu_1658">flashattn_Pipeline_Compute_Online_Softmax_VITIS_LOOP_72_4, 2405, 2405, 24.050 us, 24.050 us, 2050, 2050, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_flashattn_Pipeline_Normalize_And_Stream_Output_VITIS_LOOP_120_8_fu_1920">flashattn_Pipeline_Normalize_And_Stream_Output_VITIS_LOOP_120_8, 2068, 2068, 20.680 us, 20.680 us, 2049, 2049, loop auto-rewind stp (delay=0 clock cycles(s))</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">

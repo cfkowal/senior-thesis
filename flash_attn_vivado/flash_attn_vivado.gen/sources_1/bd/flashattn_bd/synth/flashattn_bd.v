@@ -2,7 +2,7 @@
 //Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
-//Date        : Wed Apr  9 14:53:59 2025
+//Date        : Fri Apr 11 19:33:29 2025
 //Host        : DESKTOP-I99LGQ1 running 64-bit major release  (build 9200)
 //Command     : generate_target flashattn_bd.bd
 //Design      : flashattn_bd
@@ -10,7 +10,7 @@
 //--------------------------------------------------------------------------------
 `timescale 1 ps / 1 ps
 
-(* CORE_GENERATION_INFO = "flashattn_bd,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=flashattn_bd,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=20,numReposBlks=14,numNonXlnxBlks=0,numHierBlks=6,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=1,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=6,da_clkrst_cnt=7,da_ps7_cnt=1,synth_mode=Hierarchical}" *) (* HW_HANDOFF = "flashattn_bd.hwdef" *) 
+(* CORE_GENERATION_INFO = "flashattn_bd,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=flashattn_bd,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=20,numReposBlks=14,numNonXlnxBlks=0,numHierBlks=6,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=1,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=6,da_clkrst_cnt=8,da_ps7_cnt=1,synth_mode=Hierarchical}" *) (* HW_HANDOFF = "flashattn_bd.hwdef" *) 
 module flashattn_bd
    (DDR_addr,
     DDR_ba,
@@ -661,7 +661,7 @@ module flashattn_bd
         .S00_AXI_wvalid(processing_system7_0_M_AXI_GP0_WVALID),
         .aclk(processing_system7_0_FCLK_CLK0),
         .aresetn(rst_ps7_0_100M_peripheral_aresetn));
-  flashattn_bd_flashattn_0_0 flashattn_0
+  flashattn_bd_flashattn_0_1 flashattn_0
        (.K_tile_in_TDATA(axi_dma_1_M_AXIS_MM2S_TDATA),
         .K_tile_in_TKEEP(axi_dma_1_M_AXIS_MM2S_TKEEP),
         .K_tile_in_TLAST(axi_dma_1_M_AXIS_MM2S_TLAST),

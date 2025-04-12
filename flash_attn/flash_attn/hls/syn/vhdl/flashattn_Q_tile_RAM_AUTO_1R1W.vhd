@@ -12,8 +12,8 @@ entity flashattn_Q_tile_RAM_AUTO_1R1W is
     generic(
         MEM_TYPE        : string    := "auto"; 
         DataWidth       : integer   := 32; 
-        AddressWidth    : integer   := 12;
-        AddressRange    : integer   := 4096
+        AddressWidth    : integer   := 5;
+        AddressRange    : integer   := 32
     ); 
     port (
         address0    : in std_logic_vector(AddressWidth-1 downto 0); 

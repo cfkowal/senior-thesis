@@ -57,10 +57,7 @@ if {$::dispatch::connected} {
 
 OPTRACE "synth_1" START { ROLLUP_AUTO }
 set_param chipscope.maxJobs 4
-set_param synth.incrementalSynthesisCache C:/Users/cfk30/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-28644-DESKTOP-I99LGQ1/incrSyn
-set_param checkpoint.writeSynthRtdsInDcp 1
-set_msg_config -id {Synth 8-256} -limit 10000
-set_msg_config -id {Synth 8-638} -limit 10000
+set_param bd.open.in_stealth_mode 1
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7z020clg400-1
 
@@ -80,9 +77,8 @@ set_property ip_output_repo c:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/fla
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
-read_verilog -library xil_defaultlib c:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn_vivado/flash_attn_vivado.gen/sources_1/bd/flashattn_bd/hdl/flashattn_bd_wrapper.v
+read_verilog -library xil_defaultlib C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn_vivado/flash_attn_vivado.gen/sources_1/bd/flashattn_bd/hdl/flashattn_bd_wrapper.v
 add_files C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn_vivado/flash_attn_vivado.srcs/sources_1/bd/flashattn_bd/flashattn_bd.bd
-set_property used_in_implementation false [get_files -all c:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn_vivado/flash_attn_vivado.gen/sources_1/bd/flashattn_bd/ip/flashattn_bd_flashattn_0_0/constraints/flashattn_ooc.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn_vivado/flash_attn_vivado.gen/sources_1/bd/flashattn_bd/ip/flashattn_bd_processing_system7_0_0/flashattn_bd_processing_system7_0_0.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn_vivado/flash_attn_vivado.gen/sources_1/bd/flashattn_bd/ip/flashattn_bd_axi_dma_0_0/flashattn_bd_axi_dma_0_0.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn_vivado/flash_attn_vivado.gen/sources_1/bd/flashattn_bd/ip/flashattn_bd_axi_dma_0_0/flashattn_bd_axi_dma_0_0_clocks.xdc]
@@ -149,6 +145,7 @@ set_property used_in_implementation false [get_files -all c:/Users/cfk30/OneDriv
 set_property used_in_implementation false [get_files -all c:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn_vivado/flash_attn_vivado.gen/sources_1/bd/flashattn_bd/ip/flashattn_bd_rst_ps7_0_100M_0/flashattn_bd_rst_ps7_0_100M_0.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn_vivado/flash_attn_vivado.gen/sources_1/bd/flashattn_bd/ip/flashattn_bd_rst_ps7_0_100M_0/flashattn_bd_rst_ps7_0_100M_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn_vivado/flash_attn_vivado.gen/sources_1/bd/flashattn_bd/ip/flashattn_bd_axi_interconnect_0_imp_xbar_0/flashattn_bd_axi_interconnect_0_imp_xbar_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn_vivado/flash_attn_vivado.gen/sources_1/bd/flashattn_bd/ip/flashattn_bd_flashattn_0_1/constraints/flashattn_ooc.xdc]
 set_property used_in_synthesis false [get_files -all c:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn_vivado/flash_attn_vivado.gen/sources_1/bd/flashattn_bd/ip/flashattn_bd_axi_interconnect_0_imp_auto_us_0/flashattn_bd_axi_interconnect_0_imp_auto_us_0_clocks.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn_vivado/flash_attn_vivado.gen/sources_1/bd/flashattn_bd/ip/flashattn_bd_axi_interconnect_0_imp_auto_us_0/flashattn_bd_axi_interconnect_0_imp_auto_us_0_clocks.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn_vivado/flash_attn_vivado.gen/sources_1/bd/flashattn_bd/ip/flashattn_bd_axi_interconnect_0_imp_auto_us_0/flashattn_bd_axi_interconnect_0_imp_auto_us_0_ooc.xdc]

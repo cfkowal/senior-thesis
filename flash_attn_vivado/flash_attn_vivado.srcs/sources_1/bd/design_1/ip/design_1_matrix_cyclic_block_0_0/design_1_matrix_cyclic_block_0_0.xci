@@ -5,7 +5,7 @@
     "cell_name": "matrix_cyclic_block_0",
     "component_reference": "xilinx.com:hls:matrix_cyclic_block:1.0",
     "ip_revision": "2114029481",
-    "gen_directory": "../../../../../../flash_attn_vivado.gen/sources_1/bd/design_1/ip/design_1_matrix_cyclic_block_0_0",
+    "gen_directory": ".",
     "parameters": {
       "component_parameters": {
         "Component_Name": [ { "value": "design_1_matrix_cyclic_block_0_0", "resolve_type": "user", "usage": "all" } ],
@@ -31,8 +31,9 @@
       "runtime_parameters": {
         "IPCONTEXT": [ { "value": "IP_Integrator" } ],
         "IPREVISION": [ { "value": "2114029481" } ],
+        "LOCKEDBYUSER": [ { "value": "TRUE" } ],
         "MANAGED": [ { "value": "TRUE" } ],
-        "OUTPUTDIR": [ { "value": "../../../../../../flash_attn_vivado.gen/sources_1/bd/design_1/ip/design_1_matrix_cyclic_block_0_0" } ],
+        "OUTPUTDIR": [ { "value": "." } ],
         "SELECTEDSIMMODEL": [ { "value": "" } ],
         "SHAREDDIR": [ { "value": "../../ipshared" } ],
         "SWVERSION": [ { "value": "2024.2" } ],

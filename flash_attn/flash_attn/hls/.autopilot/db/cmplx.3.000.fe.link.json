@@ -1,17 +1,35 @@
 {
   "0": {
-    "basicblocks": 39,
-    "calls": "",
+    "basicblocks": 85,
+    "calls": "1 1",
     "file": "flashattn.cpp",
     "fileloc": 3,
-    "instructions": 223,
+    "instructions": 370,
     "loads": {
-      "L": 19
+      "L": 28
     },
     "name": "flashattn",
     "stores": {
-      "L": 17
+      "L": 25
     },
-    "total_instructions": 476
+    "total_instructions": 631
+  },
+  "1": {
+    "basicblocks": 1,
+    "calls": "2",
+    "file": "expfloat.cpp",
+    "fileloc": 20,
+    "instructions": 2,
+    "name": "expf",
+    "total_instructions": 4
+  },
+  "2": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "hls_exp_float.cpp",
+    "fileloc": 15,
+    "instructions": 2,
+    "name": "exp",
+    "total_instructions": 2
   }
 }

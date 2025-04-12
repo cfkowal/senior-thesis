@@ -3,8 +3,8 @@
 # SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
 # IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
 # SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
-# Start of session at: Wed Apr  9 15:04:57 2025
-# Process ID         : 26572
+# Start of session at: Fri Apr 11 19:40:56 2025
+# Process ID         : 8780
 # Current directory  : C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn_vivado/flash_attn_vivado.runs/synth_1
 # Command line       : vivado.exe -log flashattn_bd_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source flashattn_bd_wrapper.tcl
 # Log file           : C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn_vivado/flash_attn_vivado.runs/synth_1/flashattn_bd_wrapper.vds
@@ -19,10 +19,10 @@
 # Host memory        : 34222 MB
 # Swap memory        : 5100 MB
 # Total Virtual      : 39322 MB
-# Available Virtual  : 20316 MB
+# Available Virtual  : 18668 MB
 #-----------------------------------------------------------
 source flashattn_bd_wrapper.tcl -notrace
-create_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 619.676 ; gain = 192.074
+create_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 620.684 ; gain = 191.598
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn/flash_attn'.
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2024.2/data/ip'.
@@ -40,67 +40,67 @@ INFO: [Designutils 20-5440] No compile time benefit to using incremental synthes
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 26404
+INFO: [Synth 8-7075] Helper process launched with PID 22368
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1390.078 ; gain = 469.266
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1389.699 ; gain = 468.898
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-6157] synthesizing module 'flashattn_bd_wrapper' [c:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn_vivado/flash_attn_vivado.gen/sources_1/bd/flashattn_bd/hdl/flashattn_bd_wrapper.v:13]
+INFO: [Synth 8-6157] synthesizing module 'flashattn_bd_wrapper' [C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn_vivado/flash_attn_vivado.gen/sources_1/bd/flashattn_bd/hdl/flashattn_bd_wrapper.v:13]
 INFO: [Synth 8-6157] synthesizing module 'flashattn_bd' [c:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn_vivado/flash_attn_vivado.gen/sources_1/bd/flashattn_bd/synth/flashattn_bd.v:13]
-INFO: [Synth 8-6157] synthesizing module 'flashattn_bd_axi_dma_0_0' [C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn_vivado/flash_attn_vivado.runs/synth_1/.Xil/Vivado-26572-DESKTOP-I99LGQ1/realtime/flashattn_bd_axi_dma_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'flashattn_bd_axi_dma_0_0' (0#1) [C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn_vivado/flash_attn_vivado.runs/synth_1/.Xil/Vivado-26572-DESKTOP-I99LGQ1/realtime/flashattn_bd_axi_dma_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'flashattn_bd_axi_dma_0_0' [C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn_vivado/flash_attn_vivado.runs/synth_1/.Xil/Vivado-8780-DESKTOP-I99LGQ1/realtime/flashattn_bd_axi_dma_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'flashattn_bd_axi_dma_0_0' (0#1) [C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn_vivado/flash_attn_vivado.runs/synth_1/.Xil/Vivado-8780-DESKTOP-I99LGQ1/realtime/flashattn_bd_axi_dma_0_0_stub.v:6]
 WARNING: [Synth 8-7071] port 'mm2s_prmry_reset_out_n' of module 'flashattn_bd_axi_dma_0_0' is unconnected for instance 'axi_dma_0' [c:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn_vivado/flash_attn_vivado.gen/sources_1/bd/flashattn_bd/synth/flashattn_bd.v:298]
 WARNING: [Synth 8-7071] port 'mm2s_introut' of module 'flashattn_bd_axi_dma_0_0' is unconnected for instance 'axi_dma_0' [c:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn_vivado/flash_attn_vivado.gen/sources_1/bd/flashattn_bd/synth/flashattn_bd.v:298]
 WARNING: [Synth 8-7071] port 'axi_dma_tstvec' of module 'flashattn_bd_axi_dma_0_0' is unconnected for instance 'axi_dma_0' [c:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn_vivado/flash_attn_vivado.gen/sources_1/bd/flashattn_bd/synth/flashattn_bd.v:298]
 WARNING: [Synth 8-7023] instance 'axi_dma_0' of module 'flashattn_bd_axi_dma_0_0' has 40 connections declared, but only 37 given [c:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn_vivado/flash_attn_vivado.gen/sources_1/bd/flashattn_bd/synth/flashattn_bd.v:298]
-INFO: [Synth 8-6157] synthesizing module 'flashattn_bd_axi_dma_1_0' [C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn_vivado/flash_attn_vivado.runs/synth_1/.Xil/Vivado-26572-DESKTOP-I99LGQ1/realtime/flashattn_bd_axi_dma_1_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'flashattn_bd_axi_dma_1_0' (0#1) [C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn_vivado/flash_attn_vivado.runs/synth_1/.Xil/Vivado-26572-DESKTOP-I99LGQ1/realtime/flashattn_bd_axi_dma_1_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'flashattn_bd_axi_dma_1_0' [C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn_vivado/flash_attn_vivado.runs/synth_1/.Xil/Vivado-8780-DESKTOP-I99LGQ1/realtime/flashattn_bd_axi_dma_1_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'flashattn_bd_axi_dma_1_0' (0#1) [C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn_vivado/flash_attn_vivado.runs/synth_1/.Xil/Vivado-8780-DESKTOP-I99LGQ1/realtime/flashattn_bd_axi_dma_1_0_stub.v:6]
 WARNING: [Synth 8-7071] port 'mm2s_prmry_reset_out_n' of module 'flashattn_bd_axi_dma_1_0' is unconnected for instance 'axi_dma_1' [c:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn_vivado/flash_attn_vivado.gen/sources_1/bd/flashattn_bd/synth/flashattn_bd.v:336]
 WARNING: [Synth 8-7071] port 'mm2s_introut' of module 'flashattn_bd_axi_dma_1_0' is unconnected for instance 'axi_dma_1' [c:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn_vivado/flash_attn_vivado.gen/sources_1/bd/flashattn_bd/synth/flashattn_bd.v:336]
 WARNING: [Synth 8-7071] port 'axi_dma_tstvec' of module 'flashattn_bd_axi_dma_1_0' is unconnected for instance 'axi_dma_1' [c:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn_vivado/flash_attn_vivado.gen/sources_1/bd/flashattn_bd/synth/flashattn_bd.v:336]
 WARNING: [Synth 8-7023] instance 'axi_dma_1' of module 'flashattn_bd_axi_dma_1_0' has 40 connections declared, but only 37 given [c:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn_vivado/flash_attn_vivado.gen/sources_1/bd/flashattn_bd/synth/flashattn_bd.v:336]
-INFO: [Synth 8-6157] synthesizing module 'flashattn_bd_axi_dma_2_0' [C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn_vivado/flash_attn_vivado.runs/synth_1/.Xil/Vivado-26572-DESKTOP-I99LGQ1/realtime/flashattn_bd_axi_dma_2_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'flashattn_bd_axi_dma_2_0' (0#1) [C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn_vivado/flash_attn_vivado.runs/synth_1/.Xil/Vivado-26572-DESKTOP-I99LGQ1/realtime/flashattn_bd_axi_dma_2_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'flashattn_bd_axi_dma_2_0' [C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn_vivado/flash_attn_vivado.runs/synth_1/.Xil/Vivado-8780-DESKTOP-I99LGQ1/realtime/flashattn_bd_axi_dma_2_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'flashattn_bd_axi_dma_2_0' (0#1) [C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn_vivado/flash_attn_vivado.runs/synth_1/.Xil/Vivado-8780-DESKTOP-I99LGQ1/realtime/flashattn_bd_axi_dma_2_0_stub.v:6]
 WARNING: [Synth 8-7071] port 'mm2s_prmry_reset_out_n' of module 'flashattn_bd_axi_dma_2_0' is unconnected for instance 'axi_dma_2' [c:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn_vivado/flash_attn_vivado.gen/sources_1/bd/flashattn_bd/synth/flashattn_bd.v:374]
 WARNING: [Synth 8-7071] port 'mm2s_introut' of module 'flashattn_bd_axi_dma_2_0' is unconnected for instance 'axi_dma_2' [c:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn_vivado/flash_attn_vivado.gen/sources_1/bd/flashattn_bd/synth/flashattn_bd.v:374]
 WARNING: [Synth 8-7071] port 'axi_dma_tstvec' of module 'flashattn_bd_axi_dma_2_0' is unconnected for instance 'axi_dma_2' [c:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn_vivado/flash_attn_vivado.gen/sources_1/bd/flashattn_bd/synth/flashattn_bd.v:374]
 WARNING: [Synth 8-7023] instance 'axi_dma_2' of module 'flashattn_bd_axi_dma_2_0' has 40 connections declared, but only 37 given [c:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn_vivado/flash_attn_vivado.gen/sources_1/bd/flashattn_bd/synth/flashattn_bd.v:374]
-INFO: [Synth 8-6157] synthesizing module 'flashattn_bd_axi_dma_3_0' [C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn_vivado/flash_attn_vivado.runs/synth_1/.Xil/Vivado-26572-DESKTOP-I99LGQ1/realtime/flashattn_bd_axi_dma_3_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'flashattn_bd_axi_dma_3_0' (0#1) [C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn_vivado/flash_attn_vivado.runs/synth_1/.Xil/Vivado-26572-DESKTOP-I99LGQ1/realtime/flashattn_bd_axi_dma_3_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'flashattn_bd_axi_dma_3_0' [C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn_vivado/flash_attn_vivado.runs/synth_1/.Xil/Vivado-8780-DESKTOP-I99LGQ1/realtime/flashattn_bd_axi_dma_3_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'flashattn_bd_axi_dma_3_0' (0#1) [C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn_vivado/flash_attn_vivado.runs/synth_1/.Xil/Vivado-8780-DESKTOP-I99LGQ1/realtime/flashattn_bd_axi_dma_3_0_stub.v:6]
 WARNING: [Synth 8-7071] port 's2mm_prmry_reset_out_n' of module 'flashattn_bd_axi_dma_3_0' is unconnected for instance 'axi_dma_3' [c:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn_vivado/flash_attn_vivado.gen/sources_1/bd/flashattn_bd/synth/flashattn_bd.v:412]
 WARNING: [Synth 8-7071] port 's2mm_introut' of module 'flashattn_bd_axi_dma_3_0' is unconnected for instance 'axi_dma_3' [c:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn_vivado/flash_attn_vivado.gen/sources_1/bd/flashattn_bd/synth/flashattn_bd.v:412]
 WARNING: [Synth 8-7071] port 'axi_dma_tstvec' of module 'flashattn_bd_axi_dma_3_0' is unconnected for instance 'axi_dma_3' [c:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn_vivado/flash_attn_vivado.gen/sources_1/bd/flashattn_bd/synth/flashattn_bd.v:412]
 WARNING: [Synth 8-7023] instance 'axi_dma_3' of module 'flashattn_bd_axi_dma_3_0' has 43 connections declared, but only 40 given [c:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn_vivado/flash_attn_vivado.gen/sources_1/bd/flashattn_bd/synth/flashattn_bd.v:412]
 INFO: [Synth 8-6157] synthesizing module 'flashattn_bd_axi_interconnect_0_0' [c:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn_vivado/flash_attn_vivado.gen/sources_1/bd/flashattn_bd/synth/flashattn_bd.v:804]
 INFO: [Synth 8-6157] synthesizing module 'm00_couplers_imp_Z2BNCS' [c:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn_vivado/flash_attn_vivado.gen/sources_1/bd/flashattn_bd/synth/flashattn_bd.v:1517]
-INFO: [Synth 8-6157] synthesizing module 'flashattn_bd_axi_interconnect_0_imp_auto_pc_0' [C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn_vivado/flash_attn_vivado.runs/synth_1/.Xil/Vivado-26572-DESKTOP-I99LGQ1/realtime/flashattn_bd_axi_interconnect_0_imp_auto_pc_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'flashattn_bd_axi_interconnect_0_imp_auto_pc_0' (0#1) [C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn_vivado/flash_attn_vivado.runs/synth_1/.Xil/Vivado-26572-DESKTOP-I99LGQ1/realtime/flashattn_bd_axi_interconnect_0_imp_auto_pc_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'flashattn_bd_axi_interconnect_0_imp_auto_pc_0' [C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn_vivado/flash_attn_vivado.runs/synth_1/.Xil/Vivado-8780-DESKTOP-I99LGQ1/realtime/flashattn_bd_axi_interconnect_0_imp_auto_pc_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'flashattn_bd_axi_interconnect_0_imp_auto_pc_0' (0#1) [C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn_vivado/flash_attn_vivado.runs/synth_1/.Xil/Vivado-8780-DESKTOP-I99LGQ1/realtime/flashattn_bd_axi_interconnect_0_imp_auto_pc_0_stub.v:6]
 INFO: [Synth 8-6155] done synthesizing module 'm00_couplers_imp_Z2BNCS' (0#1) [c:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn_vivado/flash_attn_vivado.gen/sources_1/bd/flashattn_bd/synth/flashattn_bd.v:1517]
 INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_RH2P7Z' [c:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn_vivado/flash_attn_vivado.gen/sources_1/bd/flashattn_bd/synth/flashattn_bd.v:1843]
-INFO: [Synth 8-6157] synthesizing module 'flashattn_bd_axi_interconnect_0_imp_auto_us_0' [C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn_vivado/flash_attn_vivado.runs/synth_1/.Xil/Vivado-26572-DESKTOP-I99LGQ1/realtime/flashattn_bd_axi_interconnect_0_imp_auto_us_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'flashattn_bd_axi_interconnect_0_imp_auto_us_0' (0#1) [C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn_vivado/flash_attn_vivado.runs/synth_1/.Xil/Vivado-26572-DESKTOP-I99LGQ1/realtime/flashattn_bd_axi_interconnect_0_imp_auto_us_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'flashattn_bd_axi_interconnect_0_imp_auto_us_0' [C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn_vivado/flash_attn_vivado.runs/synth_1/.Xil/Vivado-8780-DESKTOP-I99LGQ1/realtime/flashattn_bd_axi_interconnect_0_imp_auto_us_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'flashattn_bd_axi_interconnect_0_imp_auto_us_0' (0#1) [C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn_vivado/flash_attn_vivado.runs/synth_1/.Xil/Vivado-8780-DESKTOP-I99LGQ1/realtime/flashattn_bd_axi_interconnect_0_imp_auto_us_0_stub.v:6]
 WARNING: [Synth 8-7071] port 'm_axi_arregion' of module 'flashattn_bd_axi_interconnect_0_imp_auto_us_0' is unconnected for instance 'auto_us' [c:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn_vivado/flash_attn_vivado.gen/sources_1/bd/flashattn_bd/synth/flashattn_bd.v:1940]
 WARNING: [Synth 8-7023] instance 'auto_us' of module 'flashattn_bd_axi_interconnect_0_imp_auto_us_0' has 34 connections declared, but only 33 given [c:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn_vivado/flash_attn_vivado.gen/sources_1/bd/flashattn_bd/synth/flashattn_bd.v:1940]
 INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_RH2P7Z' (0#1) [c:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn_vivado/flash_attn_vivado.gen/sources_1/bd/flashattn_bd/synth/flashattn_bd.v:1843]
 INFO: [Synth 8-6157] synthesizing module 's01_couplers_imp_W8FHF3' [c:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn_vivado/flash_attn_vivado.gen/sources_1/bd/flashattn_bd/synth/flashattn_bd.v:1976]
-INFO: [Synth 8-6157] synthesizing module 'flashattn_bd_axi_interconnect_0_imp_auto_us_1' [C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn_vivado/flash_attn_vivado.runs/synth_1/.Xil/Vivado-26572-DESKTOP-I99LGQ1/realtime/flashattn_bd_axi_interconnect_0_imp_auto_us_1_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'flashattn_bd_axi_interconnect_0_imp_auto_us_1' (0#1) [C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn_vivado/flash_attn_vivado.runs/synth_1/.Xil/Vivado-26572-DESKTOP-I99LGQ1/realtime/flashattn_bd_axi_interconnect_0_imp_auto_us_1_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'flashattn_bd_axi_interconnect_0_imp_auto_us_1' [C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn_vivado/flash_attn_vivado.runs/synth_1/.Xil/Vivado-8780-DESKTOP-I99LGQ1/realtime/flashattn_bd_axi_interconnect_0_imp_auto_us_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'flashattn_bd_axi_interconnect_0_imp_auto_us_1' (0#1) [C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn_vivado/flash_attn_vivado.runs/synth_1/.Xil/Vivado-8780-DESKTOP-I99LGQ1/realtime/flashattn_bd_axi_interconnect_0_imp_auto_us_1_stub.v:6]
 WARNING: [Synth 8-7071] port 'm_axi_arregion' of module 'flashattn_bd_axi_interconnect_0_imp_auto_us_1' is unconnected for instance 'auto_us' [c:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn_vivado/flash_attn_vivado.gen/sources_1/bd/flashattn_bd/synth/flashattn_bd.v:2073]
 WARNING: [Synth 8-7023] instance 'auto_us' of module 'flashattn_bd_axi_interconnect_0_imp_auto_us_1' has 34 connections declared, but only 33 given [c:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn_vivado/flash_attn_vivado.gen/sources_1/bd/flashattn_bd/synth/flashattn_bd.v:2073]
 INFO: [Synth 8-6155] done synthesizing module 's01_couplers_imp_W8FHF3' (0#1) [c:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn_vivado/flash_attn_vivado.gen/sources_1/bd/flashattn_bd/synth/flashattn_bd.v:1976]
 INFO: [Synth 8-6157] synthesizing module 's02_couplers_imp_LGEWMN' [c:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn_vivado/flash_attn_vivado.gen/sources_1/bd/flashattn_bd/synth/flashattn_bd.v:2109]
-INFO: [Synth 8-6157] synthesizing module 'flashattn_bd_axi_interconnect_0_imp_auto_us_2' [C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn_vivado/flash_attn_vivado.runs/synth_1/.Xil/Vivado-26572-DESKTOP-I99LGQ1/realtime/flashattn_bd_axi_interconnect_0_imp_auto_us_2_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'flashattn_bd_axi_interconnect_0_imp_auto_us_2' (0#1) [C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn_vivado/flash_attn_vivado.runs/synth_1/.Xil/Vivado-26572-DESKTOP-I99LGQ1/realtime/flashattn_bd_axi_interconnect_0_imp_auto_us_2_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'flashattn_bd_axi_interconnect_0_imp_auto_us_2' [C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn_vivado/flash_attn_vivado.runs/synth_1/.Xil/Vivado-8780-DESKTOP-I99LGQ1/realtime/flashattn_bd_axi_interconnect_0_imp_auto_us_2_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'flashattn_bd_axi_interconnect_0_imp_auto_us_2' (0#1) [C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn_vivado/flash_attn_vivado.runs/synth_1/.Xil/Vivado-8780-DESKTOP-I99LGQ1/realtime/flashattn_bd_axi_interconnect_0_imp_auto_us_2_stub.v:6]
 WARNING: [Synth 8-7071] port 'm_axi_arregion' of module 'flashattn_bd_axi_interconnect_0_imp_auto_us_2' is unconnected for instance 'auto_us' [c:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn_vivado/flash_attn_vivado.gen/sources_1/bd/flashattn_bd/synth/flashattn_bd.v:2206]
 WARNING: [Synth 8-7023] instance 'auto_us' of module 'flashattn_bd_axi_interconnect_0_imp_auto_us_2' has 34 connections declared, but only 33 given [c:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn_vivado/flash_attn_vivado.gen/sources_1/bd/flashattn_bd/synth/flashattn_bd.v:2206]
 INFO: [Synth 8-6155] done synthesizing module 's02_couplers_imp_LGEWMN' (0#1) [c:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn_vivado/flash_attn_vivado.gen/sources_1/bd/flashattn_bd/synth/flashattn_bd.v:2109]
 INFO: [Synth 8-6157] synthesizing module 's03_couplers_imp_P3U0DR' [c:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn_vivado/flash_attn_vivado.gen/sources_1/bd/flashattn_bd/synth/flashattn_bd.v:2242]
-INFO: [Synth 8-6157] synthesizing module 'flashattn_bd_axi_interconnect_0_imp_auto_us_3' [C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn_vivado/flash_attn_vivado.runs/synth_1/.Xil/Vivado-26572-DESKTOP-I99LGQ1/realtime/flashattn_bd_axi_interconnect_0_imp_auto_us_3_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'flashattn_bd_axi_interconnect_0_imp_auto_us_3' (0#1) [C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn_vivado/flash_attn_vivado.runs/synth_1/.Xil/Vivado-26572-DESKTOP-I99LGQ1/realtime/flashattn_bd_axi_interconnect_0_imp_auto_us_3_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'flashattn_bd_axi_interconnect_0_imp_auto_us_3' [C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn_vivado/flash_attn_vivado.runs/synth_1/.Xil/Vivado-8780-DESKTOP-I99LGQ1/realtime/flashattn_bd_axi_interconnect_0_imp_auto_us_3_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'flashattn_bd_axi_interconnect_0_imp_auto_us_3' (0#1) [C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn_vivado/flash_attn_vivado.runs/synth_1/.Xil/Vivado-8780-DESKTOP-I99LGQ1/realtime/flashattn_bd_axi_interconnect_0_imp_auto_us_3_stub.v:6]
 WARNING: [Synth 8-7071] port 'm_axi_awregion' of module 'flashattn_bd_axi_interconnect_0_imp_auto_us_3' is unconnected for instance 'auto_us' [c:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn_vivado/flash_attn_vivado.gen/sources_1/bd/flashattn_bd/synth/flashattn_bd.v:2357]
 WARNING: [Synth 8-7023] instance 'auto_us' of module 'flashattn_bd_axi_interconnect_0_imp_auto_us_3' has 40 connections declared, but only 39 given [c:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn_vivado/flash_attn_vivado.gen/sources_1/bd/flashattn_bd/synth/flashattn_bd.v:2357]
 INFO: [Synth 8-6155] done synthesizing module 's03_couplers_imp_P3U0DR' (0#1) [c:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn_vivado/flash_attn_vivado.gen/sources_1/bd/flashattn_bd/synth/flashattn_bd.v:2242]
-INFO: [Synth 8-6157] synthesizing module 'flashattn_bd_axi_interconnect_0_imp_xbar_0' [C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn_vivado/flash_attn_vivado.runs/synth_1/.Xil/Vivado-26572-DESKTOP-I99LGQ1/realtime/flashattn_bd_axi_interconnect_0_imp_xbar_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'flashattn_bd_axi_interconnect_0_imp_xbar_0' (0#1) [C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn_vivado/flash_attn_vivado.runs/synth_1/.Xil/Vivado-26572-DESKTOP-I99LGQ1/realtime/flashattn_bd_axi_interconnect_0_imp_xbar_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'flashattn_bd_axi_interconnect_0_imp_xbar_0' [C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn_vivado/flash_attn_vivado.runs/synth_1/.Xil/Vivado-8780-DESKTOP-I99LGQ1/realtime/flashattn_bd_axi_interconnect_0_imp_xbar_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'flashattn_bd_axi_interconnect_0_imp_xbar_0' (0#1) [C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn_vivado/flash_attn_vivado.runs/synth_1/.Xil/Vivado-8780-DESKTOP-I99LGQ1/realtime/flashattn_bd_axi_interconnect_0_imp_xbar_0_stub.v:6]
 WARNING: [Synth 8-689] width (3) of port connection 's_axi_arready' does not match port width (4) of module 'flashattn_bd_axi_interconnect_0_imp_xbar_0' [c:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn_vivado/flash_attn_vivado.gen/sources_1/bd/flashattn_bd/synth/flashattn_bd.v:1488]
 WARNING: [Synth 8-689] width (192) of port connection 's_axi_rdata' does not match port width (256) of module 'flashattn_bd_axi_interconnect_0_imp_xbar_0' [c:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn_vivado/flash_attn_vivado.gen/sources_1/bd/flashattn_bd/synth/flashattn_bd.v:1505]
 WARNING: [Synth 8-689] width (3) of port connection 's_axi_rlast' does not match port width (4) of module 'flashattn_bd_axi_interconnect_0_imp_xbar_0' [c:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn_vivado/flash_attn_vivado.gen/sources_1/bd/flashattn_bd/synth/flashattn_bd.v:1506]
@@ -110,8 +110,8 @@ WARNING: [Synth 8-7071] port 's_axi_bid' of module 'flashattn_bd_axi_interconnec
 WARNING: [Synth 8-7071] port 's_axi_rid' of module 'flashattn_bd_axi_interconnect_0_imp_xbar_0' is unconnected for instance 'xbar' [c:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn_vivado/flash_attn_vivado.gen/sources_1/bd/flashattn_bd/synth/flashattn_bd.v:1438]
 WARNING: [Synth 8-7023] instance 'xbar' of module 'flashattn_bd_axi_interconnect_0_imp_xbar_0' has 78 connections declared, but only 76 given [c:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn_vivado/flash_attn_vivado.gen/sources_1/bd/flashattn_bd/synth/flashattn_bd.v:1438]
 INFO: [Synth 8-6155] done synthesizing module 'flashattn_bd_axi_interconnect_0_0' (0#1) [c:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn_vivado/flash_attn_vivado.gen/sources_1/bd/flashattn_bd/synth/flashattn_bd.v:804]
-INFO: [Synth 8-6157] synthesizing module 'flashattn_bd_axi_smc_0' [C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn_vivado/flash_attn_vivado.runs/synth_1/.Xil/Vivado-26572-DESKTOP-I99LGQ1/realtime/flashattn_bd_axi_smc_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'flashattn_bd_axi_smc_0' (0#1) [C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn_vivado/flash_attn_vivado.runs/synth_1/.Xil/Vivado-26572-DESKTOP-I99LGQ1/realtime/flashattn_bd_axi_smc_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'flashattn_bd_axi_smc_0' [C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn_vivado/flash_attn_vivado.runs/synth_1/.Xil/Vivado-8780-DESKTOP-I99LGQ1/realtime/flashattn_bd_axi_smc_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'flashattn_bd_axi_smc_0' (0#1) [C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn_vivado/flash_attn_vivado.runs/synth_1/.Xil/Vivado-8780-DESKTOP-I99LGQ1/realtime/flashattn_bd_axi_smc_0_stub.v:6]
 WARNING: [Synth 8-7071] port 'M00_AXI_awprot' of module 'flashattn_bd_axi_smc_0' is unconnected for instance 'axi_smc' [c:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn_vivado/flash_attn_vivado.gen/sources_1/bd/flashattn_bd/synth/flashattn_bd.v:559]
 WARNING: [Synth 8-7071] port 'M00_AXI_wstrb' of module 'flashattn_bd_axi_smc_0' is unconnected for instance 'axi_smc' [c:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn_vivado/flash_attn_vivado.gen/sources_1/bd/flashattn_bd/synth/flashattn_bd.v:559]
 WARNING: [Synth 8-7071] port 'M00_AXI_arprot' of module 'flashattn_bd_axi_smc_0' is unconnected for instance 'axi_smc' [c:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn_vivado/flash_attn_vivado.gen/sources_1/bd/flashattn_bd/synth/flashattn_bd.v:559]
@@ -125,12 +125,12 @@ WARNING: [Synth 8-7071] port 'M03_AXI_awprot' of module 'flashattn_bd_axi_smc_0'
 WARNING: [Synth 8-7071] port 'M03_AXI_wstrb' of module 'flashattn_bd_axi_smc_0' is unconnected for instance 'axi_smc' [c:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn_vivado/flash_attn_vivado.gen/sources_1/bd/flashattn_bd/synth/flashattn_bd.v:559]
 WARNING: [Synth 8-7071] port 'M03_AXI_arprot' of module 'flashattn_bd_axi_smc_0' is unconnected for instance 'axi_smc' [c:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn_vivado/flash_attn_vivado.gen/sources_1/bd/flashattn_bd/synth/flashattn_bd.v:559]
 WARNING: [Synth 8-7023] instance 'axi_smc' of module 'flashattn_bd_axi_smc_0' has 116 connections declared, but only 104 given [c:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn_vivado/flash_attn_vivado.gen/sources_1/bd/flashattn_bd/synth/flashattn_bd.v:559]
-INFO: [Synth 8-6157] synthesizing module 'flashattn_bd_flashattn_0_0' [C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn_vivado/flash_attn_vivado.runs/synth_1/.Xil/Vivado-26572-DESKTOP-I99LGQ1/realtime/flashattn_bd_flashattn_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'flashattn_bd_flashattn_0_0' (0#1) [C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn_vivado/flash_attn_vivado.runs/synth_1/.Xil/Vivado-26572-DESKTOP-I99LGQ1/realtime/flashattn_bd_flashattn_0_0_stub.v:6]
-WARNING: [Synth 8-7071] port 'O_tile_out_TSTRB' of module 'flashattn_bd_flashattn_0_0' is unconnected for instance 'flashattn_0' [c:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn_vivado/flash_attn_vivado.gen/sources_1/bd/flashattn_bd/synth/flashattn_bd.v:664]
-WARNING: [Synth 8-7023] instance 'flashattn_0' of module 'flashattn_bd_flashattn_0_0' has 26 connections declared, but only 25 given [c:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn_vivado/flash_attn_vivado.gen/sources_1/bd/flashattn_bd/synth/flashattn_bd.v:664]
-INFO: [Synth 8-6157] synthesizing module 'flashattn_bd_processing_system7_0_0' [C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn_vivado/flash_attn_vivado.runs/synth_1/.Xil/Vivado-26572-DESKTOP-I99LGQ1/realtime/flashattn_bd_processing_system7_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'flashattn_bd_processing_system7_0_0' (0#1) [C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn_vivado/flash_attn_vivado.runs/synth_1/.Xil/Vivado-26572-DESKTOP-I99LGQ1/realtime/flashattn_bd_processing_system7_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'flashattn_bd_flashattn_0_1' [C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn_vivado/flash_attn_vivado.runs/synth_1/.Xil/Vivado-8780-DESKTOP-I99LGQ1/realtime/flashattn_bd_flashattn_0_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'flashattn_bd_flashattn_0_1' (0#1) [C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn_vivado/flash_attn_vivado.runs/synth_1/.Xil/Vivado-8780-DESKTOP-I99LGQ1/realtime/flashattn_bd_flashattn_0_1_stub.v:6]
+WARNING: [Synth 8-7071] port 'O_tile_out_TSTRB' of module 'flashattn_bd_flashattn_0_1' is unconnected for instance 'flashattn_0' [c:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn_vivado/flash_attn_vivado.gen/sources_1/bd/flashattn_bd/synth/flashattn_bd.v:664]
+WARNING: [Synth 8-7023] instance 'flashattn_0' of module 'flashattn_bd_flashattn_0_1' has 26 connections declared, but only 25 given [c:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn_vivado/flash_attn_vivado.gen/sources_1/bd/flashattn_bd/synth/flashattn_bd.v:664]
+INFO: [Synth 8-6157] synthesizing module 'flashattn_bd_processing_system7_0_0' [C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn_vivado/flash_attn_vivado.runs/synth_1/.Xil/Vivado-8780-DESKTOP-I99LGQ1/realtime/flashattn_bd_processing_system7_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'flashattn_bd_processing_system7_0_0' (0#1) [C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn_vivado/flash_attn_vivado.runs/synth_1/.Xil/Vivado-8780-DESKTOP-I99LGQ1/realtime/flashattn_bd_processing_system7_0_0_stub.v:6]
 WARNING: [Synth 8-7071] port 'USB0_PORT_INDCTL' of module 'flashattn_bd_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [c:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn_vivado/flash_attn_vivado.gen/sources_1/bd/flashattn_bd/synth/flashattn_bd.v:690]
 WARNING: [Synth 8-7071] port 'USB0_VBUS_PWRSELECT' of module 'flashattn_bd_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [c:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn_vivado/flash_attn_vivado.gen/sources_1/bd/flashattn_bd/synth/flashattn_bd.v:690]
 WARNING: [Synth 8-7071] port 'S_AXI_HP0_RCOUNT' of module 'flashattn_bd_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [c:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn_vivado/flash_attn_vivado.gen/sources_1/bd/flashattn_bd/synth/flashattn_bd.v:690]
@@ -138,15 +138,15 @@ WARNING: [Synth 8-7071] port 'S_AXI_HP0_WCOUNT' of module 'flashattn_bd_processi
 WARNING: [Synth 8-7071] port 'S_AXI_HP0_RACOUNT' of module 'flashattn_bd_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [c:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn_vivado/flash_attn_vivado.gen/sources_1/bd/flashattn_bd/synth/flashattn_bd.v:690]
 WARNING: [Synth 8-7071] port 'S_AXI_HP0_WACOUNT' of module 'flashattn_bd_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [c:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn_vivado/flash_attn_vivado.gen/sources_1/bd/flashattn_bd/synth/flashattn_bd.v:690]
 WARNING: [Synth 8-7023] instance 'processing_system7_0' of module 'flashattn_bd_processing_system7_0_0' has 110 connections declared, but only 104 given [c:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn_vivado/flash_attn_vivado.gen/sources_1/bd/flashattn_bd/synth/flashattn_bd.v:690]
-INFO: [Synth 8-6157] synthesizing module 'flashattn_bd_rst_ps7_0_100M_0' [C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn_vivado/flash_attn_vivado.runs/synth_1/.Xil/Vivado-26572-DESKTOP-I99LGQ1/realtime/flashattn_bd_rst_ps7_0_100M_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'flashattn_bd_rst_ps7_0_100M_0' (0#1) [C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn_vivado/flash_attn_vivado.runs/synth_1/.Xil/Vivado-26572-DESKTOP-I99LGQ1/realtime/flashattn_bd_rst_ps7_0_100M_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'flashattn_bd_rst_ps7_0_100M_0' [C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn_vivado/flash_attn_vivado.runs/synth_1/.Xil/Vivado-8780-DESKTOP-I99LGQ1/realtime/flashattn_bd_rst_ps7_0_100M_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'flashattn_bd_rst_ps7_0_100M_0' (0#1) [C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn_vivado/flash_attn_vivado.runs/synth_1/.Xil/Vivado-8780-DESKTOP-I99LGQ1/realtime/flashattn_bd_rst_ps7_0_100M_0_stub.v:6]
 WARNING: [Synth 8-7071] port 'mb_reset' of module 'flashattn_bd_rst_ps7_0_100M_0' is unconnected for instance 'rst_ps7_0_100M' [c:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn_vivado/flash_attn_vivado.gen/sources_1/bd/flashattn_bd/synth/flashattn_bd.v:795]
 WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'flashattn_bd_rst_ps7_0_100M_0' is unconnected for instance 'rst_ps7_0_100M' [c:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn_vivado/flash_attn_vivado.gen/sources_1/bd/flashattn_bd/synth/flashattn_bd.v:795]
 WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'flashattn_bd_rst_ps7_0_100M_0' is unconnected for instance 'rst_ps7_0_100M' [c:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn_vivado/flash_attn_vivado.gen/sources_1/bd/flashattn_bd/synth/flashattn_bd.v:795]
 WARNING: [Synth 8-7071] port 'interconnect_aresetn' of module 'flashattn_bd_rst_ps7_0_100M_0' is unconnected for instance 'rst_ps7_0_100M' [c:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn_vivado/flash_attn_vivado.gen/sources_1/bd/flashattn_bd/synth/flashattn_bd.v:795]
 WARNING: [Synth 8-7023] instance 'rst_ps7_0_100M' of module 'flashattn_bd_rst_ps7_0_100M_0' has 10 connections declared, but only 6 given [c:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn_vivado/flash_attn_vivado.gen/sources_1/bd/flashattn_bd/synth/flashattn_bd.v:795]
 INFO: [Synth 8-6155] done synthesizing module 'flashattn_bd' (0#1) [c:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn_vivado/flash_attn_vivado.gen/sources_1/bd/flashattn_bd/synth/flashattn_bd.v:13]
-INFO: [Synth 8-6155] done synthesizing module 'flashattn_bd_wrapper' (0#1) [c:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn_vivado/flash_attn_vivado.gen/sources_1/bd/flashattn_bd/hdl/flashattn_bd_wrapper.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'flashattn_bd_wrapper' (0#1) [C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn_vivado/flash_attn_vivado.gen/sources_1/bd/flashattn_bd/hdl/flashattn_bd_wrapper.v:13]
 WARNING: [Synth 8-7129] Port M_ACLK in module s03_couplers_imp_P3U0DR is either unconnected or has no load
 WARNING: [Synth 8-7129] Port M_ARESETN in module s03_couplers_imp_P3U0DR is either unconnected or has no load
 WARNING: [Synth 8-7129] Port M_ACLK in module s02_couplers_imp_LGEWMN is either unconnected or has no load
@@ -176,24 +176,22 @@ WARNING: [Synth 8-7129] Port S02_ARESETN in module flashattn_bd_axi_interconnect
 WARNING: [Synth 8-7129] Port S03_ACLK in module flashattn_bd_axi_interconnect_0_0 is either unconnected or has no load
 WARNING: [Synth 8-7129] Port S03_ARESETN in module flashattn_bd_axi_interconnect_0_0 is either unconnected or has no load
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1508.633 ; gain = 587.820
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1508.625 ; gain = 587.824
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1508.633 ; gain = 587.820
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1508.625 ; gain = 587.824
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1508.633 ; gain = 587.820
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1508.625 ; gain = 587.824
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.036 . Memory (MB): peak = 1508.633 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.034 . Memory (MB): peak = 1508.625 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [c:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn_vivado/flash_attn_vivado.gen/sources_1/bd/flashattn_bd/ip/flashattn_bd_flashattn_0_0/flashattn_bd_flashattn_0_0/flashattn_bd_flashattn_0_0_in_context.xdc] for cell 'flashattn_bd_i/flashattn_0'
-Finished Parsing XDC File [c:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn_vivado/flash_attn_vivado.gen/sources_1/bd/flashattn_bd/ip/flashattn_bd_flashattn_0_0/flashattn_bd_flashattn_0_0/flashattn_bd_flashattn_0_0_in_context.xdc] for cell 'flashattn_bd_i/flashattn_0'
 Parsing XDC File [c:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn_vivado/flash_attn_vivado.gen/sources_1/bd/flashattn_bd/ip/flashattn_bd_processing_system7_0_0/flashattn_bd_processing_system7_0_0/flashattn_bd_processing_system7_0_0_in_context.xdc] for cell 'flashattn_bd_i/processing_system7_0'
 Finished Parsing XDC File [c:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn_vivado/flash_attn_vivado.gen/sources_1/bd/flashattn_bd/ip/flashattn_bd_processing_system7_0_0/flashattn_bd_processing_system7_0_0/flashattn_bd_processing_system7_0_0_in_context.xdc] for cell 'flashattn_bd_i/processing_system7_0'
 Parsing XDC File [c:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn_vivado/flash_attn_vivado.gen/sources_1/bd/flashattn_bd/ip/flashattn_bd_axi_dma_0_0/flashattn_bd_axi_dma_0_0/design_1_axi_dma_0_0_in_context.xdc] for cell 'flashattn_bd_i/axi_dma_0'
@@ -220,26 +218,28 @@ Parsing XDC File [c:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn_vi
 Finished Parsing XDC File [c:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn_vivado/flash_attn_vivado.gen/sources_1/bd/flashattn_bd/ip/flashattn_bd_axi_interconnect_0_imp_auto_us_3/flashattn_bd_axi_interconnect_0_imp_auto_us_3/flash_attn_block_axi_interconnect_1_imp_auto_us_1_in_context.xdc] for cell 'flashattn_bd_i/axi_interconnect_0/s03_couplers/auto_us'
 Parsing XDC File [c:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn_vivado/flash_attn_vivado.gen/sources_1/bd/flashattn_bd/ip/flashattn_bd_axi_interconnect_0_imp_auto_pc_0/flashattn_bd_axi_interconnect_0_imp_auto_pc_0/design_1_axi_mem_intercon_imp_auto_pc_0_in_context.xdc] for cell 'flashattn_bd_i/axi_interconnect_0/m00_couplers/auto_pc'
 Finished Parsing XDC File [c:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn_vivado/flash_attn_vivado.gen/sources_1/bd/flashattn_bd/ip/flashattn_bd_axi_interconnect_0_imp_auto_pc_0/flashattn_bd_axi_interconnect_0_imp_auto_pc_0/design_1_axi_mem_intercon_imp_auto_pc_0_in_context.xdc] for cell 'flashattn_bd_i/axi_interconnect_0/m00_couplers/auto_pc'
+Parsing XDC File [c:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn_vivado/flash_attn_vivado.gen/sources_1/bd/flashattn_bd/ip/flashattn_bd_flashattn_0_1/flashattn_bd_flashattn_0_1/flashattn_bd_flashattn_0_1_in_context.xdc] for cell 'flashattn_bd_i/flashattn_0'
+Finished Parsing XDC File [c:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn_vivado/flash_attn_vivado.gen/sources_1/bd/flashattn_bd/ip/flashattn_bd_flashattn_0_1/flashattn_bd_flashattn_0_1/flashattn_bd_flashattn_0_1_in_context.xdc] for cell 'flashattn_bd_i/flashattn_0'
 Parsing XDC File [C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn_vivado/flash_attn_vivado.runs/synth_1/dont_touch.xdc]
 Finished Parsing XDC File [C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn_vivado/flash_attn_vivado.runs/synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1515.254 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1508.625 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 1515.254 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.011 . Memory (MB): peak = 1508.625 ; gain = 0.000
 INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1515.254 ; gain = 594.441
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1508.625 ; gain = 587.824
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z020clg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1515.254 ; gain = 594.441
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1508.625 ; gain = 587.824
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -505,7 +505,6 @@ Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_ps_porb. (constraint 
 Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_ps_srstb. (constraint file  c:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn_vivado/flash_attn_vivado.gen/sources_1/bd/flashattn_bd/ip/flashattn_bd_processing_system7_0_0/flashattn_bd_processing_system7_0_0/flashattn_bd_processing_system7_0_0_in_context.xdc, line 260).
 Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_ps_srstb. (constraint file  c:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn_vivado/flash_attn_vivado.gen/sources_1/bd/flashattn_bd/ip/flashattn_bd_processing_system7_0_0/flashattn_bd_processing_system7_0_0/flashattn_bd_processing_system7_0_0_in_context.xdc, line 261).
 Applied set_property KEEP_HIERARCHY = SOFT for flashattn_bd_i. (constraint file  auto generated constraint).
-Applied set_property KEEP_HIERARCHY = SOFT for flashattn_bd_i/flashattn_0. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for flashattn_bd_i/processing_system7_0. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for flashattn_bd_i/axi_dma_0. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for flashattn_bd_i/axi_dma_1. (constraint file  auto generated constraint).
@@ -520,11 +519,12 @@ Applied set_property KEEP_HIERARCHY = SOFT for flashattn_bd_i/axi_interconnect_0
 Applied set_property KEEP_HIERARCHY = SOFT for flashattn_bd_i/axi_interconnect_0/s03_couplers/auto_us. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for flashattn_bd_i/axi_interconnect_0/m00_couplers/auto_pc. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for flashattn_bd_i/axi_interconnect_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for flashattn_bd_i/flashattn_0. (constraint file  auto generated constraint).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1515.254 ; gain = 594.441
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1508.625 ; gain = 587.824
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1515.254 ; gain = 594.441
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1508.625 ; gain = 587.824
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -565,25 +565,25 @@ WARNING: [Synth 8-7129] Port S02_ARESETN in module flashattn_bd_axi_interconnect
 WARNING: [Synth 8-7129] Port S03_ACLK in module flashattn_bd_axi_interconnect_0_0 is either unconnected or has no load
 WARNING: [Synth 8-7129] Port S03_ARESETN in module flashattn_bd_axi_interconnect_0_0 is either unconnected or has no load
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1515.254 ; gain = 594.441
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1508.625 ; gain = 587.824
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1678.500 ; gain = 757.688
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 1675.035 ; gain = 754.234
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1679.020 ; gain = 758.207
+Finished Timing Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 1675.555 ; gain = 754.754
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1689.645 ; gain = 768.832
+Finished Technology Mapping : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 1686.633 ; gain = 765.832
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -601,37 +601,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1905.547 ; gain = 984.734
+Finished IO Insertion : Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 1902.168 ; gain = 981.367
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1905.547 ; gain = 984.734
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 1902.168 ; gain = 981.367
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1905.547 ; gain = 984.734
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 1902.168 ; gain = 981.367
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1905.547 ; gain = 984.734
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 1902.168 ; gain = 981.367
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1905.547 ; gain = 984.734
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 1902.168 ; gain = 981.367
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1905.547 ; gain = 984.734
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 1902.168 ; gain = 981.367
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -652,7 +652,7 @@ Report BlackBoxes:
 |9     |flashattn_bd_axi_interconnect_0_imp_auto_us_2 |         1|
 |10    |flashattn_bd_axi_interconnect_0_imp_auto_us_3 |         1|
 |11    |flashattn_bd_axi_smc_0                        |         1|
-|12    |flashattn_bd_flashattn_0_0                    |         1|
+|12    |flashattn_bd_flashattn_0_1                    |         1|
 |13    |flashattn_bd_processing_system7_0_0           |         1|
 |14    |flashattn_bd_rst_ps7_0_100M_0                 |         1|
 +------+----------------------------------------------+----------+
@@ -674,24 +674,24 @@ Report Cell Usage:
 |14    |flashattn_bd_rst_ps7_0_100M                 |     1|
 +------+--------------------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1905.547 ; gain = 984.734
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 1902.168 ; gain = 981.367
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 19 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:15 ; elapsed = 00:00:21 . Memory (MB): peak = 1905.547 ; gain = 978.113
-Synthesis Optimization Complete : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1905.547 ; gain = 984.734
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:14 ; elapsed = 00:00:21 . Memory (MB): peak = 1902.168 ; gain = 981.367
+Synthesis Optimization Complete : Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 1902.168 ; gain = 981.367
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.034 . Memory (MB): peak = 1905.547 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.034 . Memory (MB): peak = 1902.168 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1918.316 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1914.941 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Synth Design complete | Checksum: 94f96f64
+Synth Design complete | Checksum: bf2c65e5
 INFO: [Common 17-83] Releasing license: Synthesis
 65 Infos, 107 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:25 ; elapsed = 00:00:29 . Memory (MB): peak = 1922.320 ; gain = 1233.605
+synth_design: Time (s): cpu = 00:00:25 ; elapsed = 00:00:28 . Memory (MB): peak = 1918.918 ; gain = 1229.125
 INFO: [Common 17-1381] The checkpoint 'C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn_vivado/flash_attn_vivado.runs/synth_1/flashattn_bd_wrapper.dcp' has been generated.
 INFO: [Vivado 12-24828] Executing command : report_utilization -file flashattn_bd_wrapper_utilization_synth.rpt -pb flashattn_bd_wrapper_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Wed Apr  9 15:05:39 2025...
+INFO: [Common 17-206] Exiting Vivado at Fri Apr 11 19:41:39 2025...

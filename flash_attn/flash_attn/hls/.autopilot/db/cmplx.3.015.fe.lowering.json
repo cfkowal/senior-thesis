@@ -1,17 +1,17 @@
 {
   "0": {
-    "basicblocks": 13,
+    "basicblocks": 151,
     "calls": "",
     "file": "flashattn.cpp",
     "fileloc": 3,
-    "instructions": 108,
+    "instructions": 3213,
     "loads": {
-      "L": 6
+      "L": 391
     },
     "name": "flashattn",
     "stores": {
-      "L": 6
+      "L": 392
     },
-    "total_instructions": 116
+    "total_instructions": 3221
   }
 }

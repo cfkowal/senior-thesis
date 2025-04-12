@@ -1,3 +1,113 @@
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'C:\scratch\2024.2\hls_product\495\2024.2\src\shared\hls\clib\hlsmath\src\c++\expfloat.cpp', 
+                   Line: 22, Column: 9 }
+Function:        _ZN3hls4expfEf
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'exp_reduce_::exp(float)'
+    DebugLoc:        { File: 'C:\scratch\2024.2\hls_product\495\2024.2\src\shared\hls\clib\hlsmath\src\common\hls_exp_float.cpp', 
+                       Line: 15, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'hls::expf(float)'
+    DebugLoc:        { File: 'C:\scratch\2024.2\hls_product\495\2024.2\src\shared\hls\clib\hlsmath\src\c++\expfloat.cpp', 
+                       Line: 20, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: flashattn.cpp, Line: 99, Column: 32 }
+Function:        _Z9flashattnRN3hls6streamINS_4axisIfLm0ELm0ELm0ELh56ELb0EEELi0EEES4_S4_S4_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'hls::expf(float)'
+    DebugLoc:        { File: 'C:\scratch\2024.2\hls_product\495\2024.2\src\shared\hls\clib\hlsmath\src\c++\expfloat.cpp', 
+                       Line: 20, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'flashattn(hls::stream<hls::axis<float, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&, hls::stream<hls::axis<float, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&, hls::stream<hls::axis<float, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&, hls::stream<hls::axis<float, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&)'
+    DebugLoc:        { File: flashattn.cpp, Line: 4, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: flashattn.cpp, Line: 78, Column: 30 }
+Function:        _Z9flashattnRN3hls6streamINS_4axisIfLm0ELm0ELm0ELh56ELb0EEELi0EEES4_S4_S4_
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_78_5
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: flashattn.cpp, Line: 101, Column: 35 }
+Function:        _Z9flashattnRN3hls6streamINS_4axisIfLm0ELm0ELm0ELh56ELb0EEELi0EEES4_S4_S4_
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_101_6
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: flashattn.cpp, Line: 109, Column: 31 }
+Function:        _Z9flashattnRN3hls6streamINS_4axisIfLm0ELm0ELm0ELh56ELb0EEELi0EEES4_S4_S4_
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_109_7
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: flashattn.cpp, Line: 4, Column: 0 }
+Function:        _Z9flashattnRN3hls6streamINS_4axisIfLm0ELm0ELm0ELh56ELb0EEELi0EEES4_S4_S4_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_78_5
+  - String:          ''' ('
+  - LoopLoc:         'flashattn.cpp:78:30'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          flashattn
+  - String:          ''' completely with a factor of '
+  - Factor:          '64'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: flashattn.cpp, Line: 4, Column: 0 }
+Function:        _Z9flashattnRN3hls6streamINS_4axisIfLm0ELm0ELm0ELh56ELb0EEELi0EEES4_S4_S4_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_101_6
+  - String:          ''' ('
+  - LoopLoc:         'flashattn.cpp:101:35'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          flashattn
+  - String:          ''' completely with a factor of '
+  - Factor:          '64'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: flashattn.cpp, Line: 4, Column: 0 }
+Function:        _Z9flashattnRN3hls6streamINS_4axisIfLm0ELm0ELm0ELh56ELb0EEELi0EEES4_S4_S4_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_109_7
+  - String:          ''' ('
+  - LoopLoc:         'flashattn.cpp:109:31'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          flashattn
+  - String:          ''' completely with a factor of '
+  - Factor:          '64'
+...
 --- !Missed
 Pass:            inline
 Name:            NeverInline
@@ -14,9 +124,9 @@ Pass:            auto-loop-pipeline
 Name:            AutoLoopPipeline
 Args:            
   - String:          'automatically set the pipeline for Loop< '
-  - LoopName:        VITIS_LOOP_25_1
+  - LoopName:        VITIS_LOOP_34_1
   - String:          '> at '
-  - LoopLoc:         'flashattn.cpp:25:20'
+  - LoopLoc:         'flashattn.cpp:34:20'
   - String:          ' '
 ...
 --- !HLSReportInfo
@@ -24,9 +134,9 @@ Pass:            auto-loop-pipeline
 Name:            AutoLoopPipeline
 Args:            
   - String:          'automatically set the pipeline for Loop< '
-  - LoopName:        VITIS_LOOP_35_2
+  - LoopName:        VITIS_LOOP_45_2
   - String:          '> at '
-  - LoopLoc:         'flashattn.cpp:35:20'
+  - LoopLoc:         'flashattn.cpp:45:20'
   - String:          ' '
 ...
 --- !HLSReportInfo
@@ -34,8 +144,276 @@ Pass:            auto-loop-pipeline
 Name:            AutoLoopPipeline
 Args:            
   - String:          'automatically set the pipeline for Loop< '
-  - LoopName:        VITIS_LOOP_48_3
+  - LoopName:        Init_Accumulators
   - String:          '> at '
-  - LoopLoc:         'flashattn.cpp:48:20'
+  - LoopLoc:         'flashattn.cpp:58:5'
   - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_120_8
+  - String:          '> at '
+  - LoopLoc:         'flashattn.cpp:120:27'
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: flashattn.cpp, Line: 62, Column: 26 }
+Function:        _Z9flashattnRN3hls6streamINS_4axisIfLm0ELm0ELm0ELh56ELb0EEELi0EEES4_S4_S4_
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_62_3
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: flashattn.cpp, Line: 4, Column: 0 }
+Function:        _Z9flashattnRN3hls6streamINS_4axisIfLm0ELm0ELm0ELh56ELb0EEELi0EEES4_S4_S4_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_62_3
+  - String:          ''' ('
+  - LoopLoc:         'flashattn.cpp:62:26'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          flashattn
+  - String:          ''' completely with a factor of '
+  - Factor:          '64'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoParallelPerformanceDrivenVerbosePassed
+DebugLoc:        { File: flashattn.cpp, Line: 20, Column: 12 }
+Function:        _Z9flashattnRN3hls6streamINS_4axisIfLm0ELm0ELm0ELh56ELb0EEELi0EEES4_S4_S4_
+Args:            
+  - PragmaType:      array_partition
+  - String:          ' '
+  - PragmaOptions:   'dim=2 type=complete  variable=Q_tile'
+  - String:          ' '
+  - PragmaIsAuto:    '1'
+  - String:          ' '
+  - PragmaFunction:  flashattn
+  - String:          ' '
+  - varLoc:          'flashattn.cpp:20:12'
+  - String:          ' '
+  - PragmaSrcLoc:    'flashattn.cpp:74:9'
+    DebugLoc:        { File: flashattn.cpp, Line: 74, Column: 9 }
+  - VarName:         Q_tile
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoArrayXform
+DebugLoc:        { File: flashattn.cpp, Line: 74, Column: 9 }
+Function:        _Z9flashattnRN3hls6streamINS_4axisIfLm0ELm0ELm0ELh56ELb0EEELi0EEES4_S4_S4_
+Args:            
+  - String:          'Inferring pragma '''
+  - PragmaType:      array_partition
+  - String:          ' type='
+  - Mode:            complete
+  - String:          ' dim='
+  - Dim:             '2'
+  - String:          ''' for array '''
+  - Name:            Q_tile
+  - String:          ''''
+  - String:          ' due to '
+  - String:          pipeline
+  - String:          ' pragma'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoParallelPerformanceDrivenVerbosePassed
+DebugLoc:        { File: flashattn.cpp, Line: 21, Column: 12 }
+Function:        _Z9flashattnRN3hls6streamINS_4axisIfLm0ELm0ELm0ELh56ELb0EEELi0EEES4_S4_S4_
+Args:            
+  - PragmaType:      array_partition
+  - String:          ' '
+  - PragmaOptions:   'dim=2 type=complete  variable=K_tile'
+  - String:          ' '
+  - PragmaIsAuto:    '1'
+  - String:          ' '
+  - PragmaFunction:  flashattn
+  - String:          ' '
+  - varLoc:          'flashattn.cpp:21:12'
+  - String:          ' '
+  - PragmaSrcLoc:    'flashattn.cpp:74:9'
+    DebugLoc:        { File: flashattn.cpp, Line: 74, Column: 9 }
+  - VarName:         K_tile
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoArrayXform
+DebugLoc:        { File: flashattn.cpp, Line: 74, Column: 9 }
+Function:        _Z9flashattnRN3hls6streamINS_4axisIfLm0ELm0ELm0ELh56ELb0EEELi0EEES4_S4_S4_
+Args:            
+  - String:          'Inferring pragma '''
+  - PragmaType:      array_partition
+  - String:          ' type='
+  - Mode:            complete
+  - String:          ' dim='
+  - Dim:             '2'
+  - String:          ''' for array '''
+  - Name:            K_tile
+  - String:          ''''
+  - String:          ' due to '
+  - String:          pipeline
+  - String:          ' pragma'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoParallelPerformanceDrivenVerbosePassed
+DebugLoc:        { File: flashattn.cpp, Line: 22, Column: 12 }
+Function:        _Z9flashattnRN3hls6streamINS_4axisIfLm0ELm0ELm0ELh56ELb0EEELi0EEES4_S4_S4_
+Args:            
+  - PragmaType:      array_partition
+  - String:          ' '
+  - PragmaOptions:   'dim=2 type=complete  variable=V_tile'
+  - String:          ' '
+  - PragmaIsAuto:    '1'
+  - String:          ' '
+  - PragmaFunction:  flashattn
+  - String:          ' '
+  - varLoc:          'flashattn.cpp:22:12'
+  - String:          ' '
+  - PragmaSrcLoc:    'flashattn.cpp:74:9'
+    DebugLoc:        { File: flashattn.cpp, Line: 74, Column: 9 }
+  - VarName:         V_tile
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoArrayXform
+DebugLoc:        { File: flashattn.cpp, Line: 74, Column: 9 }
+Function:        _Z9flashattnRN3hls6streamINS_4axisIfLm0ELm0ELm0ELh56ELb0EEELi0EEES4_S4_S4_
+Args:            
+  - String:          'Inferring pragma '''
+  - PragmaType:      array_partition
+  - String:          ' type='
+  - Mode:            complete
+  - String:          ' dim='
+  - Dim:             '2'
+  - String:          ''' for array '''
+  - Name:            V_tile
+  - String:          ''''
+  - String:          ' due to '
+  - String:          pipeline
+  - String:          ' pragma'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoParallelPerformanceDrivenVerbosePassed
+DebugLoc:        { File: flashattn.cpp, Line: 28, Column: 12 }
+Function:        _Z9flashattnRN3hls6streamINS_4axisIfLm0ELm0ELm0ELh56ELb0EEELi0EEES4_S4_S4_
+Args:            
+  - PragmaType:      array_partition
+  - String:          ' '
+  - PragmaOptions:   'dim=2 type=complete  variable=output_accum'
+  - String:          ' '
+  - PragmaIsAuto:    '1'
+  - String:          ' '
+  - PragmaFunction:  flashattn
+  - String:          ' '
+  - varLoc:          'flashattn.cpp:28:12'
+  - String:          ' '
+  - PragmaSrcLoc:    'flashattn.cpp:74:9'
+    DebugLoc:        { File: flashattn.cpp, Line: 74, Column: 9 }
+  - VarName:         output_accum
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoArrayXform
+DebugLoc:        { File: flashattn.cpp, Line: 74, Column: 9 }
+Function:        _Z9flashattnRN3hls6streamINS_4axisIfLm0ELm0ELm0ELh56ELb0EEELi0EEES4_S4_S4_
+Args:            
+  - String:          'Inferring pragma '''
+  - PragmaType:      array_partition
+  - String:          ' type='
+  - Mode:            complete
+  - String:          ' dim='
+  - Dim:             '2'
+  - String:          ''' for array '''
+  - Name:            output_accum
+  - String:          ''''
+  - String:          ' due to '
+  - String:          pipeline
+  - String:          ' pragma'
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: flashattn.cpp, Line: 20, Column: 12 }
+Function:        _Z9flashattnRN3hls6streamINS_4axisIfLm0ELm0ELm0ELh56ELb0EEELi0EEES4_S4_S4_
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          Q_tile
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '2'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: flashattn.cpp, Line: 21, Column: 12 }
+Function:        _Z9flashattnRN3hls6streamINS_4axisIfLm0ELm0ELm0ELh56ELb0EEELi0EEES4_S4_S4_
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          K_tile
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '2'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: flashattn.cpp, Line: 22, Column: 12 }
+Function:        _Z9flashattnRN3hls6streamINS_4axisIfLm0ELm0ELm0ELh56ELb0EEELi0EEES4_S4_S4_
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          V_tile
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '2'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: flashattn.cpp, Line: 28, Column: 12 }
+Function:        _Z9flashattnRN3hls6streamINS_4axisIfLm0ELm0ELm0ELh56ELb0EEELi0EEES4_S4_S4_
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          output_accum
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '2'
+  - String:          .
 ...

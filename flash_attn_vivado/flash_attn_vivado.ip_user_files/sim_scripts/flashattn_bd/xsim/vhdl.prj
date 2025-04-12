@@ -1,0 +1,39 @@
+vhdl lib_pkg_v1_0_4  \
+"../../../../flash_attn_vivado.gen/sources_1/bd/flashattn_bd/ipshared/8c68/hdl/lib_pkg_v1_0_rfs.vhd" \
+
+vhdl fifo_generator_v13_2_11  \
+"../../../../flash_attn_vivado.gen/sources_1/bd/flashattn_bd/ipshared/6080/hdl/fifo_generator_v13_2_rfs.vhd" \
+
+vhdl lib_fifo_v1_0_20  \
+"../../../../flash_attn_vivado.gen/sources_1/bd/flashattn_bd/ipshared/e160/hdl/lib_fifo_v1_0_rfs.vhd" \
+
+vhdl lib_srl_fifo_v1_0_4  \
+"../../../../flash_attn_vivado.gen/sources_1/bd/flashattn_bd/ipshared/1e5a/hdl/lib_srl_fifo_v1_0_rfs.vhd" \
+
+vhdl lib_cdc_v1_0_3  \
+"../../../../flash_attn_vivado.gen/sources_1/bd/flashattn_bd/ipshared/2a4f/hdl/lib_cdc_v1_0_rfs.vhd" \
+
+vhdl axi_datamover_v5_1_35  \
+"../../../../flash_attn_vivado.gen/sources_1/bd/flashattn_bd/ipshared/4277/hdl/axi_datamover_v5_1_vh_rfs.vhd" \
+
+vhdl axi_sg_v4_1_19  \
+"../../../../flash_attn_vivado.gen/sources_1/bd/flashattn_bd/ipshared/fc5d/hdl/axi_sg_v4_1_rfs.vhd" \
+
+vhdl axi_dma_v7_1_34  \
+"../../../../flash_attn_vivado.gen/sources_1/bd/flashattn_bd/ipshared/70ff/hdl/axi_dma_v7_1_vh_rfs.vhd" \
+
+vhdl xil_defaultlib  \
+"../../../bd/flashattn_bd/ip/flashattn_bd_axi_dma_0_0/sim/flashattn_bd_axi_dma_0_0.vhd" \
+"../../../bd/flashattn_bd/ip/flashattn_bd_axi_dma_1_0/sim/flashattn_bd_axi_dma_1_0.vhd" \
+"../../../bd/flashattn_bd/ip/flashattn_bd_axi_dma_2_0/sim/flashattn_bd_axi_dma_2_0.vhd" \
+"../../../bd/flashattn_bd/ip/flashattn_bd_axi_dma_3_0/sim/flashattn_bd_axi_dma_3_0.vhd" \
+
+vhdl proc_sys_reset_v5_0_16  \
+"../../../../flash_attn_vivado.gen/sources_1/bd/flashattn_bd/ipshared/0831/hdl/proc_sys_reset_v5_0_vh_rfs.vhd" \
+
+vhdl xil_defaultlib  \
+"../../../bd/flashattn_bd/ip/flashattn_bd_axi_smc_0/bd_0/ip/ip_1/sim/bd_b8a5_psr_aclk_0.vhd" \
+"../../../bd/flashattn_bd/ip/flashattn_bd_rst_ps7_0_100M_0/sim/flashattn_bd_rst_ps7_0_100M_0.vhd" \
+
+# Do not sort compile order
+nosort

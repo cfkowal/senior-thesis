@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7z020clg400-1" LaunchTime="1744225494" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/flash_attn_block_wrapper.dcp">
+<GenRun Id="synth_1" LaunchPart="xc7z020clg400-1" LaunchTime="1744414425" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/flash_attn_block_wrapper.dcp">
   <File Type="PA-TCL" Name="flashattn_bd_wrapper.tcl"/>
   <File Type="REPORTS-TCL" Name="flashattn_bd_wrapper_reports.tcl"/>
   <File Type="RDS-RDS" Name="flashattn_bd_wrapper.vds"/>
@@ -59,21 +59,17 @@
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2024"/>
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2024">
+      <Desc>Vivado Synthesis Defaults</Desc>
+    </StratHandle>
     <Step Id="synth_design"/>
   </Strategy>
-  <BlockFileSet Type="BlockSrcs" Name="flashattn_bd_flashattn_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="flashattn_bd_processing_system7_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="flashattn_bd_axi_smc_0"/>
   <BlockFileSet Type="BlockSrcs" Name="flashattn_bd_axi_dma_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="flashattn_bd_axi_dma_1_0"/>
   <BlockFileSet Type="BlockSrcs" Name="flashattn_bd_axi_dma_2_0"/>
   <BlockFileSet Type="BlockSrcs" Name="flashattn_bd_axi_dma_3_0"/>
   <BlockFileSet Type="BlockSrcs" Name="flashattn_bd_rst_ps7_0_100M_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="flashattn_bd_axi_interconnect_0_imp_auto_us_3"/>
   <BlockFileSet Type="BlockSrcs" Name="flashattn_bd_axi_interconnect_0_imp_xbar_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="flashattn_bd_axi_interconnect_0_imp_auto_us_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="flashattn_bd_axi_interconnect_0_imp_auto_us_1"/>
-  <BlockFileSet Type="BlockSrcs" Name="flashattn_bd_axi_interconnect_0_imp_auto_us_2"/>
-  <BlockFileSet Type="BlockSrcs" Name="flashattn_bd_axi_interconnect_0_imp_auto_pc_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="flashattn_bd_flashattn_0_1"/>
 </GenRun>

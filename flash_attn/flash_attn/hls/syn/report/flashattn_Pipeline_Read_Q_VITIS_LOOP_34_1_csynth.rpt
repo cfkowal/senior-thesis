@@ -1,0 +1,412 @@
+
+
+================================================================
+== Vitis HLS Report for 'flashattn_Pipeline_Read_Q_VITIS_LOOP_34_1'
+================================================================
+* Date:           Fri Apr 11 19:30:28 2025
+
+* Version:        2024.2 (Build 5238294 on Nov  8 2024)
+* Project:        flash_attn
+* Solution:       hls (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z020-clg400-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  6.321 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+-----------+-----------+------+------+------------------------------------------------+
+    |  Latency (cycles) |   Latency (absolute)  |   Interval  |                    Pipeline                    |
+    |   min   |   max   |    min    |    max    |  min |  max |                      Type                      |
+    +---------+---------+-----------+-----------+------+------+------------------------------------------------+
+    |     2051|     2051|  20.510 us|  20.510 us|  2049|  2049|  loop auto-rewind stp (delay=0 clock cycles(s))|
+    +---------+---------+-----------+-----------+------+------+------------------------------------------------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +--------------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |                          |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        |         Loop Name        |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +--------------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |- Read_Q_VITIS_LOOP_34_1  |     2049|     2049|         3|          1|          1|  2048|       yes|
+        +--------------------------+---------+---------+----------+-----------+-----------+------+----------+
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-----+--------+-------+-----+
+|       Name      | BRAM_18K| DSP |   FF   |  LUT  | URAM|
++-----------------+---------+-----+--------+-------+-----+
+|DSP              |        -|    -|       -|      -|    -|
+|Expression       |        -|    -|       0|     86|    -|
+|FIFO             |        -|    -|       -|      -|    -|
+|Instance         |        -|    -|       -|      -|    -|
+|Memory           |        -|    -|       -|      -|    -|
+|Multiplexer      |        -|    -|       0|     63|    -|
+|Register         |        -|    -|      37|      -|    -|
++-----------------+---------+-----+--------+-------+-----+
+|Total            |        0|    0|      37|    149|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Available        |      280|  220|  106400|  53200|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Utilization (%)  |        0|    0|      ~0|     ~0|    0|
++-----------------+---------+-----+--------+-------+-----+
+
++ Detail: 
+    * Instance: 
+    N/A
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +---------------------------+----------+----+---+----+------------+------------+
+    |       Variable Name       | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +---------------------------+----------+----+---+----+------------+------------+
+    |add_ln32_1_fu_1232_p2      |         +|   0|  0|  14|           6|           1|
+    |add_ln32_fu_1186_p2        |         +|   0|  0|  12|          12|           1|
+    |add_ln34_fu_1218_p2        |         +|   0|  0|  14|           7|           1|
+    |ap_block_pp0_stage0_11001  |       and|   0|  0|   2|           1|           1|
+    |icmp_ln32_fu_1180_p2       |      icmp|   0|  0|  14|          12|          13|
+    |icmp_ln34_fu_1200_p2       |      icmp|   0|  0|  15|           7|           8|
+    |select_ln32_1_fu_1238_p3   |    select|   0|  0|   6|           1|           6|
+    |select_ln32_fu_1206_p3     |    select|   0|  0|   7|           1|           1|
+    |ap_enable_pp0              |       xor|   0|  0|   2|           1|           2|
+    +---------------------------+----------+----+---+----+------------+------------+
+    |Total                      |          |   0|  0|  86|          48|          34|
+    +---------------------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    +--------------------------------------+----+-----------+-----+-----------+
+    |                 Name                 | LUT| Input Size| Bits| Total Bits|
+    +--------------------------------------+----+-----------+-----+-----------+
+    |Q_tile_in_TDATA_blk_n                 |   9|          2|    1|          2|
+    |ap_done_int                           |   9|          2|    1|          2|
+    |ap_enable_reg_pp0_iter1               |   9|          2|    1|          2|
+    |ap_sig_allocacmp_indvar_flatten_load  |   9|          2|   12|         24|
+    |col_fu_306                            |   9|          2|    7|         14|
+    |indvar_flatten_fu_314                 |   9|          2|   12|         24|
+    |row_fu_310                            |   9|          2|    6|         12|
+    +--------------------------------------+----+-----------+-----+-----------+
+    |Total                                 |  63|         14|   40|         80|
+    +--------------------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +----------------------------------+----+----+-----+-----------+
+    |               Name               | FF | LUT| Bits| Const Bits|
+    +----------------------------------+----+----+-----+-----------+
+    |ap_CS_fsm                         |   1|   0|    1|          0|
+    |ap_done_reg                       |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter1           |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter2           |   1|   0|    1|          0|
+    |ap_loop_exit_ready_pp0_iter1_reg  |   1|   0|    1|          0|
+    |col_fu_306                        |   7|   0|    7|          0|
+    |icmp_ln34_reg_1415                |   1|   0|    1|          0|
+    |indvar_flatten_fu_314             |  12|   0|   12|          0|
+    |row_fu_310                        |   6|   0|    6|          0|
+    |trunc_ln34_reg_1420               |   6|   0|    6|          0|
+    +----------------------------------+----+----+-----+-----------+
+    |Total                             |  37|   0|   37|          0|
+    +----------------------------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++--------------------+-----+-----+------------+-------------------------------------------+--------------+
+|      RTL Ports     | Dir | Bits|  Protocol  |               Source Object               |    C Type    |
++--------------------+-----+-----+------------+-------------------------------------------+--------------+
+|ap_clk              |   in|    1|  ap_ctrl_hs|  flashattn_Pipeline_Read_Q_VITIS_LOOP_34_1|  return value|
+|ap_rst              |   in|    1|  ap_ctrl_hs|  flashattn_Pipeline_Read_Q_VITIS_LOOP_34_1|  return value|
+|ap_start            |   in|    1|  ap_ctrl_hs|  flashattn_Pipeline_Read_Q_VITIS_LOOP_34_1|  return value|
+|ap_done             |  out|    1|  ap_ctrl_hs|  flashattn_Pipeline_Read_Q_VITIS_LOOP_34_1|  return value|
+|ap_idle             |  out|    1|  ap_ctrl_hs|  flashattn_Pipeline_Read_Q_VITIS_LOOP_34_1|  return value|
+|ap_ready            |  out|    1|  ap_ctrl_hs|  flashattn_Pipeline_Read_Q_VITIS_LOOP_34_1|  return value|
+|Q_tile_in_TVALID    |   in|    1|        axis|                         Q_tile_in_V_data_V|       pointer|
+|Q_tile_in_TDATA     |   in|   32|        axis|                         Q_tile_in_V_data_V|       pointer|
+|Q_tile_address0     |  out|    5|   ap_memory|                                     Q_tile|         array|
+|Q_tile_ce0          |  out|    1|   ap_memory|                                     Q_tile|         array|
+|Q_tile_we0          |  out|    1|   ap_memory|                                     Q_tile|         array|
+|Q_tile_d0           |  out|   32|   ap_memory|                                     Q_tile|         array|
+|Q_tile_1_address0   |  out|    5|   ap_memory|                                   Q_tile_1|         array|
+|Q_tile_1_ce0        |  out|    1|   ap_memory|                                   Q_tile_1|         array|
+|Q_tile_1_we0        |  out|    1|   ap_memory|                                   Q_tile_1|         array|
+|Q_tile_1_d0         |  out|   32|   ap_memory|                                   Q_tile_1|         array|
+|Q_tile_2_address0   |  out|    5|   ap_memory|                                   Q_tile_2|         array|
+|Q_tile_2_ce0        |  out|    1|   ap_memory|                                   Q_tile_2|         array|
+|Q_tile_2_we0        |  out|    1|   ap_memory|                                   Q_tile_2|         array|
+|Q_tile_2_d0         |  out|   32|   ap_memory|                                   Q_tile_2|         array|
+|Q_tile_3_address0   |  out|    5|   ap_memory|                                   Q_tile_3|         array|
+|Q_tile_3_ce0        |  out|    1|   ap_memory|                                   Q_tile_3|         array|
+|Q_tile_3_we0        |  out|    1|   ap_memory|                                   Q_tile_3|         array|
+|Q_tile_3_d0         |  out|   32|   ap_memory|                                   Q_tile_3|         array|
+|Q_tile_4_address0   |  out|    5|   ap_memory|                                   Q_tile_4|         array|
+|Q_tile_4_ce0        |  out|    1|   ap_memory|                                   Q_tile_4|         array|
+|Q_tile_4_we0        |  out|    1|   ap_memory|                                   Q_tile_4|         array|
+|Q_tile_4_d0         |  out|   32|   ap_memory|                                   Q_tile_4|         array|
+|Q_tile_5_address0   |  out|    5|   ap_memory|                                   Q_tile_5|         array|
+|Q_tile_5_ce0        |  out|    1|   ap_memory|                                   Q_tile_5|         array|
+|Q_tile_5_we0        |  out|    1|   ap_memory|                                   Q_tile_5|         array|
+|Q_tile_5_d0         |  out|   32|   ap_memory|                                   Q_tile_5|         array|
+|Q_tile_6_address0   |  out|    5|   ap_memory|                                   Q_tile_6|         array|
+|Q_tile_6_ce0        |  out|    1|   ap_memory|                                   Q_tile_6|         array|
+|Q_tile_6_we0        |  out|    1|   ap_memory|                                   Q_tile_6|         array|
+|Q_tile_6_d0         |  out|   32|   ap_memory|                                   Q_tile_6|         array|
+|Q_tile_7_address0   |  out|    5|   ap_memory|                                   Q_tile_7|         array|
+|Q_tile_7_ce0        |  out|    1|   ap_memory|                                   Q_tile_7|         array|
+|Q_tile_7_we0        |  out|    1|   ap_memory|                                   Q_tile_7|         array|
+|Q_tile_7_d0         |  out|   32|   ap_memory|                                   Q_tile_7|         array|
+|Q_tile_8_address0   |  out|    5|   ap_memory|                                   Q_tile_8|         array|
+|Q_tile_8_ce0        |  out|    1|   ap_memory|                                   Q_tile_8|         array|
+|Q_tile_8_we0        |  out|    1|   ap_memory|                                   Q_tile_8|         array|
+|Q_tile_8_d0         |  out|   32|   ap_memory|                                   Q_tile_8|         array|
+|Q_tile_9_address0   |  out|    5|   ap_memory|                                   Q_tile_9|         array|
+|Q_tile_9_ce0        |  out|    1|   ap_memory|                                   Q_tile_9|         array|
+|Q_tile_9_we0        |  out|    1|   ap_memory|                                   Q_tile_9|         array|
+|Q_tile_9_d0         |  out|   32|   ap_memory|                                   Q_tile_9|         array|
+|Q_tile_10_address0  |  out|    5|   ap_memory|                                  Q_tile_10|         array|
+|Q_tile_10_ce0       |  out|    1|   ap_memory|                                  Q_tile_10|         array|
+|Q_tile_10_we0       |  out|    1|   ap_memory|                                  Q_tile_10|         array|
+|Q_tile_10_d0        |  out|   32|   ap_memory|                                  Q_tile_10|         array|
+|Q_tile_11_address0  |  out|    5|   ap_memory|                                  Q_tile_11|         array|
+|Q_tile_11_ce0       |  out|    1|   ap_memory|                                  Q_tile_11|         array|
+|Q_tile_11_we0       |  out|    1|   ap_memory|                                  Q_tile_11|         array|
+|Q_tile_11_d0        |  out|   32|   ap_memory|                                  Q_tile_11|         array|
+|Q_tile_12_address0  |  out|    5|   ap_memory|                                  Q_tile_12|         array|
+|Q_tile_12_ce0       |  out|    1|   ap_memory|                                  Q_tile_12|         array|
+|Q_tile_12_we0       |  out|    1|   ap_memory|                                  Q_tile_12|         array|
+|Q_tile_12_d0        |  out|   32|   ap_memory|                                  Q_tile_12|         array|
+|Q_tile_13_address0  |  out|    5|   ap_memory|                                  Q_tile_13|         array|
+|Q_tile_13_ce0       |  out|    1|   ap_memory|                                  Q_tile_13|         array|
+|Q_tile_13_we0       |  out|    1|   ap_memory|                                  Q_tile_13|         array|
+|Q_tile_13_d0        |  out|   32|   ap_memory|                                  Q_tile_13|         array|
+|Q_tile_14_address0  |  out|    5|   ap_memory|                                  Q_tile_14|         array|
+|Q_tile_14_ce0       |  out|    1|   ap_memory|                                  Q_tile_14|         array|
+|Q_tile_14_we0       |  out|    1|   ap_memory|                                  Q_tile_14|         array|
+|Q_tile_14_d0        |  out|   32|   ap_memory|                                  Q_tile_14|         array|
+|Q_tile_15_address0  |  out|    5|   ap_memory|                                  Q_tile_15|         array|
+|Q_tile_15_ce0       |  out|    1|   ap_memory|                                  Q_tile_15|         array|
+|Q_tile_15_we0       |  out|    1|   ap_memory|                                  Q_tile_15|         array|
+|Q_tile_15_d0        |  out|   32|   ap_memory|                                  Q_tile_15|         array|
+|Q_tile_16_address0  |  out|    5|   ap_memory|                                  Q_tile_16|         array|
+|Q_tile_16_ce0       |  out|    1|   ap_memory|                                  Q_tile_16|         array|
+|Q_tile_16_we0       |  out|    1|   ap_memory|                                  Q_tile_16|         array|
+|Q_tile_16_d0        |  out|   32|   ap_memory|                                  Q_tile_16|         array|
+|Q_tile_17_address0  |  out|    5|   ap_memory|                                  Q_tile_17|         array|
+|Q_tile_17_ce0       |  out|    1|   ap_memory|                                  Q_tile_17|         array|
+|Q_tile_17_we0       |  out|    1|   ap_memory|                                  Q_tile_17|         array|
+|Q_tile_17_d0        |  out|   32|   ap_memory|                                  Q_tile_17|         array|
+|Q_tile_18_address0  |  out|    5|   ap_memory|                                  Q_tile_18|         array|
+|Q_tile_18_ce0       |  out|    1|   ap_memory|                                  Q_tile_18|         array|
+|Q_tile_18_we0       |  out|    1|   ap_memory|                                  Q_tile_18|         array|
+|Q_tile_18_d0        |  out|   32|   ap_memory|                                  Q_tile_18|         array|
+|Q_tile_19_address0  |  out|    5|   ap_memory|                                  Q_tile_19|         array|
+|Q_tile_19_ce0       |  out|    1|   ap_memory|                                  Q_tile_19|         array|
+|Q_tile_19_we0       |  out|    1|   ap_memory|                                  Q_tile_19|         array|
+|Q_tile_19_d0        |  out|   32|   ap_memory|                                  Q_tile_19|         array|
+|Q_tile_20_address0  |  out|    5|   ap_memory|                                  Q_tile_20|         array|
+|Q_tile_20_ce0       |  out|    1|   ap_memory|                                  Q_tile_20|         array|
+|Q_tile_20_we0       |  out|    1|   ap_memory|                                  Q_tile_20|         array|
+|Q_tile_20_d0        |  out|   32|   ap_memory|                                  Q_tile_20|         array|
+|Q_tile_21_address0  |  out|    5|   ap_memory|                                  Q_tile_21|         array|
+|Q_tile_21_ce0       |  out|    1|   ap_memory|                                  Q_tile_21|         array|
+|Q_tile_21_we0       |  out|    1|   ap_memory|                                  Q_tile_21|         array|
+|Q_tile_21_d0        |  out|   32|   ap_memory|                                  Q_tile_21|         array|
+|Q_tile_22_address0  |  out|    5|   ap_memory|                                  Q_tile_22|         array|
+|Q_tile_22_ce0       |  out|    1|   ap_memory|                                  Q_tile_22|         array|
+|Q_tile_22_we0       |  out|    1|   ap_memory|                                  Q_tile_22|         array|
+|Q_tile_22_d0        |  out|   32|   ap_memory|                                  Q_tile_22|         array|
+|Q_tile_23_address0  |  out|    5|   ap_memory|                                  Q_tile_23|         array|
+|Q_tile_23_ce0       |  out|    1|   ap_memory|                                  Q_tile_23|         array|
+|Q_tile_23_we0       |  out|    1|   ap_memory|                                  Q_tile_23|         array|
+|Q_tile_23_d0        |  out|   32|   ap_memory|                                  Q_tile_23|         array|
+|Q_tile_24_address0  |  out|    5|   ap_memory|                                  Q_tile_24|         array|
+|Q_tile_24_ce0       |  out|    1|   ap_memory|                                  Q_tile_24|         array|
+|Q_tile_24_we0       |  out|    1|   ap_memory|                                  Q_tile_24|         array|
+|Q_tile_24_d0        |  out|   32|   ap_memory|                                  Q_tile_24|         array|
+|Q_tile_25_address0  |  out|    5|   ap_memory|                                  Q_tile_25|         array|
+|Q_tile_25_ce0       |  out|    1|   ap_memory|                                  Q_tile_25|         array|
+|Q_tile_25_we0       |  out|    1|   ap_memory|                                  Q_tile_25|         array|
+|Q_tile_25_d0        |  out|   32|   ap_memory|                                  Q_tile_25|         array|
+|Q_tile_26_address0  |  out|    5|   ap_memory|                                  Q_tile_26|         array|
+|Q_tile_26_ce0       |  out|    1|   ap_memory|                                  Q_tile_26|         array|
+|Q_tile_26_we0       |  out|    1|   ap_memory|                                  Q_tile_26|         array|
+|Q_tile_26_d0        |  out|   32|   ap_memory|                                  Q_tile_26|         array|
+|Q_tile_27_address0  |  out|    5|   ap_memory|                                  Q_tile_27|         array|
+|Q_tile_27_ce0       |  out|    1|   ap_memory|                                  Q_tile_27|         array|
+|Q_tile_27_we0       |  out|    1|   ap_memory|                                  Q_tile_27|         array|
+|Q_tile_27_d0        |  out|   32|   ap_memory|                                  Q_tile_27|         array|
+|Q_tile_28_address0  |  out|    5|   ap_memory|                                  Q_tile_28|         array|
+|Q_tile_28_ce0       |  out|    1|   ap_memory|                                  Q_tile_28|         array|
+|Q_tile_28_we0       |  out|    1|   ap_memory|                                  Q_tile_28|         array|
+|Q_tile_28_d0        |  out|   32|   ap_memory|                                  Q_tile_28|         array|
+|Q_tile_29_address0  |  out|    5|   ap_memory|                                  Q_tile_29|         array|
+|Q_tile_29_ce0       |  out|    1|   ap_memory|                                  Q_tile_29|         array|
+|Q_tile_29_we0       |  out|    1|   ap_memory|                                  Q_tile_29|         array|
+|Q_tile_29_d0        |  out|   32|   ap_memory|                                  Q_tile_29|         array|
+|Q_tile_30_address0  |  out|    5|   ap_memory|                                  Q_tile_30|         array|
+|Q_tile_30_ce0       |  out|    1|   ap_memory|                                  Q_tile_30|         array|
+|Q_tile_30_we0       |  out|    1|   ap_memory|                                  Q_tile_30|         array|
+|Q_tile_30_d0        |  out|   32|   ap_memory|                                  Q_tile_30|         array|
+|Q_tile_31_address0  |  out|    5|   ap_memory|                                  Q_tile_31|         array|
+|Q_tile_31_ce0       |  out|    1|   ap_memory|                                  Q_tile_31|         array|
+|Q_tile_31_we0       |  out|    1|   ap_memory|                                  Q_tile_31|         array|
+|Q_tile_31_d0        |  out|   32|   ap_memory|                                  Q_tile_31|         array|
+|Q_tile_32_address0  |  out|    5|   ap_memory|                                  Q_tile_32|         array|
+|Q_tile_32_ce0       |  out|    1|   ap_memory|                                  Q_tile_32|         array|
+|Q_tile_32_we0       |  out|    1|   ap_memory|                                  Q_tile_32|         array|
+|Q_tile_32_d0        |  out|   32|   ap_memory|                                  Q_tile_32|         array|
+|Q_tile_33_address0  |  out|    5|   ap_memory|                                  Q_tile_33|         array|
+|Q_tile_33_ce0       |  out|    1|   ap_memory|                                  Q_tile_33|         array|
+|Q_tile_33_we0       |  out|    1|   ap_memory|                                  Q_tile_33|         array|
+|Q_tile_33_d0        |  out|   32|   ap_memory|                                  Q_tile_33|         array|
+|Q_tile_34_address0  |  out|    5|   ap_memory|                                  Q_tile_34|         array|
+|Q_tile_34_ce0       |  out|    1|   ap_memory|                                  Q_tile_34|         array|
+|Q_tile_34_we0       |  out|    1|   ap_memory|                                  Q_tile_34|         array|
+|Q_tile_34_d0        |  out|   32|   ap_memory|                                  Q_tile_34|         array|
+|Q_tile_35_address0  |  out|    5|   ap_memory|                                  Q_tile_35|         array|
+|Q_tile_35_ce0       |  out|    1|   ap_memory|                                  Q_tile_35|         array|
+|Q_tile_35_we0       |  out|    1|   ap_memory|                                  Q_tile_35|         array|
+|Q_tile_35_d0        |  out|   32|   ap_memory|                                  Q_tile_35|         array|
+|Q_tile_36_address0  |  out|    5|   ap_memory|                                  Q_tile_36|         array|
+|Q_tile_36_ce0       |  out|    1|   ap_memory|                                  Q_tile_36|         array|
+|Q_tile_36_we0       |  out|    1|   ap_memory|                                  Q_tile_36|         array|
+|Q_tile_36_d0        |  out|   32|   ap_memory|                                  Q_tile_36|         array|
+|Q_tile_37_address0  |  out|    5|   ap_memory|                                  Q_tile_37|         array|
+|Q_tile_37_ce0       |  out|    1|   ap_memory|                                  Q_tile_37|         array|
+|Q_tile_37_we0       |  out|    1|   ap_memory|                                  Q_tile_37|         array|
+|Q_tile_37_d0        |  out|   32|   ap_memory|                                  Q_tile_37|         array|
+|Q_tile_38_address0  |  out|    5|   ap_memory|                                  Q_tile_38|         array|
+|Q_tile_38_ce0       |  out|    1|   ap_memory|                                  Q_tile_38|         array|
+|Q_tile_38_we0       |  out|    1|   ap_memory|                                  Q_tile_38|         array|
+|Q_tile_38_d0        |  out|   32|   ap_memory|                                  Q_tile_38|         array|
+|Q_tile_39_address0  |  out|    5|   ap_memory|                                  Q_tile_39|         array|
+|Q_tile_39_ce0       |  out|    1|   ap_memory|                                  Q_tile_39|         array|
+|Q_tile_39_we0       |  out|    1|   ap_memory|                                  Q_tile_39|         array|
+|Q_tile_39_d0        |  out|   32|   ap_memory|                                  Q_tile_39|         array|
+|Q_tile_40_address0  |  out|    5|   ap_memory|                                  Q_tile_40|         array|
+|Q_tile_40_ce0       |  out|    1|   ap_memory|                                  Q_tile_40|         array|
+|Q_tile_40_we0       |  out|    1|   ap_memory|                                  Q_tile_40|         array|
+|Q_tile_40_d0        |  out|   32|   ap_memory|                                  Q_tile_40|         array|
+|Q_tile_41_address0  |  out|    5|   ap_memory|                                  Q_tile_41|         array|
+|Q_tile_41_ce0       |  out|    1|   ap_memory|                                  Q_tile_41|         array|
+|Q_tile_41_we0       |  out|    1|   ap_memory|                                  Q_tile_41|         array|
+|Q_tile_41_d0        |  out|   32|   ap_memory|                                  Q_tile_41|         array|
+|Q_tile_42_address0  |  out|    5|   ap_memory|                                  Q_tile_42|         array|
+|Q_tile_42_ce0       |  out|    1|   ap_memory|                                  Q_tile_42|         array|
+|Q_tile_42_we0       |  out|    1|   ap_memory|                                  Q_tile_42|         array|
+|Q_tile_42_d0        |  out|   32|   ap_memory|                                  Q_tile_42|         array|
+|Q_tile_43_address0  |  out|    5|   ap_memory|                                  Q_tile_43|         array|
+|Q_tile_43_ce0       |  out|    1|   ap_memory|                                  Q_tile_43|         array|
+|Q_tile_43_we0       |  out|    1|   ap_memory|                                  Q_tile_43|         array|
+|Q_tile_43_d0        |  out|   32|   ap_memory|                                  Q_tile_43|         array|
+|Q_tile_44_address0  |  out|    5|   ap_memory|                                  Q_tile_44|         array|
+|Q_tile_44_ce0       |  out|    1|   ap_memory|                                  Q_tile_44|         array|
+|Q_tile_44_we0       |  out|    1|   ap_memory|                                  Q_tile_44|         array|
+|Q_tile_44_d0        |  out|   32|   ap_memory|                                  Q_tile_44|         array|
+|Q_tile_45_address0  |  out|    5|   ap_memory|                                  Q_tile_45|         array|
+|Q_tile_45_ce0       |  out|    1|   ap_memory|                                  Q_tile_45|         array|
+|Q_tile_45_we0       |  out|    1|   ap_memory|                                  Q_tile_45|         array|
+|Q_tile_45_d0        |  out|   32|   ap_memory|                                  Q_tile_45|         array|
+|Q_tile_46_address0  |  out|    5|   ap_memory|                                  Q_tile_46|         array|
+|Q_tile_46_ce0       |  out|    1|   ap_memory|                                  Q_tile_46|         array|
+|Q_tile_46_we0       |  out|    1|   ap_memory|                                  Q_tile_46|         array|
+|Q_tile_46_d0        |  out|   32|   ap_memory|                                  Q_tile_46|         array|
+|Q_tile_47_address0  |  out|    5|   ap_memory|                                  Q_tile_47|         array|
+|Q_tile_47_ce0       |  out|    1|   ap_memory|                                  Q_tile_47|         array|
+|Q_tile_47_we0       |  out|    1|   ap_memory|                                  Q_tile_47|         array|
+|Q_tile_47_d0        |  out|   32|   ap_memory|                                  Q_tile_47|         array|
+|Q_tile_48_address0  |  out|    5|   ap_memory|                                  Q_tile_48|         array|
+|Q_tile_48_ce0       |  out|    1|   ap_memory|                                  Q_tile_48|         array|
+|Q_tile_48_we0       |  out|    1|   ap_memory|                                  Q_tile_48|         array|
+|Q_tile_48_d0        |  out|   32|   ap_memory|                                  Q_tile_48|         array|
+|Q_tile_49_address0  |  out|    5|   ap_memory|                                  Q_tile_49|         array|
+|Q_tile_49_ce0       |  out|    1|   ap_memory|                                  Q_tile_49|         array|
+|Q_tile_49_we0       |  out|    1|   ap_memory|                                  Q_tile_49|         array|
+|Q_tile_49_d0        |  out|   32|   ap_memory|                                  Q_tile_49|         array|
+|Q_tile_50_address0  |  out|    5|   ap_memory|                                  Q_tile_50|         array|
+|Q_tile_50_ce0       |  out|    1|   ap_memory|                                  Q_tile_50|         array|
+|Q_tile_50_we0       |  out|    1|   ap_memory|                                  Q_tile_50|         array|
+|Q_tile_50_d0        |  out|   32|   ap_memory|                                  Q_tile_50|         array|
+|Q_tile_51_address0  |  out|    5|   ap_memory|                                  Q_tile_51|         array|
+|Q_tile_51_ce0       |  out|    1|   ap_memory|                                  Q_tile_51|         array|
+|Q_tile_51_we0       |  out|    1|   ap_memory|                                  Q_tile_51|         array|
+|Q_tile_51_d0        |  out|   32|   ap_memory|                                  Q_tile_51|         array|
+|Q_tile_52_address0  |  out|    5|   ap_memory|                                  Q_tile_52|         array|
+|Q_tile_52_ce0       |  out|    1|   ap_memory|                                  Q_tile_52|         array|
+|Q_tile_52_we0       |  out|    1|   ap_memory|                                  Q_tile_52|         array|
+|Q_tile_52_d0        |  out|   32|   ap_memory|                                  Q_tile_52|         array|
+|Q_tile_53_address0  |  out|    5|   ap_memory|                                  Q_tile_53|         array|
+|Q_tile_53_ce0       |  out|    1|   ap_memory|                                  Q_tile_53|         array|
+|Q_tile_53_we0       |  out|    1|   ap_memory|                                  Q_tile_53|         array|
+|Q_tile_53_d0        |  out|   32|   ap_memory|                                  Q_tile_53|         array|
+|Q_tile_54_address0  |  out|    5|   ap_memory|                                  Q_tile_54|         array|
+|Q_tile_54_ce0       |  out|    1|   ap_memory|                                  Q_tile_54|         array|
+|Q_tile_54_we0       |  out|    1|   ap_memory|                                  Q_tile_54|         array|
+|Q_tile_54_d0        |  out|   32|   ap_memory|                                  Q_tile_54|         array|
+|Q_tile_55_address0  |  out|    5|   ap_memory|                                  Q_tile_55|         array|
+|Q_tile_55_ce0       |  out|    1|   ap_memory|                                  Q_tile_55|         array|
+|Q_tile_55_we0       |  out|    1|   ap_memory|                                  Q_tile_55|         array|
+|Q_tile_55_d0        |  out|   32|   ap_memory|                                  Q_tile_55|         array|
+|Q_tile_56_address0  |  out|    5|   ap_memory|                                  Q_tile_56|         array|
+|Q_tile_56_ce0       |  out|    1|   ap_memory|                                  Q_tile_56|         array|
+|Q_tile_56_we0       |  out|    1|   ap_memory|                                  Q_tile_56|         array|
+|Q_tile_56_d0        |  out|   32|   ap_memory|                                  Q_tile_56|         array|
+|Q_tile_57_address0  |  out|    5|   ap_memory|                                  Q_tile_57|         array|
+|Q_tile_57_ce0       |  out|    1|   ap_memory|                                  Q_tile_57|         array|
+|Q_tile_57_we0       |  out|    1|   ap_memory|                                  Q_tile_57|         array|
+|Q_tile_57_d0        |  out|   32|   ap_memory|                                  Q_tile_57|         array|
+|Q_tile_58_address0  |  out|    5|   ap_memory|                                  Q_tile_58|         array|
+|Q_tile_58_ce0       |  out|    1|   ap_memory|                                  Q_tile_58|         array|
+|Q_tile_58_we0       |  out|    1|   ap_memory|                                  Q_tile_58|         array|
+|Q_tile_58_d0        |  out|   32|   ap_memory|                                  Q_tile_58|         array|
+|Q_tile_59_address0  |  out|    5|   ap_memory|                                  Q_tile_59|         array|
+|Q_tile_59_ce0       |  out|    1|   ap_memory|                                  Q_tile_59|         array|
+|Q_tile_59_we0       |  out|    1|   ap_memory|                                  Q_tile_59|         array|
+|Q_tile_59_d0        |  out|   32|   ap_memory|                                  Q_tile_59|         array|
+|Q_tile_60_address0  |  out|    5|   ap_memory|                                  Q_tile_60|         array|
+|Q_tile_60_ce0       |  out|    1|   ap_memory|                                  Q_tile_60|         array|
+|Q_tile_60_we0       |  out|    1|   ap_memory|                                  Q_tile_60|         array|
+|Q_tile_60_d0        |  out|   32|   ap_memory|                                  Q_tile_60|         array|
+|Q_tile_61_address0  |  out|    5|   ap_memory|                                  Q_tile_61|         array|
+|Q_tile_61_ce0       |  out|    1|   ap_memory|                                  Q_tile_61|         array|
+|Q_tile_61_we0       |  out|    1|   ap_memory|                                  Q_tile_61|         array|
+|Q_tile_61_d0        |  out|   32|   ap_memory|                                  Q_tile_61|         array|
+|Q_tile_62_address0  |  out|    5|   ap_memory|                                  Q_tile_62|         array|
+|Q_tile_62_ce0       |  out|    1|   ap_memory|                                  Q_tile_62|         array|
+|Q_tile_62_we0       |  out|    1|   ap_memory|                                  Q_tile_62|         array|
+|Q_tile_62_d0        |  out|   32|   ap_memory|                                  Q_tile_62|         array|
+|Q_tile_63_address0  |  out|    5|   ap_memory|                                  Q_tile_63|         array|
+|Q_tile_63_ce0       |  out|    1|   ap_memory|                                  Q_tile_63|         array|
+|Q_tile_63_we0       |  out|    1|   ap_memory|                                  Q_tile_63|         array|
+|Q_tile_63_d0        |  out|   32|   ap_memory|                                  Q_tile_63|         array|
+|Q_tile_in_TREADY    |  out|    1|        axis|                         Q_tile_in_V_last_V|       pointer|
+|Q_tile_in_TLAST     |   in|    1|        axis|                         Q_tile_in_V_last_V|       pointer|
+|Q_tile_in_TKEEP     |   in|    4|        axis|                         Q_tile_in_V_keep_V|       pointer|
+|Q_tile_in_TSTRB     |   in|    4|        axis|                         Q_tile_in_V_strb_V|       pointer|
++--------------------+-----+-----+------------+-------------------------------------------+--------------+
+

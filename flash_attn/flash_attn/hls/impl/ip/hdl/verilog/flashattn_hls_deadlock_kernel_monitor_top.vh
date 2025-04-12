@@ -10,17 +10,17 @@ wire [3:0] inst_idle_sigs;
 wire [0:0] inst_block_sigs;
 wire kernel_block;
 
-assign axis_block_sigs[0] = ~grp_flashattn_Pipeline_Read_Q_VITIS_LOOP_25_1_fu_82.Q_tile_in_TDATA_blk_n;
-assign axis_block_sigs[1] = ~grp_flashattn_Pipeline_Read_K_and_V_VITIS_LOOP_35_2_fu_96.K_tile_in_TDATA_blk_n;
-assign axis_block_sigs[2] = ~grp_flashattn_Pipeline_Read_K_and_V_VITIS_LOOP_35_2_fu_96.V_tile_in_TDATA_blk_n;
-assign axis_block_sigs[3] = ~grp_flashattn_Pipeline_Attention_Loop_VITIS_LOOP_48_3_fu_120.O_tile_out_TDATA_blk_n;
+assign axis_block_sigs[0] = ~grp_flashattn_Pipeline_Read_Q_VITIS_LOOP_34_1_fu_1106.Q_tile_in_TDATA_blk_n;
+assign axis_block_sigs[1] = ~grp_flashattn_Pipeline_Read_K_and_V_VITIS_LOOP_45_2_fu_1246.K_tile_in_TDATA_blk_n;
+assign axis_block_sigs[2] = ~grp_flashattn_Pipeline_Read_K_and_V_VITIS_LOOP_45_2_fu_1246.V_tile_in_TDATA_blk_n;
+assign axis_block_sigs[3] = ~grp_flashattn_Pipeline_Normalize_And_Stream_Output_VITIS_LOOP_120_8_fu_1920.O_tile_out_TDATA_blk_n;
 
 assign inst_block_sigs[0] = 1'b0;
 
 assign inst_idle_sigs[0] = 1'b0;
-assign inst_idle_sigs[1] = grp_flashattn_Pipeline_Read_Q_VITIS_LOOP_25_1_fu_82.ap_idle;
-assign inst_idle_sigs[2] = grp_flashattn_Pipeline_Read_K_and_V_VITIS_LOOP_35_2_fu_96.ap_idle;
-assign inst_idle_sigs[3] = grp_flashattn_Pipeline_Attention_Loop_VITIS_LOOP_48_3_fu_120.ap_idle;
+assign inst_idle_sigs[1] = grp_flashattn_Pipeline_Read_Q_VITIS_LOOP_34_1_fu_1106.ap_idle;
+assign inst_idle_sigs[2] = grp_flashattn_Pipeline_Read_K_and_V_VITIS_LOOP_45_2_fu_1246.ap_idle;
+assign inst_idle_sigs[3] = grp_flashattn_Pipeline_Normalize_And_Stream_Output_VITIS_LOOP_120_8_fu_1920.ap_idle;
 
 flashattn_hls_deadlock_idx0_monitor flashattn_hls_deadlock_idx0_monitor_U (
     .clock(kernel_monitor_clock),

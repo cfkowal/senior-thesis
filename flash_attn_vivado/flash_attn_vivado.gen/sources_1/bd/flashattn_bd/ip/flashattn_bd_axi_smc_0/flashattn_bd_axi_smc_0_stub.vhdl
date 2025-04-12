@@ -2,10 +2,10 @@
 -- Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
--- Date        : Wed Apr  9 14:59:10 2025
+-- Date        : Wed Apr  9 14:59:07 2025
 -- Host        : DESKTOP-I99LGQ1 running 64-bit major release  (build 9200)
--- Command     : write_vhdl -force -mode synth_stub
---               c:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn_vivado/flash_attn_vivado.gen/sources_1/bd/flashattn_bd/ip/flashattn_bd_axi_smc_0/flashattn_bd_axi_smc_0_stub.vhdl
+-- Command     : write_vhdl -force -mode synth_stub -rename_top flashattn_bd_axi_smc_0 -prefix
+--               flashattn_bd_axi_smc_0_ flashattn_bd_axi_smc_0_stub.vhdl
 -- Design      : flashattn_bd_axi_smc_0
 -- Purpose     : Stub declaration of top-level module interface
 -- Device      : xc7z020clg400-1

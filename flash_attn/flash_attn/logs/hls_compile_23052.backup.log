@@ -1,0 +1,237 @@
+  **** HLS Build v2024.2 5238294
+INFO: [HLS 200-2005] Using work_dir C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn/flash_attn 
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+WARNING: [HLS 200-2001] file not found 'flashattn.h.cpp' see [hls] from C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn/hls_config.cfg(11)
+INFO: [HLS 200-1465] Applying ini 'syn.file=flashattn.h.cpp' from C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn/hls_config.cfg(11)
+WARNING: [HLS 200-40] Cannot find design file 'flashattn.h.cpp'
+INFO: [HLS 200-1465] Applying ini 'syn.file=flashattn.cpp' from C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn/hls_config.cfg(12)
+INFO: [HLS 200-10] Adding design file 'C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn/flashattn.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'tb.file=flashattn.h' from C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn/hls_config.cfg(9)
+INFO: [HLS 200-10] Adding test bench file 'C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn/flashattn.h' to the project
+INFO: [HLS 200-1465] Applying ini 'tb.file=flashattn_tb.cpp' from C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn/hls_config.cfg(10)
+INFO: [HLS 200-10] Adding test bench file 'C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn/flashattn_tb.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.top=flashattn' from C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn/hls_config.cfg(7)
+INFO: [HLS 200-1465] Applying ini 'flow_target=vivado' from C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn/hls_config.cfg(4)
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying ini 'part=xc7z020clg400-1' from C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn/hls_config.cfg(1)
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg400-1'
+INFO: [HLS 200-1465] Applying ini 'package.output.format=ip_catalog' from C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn/hls_config.cfg(5)
+INFO: [HLS 200-1465] Applying ini 'syn.interface.s_axilite_data64=1' from C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn/hls_config.cfg(8)
+WARNING: [HLS 200-40] Cannot find source file flashattn.h.cpp; skipping it.
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 2 seconds. CPU system time: 1 seconds. Elapsed time: 3.127 seconds; current allocated memory: 259.066 MB.
+INFO: [HLS 200-10] Analyzing design file 'flashattn.cpp' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 19.628 seconds; current allocated memory: 265.848 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 200-1995] There were 631 instructions in the design after the 'Compile/Link' phase of compilation. See the Design Size Report for more details: C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn/flash_attn/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,347 instructions in the design after the 'Unroll/Inline (step 1)' phase of compilation. See the Design Size Report for more details: C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn/flash_attn/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,296 instructions in the design after the 'Unroll/Inline (step 2)' phase of compilation. See the Design Size Report for more details: C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn/flash_attn/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,286 instructions in the design after the 'Unroll/Inline (step 3)' phase of compilation. See the Design Size Report for more details: C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn/flash_attn/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,221 instructions in the design after the 'Unroll/Inline (step 4)' phase of compilation. See the Design Size Report for more details: C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn/flash_attn/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,221 instructions in the design after the 'Array/Struct (step 1)' phase of compilation. See the Design Size Report for more details: C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn/flash_attn/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,221 instructions in the design after the 'Array/Struct (step 2)' phase of compilation. See the Design Size Report for more details: C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn/flash_attn/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,221 instructions in the design after the 'Array/Struct (step 3)' phase of compilation. See the Design Size Report for more details: C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn/flash_attn/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,221 instructions in the design after the 'Array/Struct (step 4)' phase of compilation. See the Design Size Report for more details: C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn/flash_attn/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,208 instructions in the design after the 'Array/Struct (step 5)' phase of compilation. See the Design Size Report for more details: C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn/flash_attn/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,203 instructions in the design after the 'Performance (step 1)' phase of compilation. See the Design Size Report for more details: C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn/flash_attn/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,324 instructions in the design after the 'Performance (step 2)' phase of compilation. See the Design Size Report for more details: C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn/flash_attn/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 23,459 instructions in the design after the 'Performance (step 3)' phase of compilation. See the Design Size Report for more details: C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn/flash_attn/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 3,232 instructions in the design after the 'Performance (step 4)' phase of compilation. See the Design Size Report for more details: C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn/flash_attn/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 3,221 instructions in the design after the 'HW Transforms (step 1)' phase of compilation. See the Design Size Report for more details: C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn/flash_attn/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 3,244 instructions in the design after the 'HW Transforms (step 2)' phase of compilation. See the Design Size Report for more details: C:/Users/cfk30/OneDrive/Documents/ECE4910/thesis/flash_attn/flash_attn/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 214-131] Inlining function 'exp_reduce_::exp(float)' into 'hls::expf(float)' (C:\scratch\2024.2\hls_product\495\2024.2\src\shared\hls\clib\hlsmath\src\c++\expfloat.cpp:22:9)
+INFO: [HLS 214-131] Inlining function 'hls::expf(float)' into 'flashattn(hls::stream<hls::axis<float, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&, hls::stream<hls::axis<float, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&, hls::stream<hls::axis<float, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&, hls::stream<hls::axis<float, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&)' (flashattn.cpp:99:32)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_78_5' is marked as complete unroll implied by the pipeline pragma (flashattn.cpp:78:30)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_101_6' is marked as complete unroll implied by the pipeline pragma (flashattn.cpp:101:35)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_109_7' is marked as complete unroll implied by the pipeline pragma (flashattn.cpp:109:31)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_78_5' (flashattn.cpp:78:30) in function 'flashattn' completely with a factor of 64 (flashattn.cpp:4:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_101_6' (flashattn.cpp:101:35) in function 'flashattn' completely with a factor of 64 (flashattn.cpp:4:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_109_7' (flashattn.cpp:109:31) in function 'flashattn' completely with a factor of 64 (flashattn.cpp:4:0)
+INFO: [HLS 214-376] automatically set the pipeline for Loop< VITIS_LOOP_34_1> at flashattn.cpp:34:20 
+INFO: [HLS 214-376] automatically set the pipeline for Loop< VITIS_LOOP_45_2> at flashattn.cpp:45:20 
+INFO: [HLS 214-376] automatically set the pipeline for Loop< Init_Accumulators> at flashattn.cpp:58:5 
+INFO: [HLS 214-376] automatically set the pipeline for Loop< VITIS_LOOP_120_8> at flashattn.cpp:120:27 
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_62_3' is marked as complete unroll implied by the pipeline pragma (flashattn.cpp:62:26)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_62_3' (flashattn.cpp:62:26) in function 'flashattn' completely with a factor of 64 (flashattn.cpp:4:0)
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=2' for array 'Q_tile' due to pipeline pragma (flashattn.cpp:74:9)
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=2' for array 'K_tile' due to pipeline pragma (flashattn.cpp:74:9)
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=2' for array 'V_tile' due to pipeline pragma (flashattn.cpp:74:9)
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=2' for array 'output_accum' due to pipeline pragma (flashattn.cpp:74:9)
+INFO: [HLS 214-248] Applying array_partition to 'Q_tile': Complete partitioning on dimension 2. (flashattn.cpp:20:12)
+INFO: [HLS 214-248] Applying array_partition to 'K_tile': Complete partitioning on dimension 2. (flashattn.cpp:21:12)
+INFO: [HLS 214-248] Applying array_partition to 'V_tile': Complete partitioning on dimension 2. (flashattn.cpp:22:12)
+INFO: [HLS 214-248] Applying array_partition to 'output_accum': Complete partitioning on dimension 2. (flashattn.cpp:28:12)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 9.278 seconds; current allocated memory: 267.066 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.003 seconds; current allocated memory: 267.066 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.358 seconds; current allocated memory: 277.340 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.167 seconds; current allocated memory: 280.320 MB.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.477 seconds; current allocated memory: 309.062 MB.
+INFO: [HLS 200-2061] Successfully converted nested loops 'Read_Q'(flashattn.cpp:32:2) and 'VITIS_LOOP_34_1'(flashattn.cpp:34:20) in function 'flashattn' into perfectly nested loops.
+INFO: [HLS 200-2061] Successfully converted nested loops 'Read_K_and_V'(flashattn.cpp:43:5) and 'VITIS_LOOP_45_2'(flashattn.cpp:45:20) in function 'flashattn' into perfectly nested loops.
+INFO: [HLS 200-2061] Successfully converted nested loops 'Compute_Online_Softmax'(flashattn.cpp:70:5) and 'VITIS_LOOP_72_4'(flashattn.cpp:72:26) in function 'flashattn' into perfectly nested loops.
+INFO: [HLS 200-2061] Successfully converted nested loops 'Normalize_And_Stream_Output'(flashattn.cpp:118:5) and 'VITIS_LOOP_120_8'(flashattn.cpp:120:27) in function 'flashattn' into perfectly nested loops.
+INFO: [XFORM 203-541] Flattening a loop nest 'Read_Q' (flashattn.cpp:32:2) in function 'flashattn'.
+INFO: [XFORM 203-541] Flattening a loop nest 'Read_K_and_V' (flashattn.cpp:43:5) in function 'flashattn'.
+INFO: [XFORM 203-541] Flattening a loop nest 'Compute_Online_Softmax' (flashattn.cpp:70:5) in function 'flashattn'.
+INFO: [XFORM 203-541] Flattening a loop nest 'Normalize_And_Stream_Output' (flashattn.cpp:118:5) in function 'flashattn'.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.603 seconds; current allocated memory: 355.145 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'flashattn' ...
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'flashattn_Pipeline_Read_Q_VITIS_LOOP_34_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Read_Q_VITIS_LOOP_34_1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 3, loop 'Read_Q_VITIS_LOOP_34_1'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.443 seconds; current allocated memory: 363.008 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.096 seconds; current allocated memory: 364.105 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'flashattn_Pipeline_Read_K_and_V_VITIS_LOOP_45_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Read_K_and_V_VITIS_LOOP_45_2'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 3, loop 'Read_K_and_V_VITIS_LOOP_45_2'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.269 seconds; current allocated memory: 368.188 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.1 seconds; current allocated memory: 368.191 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'flashattn_Pipeline_Init_Accumulators' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Init_Accumulators'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 1, loop 'Init_Accumulators'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.168 seconds; current allocated memory: 368.805 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.071 seconds; current allocated memory: 368.910 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'flashattn_Pipeline_Compute_Online_Softmax_VITIS_LOOP_72_4' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Compute_Online_Softmax_VITIS_LOOP_72_4'.
+WARNING: [HLS 200-885] The II Violation in module 'flashattn_Pipeline_Compute_Online_Softmax_VITIS_LOOP_72_4' (loop 'Compute_Online_Softmax_VITIS_LOOP_72_4'): Unable to schedule 'store' operation 0 bit ('exp_sum_addr_write_ln100', flashattn.cpp:100) of variable 'mul1', flashattn.cpp:100 on array 'exp_sum' due to limited memory ports (II = 1). Please consider using a memory core with more ports or partitioning the array 'exp_sum'.
+Resolution: For help on HLS 200-885 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-885.html
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 2, Depth = 358, loop 'Compute_Online_Softmax_VITIS_LOOP_72_4'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 3 seconds. CPU system time: 0 seconds. Elapsed time: 3.175 seconds; current allocated memory: 387.938 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.444 seconds; current allocated memory: 388.004 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'flashattn_Pipeline_Normalize_And_Stream_Output_VITIS_LOOP_120_8' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Normalize_And_Stream_Output_VITIS_LOOP_120_8'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 20, loop 'Normalize_And_Stream_Output_VITIS_LOOP_120_8'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.527 seconds; current allocated memory: 389.832 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.121 seconds; current allocated memory: 390.609 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'flashattn' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.206 seconds; current allocated memory: 391.535 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.123 seconds; current allocated memory: 392.168 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'flashattn_Pipeline_Read_Q_VITIS_LOOP_34_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'flashattn_Pipeline_Read_Q_VITIS_LOOP_34_1' pipeline 'Read_Q_VITIS_LOOP_34_1' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'flashattn_Pipeline_Read_Q_VITIS_LOOP_34_1'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.233 seconds; current allocated memory: 396.238 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'flashattn_Pipeline_Read_K_and_V_VITIS_LOOP_45_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'flashattn_Pipeline_Read_K_and_V_VITIS_LOOP_45_2' pipeline 'Read_K_and_V_VITIS_LOOP_45_2' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'flashattn_Pipeline_Read_K_and_V_VITIS_LOOP_45_2'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 1 seconds. Elapsed time: 0.621 seconds; current allocated memory: 405.328 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'flashattn_Pipeline_Init_Accumulators' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'flashattn_Pipeline_Init_Accumulators'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.748 seconds; current allocated memory: 413.188 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'flashattn_Pipeline_Compute_Online_Softmax_VITIS_LOOP_72_4' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'flashattn_Pipeline_Compute_Online_Softmax_VITIS_LOOP_72_4' pipeline 'Compute_Online_Softmax_VITIS_LOOP_72_4' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-104] Estimated max fanout for 'flashattn_Pipeline_Compute_Online_Softmax_VITIS_LOOP_72_4' is 167226 from HDL expression: ((1'b0 == ap_block_pp0_stage0_11001) & (1'b1 == ap_CS_fsm_pp0_stage0))
+INFO: [RTGEN 206-100] Generating core module 'fadd_32ns_32ns_32_5_full_dsp_1': 64 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'faddfsub_32ns_32ns_32_5_full_dsp_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fcmp_32ns_32ns_1_2_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fexp_32ns_32ns_32_10_full_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fmul_32ns_32ns_32_4_max_dsp_1': 97 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'flashattn_Pipeline_Compute_Online_Softmax_VITIS_LOOP_72_4'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 3 seconds. CPU system time: 0 seconds. Elapsed time: 3.454 seconds; current allocated memory: 475.672 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'flashattn_Pipeline_Normalize_And_Stream_Output_VITIS_LOOP_120_8' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'flashattn_Pipeline_Normalize_And_Stream_Output_VITIS_LOOP_120_8' pipeline 'Normalize_And_Stream_Output_VITIS_LOOP_120_8' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'fdiv_32ns_32ns_32_16_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_129_6_32_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'flashattn_Pipeline_Normalize_And_Stream_Output_VITIS_LOOP_120_8'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 2 seconds. CPU system time: 2 seconds. Elapsed time: 3.42 seconds; current allocated memory: 505.574 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'flashattn' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low.
+INFO: [RTGEN 206-500] Setting interface mode on port 'flashattn/Q_tile_in_V_data_V' to 'axis'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'flashattn/Q_tile_in_V_keep_V' to 'axis'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'flashattn/Q_tile_in_V_strb_V' to 'axis'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'flashattn/Q_tile_in_V_last_V' to 'axis'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'flashattn/K_tile_in_V_data_V' to 'axis'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'flashattn/K_tile_in_V_keep_V' to 'axis'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'flashattn/K_tile_in_V_strb_V' to 'axis'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'flashattn/K_tile_in_V_last_V' to 'axis'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'flashattn/V_tile_in_V_data_V' to 'axis'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'flashattn/V_tile_in_V_keep_V' to 'axis'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'flashattn/V_tile_in_V_strb_V' to 'axis'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'flashattn/V_tile_in_V_last_V' to 'axis'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'flashattn/O_tile_out_V_data_V' to 'axis'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'flashattn/O_tile_out_V_keep_V' to 'axis'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'flashattn/O_tile_out_V_strb_V' to 'axis'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'flashattn/O_tile_out_V_last_V' to 'axis'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'flashattn' to 'ap_ctrl_none'.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'flashattn'.
+INFO: [RTMG 210-278] Implementing memory 'flashattn_Q_tile_RAM_AUTO_1R1W' using auto RAMs.
+INFO: [RTMG 210-278] Implementing memory 'flashattn_exp_sum_RAM_AUTO_1R1W' using auto RAMs.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.012 seconds; current allocated memory: 523.016 MB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 0 seconds. CPU system time: 1 seconds. Elapsed time: 1.62 seconds; current allocated memory: 538.688 MB.
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.314 seconds; current allocated memory: 552.973 MB.
+INFO: [VHDL 208-304] Generating VHDL RTL for flashattn.
+INFO: [VLOG 209-307] Generating Verilog RTL for flashattn.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were NOT satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 137.82 MHz
+INFO: [HLS 200-112] Total CPU user time: 17 seconds. Total CPU system time: 5 seconds. Total elapsed time: 53.222 seconds; peak allocated memory: 553.020 MB.
+INFO: [v++ 60-791] Total elapsed time: 0h 0m 57s

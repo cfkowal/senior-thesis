@@ -18,18 +18,746 @@ C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.auto
       ^~~
       VITIS_LOOP_1248_1: 
 C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:4055:7: note: FIX-IT applied suggested code changes
-C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:9781:3: warning: Added loop label VITIS_LOOP_25_1:   [xilinx-label-all-loops]
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:15626:72: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=fourth_order_double::sin_cos_K0 type=ROM_1P impl=LUTRAM
+                                                                       ^
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:15627:72: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=fourth_order_double::sin_cos_K1 type=ROM_1P impl=LUTRAM
+                                                                       ^
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:15628:72: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=fourth_order_double::sin_cos_K2 type=ROM_1P impl=LUTRAM
+                                                                       ^
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:15629:72: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=fourth_order_double::sin_cos_K3 type=ROM_1P impl=LUTRAM
+                                                                       ^
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:15630:72: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=fourth_order_double::sin_cos_K4 type=ROM_1P impl=LUTRAM
+                                                                       ^
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:15660:68: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=fourth_order_double::cos_K0 type=ROM_1P impl=LUTRAM
+                                                                   ^
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:15661:68: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=fourth_order_double::cos_K1 type=ROM_1P impl=LUTRAM
+                                                                   ^
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:15662:68: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=fourth_order_double::cos_K2 type=ROM_1P impl=LUTRAM
+                                                                   ^
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:15663:68: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=fourth_order_double::cos_K3 type=ROM_1P impl=LUTRAM
+                                                                   ^
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:15664:68: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=fourth_order_double::cos_K4 type=ROM_1P impl=LUTRAM
+                                                                   ^
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:15665:68: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=fourth_order_double::sin_K0 type=ROM_1P impl=LUTRAM
+                                                                   ^
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:15666:68: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=fourth_order_double::sin_K1 type=ROM_1P impl=LUTRAM
+                                                                   ^
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:15667:68: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=fourth_order_double::sin_K2 type=ROM_1P impl=LUTRAM
+                                                                   ^
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:15668:68: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=fourth_order_double::sin_K3 type=ROM_1P impl=LUTRAM
+                                                                   ^
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:15669:68: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=fourth_order_double::sin_K4 type=ROM_1P impl=LUTRAM
+                                                                   ^
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:15719:71: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=second_order_float::sin_cos_K0 type=ROM_1P impl=LUTRAM
+                                                                      ^
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:15720:71: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=second_order_float::sin_cos_K1 type=ROM_1P impl=LUTRAM
+                                                                      ^
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:15721:71: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=second_order_float::sin_cos_K2 type=ROM_1P impl=LUTRAM
+                                                                      ^
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:15748:67: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=second_order_float::cos_K0 type=ROM_1P impl=LUTRAM
+                                                                  ^
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:15749:67: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=second_order_float::cos_K1 type=ROM_1P impl=LUTRAM
+                                                                  ^
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:15750:67: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=second_order_float::cos_K2 type=ROM_1P impl=LUTRAM
+                                                                  ^
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:15751:67: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=second_order_float::sin_K0 type=ROM_1P impl=LUTRAM
+                                                                  ^
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:15752:67: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=second_order_float::sin_K1 type=ROM_1P impl=LUTRAM
+                                                                  ^
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:15753:67: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=second_order_float::sin_K2 type=ROM_1P impl=LUTRAM
+                                                                  ^
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:15789:73: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=first_order_fixed_16::sin_cos_K0 type=ROM_1P impl=LUTRAM
+                                                                        ^
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:15790:73: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=first_order_fixed_16::sin_cos_K1 type=ROM_1P impl=LUTRAM
+                                                                        ^
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:16064:5: warning: Added loop label VITIS_LOOP_61_1:   [xilinx-label-all-loops]
+    for (int n=0; n<Nmax; n++){
+    ^~~
+    VITIS_LOOP_61_1: 
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:16064:5: note: FIX-IT applied suggested code changes
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:16110:5: warning: Added loop label VITIS_LOOP_117_1:   [xilinx-label-all-loops]
+    for (int n=0; n<Nmax; n++){
+    ^~~
+    VITIS_LOOP_117_1: 
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:16110:5: note: FIX-IT applied suggested code changes
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:16273:9: warning: Added loop label VITIS_LOOP_289_1:   [xilinx-label-all-loops]
+        for(int i=0;i<W-1;i++){
+        ^~~
+        VITIS_LOOP_289_1: 
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:16273:9: note: FIX-IT applied suggested code changes
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:16425:9: warning: Added loop label VITIS_LOOP_449_1:   [xilinx-label-all-loops]
+        for(int i=0;i<W-1;i++){
+        ^~~
+        VITIS_LOOP_449_1: 
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:16425:9: note: FIX-IT applied suggested code changes
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:16605:5: warning: Added loop label VITIS_LOOP_629_1:   [xilinx-label-all-loops]
+    for(int i=0;i<W+1;i++){
+    ^~~
+    VITIS_LOOP_629_1: 
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:16605:5: note: FIX-IT applied suggested code changes
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:16609:5: warning: Added loop label VITIS_LOOP_633_2:   [xilinx-label-all-loops]
+    for(int i=0;i<W+1;i++){
+    ^~~
+    VITIS_LOOP_633_2: 
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:16609:5: note: FIX-IT applied suggested code changes
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:16719:5: warning: Added loop label VITIS_LOOP_743_1:   [xilinx-label-all-loops]
+    for (int n=0; n<Nmax; n++){
+    ^~~
+    VITIS_LOOP_743_1: 
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:16719:5: note: FIX-IT applied suggested code changes
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:16809:7: warning: Added loop label VITIS_LOOP_840_1:   [xilinx-label-all-loops]
+      for(int i=0;i<W-1;i++){
+      ^~~
+      VITIS_LOOP_840_1: 
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:16809:7: note: FIX-IT applied suggested code changes
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:16828:7: warning: Added loop label VITIS_LOOP_859_2:   [xilinx-label-all-loops]
+      for(int i=0;i<W-1;i++){
+      ^~~
+      VITIS_LOOP_859_2: 
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:16828:7: note: FIX-IT applied suggested code changes
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:17118:5: warning: Added loop label VITIS_LOOP_1173_1:   [xilinx-label-all-loops]
+    for(int i=0; i<Nmax; i++) {
+    ^~~
+    VITIS_LOOP_1173_1: 
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:17118:5: note: FIX-IT applied suggested code changes
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:17201:5: warning: Added loop label VITIS_LOOP_1256_1:   [xilinx-label-all-loops]
+    for(int i=0; i<Nmax; i++) {
+    ^~~
+    VITIS_LOOP_1256_1: 
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:17201:5: note: FIX-IT applied suggested code changes
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:17607:13: warning: Added loop label VITIS_LOOP_68_1:   [xilinx-label-all-loops]
+            for (int j = 3; j >= I_+1; j--) {
+            ^~~
+            VITIS_LOOP_68_1: 
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:17607:13: note: FIX-IT applied suggested code changes
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:17613:17: warning: Added loop label VITIS_LOOP_74_2:   [xilinx-label-all-loops]
+                for (int j = 3; j >= I_+1; j--){
+                ^~~
+                VITIS_LOOP_74_2: 
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:17613:17: note: FIX-IT applied suggested code changes
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:17617:17: warning: Added loop label VITIS_LOOP_78_3:   [xilinx-label-all-loops]
+                for (int j = I_; j >= 0; j--){
+                ^~~
+                VITIS_LOOP_78_3: 
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:17617:17: note: FIX-IT applied suggested code changes
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:17665:13: warning: Added loop label VITIS_LOOP_145_4:   [xilinx-label-all-loops]
+            for (int j = 9; j >= I_+4; j--) {
+            ^~~
+            VITIS_LOOP_145_4: 
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:17665:13: note: FIX-IT applied suggested code changes
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:17671:17: warning: Added loop label VITIS_LOOP_151_5:   [xilinx-label-all-loops]
+                for (int j = 9; j >= I_+4; j--){
+                ^~~
+                VITIS_LOOP_151_5: 
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:17671:17: note: FIX-IT applied suggested code changes
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:17675:17: warning: Added loop label VITIS_LOOP_155_6:   [xilinx-label-all-loops]
+                for (int j = I_+3; j >= 0; j--){
+                ^~~
+                VITIS_LOOP_155_6: 
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:17675:17: note: FIX-IT applied suggested code changes
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:17690:9: warning: Added loop label VITIS_LOOP_170_7:   [xilinx-label-all-loops]
+        for (int j = 14; j < 22; j++){
+        ^~~
+        VITIS_LOOP_170_7: 
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:17690:9: note: FIX-IT applied suggested code changes
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:17698:17: warning: Added loop label VITIS_LOOP_178_8:   [xilinx-label-all-loops]
+                for (int j = 0; j < 22; j++){
+                ^~~
+                VITIS_LOOP_178_8: 
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:17698:17: note: FIX-IT applied suggested code changes
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:17763:13: warning: Added loop label VITIS_LOOP_243_9:   [xilinx-label-all-loops]
+            for (int j = 21; j >= I_+10; j--) {
+            ^~~
+            VITIS_LOOP_243_9: 
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:17763:13: note: FIX-IT applied suggested code changes
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:17769:17: warning: Added loop label VITIS_LOOP_249_10:   [xilinx-label-all-loops]
+                for (int j = 21; j >= I_+10; j--) {
+                ^~~
+                VITIS_LOOP_249_10: 
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:17769:17: note: FIX-IT applied suggested code changes
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:17773:17: warning: Added loop label VITIS_LOOP_253_11:   [xilinx-label-all-loops]
+                for (int j = I_+9; j >= 0; j--) {
+                ^~~
+                VITIS_LOOP_253_11: 
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:17773:17: note: FIX-IT applied suggested code changes
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:17788:9: warning: Added loop label VITIS_LOOP_268_12:   [xilinx-label-all-loops]
+        for (int j = 27; j < 46; j++){
+        ^~~
+        VITIS_LOOP_268_12: 
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:17788:9: note: FIX-IT applied suggested code changes
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:17796:17: warning: Added loop label VITIS_LOOP_276_13:   [xilinx-label-all-loops]
+                for (int j = 0; j < 46; j++) {
+                ^~~
+                VITIS_LOOP_276_13: 
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:17796:17: note: FIX-IT applied suggested code changes
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:18025:13: warning: Added loop label VITIS_LOOP_505_14:   [xilinx-label-all-loops]
+            for (int j = 45; j >= I_+22; j--) {
+            ^~~
+            VITIS_LOOP_505_14: 
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:18025:13: note: FIX-IT applied suggested code changes
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:18031:17: warning: Added loop label VITIS_LOOP_511_15:   [xilinx-label-all-loops]
+                for (int j = 45; j >= I_+22; j--){
+                ^~~
+                VITIS_LOOP_511_15: 
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:18031:17: note: FIX-IT applied suggested code changes
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:18035:17: warning: Added loop label VITIS_LOOP_515_16:   [xilinx-label-all-loops]
+                for (int j = I_+21; j >= 0; j--) {
+                ^~~
+                VITIS_LOOP_515_16: 
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:18035:17: note: FIX-IT applied suggested code changes
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:18045:9: warning: Added loop label VITIS_LOOP_525_17:   [xilinx-label-all-loops]
+        for (int j = 32-F_; j < 32+I_; j++){
+        ^~~
+        VITIS_LOOP_525_17: 
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:18045:9: note: FIX-IT applied suggested code changes
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:18049:9: warning: Added loop label VITIS_LOOP_529_18:   [xilinx-label-all-loops]
+        for (int j = 32+I_; j <= 64; j++){
+        ^~~
+        VITIS_LOOP_529_18: 
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:18049:9: note: FIX-IT applied suggested code changes
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:18059:9: warning: Added loop label VITIS_LOOP_539_19:   [xilinx-label-all-loops]
+        for (int j = 37; j < 64; j++) {
+        ^~~
+        VITIS_LOOP_539_19: 
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:18059:9: note: FIX-IT applied suggested code changes
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:18067:17: warning: Added loop label VITIS_LOOP_547_20:   [xilinx-label-all-loops]
+                for (int j = 0; j < 64; j++){
+                ^~~
+                VITIS_LOOP_547_20: 
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:18067:17: note: FIX-IT applied suggested code changes
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:18428:13: warning: Added loop label VITIS_LOOP_908_21:   [xilinx-label-all-loops]
+            for (int j = 63; j >= I_+31; j--) {
+            ^~~
+            VITIS_LOOP_908_21: 
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:18428:13: note: FIX-IT applied suggested code changes
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:18434:17: warning: Added loop label VITIS_LOOP_914_22:   [xilinx-label-all-loops]
+                for (int j = 63; j >= I_+31; j--) {
+                ^~~
+                VITIS_LOOP_914_22: 
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:18434:17: note: FIX-IT applied suggested code changes
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:18438:17: warning: Added loop label VITIS_LOOP_918_23:   [xilinx-label-all-loops]
+                for (int j = I_+30; j >= 0; j--) {
+                ^~~
+                VITIS_LOOP_918_23: 
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:18438:17: note: FIX-IT applied suggested code changes
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:18554:13: warning: Added loop label VITIS_LOOP_1034_1:   [xilinx-label-all-loops]
+            for (int j = 4; j >= I_+1; j--) {
+            ^~~
+            VITIS_LOOP_1034_1: 
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:18554:13: note: FIX-IT applied suggested code changes
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:18560:17: warning: Added loop label VITIS_LOOP_1040_2:   [xilinx-label-all-loops]
+                for (int j = 4; j >= I_+1; j--) {
+                ^~~
+                VITIS_LOOP_1040_2: 
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:18560:17: note: FIX-IT applied suggested code changes
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:18564:17: warning: Added loop label VITIS_LOOP_1044_3:   [xilinx-label-all-loops]
+                for (int j = I_; j >= 0; j--) {
+                ^~~
+                VITIS_LOOP_1044_3: 
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:18564:17: note: FIX-IT applied suggested code changes
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:18651:13: warning: Added loop label VITIS_LOOP_1131_4:   [xilinx-label-all-loops]
+            for (int j = 10; j >= I_+4; j--) {
+            ^~~
+            VITIS_LOOP_1131_4: 
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:18651:13: note: FIX-IT applied suggested code changes
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:18657:17: warning: Added loop label VITIS_LOOP_1137_5:   [xilinx-label-all-loops]
+                for (int j = 10; j >= I_+4; j--) {
+                ^~~
+                VITIS_LOOP_1137_5: 
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:18657:17: note: FIX-IT applied suggested code changes
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:18661:17: warning: Added loop label VITIS_LOOP_1141_6:   [xilinx-label-all-loops]
+                for (int j = I_+3; j >= 0; j--) {
+                ^~~
+                VITIS_LOOP_1141_6: 
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:18661:17: note: FIX-IT applied suggested code changes
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:18680:9: warning: Added loop label VITIS_LOOP_1160_7:   [xilinx-label-all-loops]
+        for (int j = wf+3; j < w-1; j++) {
+        ^~~
+        VITIS_LOOP_1160_7: 
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:18680:9: note: FIX-IT applied suggested code changes
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:18687:17: warning: Added loop label VITIS_LOOP_1167_8:   [xilinx-label-all-loops]
+                for (int j = 0; j < 22; j++) {
+                ^~~
+                VITIS_LOOP_1167_8: 
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:18687:17: note: FIX-IT applied suggested code changes
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:18803:13: warning: Added loop label VITIS_LOOP_1283_9:   [xilinx-label-all-loops]
+            for (int j = 22; j >= I_+10; j--) {
+            ^~~
+            VITIS_LOOP_1283_9: 
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:18803:13: note: FIX-IT applied suggested code changes
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:18809:17: warning: Added loop label VITIS_LOOP_1289_10:   [xilinx-label-all-loops]
+                for (int j = 22; j >= I_+10; j--){
+                ^~~
+                VITIS_LOOP_1289_10: 
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:18809:17: note: FIX-IT applied suggested code changes
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:18813:17: warning: Added loop label VITIS_LOOP_1293_11:   [xilinx-label-all-loops]
+                for (int j = I_+9; j >= 0; j--) {
+                ^~~
+                VITIS_LOOP_1293_11: 
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:18813:17: note: FIX-IT applied suggested code changes
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:18833:9: warning: Added loop label VITIS_LOOP_1313_12:   [xilinx-label-all-loops]
+        for (int j = wf+4; j < w-1; j++){
+        ^~~
+        VITIS_LOOP_1313_12: 
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:18833:9: note: FIX-IT applied suggested code changes
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:18840:17: warning: Added loop label VITIS_LOOP_1320_13:   [xilinx-label-all-loops]
+                for (int j = 0; j < 46; j++) {
+                ^~~
+                VITIS_LOOP_1320_13: 
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:18840:17: note: FIX-IT applied suggested code changes
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:19102:13: warning: Added loop label VITIS_LOOP_1582_14:   [xilinx-label-all-loops]
+            for (int j = 46; j >= I_+22; j--) {
+            ^~~
+            VITIS_LOOP_1582_14: 
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:19102:13: note: FIX-IT applied suggested code changes
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:19108:17: warning: Added loop label VITIS_LOOP_1588_15:   [xilinx-label-all-loops]
+                for (int j = 46; j >= I_+22; j--) {
+                ^~~
+                VITIS_LOOP_1588_15: 
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:19108:17: note: FIX-IT applied suggested code changes
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:19112:17: warning: Added loop label VITIS_LOOP_1592_16:   [xilinx-label-all-loops]
+                for (int j = I_+21; j >= 0; j--) {
+                ^~~
+                VITIS_LOOP_1592_16: 
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:19112:17: note: FIX-IT applied suggested code changes
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:19136:9: warning: Added loop label VITIS_LOOP_1616_17:   [xilinx-label-all-loops]
+        for (int j = wf+5; j < w-1; j++){
+        ^~~
+        VITIS_LOOP_1616_17: 
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:19136:9: note: FIX-IT applied suggested code changes
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:19143:17: warning: Added loop label VITIS_LOOP_1623_18:   [xilinx-label-all-loops]
+                for (int j = 0; j < 64; j++) {
+                ^~~
+                VITIS_LOOP_1623_18: 
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:19143:17: note: FIX-IT applied suggested code changes
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:19573:13: warning: Added loop label VITIS_LOOP_2053_19:   [xilinx-label-all-loops]
+            for (int j = 64; j >= I_+31; j--) {
+            ^~~
+            VITIS_LOOP_2053_19: 
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:19573:13: note: FIX-IT applied suggested code changes
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:19579:17: warning: Added loop label VITIS_LOOP_2059_20:   [xilinx-label-all-loops]
+                for (int j = 64; j >= I_+31; j--) {
+                ^~~
+                VITIS_LOOP_2059_20: 
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:19579:17: note: FIX-IT applied suggested code changes
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:19583:17: warning: Added loop label VITIS_LOOP_2063_21:   [xilinx-label-all-loops]
+                for (int j = I_+30; j >= 0; j--) {
+                ^~~
+                VITIS_LOOP_2063_21: 
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:19583:17: note: FIX-IT applied suggested code changes
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:19713:13: warning: Added loop label VITIS_LOOP_2193_1:   [xilinx-label-all-loops]
+            for(int j=3; j>=I+1; j--) {
+            ^~~
+            VITIS_LOOP_2193_1: 
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:19713:13: note: FIX-IT applied suggested code changes
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:19720:17: warning: Added loop label VITIS_LOOP_2200_2:   [xilinx-label-all-loops]
+                for(int j=3; j>=I+1; j--) {
+                ^~~
+                VITIS_LOOP_2200_2: 
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:19720:17: note: FIX-IT applied suggested code changes
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:19724:17: warning: Added loop label VITIS_LOOP_2204_3:   [xilinx-label-all-loops]
+                for(int j=I; j>=0; j--) {
+                ^~~
+                VITIS_LOOP_2204_3: 
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:19724:17: note: FIX-IT applied suggested code changes
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:19771:13: warning: Added loop label VITIS_LOOP_2251_4:   [xilinx-label-all-loops]
+            for(int j=7; j>=3+I; j--) {
+            ^~~
+            VITIS_LOOP_2251_4: 
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:19771:13: note: FIX-IT applied suggested code changes
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:19778:17: warning: Added loop label VITIS_LOOP_2258_5:   [xilinx-label-all-loops]
+                for(int j=7; j>=3+I; j--) {
+                ^~~
+                VITIS_LOOP_2258_5: 
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:19778:17: note: FIX-IT applied suggested code changes
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:19782:17: warning: Added loop label VITIS_LOOP_2262_6:   [xilinx-label-all-loops]
+                for(int j=I+2; j>=0; j--) {
+                ^~~
+                VITIS_LOOP_2262_6: 
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:19782:17: note: FIX-IT applied suggested code changes
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:19800:9: warning: Added loop label VITIS_LOOP_2280_7:   [xilinx-label-all-loops]
+        for(int j=11; j<16; j++) {
+        ^~~
+        VITIS_LOOP_2280_7: 
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:19800:9: note: FIX-IT applied suggested code changes
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:19855:13: warning: Added loop label VITIS_LOOP_2335_8:   [xilinx-label-all-loops]
+            for(int j=15; j>=7+I; j--) {
+            ^~~
+            VITIS_LOOP_2335_8: 
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:19855:13: note: FIX-IT applied suggested code changes
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:19862:17: warning: Added loop label VITIS_LOOP_2342_9:   [xilinx-label-all-loops]
+                for(int j=15; j>=7+I; j--) {
+                ^~~
+                VITIS_LOOP_2342_9: 
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:19862:17: note: FIX-IT applied suggested code changes
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:19866:17: warning: Added loop label VITIS_LOOP_2346_10:   [xilinx-label-all-loops]
+                for(int j=6+I; j>=0; j--) {
+                ^~~
+                VITIS_LOOP_2346_10: 
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:19866:17: note: FIX-IT applied suggested code changes
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:19884:9: warning: Added loop label VITIS_LOOP_2364_11:   [xilinx-label-all-loops]
+        for(int j=20; j<32; j++) {
+        ^~~
+        VITIS_LOOP_2364_11: 
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:19884:9: note: FIX-IT applied suggested code changes
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:19973:13: warning: Added loop label VITIS_LOOP_2453_12:   [xilinx-label-all-loops]
+            for(int j=31; j>=I+15; j--) {
+            ^~~
+            VITIS_LOOP_2453_12: 
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:19973:13: note: FIX-IT applied suggested code changes
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:19980:17: warning: Added loop label VITIS_LOOP_2460_13:   [xilinx-label-all-loops]
+                for(int j=31; j>=I+15; j--) {
+                ^~~
+                VITIS_LOOP_2460_13: 
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:19980:17: note: FIX-IT applied suggested code changes
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:19984:17: warning: Added loop label VITIS_LOOP_2464_14:   [xilinx-label-all-loops]
+                for(int j=I+14; j>=0; j--) {
+                ^~~
+                VITIS_LOOP_2464_14: 
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:19984:17: note: FIX-IT applied suggested code changes
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:19994:9: warning: Added loop label VITIS_LOOP_2474_15:   [xilinx-label-all-loops]
+        for(int j=32-F; j<32+I; j++) {
+        ^~~
+        VITIS_LOOP_2474_15: 
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:19994:9: note: FIX-IT applied suggested code changes
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:19998:9: warning: Added loop label VITIS_LOOP_2478_16:   [xilinx-label-all-loops]
+        for(int j=32+I; j<=64; j++) {
+        ^~~
+        VITIS_LOOP_2478_16: 
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:19998:9: note: FIX-IT applied suggested code changes
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:20009:9: warning: Added loop label VITIS_LOOP_2489_17:   [xilinx-label-all-loops]
+        for(int j=37; j<64; j++) {
+        ^~~
+        VITIS_LOOP_2489_17: 
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:20009:9: note: FIX-IT applied suggested code changes
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:20017:17: warning: Added loop label VITIS_LOOP_2497_18:   [xilinx-label-all-loops]
+                for(int j=0; j<64; j++) {
+                ^~~
+                VITIS_LOOP_2497_18: 
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:20017:17: note: FIX-IT applied suggested code changes
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:20342:13: warning: Added loop label VITIS_LOOP_2822_19:   [xilinx-label-all-loops]
+            for(int j=63; j>=I+31; j--) {
+            ^~~
+            VITIS_LOOP_2822_19: 
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:20342:13: note: FIX-IT applied suggested code changes
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:20349:17: warning: Added loop label VITIS_LOOP_2829_20:   [xilinx-label-all-loops]
+                for(int j=63; j>=I+31; j--) {
+                ^~~
+                VITIS_LOOP_2829_20: 
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:20349:17: note: FIX-IT applied suggested code changes
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:20353:17: warning: Added loop label VITIS_LOOP_2833_21:   [xilinx-label-all-loops]
+                for(int j=I+30; j>=0; j--) {
+                ^~~
+                VITIS_LOOP_2833_21: 
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:20353:17: note: FIX-IT applied suggested code changes
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:20441:4: warning: Added loop label VITIS_LOOP_2921_1:   [xilinx-label-all-loops]
+   for(int j = 5; j>=I_+2; j--) {
+   ^~~
+   VITIS_LOOP_2921_1: 
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:20441:4: note: FIX-IT applied suggested code changes
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:20448:5: warning: Added loop label VITIS_LOOP_2928_2:   [xilinx-label-all-loops]
+    for(int j = 5; j>=I_+2; j--) {
+    ^~~
+    VITIS_LOOP_2928_2: 
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:20448:5: note: FIX-IT applied suggested code changes
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:20452:5: warning: Added loop label VITIS_LOOP_2932_3:   [xilinx-label-all-loops]
+    for(int j = I_+1; j>=0; j--) {
+    ^~~
+    VITIS_LOOP_2932_3: 
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:20452:5: note: FIX-IT applied suggested code changes
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:20467:3: warning: Added loop label VITIS_LOOP_2947_4:   [xilinx-label-all-loops]
+  for(int j = 11; j >=7; j--) {
+  ^~~
+  VITIS_LOOP_2947_4: 
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:20467:3: note: FIX-IT applied suggested code changes
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:20499:4: warning: Added loop label VITIS_LOOP_2979_5:   [xilinx-label-all-loops]
+   for(int j = 11; j >= I_+5; j--) {
+   ^~~
+   VITIS_LOOP_2979_5: 
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:20499:4: note: FIX-IT applied suggested code changes
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:20506:5: warning: Added loop label VITIS_LOOP_2986_6:   [xilinx-label-all-loops]
+    for(int j = 11; j>= I_+5; j--) {
+    ^~~
+    VITIS_LOOP_2986_6: 
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:20506:5: note: FIX-IT applied suggested code changes
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:20510:5: warning: Added loop label VITIS_LOOP_2990_7:   [xilinx-label-all-loops]
+    for(int j = I_+4; j>=0; j--) {
+    ^~~
+    VITIS_LOOP_2990_7: 
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:20510:5: note: FIX-IT applied suggested code changes
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:20525:3: warning: Added loop label VITIS_LOOP_3005_8:   [xilinx-label-all-loops]
+  for(int j = 25; j>=15; j--) {
+  ^~~
+  VITIS_LOOP_3005_8: 
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:20525:3: note: FIX-IT applied suggested code changes
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:20575:4: warning: Added loop label VITIS_LOOP_3055_9:   [xilinx-label-all-loops]
+   for(int j = 25; j>= I_+12; j--) {
+   ^~~
+   VITIS_LOOP_3055_9: 
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:20575:4: note: FIX-IT applied suggested code changes
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:20582:5: warning: Added loop label VITIS_LOOP_3062_10:   [xilinx-label-all-loops]
+    for(int j = 25; j>=I_+12; j--) {
+    ^~~
+    VITIS_LOOP_3062_10: 
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:20582:5: note: FIX-IT applied suggested code changes
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:20586:5: warning: Added loop label VITIS_LOOP_3066_11:   [xilinx-label-all-loops]
+    for(int j = I_+11; j>=0; j--) {
+    ^~~
+    VITIS_LOOP_3066_11: 
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:20586:5: note: FIX-IT applied suggested code changes
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:20601:3: warning: Added loop label VITIS_LOOP_3081_12:   [xilinx-label-all-loops]
+  for(int j = 51; j >= 29; j--) {
+  ^~~
+  VITIS_LOOP_3081_12: 
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:20601:3: note: FIX-IT applied suggested code changes
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:20738:4: warning: Added loop label VITIS_LOOP_3218_13:   [xilinx-label-all-loops]
+   for(int j = 51; j >= 25 + I_; j--) {
+   ^~~
+   VITIS_LOOP_3218_13: 
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:20738:4: note: FIX-IT applied suggested code changes
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:20745:5: warning: Added loop label VITIS_LOOP_3225_14:   [xilinx-label-all-loops]
+    for(int j = 51; j>=25 + I_; j--) {
+    ^~~
+    VITIS_LOOP_3225_14: 
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:20745:5: note: FIX-IT applied suggested code changes
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:20749:5: warning: Added loop label VITIS_LOOP_3229_15:   [xilinx-label-all-loops]
+    for(int j = 24 + I_; j >= 0; j--) {
+    ^~~
+    VITIS_LOOP_3229_15: 
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:20749:5: note: FIX-IT applied suggested code changes
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:20764:3: warning: Added loop label VITIS_LOOP_3244_16:   [xilinx-label-all-loops]
+  for(int j = 63; j >= 36; j--) {
+  ^~~
+  VITIS_LOOP_3244_16: 
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:20764:3: note: FIX-IT applied suggested code changes
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:20924:4: warning: Added loop label VITIS_LOOP_3404_17:   [xilinx-label-all-loops]
+   for(int j = 63; j >= 31 + I_; j--) {
+   ^~~
+   VITIS_LOOP_3404_17: 
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:20924:4: note: FIX-IT applied suggested code changes
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:20931:5: warning: Added loop label VITIS_LOOP_3411_18:   [xilinx-label-all-loops]
+    for(int j = 63; j >= 31 + I_; j--) {
+    ^~~
+    VITIS_LOOP_3411_18: 
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:20931:5: note: FIX-IT applied suggested code changes
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:20935:5: warning: Added loop label VITIS_LOOP_3415_19:   [xilinx-label-all-loops]
+    for(int j = 30 + I_; j >= 0; j--) {
+    ^~~
+    VITIS_LOOP_3415_19: 
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:20935:5: note: FIX-IT applied suggested code changes
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:21650:13: warning: Added loop label VITIS_LOOP_703_1:   [xilinx-label-all-loops]
+            for (b_exp = I_-1; b_exp >= -F_; b_exp--) {
+            ^~~
+            VITIS_LOOP_703_1: 
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:21650:13: note: FIX-IT applied suggested code changes
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:21868:13: warning: Added loop label VITIS_LOOP_921_1:   [xilinx-label-all-loops]
+            for (b_exp = I_-1; b_exp >= -F_; b_exp--) {
+            ^~~
+            VITIS_LOOP_921_1: 
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:21868:13: note: FIX-IT applied suggested code changes
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:22285:13: warning: Added loop label VITIS_LOOP_1345_1:   [xilinx-label-all-loops]
+            for (b_exp = I_-1; b_exp >= -F_; b_exp--) {
+            ^~~
+            VITIS_LOOP_1345_1: 
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:22285:13: note: FIX-IT applied suggested code changes
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:22605:9: warning: Added loop label VITIS_LOOP_240_1:   [xilinx-label-all-loops]
+        for ( int pos = msbr-1; pos >= 0; pos-- ) {
+        ^~~
+        VITIS_LOOP_240_1: 
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:22605:9: note: FIX-IT applied suggested code changes
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:22633:9: warning: Added loop label VITIS_LOOP_268_2:   [xilinx-label-all-loops]
+        for ( int pos = -1; pos >= -F_-1; pos-- ) {
+        ^~~
+        VITIS_LOOP_268_2: 
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:22633:9: note: FIX-IT applied suggested code changes
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:23335:13: warning: Added loop label VITIS_LOOP_48_1:   [xilinx-label-all-loops]
+            for (int j = 0; j < W_-1; j++){
+            ^~~
+            VITIS_LOOP_48_1: 
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:23335:13: note: FIX-IT applied suggested code changes
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:23388:5: warning: Added loop label VITIS_LOOP_109_2:   [xilinx-label-all-loops]
+    for (int j = F_l+F_+I_m-1; j < F_l+W_+5; j++){
+    ^~~
+    VITIS_LOOP_109_2: 
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:23388:5: note: FIX-IT applied suggested code changes
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:23402:13: warning: Added loop label VITIS_LOOP_123_3:   [xilinx-label-all-loops]
+            for (int j = WO_m-1; j >= W_-1; j--) {
+            ^~~
+            VITIS_LOOP_123_3: 
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:23402:13: note: FIX-IT applied suggested code changes
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:23432:13: warning: Added loop label VITIS_LOOP_153_4:   [xilinx-label-all-loops]
+            for (int j = W_-2; j >= 0; j--){
+            ^~~
+            VITIS_LOOP_153_4: 
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:23432:13: note: FIX-IT applied suggested code changes
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:23517:12: warning: Added loop label VITIS_LOOP_281_1:   [xilinx-label-all-loops]
+           for(int i = wf_log+we_log-2; i > WI_e - 2; --i) {
+           ^~~
+           VITIS_LOOP_281_1: 
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:23517:12: note: FIX-IT applied suggested code changes
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:23537:16: warning: Added loop label VITIS_LOOP_301_2:   [xilinx-label-all-loops]
+               for (int j = WO_e-1; j >= W_-1; j--) {
+               ^~~
+               VITIS_LOOP_301_2: 
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:23537:16: note: FIX-IT applied suggested code changes
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:23551:20: warning: Added loop label VITIS_LOOP_315_3:   [xilinx-label-all-loops]
+                   for(int i = 0; i < W_-1; ++i) {
+                   ^~~
+                   VITIS_LOOP_315_3: 
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:23551:20: note: FIX-IT applied suggested code changes
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:23644:12: warning: Added loop label VITIS_LOOP_433_1:   [xilinx-label-all-loops]
+           for (int j =WO_d-1; j >= W_-1; j--) {
+           ^~~
+           VITIS_LOOP_433_1: 
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:23644:12: note: FIX-IT applied suggested code changes
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:23658:15: warning: Added loop label VITIS_LOOP_447_2:   [xilinx-label-all-loops]
+              for(int i = 0; i < W_-1; ++i) {
+              ^~~
+              VITIS_LOOP_447_2: 
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:23658:15: note: FIX-IT applied suggested code changes
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:23778:13: warning: Added loop label VITIS_LOOP_33_1:   [xilinx-label-all-loops]
+            for (int i = 0; i < W_-1; i++){
+            ^~~
+            VITIS_LOOP_33_1: 
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:23778:13: note: FIX-IT applied suggested code changes
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:23902:13: warning: Added loop label VITIS_LOOP_183_1:   [xilinx-label-all-loops]
+            for (int i = 0; i < W_-1; i++){
+            ^~~
+            VITIS_LOOP_183_1: 
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:23902:13: note: FIX-IT applied suggested code changes
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:23957:13: warning: Added loop label VITIS_LOOP_248_1:   [xilinx-label-all-loops]
+            for (int i = 0; i < W_-1; i++){
+            ^~~
+            VITIS_LOOP_248_1: 
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:23957:13: note: FIX-IT applied suggested code changes
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:24476:2: warning: Added loop label VITIS_LOOP_16_1:   [xilinx-label-all-loops]
+ for (int i=0; i<W_;i++)
+ ^~~
+ VITIS_LOOP_16_1: 
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:24476:2: note: FIX-IT applied suggested code changes
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:24487:2: warning: Added loop label VITIS_LOOP_27_1:   [xilinx-label-all-loops]
+ for (int i=0; i<W_;i++)
+ ^~~
+ VITIS_LOOP_27_1: 
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:24487:2: note: FIX-IT applied suggested code changes
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:24498:2: warning: Added loop label VITIS_LOOP_38_1:   [xilinx-label-all-loops]
+ for (int i=0; i<I_;i++)
+ ^~~
+ VITIS_LOOP_38_1: 
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:24498:2: note: FIX-IT applied suggested code changes
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:24509:2: warning: Added loop label VITIS_LOOP_49_1:   [xilinx-label-all-loops]
+ for (int i=0; i<I_;i++)
+ ^~~
+ VITIS_LOOP_49_1: 
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:24509:2: note: FIX-IT applied suggested code changes
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:24520:2: warning: Added loop label VITIS_LOOP_60_1:   [xilinx-label-all-loops]
+ for (int i=0; i<W_;i++)
+ ^~~
+ VITIS_LOOP_60_1: 
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:24520:2: note: FIX-IT applied suggested code changes
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:24531:2: warning: Added loop label VITIS_LOOP_71_1:   [xilinx-label-all-loops]
+ for (int i=0; i<W_;i++)
+ ^~~
+ VITIS_LOOP_71_1: 
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:24531:2: note: FIX-IT applied suggested code changes
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:24542:2: warning: Added loop label VITIS_LOOP_82_1:   [xilinx-label-all-loops]
+ for (int i=0; i<I_;i++)
+ ^~~
+ VITIS_LOOP_82_1: 
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:24542:2: note: FIX-IT applied suggested code changes
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:24553:2: warning: Added loop label VITIS_LOOP_93_1:   [xilinx-label-all-loops]
+ for (int i=0; i<I_;i++)
+ ^~~
+ VITIS_LOOP_93_1: 
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:24553:2: note: FIX-IT applied suggested code changes
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:26913:12: warning: Added loop label VITIS_LOOP_26_1:   [xilinx-label-all-loops]
+           for(int i = 0; i < W_-1; ++i) {
+           ^~~
+           VITIS_LOOP_26_1: 
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:26913:12: note: FIX-IT applied suggested code changes
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:26977:7: warning: Added loop label VITIS_LOOP_40_1:   [xilinx-label-all-loops]
+      for(int pos = msbr - 1 ; pos >= -F-1; pos--) {
+      ^~~
+      VITIS_LOOP_40_1: 
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:26977:7: note: FIX-IT applied suggested code changes
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:27094:9: warning: Added loop label VITIS_LOOP_49_1:   [xilinx-label-all-loops]
+        for(int pos = msbr - 1; pos >= 0; pos--) {
+        ^~~
+        VITIS_LOOP_49_1: 
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:27094:9: note: FIX-IT applied suggested code changes
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:27119:5: warning: Added loop label VITIS_LOOP_81_2:   [xilinx-label-all-loops]
+    for(int pos = -1; pos >= -F-1; pos--) {
+    ^~~
+    VITIS_LOOP_81_2: 
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:27119:5: note: FIX-IT applied suggested code changes
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:27189:8: warning: Added loop label VITIS_LOOP_169_3:   [xilinx-label-all-loops]
+       for(int i = 0; i < W - 1; ++i) {
+       ^~~
+       VITIS_LOOP_169_3: 
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:27189:8: note: FIX-IT applied suggested code changes
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:29459:3: warning: Added loop label VITIS_LOOP_34_1:   [xilinx-label-all-loops]
   for(int col = 0; col < 64; col++)
   ^~~
-  VITIS_LOOP_25_1: 
-C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:9781:3: note: FIX-IT applied suggested code changes
-C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:9791:3: warning: Added loop label VITIS_LOOP_35_2:   [xilinx-label-all-loops]
+  VITIS_LOOP_34_1: 
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:29459:3: note: FIX-IT applied suggested code changes
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:29470:3: warning: Added loop label VITIS_LOOP_45_2:   [xilinx-label-all-loops]
   for(int col = 0; col < 64; col++)
   ^~~
-  VITIS_LOOP_35_2: 
-C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:9791:3: note: FIX-IT applied suggested code changes
-C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:9804:3: warning: Added loop label VITIS_LOOP_48_3:   [xilinx-label-all-loops]
-  for(int col = 0; col < 64; col++)
-  ^~~
-  VITIS_LOOP_48_3: 
-C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:9804:3: note: FIX-IT applied suggested code changes
+  VITIS_LOOP_45_2: 
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:29470:3: note: FIX-IT applied suggested code changes
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:29487:9: warning: Added loop label VITIS_LOOP_62_3:   [xilinx-label-all-loops]
+        for (int d = 0; d < 64; d++)
+        ^~~
+        VITIS_LOOP_62_3: 
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:29487:9: note: FIX-IT applied suggested code changes
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:29497:9: warning: Added loop label VITIS_LOOP_72_4:   [xilinx-label-all-loops]
+        for (int q = 0; q < 32; q++)
+        ^~~
+        VITIS_LOOP_72_4: 
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:29497:9: note: FIX-IT applied suggested code changes
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:29503:13: warning: Added loop label VITIS_LOOP_78_5:   [xilinx-label-all-loops]
+            for (int d = 0; d < 64; d++)
+            ^~~
+            VITIS_LOOP_78_5: 
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:29503:13: note: FIX-IT applied suggested code changes
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:29526:17: warning: Added loop label VITIS_LOOP_101_6:   [xilinx-label-all-loops]
+                for (int d = 0; d < 64; d++) {
+                ^~~
+                VITIS_LOOP_101_6: 
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:29526:17: note: FIX-IT applied suggested code changes
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:29534:13: warning: Added loop label VITIS_LOOP_109_7:   [xilinx-label-all-loops]
+            for (int d = 0; d < 64; d++)
+            ^~~
+            VITIS_LOOP_109_7: 
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:29534:13: note: FIX-IT applied suggested code changes
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:29545:9: warning: Added loop label VITIS_LOOP_120_8:   [xilinx-label-all-loops]
+        for (int d = 0; d < 64; d++)
+        ^~~
+        VITIS_LOOP_120_8: 
+C:\Users\cfk30\OneDrive\Documents\ECE4910\thesis\flash_attn\flash_attn\hls\.autopilot\db\flashattn.pp.0.cpp:29545:9: note: FIX-IT applied suggested code changes

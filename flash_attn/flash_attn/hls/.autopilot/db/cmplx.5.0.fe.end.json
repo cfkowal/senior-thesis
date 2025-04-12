@@ -1,53 +1,35 @@
 {
     "1": {
-        "name": "flashattn_Pipeline_Attention_Loop_VITIS_LOOP_48_3",
+        "name": "flashattn_Pipeline_Read_K_and_V_VITIS_LOOP_45_2",
         "file": "flashattn.cpp",
-        "fileloc": "12",
-        "instructions": "46",
-        "total_instructions": "46",
+        "fileloc": "15",
+        "instructions": "359",
+        "total_instructions": "359",
         "calls": "",
-        "basicblocks": "4",
+        "basicblocks": "69",
         "loads": {
-            "L": "6"
+            "L": "3"
         },
         "stores": {
-            "L": "6"
+            "L": "134"
         },
         "loops": {
             "L": "1"
         }
     },
     "2": {
-        "name": "flashattn_Pipeline_Read_K_and_V_VITIS_LOOP_35_2",
+        "name": "flashattn_Pipeline_Read_Q_VITIS_LOOP_34_1",
         "file": "flashattn.cpp",
-        "fileloc": "12",
-        "instructions": "45",
-        "total_instructions": "45",
+        "fileloc": "15",
+        "instructions": "226",
+        "total_instructions": "226",
         "calls": "",
-        "basicblocks": "4",
+        "basicblocks": "69",
         "loads": {
             "L": "3"
         },
         "stores": {
-            "L": "8"
-        },
-        "loops": {
-            "L": "1"
-        }
-    },
-    "3": {
-        "name": "flashattn_Pipeline_Read_Q_VITIS_LOOP_25_1",
-        "file": "flashattn.cpp",
-        "fileloc": "12",
-        "instructions": "38",
-        "total_instructions": "38",
-        "calls": "",
-        "basicblocks": "4",
-        "loads": {
-            "L": "3"
-        },
-        "stores": {
-            "L": "7"
+            "L": "70"
         },
         "loops": {
             "L": "1"
@@ -57,9 +39,63 @@
         "name": "flashattn",
         "file": "flashattn.cpp",
         "fileloc": "3",
-        "instructions": "33",
-        "total_instructions": "162",
-        "calls": "3 2 1",
+        "instructions": "290",
+        "total_instructions": "2854",
+        "calls": "2 1 3 5 4",
         "basicblocks": "1"
+    },
+    "3": {
+        "name": "flashattn_Pipeline_Init_Accumulators",
+        "file": "flashattn.cpp",
+        "fileloc": "58",
+        "instructions": "146",
+        "total_instructions": "146",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "1"
+        },
+        "stores": {
+            "L": "68"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "4": {
+        "name": "flashattn_Pipeline_Normalize_And_Stream_Output_VITIS_LOOP_120_8",
+        "file": "flashattn.cpp",
+        "fileloc": "15",
+        "instructions": "362",
+        "total_instructions": "362",
+        "calls": "",
+        "basicblocks": "6",
+        "loads": {
+            "L": "132"
+        },
+        "stores": {
+            "L": "70"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "5": {
+        "name": "flashattn_Pipeline_Compute_Online_Softmax_VITIS_LOOP_72_4",
+        "file": "flashattn.cpp",
+        "fileloc": "70",
+        "instructions": "1471",
+        "total_instructions": "1471",
+        "calls": "",
+        "basicblocks": "8",
+        "loads": {
+            "L": "454"
+        },
+        "stores": {
+            "L": "265"
+        },
+        "loops": {
+            "L": "1"
+        }
     }
 }

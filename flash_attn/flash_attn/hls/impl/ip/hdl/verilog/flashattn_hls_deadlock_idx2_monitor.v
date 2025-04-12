@@ -1,6 +1,6 @@
 `timescale 1 ns / 1 ps
 
-module flashattn_hls_deadlock_idx2_monitor ( // for module flashattn_flashattn_inst.grp_flashattn_Pipeline_Read_K_and_V_VITIS_LOOP_35_2_fu_96
+module flashattn_hls_deadlock_idx2_monitor ( // for module flashattn_flashattn_inst.grp_flashattn_Pipeline_Read_K_and_V_VITIS_LOOP_45_2_fu_1246
     input wire clock,
     input wire reset,
     input wire [3:0] axis_block_sigs,
