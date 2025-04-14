@@ -1,52 +1,89 @@
 #include "flashattn.h"
 #include "exp_lut.h"
 
-inline ap_fixed<16,6> exp_lut(ap_fixed<16,6> x) {
-    const float EXP_LUT_MIN = -12.0f;
-    const float EXP_LUT_STEP = 0.001953125f;
-    const int EXP_LUT_SIZE = 6145;
 
-    if (x <= ap_fixed<16,6>(EXP_LUT_MIN)) return ap_fixed<16,6>(0.0);
-    if (x >= ap_fixed<16, 6>(0.0f)) return ap_fixed<16, 6>(1.0);
 
-    float xf = (float)(x - ap_fixed<16,6>(EXP_LUT_MIN)) / EXP_LUT_STEP;
-    int idx = (int)xf;
-    float frac = xf - idx;
+inline data_t exp_lut(data_t x) {
+    const data_t EXP_LUT_MIN = -12.0;
+    const data_t EXP_LUT_STEP = 0.0009765625; // 1 / 1024
+    const int EXP_LUT_SIZE = 12289;
 
-    ap_fixed<16,6> f = frac;
-    return (ap_fixed<16,6>(1.0) - f) * exp_lut_table[idx] + f * exp_lut_table[idx + 1];
+    // Clamp x to LUT range
+    if (x <= EXP_LUT_MIN) return data_t(0.0);
+    if (x >= data_t(0.0)) return data_t(1.0);
+
+    // Fixed-point fractional lookup
+    lut_frac_t xf = (lut_frac_t)((x - EXP_LUT_MIN) / EXP_LUT_STEP);
+    ap_uint<14> idx = xf.to_uint();
+    if (idx >= EXP_LUT_SIZE - 2) idx = EXP_LUT_SIZE - 2;
+    lut_frac_t frac = xf - lut_frac_t(idx);
+
+    // Interpolate in fixed-point domain
+    data_t v0 = exp_lut_table[idx];
+    data_t v1 = exp_lut_table[idx + 1];
+    return (data_t(1.0) - frac) * v0 + frac * v1;
 }
 
-
-
-void flashattn(d_stream &Q_tile_in, d_stream &K_tile_in, d_stream &V_tile_in, d_stream &O_tile_out)
+void flashattn(stream_t &Q_tile_in, stream_t &K_tile_in, stream_t &V_tile_in, stream_t &O_tile_out, state_t state)
 {
 #pragma HLS INTERFACE ap_ctrl_none port=return
 #pragma HLS INTERFACE mode=AXIS port=Q_tile_in register_mode=off
 #pragma HLS INTERFACE mode=AXIS port=V_tile_in register_mode=off
 #pragma HLS INTERFACE mode=AXIS port=K_tile_in register_mode=off
 #pragma HLS INTERFACE mode=AXIS port=O_tile_out register_mode=off
+#pragma HLS INTERFACE s_axilite port=state bundle=control
+#pragma HLS INTERFACE s_axilite port=return bundle=control
 
-    data_t_pack Q_in, K_in, V_in, O_out;
+    pkt_t Q_in, K_in, V_in, O_out;
     Q_in.keep = K_in.keep = V_in.keep = O_out.keep = -1; 
     Q_in.last = K_in.last = V_in.last = O_out.last = 0;
 
-    data_t Q_tile[tile_q_len][head_dim];
+    // Static across calls of the function
+    static data_t Q_tile[tile_q_len][head_dim];
+    static accum_t output_accum[tile_q_len][head_dim];
+    static accum_t exp_sum[tile_q_len];
+    static accum_t row_max[tile_q_len];
+    
     data_t K_tile[tile_k_len][head_dim];
     data_t V_tile[tile_k_len][head_dim];
-    data_t O_tile[tile_q_len][head_dim];
 
-    ap_fixed<24,8> row_max[tile_q_len];
-    ap_fixed<24,8> exp_sum[tile_q_len];
-    ap_fixed<24,8> output_accum[tile_q_len][head_dim];
+// Stateful control
+if (state != STATE_STEP && state != STATE_FINAL) // INIT STATE
+{
+/*
+    Initialization State. 
+    Called once per Q tile.
+    Static buffers are reinitialized.
+    Q tile is read in from stream.
+*/
 
-Read_Q:
+Read_Q: // Read Q in from stream
     for(int row = 0; row < tile_q_len; row++) {
         for(int col = 0; col < head_dim; col++) {
             Q_in = Q_tile_in.read();         
             Q_tile[row][col] = Q_in.data;
         }
     }
+
+Init_Accumulators: // Reinitialize static accumulators for new Q tile
+    for (int q = 0; q < tile_q_len; q++) {
+        row_max[q] = accum_t(-32.0);
+        exp_sum[q] = accum_t(0);
+        for (int d = 0; d < head_dim; d++) {
+            output_accum[q][d] = accum_t(0);
+        }
+    }
+} 
+else if (state == STATE_STEP)
+{
+    /*
+        Step State. 
+        Called once per K/V tile pair (Called multiple times per Q tile).
+        K/V tile pair is read in from stream.
+        Computes attention scores against persistent Q tile.
+        Applies online softmax updates.
+        Accumulates into output_accum and exp_sum.
+    */
 
 Read_K_and_V:
     for(int row = 0; row < tile_k_len; row++) {
@@ -58,41 +95,41 @@ Read_K_and_V:
         }
     }
 
-Init_Accumulators:
-    for (int q = 0; q < tile_q_len; q++) {
-        row_max[q] = -INFINITY;
-        exp_sum[q] = 0;
-        for (int d = 0; d < head_dim; d++) {
-            output_accum[q][d] = 0;
-        }
-    }
-
 Compute_Online_Softmax:
     for (int k = 0; k < tile_k_len; k++) {
         for (int q = 0; q < tile_q_len; q++) {
 #pragma HLS PIPELINE II=1
 
-            ap_fixed<24,8> score = 0;
+            accum_t score = 0;
             for (int d = 0; d < head_dim; d++) {
                 score += Q_tile[q][d] * K_tile[k][d];
             }
 
-            ap_fixed<24,8> new_max = row_max[q];
-            bool max_updated = false;
+            data_t exp_val;
             if (score > row_max[q]) {
-                new_max = score;
-                max_updated = true;
-            }
+                data_t new_max = score;
+                data_t diff = row_max[q] - new_max;
+                
+                if (diff < data_t(-12.0f)) diff = data_t(-12.0f);
+                if (diff > data_t(0.0f))  diff = data_t(0.0f);
 
-            ap_fixed<16,6> exp_val = exp_lut((ap_fixed<16,6>)(score - new_max));
-
-            if (max_updated) {
-                ap_fixed<16,6> scale = exp_lut((ap_fixed<16,6>)(row_max[q] - new_max));
+                data_t scale = exp_lut(diff);  // safe lookup
                 exp_sum[q] *= scale;
+
                 for (int d = 0; d < head_dim; d++) {
                     output_accum[q][d] *= scale;
                 }
+
                 row_max[q] = new_max;
+                exp_val = data_t(1.0);  // exp(0)
+            } else {
+                data_t diff = score - row_max[q];
+
+                // Clamp LUT input
+                if (diff < data_t(-12.0f)) diff = data_t(-12.0f);
+                if (diff > data_t(0.0f))  diff = data_t(0.0f);
+
+                exp_val = exp_lut(diff);
             }
 
             exp_sum[q] += exp_val;
@@ -101,7 +138,15 @@ Compute_Online_Softmax:
             }
         }
     }
-
+} else if (state == STATE_FINAL)
+{
+ /*
+        Final state. 
+        Called once per Q tile.
+        Normalizes output accumulator.
+        Streams out output.
+    */
+    
 Normalize_And_Stream_Output:
     for (int q = 0; q < tile_q_len; q++) {
         data_t inv_sum = (data_t)(1.0) / exp_sum[q];  // << ONE divider per q
@@ -117,3 +162,11 @@ Normalize_And_Stream_Output:
         }
     }
 }
+}
+
+
+
+
+
+
+
